@@ -1,0 +1,23 @@
+{
+  "name": "apiprjShnk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dsktp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "jsdoc": "jsdoc   -r -c  jsdoc-conf.json -R README.md -d jsdocOut"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^9.4.4",
+    "electron-installer-dmg": "^3.0.0",
+    "electron-packager": "^14.2.1",
+    "ini": "^4.1.1",
+    "jquery": "^3.7.1",
+    "jsdoc": "^4.0.2",
+    "jsdom": "^22.1.0"
+  }
+}

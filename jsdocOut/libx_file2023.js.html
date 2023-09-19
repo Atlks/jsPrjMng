@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: libx/file2023.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: libx/file2023.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>
+global['writeFile']=writeFile
+function writeFile(f, t) {
+
+
+
+    if(isWinformEnv())
+    {
+
+
+        let txtInshell=encodeURIComponent(t)
+        let fl=encodeURIComponent( f);
+        var hedtx=window.external.callFun("writeFileV3 "+fl+" "+ txtInshell);
+    }
+    else
+    {
+        f=f.replace("__USERPROFILE__",process.env.USERPROFILE);
+        f=f.replace("__rootdir__",__dirname)
+        // f=f.replace("__USERPROFILE__",process.env.USERPROFILE);
+        // f=f.replace("__rootdir__",__dirname)
+        writeFileSyncx( f,t );
+
+    }
+
+}
+
+global['writeFileSyncV2']=writeFileSyncV2
+
+/**
+ * dep
+ * @param fil
+ * @param str
+ */
+function writeFileSyncV2(fil, str) {
+    log_enterFun_console(arguments)
+    try{
+        var fs = require("fs");
+        var path = require("path");
+        fs.mkdirSync(path.dirname(fil), {recursive: true});
+        //   fs.mkdirSync(appRoot + '/css
+
+        fs.writeFileSync(fil, str);
+    }catch (e)
+    {
+        console.log(e)
+    }
+
+}
+
+global['getlib']=getlib
+function getlib(basename) {
+
+    let f = __dirname + "/"+basename;
+    if(!file_exists(f))
+        f = __dirname + "/../libx/"+basename;
+    if(!file_exists(f))
+        f = __dirname + "/../libxBiz/"+basename;
+
+
+
+    if(!file_exists(f))
+        f = __dirname + "/libx/"+basename;
+
+    if(!file_exists(f))
+        f = __dirname + "/libx/"+basename;
+
+
+
+    if(!file_exists(f))
+        f = __dirname + "/../"+basename;
+
+    // if (libdir)
+    //     f = libdir + "/../cfg.ini";
+    return f;
+}
+
+
+try{
+    require("./sys")
+}catch (e){}
+try{
+    require("./libx/sys")
+}catch (e){}
+
+
+
+try{
+    require("./file")
+}catch (e){}
+try{
+    require("./libx/file")
+}catch (e){}
+global['appendFileV2']=appendFileV2
+function  appendFileV2(f,t){
+
+
+    if(isWinformEnv())
+    {
+
+
+        let txtInshell=encodeURIComponent(t)
+        let fl=encodeURIComponent( f);
+        var hedtx=window.external.callFun("appendFileV2 "+fl+" "+ txtInshell);
+    }
+    else
+    {
+      //  require("./file")
+        f=f.replace("__USERPROFILE__",process.env.USERPROFILE);
+        f=f.replace("__rootdir__",__dirname)
+        // f=f.replace("__USERPROFILE__",process.env.USERPROFILE);
+        // f=f.replace("__rootdir__",__dirname)
+        appendFileSync( f,t );
+
+    }
+}</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="kexiafenBal.html">kexiafenBal</a></li></ul><h3>Global</h3><ul><li><a href="global.html#QryShangxiafen">QryShangxiafen</a></li><li><a href="global.html#accFiles">accFiles</a></li><li><a href="global.html#agtbal648">agtbal648</a></li><li><a href="global.html#allFileScore">allFileScore</a></li><li><a href="global.html#callCmd">callCmd</a></li><li><a href="global.html#callFunPressEx">callFunPressEx</a></li><li><a href="global.html#call_func">call_func</a></li><li><a href="global.html#checkAgtidErr">checkAgtidErr</a></li><li><a href="global.html#checkWhiteIp">checkWhiteIp</a></li><li><a href="global.html#dsl_callFrmUiToBiz">dsl_callFrmUiToBiz</a></li><li><a href="global.html#dsl_callFunCmdMode">dsl_callFunCmdMode</a></li><li><a href="global.html#exit">exit</a></li><li><a href="global.html#explode">explode</a></li><li><a href="global.html#funtion_exist">funtion_exist</a></li><li><a href="global.html#getDbdir">getDbdir</a></li><li><a href="global.html#http_get">http_get</a></li><li><a href="global.html#http_get_core">http_get_core</a></li><li><a href="global.html#http_get_jqGet">http_get_jqGet</a></li><li><a href="global.html#http_get_jqGetSync">http_get_jqGetSync</a></li><li><a href="global.html#http_get_jqStyle">http_get_jqStyle</a></li><li><a href="global.html#incLibs">incLibs</a></li><li><a href="global.html#includeEsm">includeEsm</a></li><li><a href="global.html#kick">kick</a></li><li><a href="global.html#login">login</a></li><li><a href="global.html#oplog_qry">oplog_qry</a></li><li><a href="global.html#pipe">pipe</a></li><li><a href="global.html#qryAgtBal">qryAgtBal</a></li><li><a href="global.html#qryAgtBalINweb">qryAgtBalINweb</a></li><li><a href="global.html#refresh_login_token">refresh_login_token</a></li><li><a href="global.html#requireAutoload">requireAutoload</a></li><li><a href="global.html#requirex">requirex</a></li><li><a href="global.html#retry">retry</a></li><li><a href="global.html#score_orderQryShagnxiafenByUnameOrderid">score_orderQryShagnxiafenByUnameOrderid</a></li><li><a href="global.html#searchPlayer">searchPlayer</a></li><li><a href="global.html#setGlobalErrCatch">setGlobalErrCatch</a></li><li><a href="global.html#writeFileSyncV2">writeFileSyncV2</a></li><li><a href="global.html#writeFileV3">writeFileV3</a></li><li><a href="global.html#xiafen">xiafen</a></li><li><a href="global.html#xiafen745">xiafen745</a></li><li><a href="global.html#%25E7%2599%25BB%25E5%25BD%2595">登录</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a> on Mon Sep 18 2023 20:39:47 GMT+0700 (Indochina Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

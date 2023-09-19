@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: libx/sttb.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: libx/sttb.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>global['retry'] = retry;
+
+
+/**
+ * retry useage
+ * @author ati
+ * @version 1.1
+
+ * @description retry desc
+ *
+ *
+ * @param {function} f
+ * @param {int} reTrytimes
+ * @param {fun} chkFun
+ * @returns {*}
+ */
+function retry(f, reTrytimes, chkFun) {
+
+    var rzt_fnl;
+    for (let i = 0; i &lt; reTrytimes; i++) {
+        rzt_fnl = f();
+        if (chkFun(rzt_fnl))
+            break;
+    }
+
+    return rzt_fnl;
+
+
+}
+
+/**
+ * 
+ */
+function pipe() {
+
+}
+
+
+
+/**
+ * 
+ *   Description placeholder
+ *  @author ati
+ * @version 1.1
+ * 
+
+ * @date 9/18/2023 - 12:07:43 AM
+ */
+function setGlobalErrCatch() {
+
+}
+
+function mq() {
+
+}
+
+/**
+ * callcmd desc
+ * @author ati
+ * @version 1.1
+ */
+function callCmd() {
+
+}
+
+function setDaemon() {
+
+}
+
+
+function unittest() {
+
+}
+
+/**
+ * callFunPressExcallFunPressEx
+ * callFunPressExcallFunPressEx
+ *
+ * @param fun
+ * @param params
+ * @returns {*}
+ */
+function callFunPressEx(fun, params) {
+    try {
+        echo("\r\n\r\n");
+        var funname = arguments.callee.name;
+        arg = JSON.stringify(arguments);
+        var ivkFundbg = "*********=>" + funname + arg
+        console.log(ivkFundbg)
+
+
+        if (isset("window"))
+            func = window[fun];
+        else
+            func = global[fun];
+
+
+        if (func == undefined) {
+            let eobj = { "enterFunArgs": ivkFundbg, "msg": " cant find fun:" + fun }
+            throw eobj;
+        }
+
+        //window[cb];
+        $r = func.apply("thisobj", params);
+        echo(sprintf("[%s] ret==>%s", fun, $r));
+        echo("\r\n\r\n");
+        return $r;
+    } catch (e) {
+        echo(e)
+        $e2 = errorCast(e);
+        let eobj = { "type": "ex", "name": "xxxex", "msg": JSON.stringify($e2), "e": $e2 };
+        $rz = JSON.stringify(eobj);
+    }
+
+
+}
+
+
+// ref  提升稳定性   文档 v2 x8x.docx</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="kexiafenBal.html">kexiafenBal</a></li></ul><h3>Global</h3><ul><li><a href="global.html#QryShangxiafen">QryShangxiafen</a></li><li><a href="global.html#accFiles">accFiles</a></li><li><a href="global.html#agtbal648">agtbal648</a></li><li><a href="global.html#allFileScore">allFileScore</a></li><li><a href="global.html#callCmd">callCmd</a></li><li><a href="global.html#callFunPressEx">callFunPressEx</a></li><li><a href="global.html#call_func">call_func</a></li><li><a href="global.html#checkAgtidErr">checkAgtidErr</a></li><li><a href="global.html#checkWhiteIp">checkWhiteIp</a></li><li><a href="global.html#dsl_callFrmUiToBiz">dsl_callFrmUiToBiz</a></li><li><a href="global.html#dsl_callFunCmdMode">dsl_callFunCmdMode</a></li><li><a href="global.html#exit">exit</a></li><li><a href="global.html#explode">explode</a></li><li><a href="global.html#funtion_exist">funtion_exist</a></li><li><a href="global.html#getDbdir">getDbdir</a></li><li><a href="global.html#http_get">http_get</a></li><li><a href="global.html#http_get_core">http_get_core</a></li><li><a href="global.html#http_get_jqGet">http_get_jqGet</a></li><li><a href="global.html#http_get_jqGetSync">http_get_jqGetSync</a></li><li><a href="global.html#http_get_jqStyle">http_get_jqStyle</a></li><li><a href="global.html#incLibs">incLibs</a></li><li><a href="global.html#includeEsm">includeEsm</a></li><li><a href="global.html#kick">kick</a></li><li><a href="global.html#login">login</a></li><li><a href="global.html#oplog_qry">oplog_qry</a></li><li><a href="global.html#pipe">pipe</a></li><li><a href="global.html#qryAgtBal">qryAgtBal</a></li><li><a href="global.html#qryAgtBalINweb">qryAgtBalINweb</a></li><li><a href="global.html#refresh_login_token">refresh_login_token</a></li><li><a href="global.html#requireAutoload">requireAutoload</a></li><li><a href="global.html#requirex">requirex</a></li><li><a href="global.html#retry">retry</a></li><li><a href="global.html#score_orderQryShagnxiafenByUnameOrderid">score_orderQryShagnxiafenByUnameOrderid</a></li><li><a href="global.html#searchPlayer">searchPlayer</a></li><li><a href="global.html#setGlobalErrCatch">setGlobalErrCatch</a></li><li><a href="global.html#writeFileSyncV2">writeFileSyncV2</a></li><li><a href="global.html#writeFileV3">writeFileV3</a></li><li><a href="global.html#xiafen">xiafen</a></li><li><a href="global.html#xiafen745">xiafen745</a></li><li><a href="global.html#%25E7%2599%25BB%25E5%25BD%2595">登录</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a> on Mon Sep 18 2023 20:39:47 GMT+0700 (Indochina Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

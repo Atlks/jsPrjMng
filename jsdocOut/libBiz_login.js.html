@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: libBiz/login.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: libBiz/login.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>
+function loginInFm() {
+
+
+    if (!$("#uid").val().trim()) {
+        alert("代理id,秘钥不能为空");
+        return;
+    }
+
+    let arr = $("#uid").val().trim().split(",")
+
+
+
+    global['agentid'] = arr[0]
+    global['desCode'] = arr[1]
+    global['md5Code'] = arr[2]
+    window['agtid'] = arr[0]
+    window['agentid'] = arr[0]
+    window['desCode'] = arr[1]
+    window['md5Code'] = arr[2]
+
+    let a = {};
+
+    a.agtid = arr[0];
+
+    a.descode = arr[1];
+    a.md5key = arr[2]
+    a.lgky = $("#uid").val()
+    window['curvisa']=a
+
+
+
+    //saveLoginVisa  in fm
+
+    var sucsFun= function (a2){
+
+
+        Cookies.set ("agtid",curvisa.agtid,{ expires: 7, path: '/' });
+        Cookies.set("desCode",curvisa.descode,{ expires: 7, path: '/' });
+        Cookies.set ("md5Code", curvisa.md5key,{ expires: 7, path: '/' });
+
+
+        Cookies.set('name', 'value', { expires: 7, path: '/' })
+       let a= window['curvisa']
+        localStorage.setItem("agtid", a.agtid);
+          localStorage.setItem("agentid", a.agtid);
+          localStorage.setItem("desCode", a.descode);
+          localStorage.setItem("md5Code",a.md5key);
+       //   cookie aleway err ,cant find jq cooke plugin
+        // $.cookie ("agtid",a.agtid,{ expires: 7, path: '/' });
+        // $.cookie ("desCode",a.descode,{ expires: 7, path: '/' });
+        // $.cookie ("md5Code", arr[2],{ expires: 7, path: '/' });
+        //set window var
+        $("#unameLab").text(a.agtid)
+        $("form").hide();
+        $("#logined").show();
+    }
+    http_get_jqGet("api?callfun=login "+$("#uid").val().trim(),sucsFun)
+
+
+
+
+    console.log("lgky arr:" + arr)
+
+    // Cookies.set('loginkey', a.agtid.trim(), {expires: 7})
+    //
+    // let loginkey = Cookies.get('loginkey');
+    // console.log("lgky:" + loginkey)
+    // let arr2 = loginkey.trim().split(",")
+
+
+
+    //console.log(json_encode(a))
+    // writeFileSyncx(__dirname + "/cfg.json", json_encode(a));
+    //alert("ok")
+
+
+
+
+}
+
+
+global['login']=login
+
+/**
+ * login dsc
+ * @param uNkey
+ */
+function login(uNkey) {
+
+
+    let arr = uNkey.trim().split(",")
+
+    //  localStorage.setItem("loginkey", $("#uid").val());
+
+    global['agentid'] = arr[0]
+    global['desCode'] = arr[1]
+    global['md5Code'] = arr[2]
+
+    // localStorage.setItem("agentid", arr[0]);
+    // localStorage.setItem("desCode", arr[1]);
+    // localStorage.setItem("md5Code", arr[2]);
+
+    let a = {};
+
+    a.agtid = arr[0];
+
+    a.descode = arr[1];
+    a.md5key = arr[2]
+    a.lgky = uNkey
+    saveLoginVisa(a)
+
+
+
+    console.log("lgky arr:" + arr)
+
+    return a;
+
+    // Cookies.set('loginkey', a.agtid.trim(), {expires: 7})
+    //
+    // let loginkey = Cookies.get('loginkey');
+    // console.log("lgky:" + loginkey)
+    // let arr2 = loginkey.trim().split(",")
+
+
+
+}
+
+function saveLoginVisa(a) {
+
+    writeFileV3(  "__USERPROFILE__/lgky.json", json_encode(a));
+
+  try{
+      window['agentid'] = a.agtid
+      set_login_tokenV2(a)
+  }catch (e)
+  {
+      console.log(e)
+  }
+
+}
+
+
+
+
+
+function loginLocal() {
+    // a = {};
+    //
+    // a.agtid = $("#uid").val();
+    // a.descode = $("#password").val();
+    // a.md5key = $("#md5key").val();
+    //  require("./libx/file.js")
+
+    if (!$("#uid").val().trim()) {
+        alert("代理id,秘钥不能为空");
+        return;
+    }
+
+    let arr = $("#uid").val().trim().split(",")
+
+    //  localStorage.setItem("loginkey", $("#uid").val());
+
+    global['agentid'] = arr[0]
+    global['desCode'] = arr[1]
+    global['md5Code'] = arr[2]
+
+    // localStorage.setItem("agentid", arr[0]);
+    // localStorage.setItem("desCode", arr[1]);
+    // localStorage.setItem("md5Code", arr[2]);
+
+    let a = {};
+
+    a.agtid = arr[0];
+
+    a.descode = arr[1];
+    a.md5key = arr[2]
+    a.lgky = $("#uid").val()
+    saveLoginFlag(a)
+
+
+
+    console.log("lgky arr:" + arr)
+
+    // Cookies.set('loginkey', a.agtid.trim(), {expires: 7})
+    //
+    // let loginkey = Cookies.get('loginkey');
+    // console.log("lgky:" + loginkey)
+    // let arr2 = loginkey.trim().split(",")
+
+    $("#unameLab").text(a.agtid)
+
+    //console.log(json_encode(a))
+    // writeFileSyncx(__dirname + "/cfg.json", json_encode(a));
+    //alert("ok")
+
+    $("form").hide();
+    $("#logined").show();
+
+
+}
+
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="kexiafenBal.html">kexiafenBal</a></li></ul><h3>Global</h3><ul><li><a href="global.html#QryShangxiafen">QryShangxiafen</a></li><li><a href="global.html#accFiles">accFiles</a></li><li><a href="global.html#agtbal648">agtbal648</a></li><li><a href="global.html#allFileScore">allFileScore</a></li><li><a href="global.html#callCmd">callCmd</a></li><li><a href="global.html#callFunPressEx">callFunPressEx</a></li><li><a href="global.html#call_func">call_func</a></li><li><a href="global.html#checkAgtidErr">checkAgtidErr</a></li><li><a href="global.html#checkWhiteIp">checkWhiteIp</a></li><li><a href="global.html#dsl_callFrmUiToBiz">dsl_callFrmUiToBiz</a></li><li><a href="global.html#dsl_callFunCmdMode">dsl_callFunCmdMode</a></li><li><a href="global.html#exit">exit</a></li><li><a href="global.html#explode">explode</a></li><li><a href="global.html#funtion_exist">funtion_exist</a></li><li><a href="global.html#getDbdir">getDbdir</a></li><li><a href="global.html#http_get">http_get</a></li><li><a href="global.html#http_get_core">http_get_core</a></li><li><a href="global.html#http_get_jqGet">http_get_jqGet</a></li><li><a href="global.html#http_get_jqGetSync">http_get_jqGetSync</a></li><li><a href="global.html#http_get_jqStyle">http_get_jqStyle</a></li><li><a href="global.html#incLibs">incLibs</a></li><li><a href="global.html#includeEsm">includeEsm</a></li><li><a href="global.html#kick">kick</a></li><li><a href="global.html#login">login</a></li><li><a href="global.html#oplog_qry">oplog_qry</a></li><li><a href="global.html#pipe">pipe</a></li><li><a href="global.html#qryAgtBal">qryAgtBal</a></li><li><a href="global.html#qryAgtBalINweb">qryAgtBalINweb</a></li><li><a href="global.html#refresh_login_token">refresh_login_token</a></li><li><a href="global.html#requireAutoload">requireAutoload</a></li><li><a href="global.html#requirex">requirex</a></li><li><a href="global.html#retry">retry</a></li><li><a href="global.html#score_orderQryShagnxiafenByUnameOrderid">score_orderQryShagnxiafenByUnameOrderid</a></li><li><a href="global.html#searchPlayer">searchPlayer</a></li><li><a href="global.html#setGlobalErrCatch">setGlobalErrCatch</a></li><li><a href="global.html#writeFileSyncV2">writeFileSyncV2</a></li><li><a href="global.html#writeFileV3">writeFileV3</a></li><li><a href="global.html#xiafen">xiafen</a></li><li><a href="global.html#xiafen745">xiafen745</a></li><li><a href="global.html#%25E7%2599%25BB%25E5%25BD%2595">登录</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a> on Mon Sep 18 2023 20:39:47 GMT+0700 (Indochina Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

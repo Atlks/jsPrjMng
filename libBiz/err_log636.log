@@ -1,0 +1,68 @@
+2023-09-18 15:54:07 ERR e at:exit{"0":"exit","1":[]}
+2023-09-18 15:54:07 ERR {}
+2023-09-18 15:54:13 ERR e at:exit{"0":"exit","1":[]}
+2023-09-18 15:54:13 ERR {}
+2023-09-18 15:54:58 ERR e at:qryAgtBal{"0":"qryAgtBal","1":["111356"]}
+2023-09-18 15:54:58 ERR "not_loginex@没有agtid,需要登录"
+2023-09-18 15:55:18 ERR e at:qryAgtBal{"0":"qryAgtBal","1":["111356"]}
+2023-09-18 15:55:18 ERR "not_loginex@没有agtid,需要登录"
+2023-09-18 15:57:56 ERR e at:qryAgtBal{"0":"qryAgtBal","1":["111356"]}
+2023-09-18 15:57:56 ERR "not_loginex@没有agtid,需要登录"
+2023-09-18 15:58:00 ERR e at:qryAgtBal{"0":"qryAgtBal","1":["111356"]}
+2023-09-18 15:58:00 ERR "not_loginex@没有agtid,需要登录"
+2023-09-18 15:58:07 ERR e at:qryAgtBal{"0":"qryAgtBal","1":["111356"]}
+2023-09-18 15:58:07 ERR "not_loginex@没有agtid,需要登录"
+2023-09-18 15:58:41 ERR e at:qryAgtBal{"0":"qryAgtBal","1":["111356"]}
+2023-09-18 15:58:41 ERR "not_loginex@没有agtid,需要登录"
+2023-09-18 15:58:44 ERR e at:qryAgtBal{"0":"qryAgtBal","1":["111356"]}
+2023-09-18 15:58:44 ERR "not_loginex@没有agtid,需要登录"
+2023-09-18 15:59:10 ERR e at:qryAgtBal{"0":"qryAgtBal","1":["111356"]}
+2023-09-18 15:59:10 ERR "not_loginex@没有agtid,需要登录"
+2023-09-18 15:59:54 ERR e at:qryAgtBal{"0":"qryAgtBal","1":["111356"]}
+2023-09-18 15:59:54 ERR "not_loginex@没有agtid,需要登录"
+2023-09-18 16:01:42 ERR e at:addUser{"0":"addUser","1":["daf","dasf"]}
+2023-09-18 16:01:42 ERR "not_loginex@没有agtid,需要登录"
+2023-09-18 16:02:41 ERR e at:addUser{"0":"addUser","1":["tret","ewr"]}
+2023-09-18 16:02:41 ERR "not_loginex@没有agtid,需要登录"
+2023-09-18 16:43:34 ERR e at:login{"0":"login","1":["111356,26916DD661300B25,1BC0036763DE22EC"]}
+2023-09-18 16:43:34 ERR {}
+2023-09-18 16:43:38 ERR e at:qryAgtBal{"0":"qryAgtBal","1":["111356"]}
+2023-09-18 16:43:38 ERR "not_loginex@没有agtid,需要登录"
+2023-09-18 16:43:40 ERR e at:qryAgtBal{"0":"qryAgtBal","1":["111356"]}
+2023-09-18 16:43:40 ERR "not_loginex@没有agtid,需要登录"
+2023-09-18 16:43:46 ERR e at:qryAgtBal{"0":"qryAgtBal","1":["111356"]}
+2023-09-18 16:43:46 ERR "not_loginex@没有agtid,需要登录"
+2023-09-18 17:03:14 ERR e at:qryAgtBal{"0":"qryAgtBal","1":["111356"]}
+2023-09-18 17:03:14 ERR "not_loginex@没有agtid,需要登录"
+2023-09-18 17:03:23 ERR e at:login{"0":"login","1":["111356,26916DD661300B25,1BC0036763DE22EC"]}
+2023-09-18 17:03:23 ERR {}
+2023-09-18 17:03:27 ERR e at:login{"0":"login","1":["111356,26916DD661300B25,1BC0036763DE22EC"]}
+2023-09-18 17:03:27 ERR {}
+2023-09-18 17:08:34 ERR e at:login{"0":"login","1":["111356,26916DD661300B25,1BC0036763DE22EC"]}
+2023-09-18 17:08:34 ERR {}
+2023-09-18 17:09:06 ERR e at:login{"0":"login","1":["111356,26916DD661300B25,1BC0036763DE22EC"]}
+2023-09-18 17:09:06 ERR {}
+2023-09-18 17:23:38 ERR {"stack":"ReferenceError: getLoginToken is not defined\n    at String.shangfen (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\shangfenNode.js:32:25)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async call_func (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:59:12)\n    at async dsl_callFrmUiToBiz (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\dsl.js:201:15)\n    at async C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\bzweb.js:100:23","msg":"getLoginToken is not defined"}
+2023-09-18 17:24:37 ERR {"stack":"ReferenceError: getLoginToken is not defined\n    at String.shangfen (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\shangfenNode.js:32:25)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async call_func (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:59:12)\n    at async dsl_callFrmUiToBiz (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\dsl.js:201:15)\n    at async C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\bzweb.js:100:23","msg":"getLoginToken is not defined"}
+2023-09-18 17:26:01 ERR {"stack":"ReferenceError: getLoginToken is not defined\n    at String.shangfen (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\shangfenNode.js:32:25)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async call_func (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:59:12)\n    at async dsl_callFrmUiToBiz (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\dsl.js:201:15)\n    at async C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\bzweb.js:100:23","msg":"getLoginToken is not defined"}
+2023-09-18 17:36:23 ERR uncaughtException
+2023-09-18 17:36:23 ERR {
+  "stack": "C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\oplog.js:28\n        file=  =  oplog_logDbdir();\n               ^\n\nSyntaxError: Unexpected token '='\n    at internalCompileFunction (node:internal/vm:73:18)\n    at wrapSafe (node:internal/modules/cjs/loader:1153:20)\n    at Module._compile (node:internal/modules/cjs/loader:1197:27)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1287:10)\n    at Module.load (node:internal/modules/cjs/loader:1091:32)\n    at Module._load (node:internal/modules/cjs/loader:938:12)\n    at Module.require (node:internal/modules/cjs/loader:1115:19)\n    at require (node:internal/modules/helpers:119:18)\n    at Object.<anonymous> (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\bzweb.js:51:1)\n    at Module._compile (node:internal/modules/cjs/loader:1233:14)",
+  "msg": "Unexpected token '='"
+}
+2023-09-18 17:36:48 ERR e at:QryShangxiafen{"0":"QryShangxiafen","1":[]}
+2023-09-18 17:36:48 ERR {
+  "code": "ERR_INVALID_ARG_TYPE"
+}
+2023-09-18 17:36:53 ERR e at:QryShangxiafen{"0":"QryShangxiafen","1":[]}
+2023-09-18 17:36:53 ERR {
+  "code": "ERR_INVALID_ARG_TYPE"
+}
+2023-09-18 17:38:03 ERR e at:oplog_qry{"0":"oplog_qry","1":[]}
+2023-09-18 17:38:03 ERR {
+  "code": "ERR_INVALID_ARG_TYPE"
+}
+2023-09-18 17:39:21 ERR e at:kick{"0":"kick","1":["777"]}
+2023-09-18 17:39:21 ERR {}
+2023-09-18 17:39:32 ERR e at:kick{"0":"kick","1":["777"]}
+2023-09-18 17:39:32 ERR {}

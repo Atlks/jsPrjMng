@@ -1,0 +1,10 @@
+{
+  "0": {
+    "readyState": 4,
+    "responseText": "{\"type\":\"https://tools.ietf.org/html/rfc7231#section-6.5.1\",\"title\":\"One or more validation errors occurred.\",\"status\":400,\"traceId\":\"|8d18190b-411521f39c280ca1.\",\"errors\":{\"agentid\":[\"The value '花间提壶个体户' is not valid.\"]}}",
+    "status": 400,
+    "statusText": "error"
+  },
+  "1": "error",
+  "2": ""
+}

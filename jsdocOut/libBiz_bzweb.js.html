@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: libBiz/bzweb.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: libBiz/bzweb.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>// C:\w\sdkprj\node_modules\electron\dist\electron.exe  C:\modyfing\jbbot\zmng\dsktp.js
+
+//   npm i  electron
+//   npm i chalk
+//   npm i esm-hook
+//    npm i node-fetch
+//     node_modules/electron/dist/electron  dsktp.js
+const {join} = require("path");
+
+require("../libx/errHdlr")
+
+/////------------- stgart web
+const express = require('express')
+const app_web = express()
+
+
+let webroot = join(__dirname+"/../", '');
+console.log("webrt=>"+webroot)
+app_web.use(express.static(webroot))
+
+// respond with "hello world" when a GET request is made to the homepage
+app_web.get('/', (req, res) => {
+    res.send('okkk')
+})
+
+app_web.get('/about', (req, res) => {
+    res.send('about')
+})
+
+/**
+ *
+ * @param libss
+ */
+// function requireAutoload(libss) {
+//     let arr=libss.split(",")
+//     for(let lib of arr)
+//     {
+//         requirex("./"+lib+".js")
+//         requirex("./libx/"+lib+".js")
+//         requirex("./libBiz/"+lib+".js")
+//     }
+// }
+function incLibs()
+{
+    require("../libx/incHtm")
+    require("../libx/autoload")
+    require("../libBiz/searchPlayer")
+    requireAutoload("bzDb,user,sys,addUser,searchPlayer,oplog,ex,httpSync,bizHttp,incHtm,exit,login,qryAgtBal")
+    require("../libx/logger")
+    require("../libx/dsl")
+    require("../libx/api2023jb")
+    require("../libBiz/bizHttp.js")
+    require("../libBiz/oplog.js")
+    require("../libx/err.js")
+    require("../libx/crpto.js")
+    require("../libx/api2023jb.js")
+    const fs = require("fs");
+    require("../libx/fp_ati1990");
+    require("../libx/errHdlr");require("../libx/logger")
+    global["reg"] = reg;
+    global["login"] = login;
+    require("../libx/php.js")
+    require("../libBiz/acc.js")
+    require("../libx/ref.js")
+    require("../libx/sys.js")
+    require("../libx/enc.js")
+    require("../libBiz/bizErr.js")
+
+    require("../libx/aes.js")
+    require("../libBiz/bizHttp.js")
+    require("../libBiz/shangfen.js");
+    require("../libBiz/shangfenNode.js")
+}
+incLibs()
+function requirex(f) {
+    try {
+        console.log(f)
+        require(f)
+    }catch (e)
+    {
+        console.warn(e.message)
+    }
+    
+}
+
+/**
+ * http://localhost:8000/api?callfun=player_kick 777
+ */
+app_web.get('/api', async (req, res) => {
+
+    console.log("req querystr=>"+JSON.stringify(req.query))
+    let callfun = req.query.callfun;
+    require("../libx/dsl.js")
+
+    callfun=callfun.trim()
+    let arr=callfun.split(" ");
+    let fun=arr[0]
+
+    requirex("../libBiz/"+fun+".js");
+    requirex("../libBiz/"+fun+"Node.js")
+
+    try{
+        let promise = await dsl_callFrmUiToBiz(callfun);
+
+        if (typeof promise == "string")
+            res.send((promise))
+        else if (typeof promise != "string")
+            res.send(JSON.stringify(promise))
+    }catch (e)
+    {
+        if(e?.httpStatuCode)
+            res.status(e?.httpStatuCode)
+        res.send(JSON.stringify(e))
+    }
+
+})
+
+app_web.get('/tmot', (req, res) => {
+
+    setTimeout(() => {
+
+
+        res.send('tmot')
+    }, 15000)
+
+})
+
+
+console.log(77)
+
+var server = app_web.listen(8000, function () {
+
+    var host = server.address().address
+    var port = server.address().port
+
+    console.log("应用实例，访问地址为 http://localhost:%s", host, port)
+
+})
+
+console.log(999999)</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="kexiafenBal.html">kexiafenBal</a></li></ul><h3>Global</h3><ul><li><a href="global.html#QryShangxiafen">QryShangxiafen</a></li><li><a href="global.html#accFiles">accFiles</a></li><li><a href="global.html#agtbal648">agtbal648</a></li><li><a href="global.html#allFileScore">allFileScore</a></li><li><a href="global.html#callCmd">callCmd</a></li><li><a href="global.html#callFunPressEx">callFunPressEx</a></li><li><a href="global.html#call_func">call_func</a></li><li><a href="global.html#checkAgtidErr">checkAgtidErr</a></li><li><a href="global.html#checkWhiteIp">checkWhiteIp</a></li><li><a href="global.html#dsl_callFrmUiToBiz">dsl_callFrmUiToBiz</a></li><li><a href="global.html#dsl_callFunCmdMode">dsl_callFunCmdMode</a></li><li><a href="global.html#exit">exit</a></li><li><a href="global.html#explode">explode</a></li><li><a href="global.html#funtion_exist">funtion_exist</a></li><li><a href="global.html#getDbdir">getDbdir</a></li><li><a href="global.html#http_get">http_get</a></li><li><a href="global.html#http_get_core">http_get_core</a></li><li><a href="global.html#http_get_jqGet">http_get_jqGet</a></li><li><a href="global.html#http_get_jqGetSync">http_get_jqGetSync</a></li><li><a href="global.html#http_get_jqStyle">http_get_jqStyle</a></li><li><a href="global.html#incLibs">incLibs</a></li><li><a href="global.html#includeEsm">includeEsm</a></li><li><a href="global.html#kick">kick</a></li><li><a href="global.html#login">login</a></li><li><a href="global.html#oplog_qry">oplog_qry</a></li><li><a href="global.html#pipe">pipe</a></li><li><a href="global.html#qryAgtBal">qryAgtBal</a></li><li><a href="global.html#qryAgtBalINweb">qryAgtBalINweb</a></li><li><a href="global.html#refresh_login_token">refresh_login_token</a></li><li><a href="global.html#requireAutoload">requireAutoload</a></li><li><a href="global.html#requirex">requirex</a></li><li><a href="global.html#retry">retry</a></li><li><a href="global.html#score_orderQryShagnxiafenByUnameOrderid">score_orderQryShagnxiafenByUnameOrderid</a></li><li><a href="global.html#searchPlayer">searchPlayer</a></li><li><a href="global.html#setGlobalErrCatch">setGlobalErrCatch</a></li><li><a href="global.html#writeFileSyncV2">writeFileSyncV2</a></li><li><a href="global.html#writeFileV3">writeFileV3</a></li><li><a href="global.html#xiafen">xiafen</a></li><li><a href="global.html#xiafen745">xiafen745</a></li><li><a href="global.html#%25E7%2599%25BB%25E5%25BD%2595">登录</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a> on Mon Sep 18 2023 20:39:47 GMT+0700 (Indochina Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

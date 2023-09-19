@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: libBiz/acc.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: libBiz/acc.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>//const _ = require("lodash");
+
+global['Acc_logDbdir']=Acc_logDbdir
+function Acc_logDbdir()
+{
+   let dbfile =getDbdir()+"scoreLogColl.json";
+    return dbfile;
+}
+
+function chkSxfUname() {
+    if ($("#uname_sxf").val() == "") {
+        throw ("玩家账户不能为空")
+    }
+
+    if ($("#score_sxf").val() == "") {
+        throw ("上下分不能为空")
+    }
+}
+
+function orderQryShagnxiafen415() {
+    // chkAop()
+    authChk()
+    var funname = arguments.callee.name;
+    // arguments.callee.name
+    arg = JSON.stringify(arguments);
+    console.log("*********=>" + funname + arg);
+    $("#loaddiv").show()
+
+//return
+
+    setTimeout(function () {
+
+
+
+        http_get_jqGet("api?callfun=QryShangxiafen",function (rzt){
+
+            let columns = [
+                {data: 'uname'},
+                {data: '类型'},
+                {data: 'score'},
+                {data: 'time'}
+            ]
+
+            loadToDataTable(json_decode(rzt), "tab_sxf", columns)
+
+            //  window['loadToTable'](json_decode(rzt),"tab_sxf")
+            // console.log("[playerStat237] rzt=>" + rzt)
+
+            $("#tab_sxf tr").each(function (idx, item) {
+                // item.show();  item.css("display","");
+                //  alert(item)
+                //  alert($(item)[0])
+                $(item).css("display", "");
+                $(item).show();
+            })
+            $("#loaddiv").hide()
+        })
+       // rzt = dsl_callFunCmdMode("score_orderQryShagnxiafen", $("#uname").val())
+
+
+
+
+    }, 50)
+
+}
+
+
+/**
+ * QryShangxiafen shangfen xiafen kexiafen
+ */
+function accFiles()
+{}
+
+
+try {
+    // 玩家状态(0离线，1大厅，2游戏中)
+    window['playerStat0'] = '离线'
+    window['playerStat1'] = '大厅'
+    window['playerStat2'] = '游戏中'
+} catch (e) {
+
+}
+
+
+/**
+ * shangfen.js xiafen  kexiafenBal
+ */
+function allFileScore() {
+
+}
+
+
+
+
+
+
+
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="kexiafenBal.html">kexiafenBal</a></li></ul><h3>Global</h3><ul><li><a href="global.html#QryShangxiafen">QryShangxiafen</a></li><li><a href="global.html#accFiles">accFiles</a></li><li><a href="global.html#agtbal648">agtbal648</a></li><li><a href="global.html#allFileScore">allFileScore</a></li><li><a href="global.html#callCmd">callCmd</a></li><li><a href="global.html#callFunPressEx">callFunPressEx</a></li><li><a href="global.html#call_func">call_func</a></li><li><a href="global.html#checkAgtidErr">checkAgtidErr</a></li><li><a href="global.html#checkWhiteIp">checkWhiteIp</a></li><li><a href="global.html#dsl_callFrmUiToBiz">dsl_callFrmUiToBiz</a></li><li><a href="global.html#dsl_callFunCmdMode">dsl_callFunCmdMode</a></li><li><a href="global.html#exit">exit</a></li><li><a href="global.html#explode">explode</a></li><li><a href="global.html#funtion_exist">funtion_exist</a></li><li><a href="global.html#getDbdir">getDbdir</a></li><li><a href="global.html#http_get">http_get</a></li><li><a href="global.html#http_get_core">http_get_core</a></li><li><a href="global.html#http_get_jqGet">http_get_jqGet</a></li><li><a href="global.html#http_get_jqGetSync">http_get_jqGetSync</a></li><li><a href="global.html#http_get_jqStyle">http_get_jqStyle</a></li><li><a href="global.html#incLibs">incLibs</a></li><li><a href="global.html#includeEsm">includeEsm</a></li><li><a href="global.html#kick">kick</a></li><li><a href="global.html#login">login</a></li><li><a href="global.html#oplog_qry">oplog_qry</a></li><li><a href="global.html#pipe">pipe</a></li><li><a href="global.html#qryAgtBal">qryAgtBal</a></li><li><a href="global.html#qryAgtBalINweb">qryAgtBalINweb</a></li><li><a href="global.html#refresh_login_token">refresh_login_token</a></li><li><a href="global.html#requireAutoload">requireAutoload</a></li><li><a href="global.html#requirex">requirex</a></li><li><a href="global.html#retry">retry</a></li><li><a href="global.html#score_orderQryShagnxiafenByUnameOrderid">score_orderQryShagnxiafenByUnameOrderid</a></li><li><a href="global.html#searchPlayer">searchPlayer</a></li><li><a href="global.html#setGlobalErrCatch">setGlobalErrCatch</a></li><li><a href="global.html#writeFileSyncV2">writeFileSyncV2</a></li><li><a href="global.html#writeFileV3">writeFileV3</a></li><li><a href="global.html#xiafen">xiafen</a></li><li><a href="global.html#xiafen745">xiafen745</a></li><li><a href="global.html#%25E7%2599%25BB%25E5%25BD%2595">登录</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a> on Mon Sep 18 2023 20:39:47 GMT+0700 (Indochina Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

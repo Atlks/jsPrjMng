@@ -1,0 +1,29 @@
+{
+  "recurseDepth": 10,
+
+  "source": {
+    "include": ["./libx","./libBiz"],
+    "exclude": [ /* array of paths to exclude */ ],
+    "includePattern": ".+\\.js(doc|x)?$",
+    "excludePattern": "(^|\\/|\\\\)_",
+    "exclude": []
+  },
+  "sourceType": "script",
+
+  "tags": {
+    "allowUnknownTags": true,
+    "dictionaries": ["jsdoc","closure"]
+  },
+  "plugins": [],
+  "opts": {
+
+  },
+  "templates": {
+    "cleverLinks": false,
+    "monospaceLinks": false
+  },
+
+
+  "destination": "./out/",
+  "recurse": true
+}
