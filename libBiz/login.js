@@ -1,3 +1,92 @@
+  chkRzt_pass="pass";
+  chkRzt_crdtNotExist="chkRzt_crdtNotExist"
+  chkRzt_unameFmtErr="chkRzt_unameFmtErr"
+  chkRzt_unameNotExist="chkRzt_unameNotExist"
+  function not_exist(凭据) {
+      if(凭据)
+          return  false;
+      return true;
+  }
+
+  function NotExistUname(用户名) {
+      return undefined;
+  }
+
+
+  function chkPass(检查结果) {
+      return 检查结果
+  }
+
+
+  function chkNotPass(检查结果) {
+      return !chkPass(检查结果);
+  }
+
+  function if_login_credent_isPwdType_issueLoginCrdt(凭据) {
+      return undefined;
+  }
+
+  function addOplog(用户用户名登录时间当前时间) {
+      return undefined;
+  }
+
+  /**
+   * loginV2
+   * @param 凭据
+   */
+  function loginV2(凭据) {
+
+
+      let 检查结果 = check_login_credentials(凭据);
+      ifx(chkPass(检查结果),
+          if_login_credent_isPwdType_issueLoginCrdt(凭据),
+          addOplog("用户 (@用户名@)登录，时间 @当前时间@")
+
+
+      )
+
+      ifx(chkNotPass(检查结果), tipsNend(检查结果))
+
+
+  }
+
+  /**
+ * 检查登录凭据
+ */
+function check_login_credentials(凭据)
+{
+    ifx(not_exist(凭据), tipsNend(chkRzt_crdtNotExist))
+    ifx( 凭据.用户名.length < 3, tipsNend(chkRzt_unameFmtErr))
+    ifx(NotExistUname(凭据.用户名), tipsNend(chkRzt_unameNotExist))
+    // 如果(凭据.类型 == "密码", 检查密码(凭据))
+    // 如果(凭据.类型 == "cookie", 检查cookie(凭据))
+
+    return chkRzt_pass;
+}
+
+
+  /**
+   * 发放登录凭据
+   * @param 用户名
+
+   * @constructor
+   */
+  function Issue_login_credentials(用户名) {
+
+    过期日 = 计算过期日("@当前日期@+7")
+    return () => {
+
+        console.log("发放登录凭据....")
+        var 登录凭据 = {"用户名": 用户名, "过期日": 过期日, "签名": "4546fdafsd"};
+        登录凭据.加密效验码 = md5(用户名 + 过期日)
+        保存登录凭据(登录凭据)
+    }
+
+}
+
+
+
+
 
 function loginInFm() {
 
@@ -8,6 +97,11 @@ function loginInFm() {
     }
 
     let arr = $("#uid").val().trim().split(",")
+    if(arr.length<3)
+    {
+        alert("格式不对，检查格式为》：    代理id,descode,md5code")
+        return;
+    }
 
 
 
@@ -32,9 +126,17 @@ function loginInFm() {
 
     //saveLoginVisa  in fm
 
-    var sucsFun= function (a2){
+    var sucsFun= function (dt){
 
+      console.log(" ajax sucsFun dt=> "+dt)
+        let rtobj=JSON.parse(dt)
+        if(rtobj?.type=="ex")
+        {
+            alert(rtobj.errmsg)
+            return;
+        }
 
+      //  alert("sucsFun")
         Cookies.set ("agtid",curvisa.agtid,{ expires: 7, path: '/' });
         Cookies.set("desCode",curvisa.descode,{ expires: 7, path: '/' });
         Cookies.set ("md5Code", curvisa.md5key,{ expires: 7, path: '/' });
@@ -46,6 +148,9 @@ function loginInFm() {
           localStorage.setItem("agentid", a.agtid);
           localStorage.setItem("desCode", a.descode);
           localStorage.setItem("md5Code",a.md5key);
+
+
+        qryAgtBalINweb()
        //   cookie aleway err ,cant find jq cooke plugin
         // $.cookie ("agtid",a.agtid,{ expires: 7, path: '/' });
         // $.cookie ("desCode",a.descode,{ expires: 7, path: '/' });
@@ -54,8 +159,9 @@ function loginInFm() {
         $("#unameLab").text(a.agtid)
         $("form").hide();
         $("#logined").show();
+        window.location.reload()
     }
-    http_get_jqGet("api?callfun=login "+$("#uid").val().trim(),sucsFun)
+    http_get_jqGet(callrmtRstapiUrl()+"login "+$("#uid").val().trim(),sucsFun,jqFailFun)
 
 
 
@@ -86,7 +192,7 @@ global['login']=login
  * login dsc
  * @param uNkey
  */
-function login(uNkey) {
+async function login(uNkey) {
 
 
     let arr = uNkey.trim().split(",")
@@ -111,8 +217,14 @@ function login(uNkey) {
     saveLoginVisa(a)
 
 
-
     console.log("lgky arr:" + arr)
+
+
+    let rzt = await qryAgtBal()
+    let rztobj = JSON.parse(rzt);
+    if (rztobj.type == "ex") {
+        throw "alrtEx@" + rztobj.msg_to_ui
+    }
 
     return a;
 
@@ -121,7 +233,6 @@ function login(uNkey) {
     // let loginkey = Cookies.get('loginkey');
     // console.log("lgky:" + loginkey)
     // let arr2 = loginkey.trim().split(",")
-
 
 
 }
@@ -141,9 +252,9 @@ function saveLoginVisa(a) {
 }
 
 
-
-
-
+/**
+ * DEP
+ */
 function loginLocal() {
     // a = {};
     //

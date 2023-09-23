@@ -67,7 +67,7 @@ function PlayerKexiafenBal638() {
         //rzt=  dsl_callFunCmdMode("playerStat",$("#uname").val() )
         //   rzt = dsl_callFunCmdMode("Score_PlayerKexiafenBal", $("#uname").val())
 
-        http_get_jqGet("api?callfun=kexiafenBal " + $("#uname").val(), function (rzt) {
+        http_get_jqGet(callrmtRstapiUrl()+"kexiafenBal " + $("#uname").val(), function (rzt) {
             //  {"maintype":"/GameHandle","type":7,"data":{"code":0,"agentid":111356,"linecode":"10001_1","status":0,"userid":32076939,"account":"uname1","totalScore":300.0,"integralvalue":6.0,"addscore":300.0,"subscore":0.0,"addscoretimes":2,"subscoretimes":0,"totalwinlose":0.0,"totalrevenue":0.0}}
             console.log("[PlayerKexiafenBal638] rzt=>" + rzt)
             rztobj = JSON.parse(rzt);
@@ -140,7 +140,7 @@ function player_kickInform() {
         //rzt=  dsl_callFunCmdMode("playerStat",$("#uname").val() )
         //  rzt = dsl_callFunCmdMode("player_kick", $("#uname").val())
 
-        http_get_jqGet("api?callfun=kick " + $("#uname").val(), function (rzt) {
+        http_get_jqGet(callrmtRstapiUrl()+"kick " + $("#uname").val(), function (rzt) {
 
             try {
                 $("#loaddiv2").hide()

@@ -29,12 +29,87 @@
             <pre class="prettyprint source linenums"><code>// @ts-check
 
 var __检查通过 = false
+var __检查不通过 = true
+var __过期日;
+var __通过 = true;
+
+检查结果_凭据无效_用户名格式不对 = "用户名长度于格式不对"
+检查结果_凭据不存在 = "检查结果_没有凭据"
+检查结果_凭据过期 = "凭据过期"
+检查结果_凭据校验签名不通过 = "凭据校验签名不通过"
+检查结果_凭据无效缺失栏目 = "凭据无效缺失栏目"
+检查结果_用户名不存在 = "用户名不存在"
+检查结果_密码错误 = "密码错误"
 
 
 // @ts-ignore
 require("./系统.js")
-
+require("./操作日志.js")
+require("./控制流程函数.js")
 //jsdoc libx/登录.js
+
+
+/**
+ * 登录流程2.0
+ * @author ati
+ * @version 2.0
+ * 登录流程
+ * @param 凭据   类型（密码，cookie)，用户名，密码，签名，过期日
+ * @param 密码
+ */
+function 登录流程(凭据) {
+
+
+    检查结果 = 检查登录凭据(凭据);
+    如果(检查通过(检查结果),
+        如果是登录凭据是密码类型则发放登录凭据(凭据),
+        添加操作日志("用户 (@用户名@)登录，时间 @当前时间@"),
+    )
+    如果(检查不通过(检查结果), 提示并终止(检查结果))
+
+}
+
+
+
+//  显示( 如果(false,那么(返回(1)),否则(返回(2))));
+let 凭据 = {}
+凭据.类型 = "密码"
+凭据.用户名 = "aaa"
+凭据.密码 = "123"
+登录流程()
+
+
+
+/**
+ * 根据规则来
+ * @param 凭据
+ * @returns {undefined}
+ */
+function 检查登录凭据(凭据) {
+    如果(不存在(凭据), 提示并终止(检查结果_凭据不存在))
+    如果(长度(凭据.用户名) &lt; 3, 提示并终止(检查结果_凭据无效_用户名格式不对))
+    如果(用户名不存在(凭据.用户名), 提示并终止(检查结果_用户名不存在))
+    如果(凭据.类型 == "密码", 检查密码(凭据))
+    如果(凭据.类型 == "token", 检查token(凭据))
+
+    return __通过;
+}
+
+
+
+/**
+ * 检查cookie凭据  token
+ * @param 凭据
+ */
+function 检查token(凭据) {
+    如果(长度(凭据.用户名) &lt; 3, 提示并终止(检查结果_凭据无效_用户名格式不对))
+
+    如果(过期效验(凭据.过期日), 提示并终止(检查结果_凭据过期))
+    如果(校验签名不通过(凭据.签名), 提示并终止(检查结果_凭据校验签名不通过))
+    如果(校验用户名不通过(凭据.用户名), 提示并终止(检查结果_用户名不存在))
+}
+
+
 
 /**  登录算法
  * alias login
@@ -47,45 +122,114 @@ require("./系统.js")
  * @param {any} 密码
  */
 
-function 登录(用户名, 密码) {
+// function 登录Dep(用户名, 密码) {
+//
+//     /*** @type {*} */
+//     let aaa = "a"
+//
+//     检查用户名密码(用户名是("aaa"), 密码是(123)); //  is not empty
+//     如果(__检查通过,
+//         那么(发放登录凭据(用户名是("aaa"), 过期日("2024-01-01")), 显示退出按钮区域,
+//             关闭登录区域, 转到主界面, 添加操作日志()),
+//         否则(提示("用户名密码不对"), 终止流程)
+//     )
+//     // pipe()
+//
+// }
 
-    /*** @type {*} */
-    let aaa = "a"
 
-    检查用户名密码(用户名是("aaa"), 密码是(123)); //  is not empty
-    如果(__检查通过,
-        那么(发放登录凭据(用户名是("aaa"), 过期日("2024-01-01")), 显示退出按钮区域,
-            关闭登录区域, 转到主界面, 添加操作日志()),
-        否则(提示("用户名密码不对"), 终止流程)
-    )
-    // pipe()
+// function 检查不通过() {
+//     return __检查通过
+// }
 
+
+
+function 如果是登录凭据是密码类型则发放登录凭据(凭据3) {
+
+
+    return () => 如果(凭据3.类型 == "密码", 发放登录凭据(凭据3.用户名));
+}
+
+//登录流程("用户名=aaa&amp;密码=123")
+
+
+function 检查不通过(检查结果) {
+    return !检查结果;
+}
+
+function 获取登录凭据() {
+    let 凭据 = {}
+    凭据.类型 = "密码"
+    凭据.用户名 = "aaa"
+    凭据.密码 = "123"
+    return 凭据;
 }
 
 
-function 检查不通过() {
-    return __检查通过
+
+function 检查密码(凭据) {
+    return () => {
+
+    };
 }
 
-function 登录(用户名, 密码) {
+
+function 提示并终止Ex(提示内容) {
 
 
-    检查用户名密码(用户名是("aaa"), 密码是(123));
-    如果(__检查通过, 那么(发放登录凭据(用户名是("aaa"), 过期日("2024-01-01")),
-            显示退出按钮区域, 关闭登录区域, 转到主界面, 添加操作日志())
-    )
-
-    如果(检查不通过 ,那么(提示("用户名密码不对"), 终止流程))
-
+    throw  "ex@" + 提示内容
 
 }
 
-//  显示( 如果(false,那么(返回(1)),否则(返回(2))));
+function 提示并终止(提示内容) {
 
-登录("aaa", 123)
+    return () => {
+        throw  "ex@" + 提示内容
+    }
+}
+
+function 是否过期(过期日) {
+    return undefined;
+}
+
+function 过期(过期日) {
+    return undefined;
+}
+
+function 校验签名不通过(凭据) {
+    return undefined;
+}
 
 
-function 添加操作日志() {
+function 过期效验(过期日) {
+    return undefined;
+}
+
+
+
+function 用户名不存在(用户名) {
+    return false;
+}
+
+function 不存在(凭据) {
+
+    if (凭据)
+        return false;
+    return true;
+}
+
+
+
+
+function 校验用户名不通过(用户名) {
+    return undefined;
+}
+
+
+
+function 计算过期日(s) {
+
+    return "2005";
 
 }
 
@@ -96,14 +240,26 @@ function 过期日(过期日) {
     return 过期日
 }
 
-function 发放登录凭据(用户名, 过期日) {
+function 发放登录凭据(用户名) {
 
-    var 登录凭据 = {"用户名": 用户名, "过期日": 过期日};
-    登录凭据.加密效验码 = md5(用户名 + 过期日)
-    保存登录凭据(登录凭据)
+    过期日 = 计算过期日("@当前日期@+7")
+    return () => {
+
+        console.log("发放登录凭据....")
+        var 登录凭据 = {"用户名": 用户名, "过期日": 过期日, "签名": "4546fdafsd"};
+        登录凭据.加密效验码 = md5(用户名 + 过期日)
+        保存登录凭据(登录凭据)
+    }
+
 }
 
+/**
+ * cookie localstore file etc..rds
+ * @param 登录凭据
+ */
 function 保存登录凭据(登录凭据) {
+
+    console.log("保存登录凭据ck......" + JSON.stringify(登录凭据))
 
 }
 
@@ -118,8 +274,8 @@ function 密码是(密码) {
 }
 
 
-function 检查通过() {
-    return __检查通过
+function 检查通过(检查结果) {
+    return 检查结果
 }
 
 
@@ -134,12 +290,10 @@ function 保存登录状态() {
     console.log("save token")
 }
 
-function 显示退出按钮区域() {
 
-}
 
 function 终止流程() {
-
+    console.log("终止流程d代码")
 }
 
 function 提示(提示信息) {
@@ -149,12 +303,8 @@ function 提示(提示信息) {
     }
 }
 
-function 转到主界面() {
-    console.log("welcome")
-}
 
-function 关闭登录区域() {
-}
+
 
 
 function 那么(...满足条件后执行的指令集) {
@@ -193,24 +343,19 @@ function 否则(...不满足条件的时候执行的指令集) {
 
 
 function 检查用户名密码(用户名, 密码) {
-    __检查通过 = true;
+
     __检查通过 = false;
     // console.log(111)
+    __检查不通过 = true;
+
+
+    __检查通过 = true;
+    __检查不通过 = false;
+    return true;
 
 }
 
-function 如果(条件, 通过后执行的指令, 拒绝后执行的指令) {
-   // if(typeof  条件 =="function")
-   //     条件=条件()
-
-    if (条件) {
-        return 通过后执行的指令()
-    } else {
-        if (拒绝后执行的指令)
-            return 拒绝后执行的指令()
-    }
-
-}</code></pre>
+</code></pre>
         </article>
     </section>
 
@@ -220,13 +365,13 @@ function 如果(条件, 通过后执行的指令, 拒绝后执行的指令) {
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="kexiafenBal.html">kexiafenBal</a></li></ul><h3>Global</h3><ul><li><a href="global.html#QryShangxiafen">QryShangxiafen</a></li><li><a href="global.html#accFiles">accFiles</a></li><li><a href="global.html#agtbal648">agtbal648</a></li><li><a href="global.html#allFileScore">allFileScore</a></li><li><a href="global.html#callCmd">callCmd</a></li><li><a href="global.html#callFunPressEx">callFunPressEx</a></li><li><a href="global.html#call_func">call_func</a></li><li><a href="global.html#checkAgtidErr">checkAgtidErr</a></li><li><a href="global.html#checkWhiteIp">checkWhiteIp</a></li><li><a href="global.html#dsl_callFrmUiToBiz">dsl_callFrmUiToBiz</a></li><li><a href="global.html#dsl_callFunCmdMode">dsl_callFunCmdMode</a></li><li><a href="global.html#exit">exit</a></li><li><a href="global.html#explode">explode</a></li><li><a href="global.html#funtion_exist">funtion_exist</a></li><li><a href="global.html#getDbdir">getDbdir</a></li><li><a href="global.html#http_get">http_get</a></li><li><a href="global.html#http_get_core">http_get_core</a></li><li><a href="global.html#http_get_jqGet">http_get_jqGet</a></li><li><a href="global.html#http_get_jqGetSync">http_get_jqGetSync</a></li><li><a href="global.html#http_get_jqStyle">http_get_jqStyle</a></li><li><a href="global.html#incLibs">incLibs</a></li><li><a href="global.html#includeEsm">includeEsm</a></li><li><a href="global.html#kick">kick</a></li><li><a href="global.html#login">login</a></li><li><a href="global.html#oplog_qry">oplog_qry</a></li><li><a href="global.html#pipe">pipe</a></li><li><a href="global.html#qryAgtBal">qryAgtBal</a></li><li><a href="global.html#qryAgtBalINweb">qryAgtBalINweb</a></li><li><a href="global.html#refresh_login_token">refresh_login_token</a></li><li><a href="global.html#requireAutoload">requireAutoload</a></li><li><a href="global.html#requirex">requirex</a></li><li><a href="global.html#retry">retry</a></li><li><a href="global.html#score_orderQryShagnxiafenByUnameOrderid">score_orderQryShagnxiafenByUnameOrderid</a></li><li><a href="global.html#searchPlayer">searchPlayer</a></li><li><a href="global.html#setGlobalErrCatch">setGlobalErrCatch</a></li><li><a href="global.html#writeFileSyncV2">writeFileSyncV2</a></li><li><a href="global.html#writeFileV3">writeFileV3</a></li><li><a href="global.html#xiafen">xiafen</a></li><li><a href="global.html#xiafen745">xiafen745</a></li><li><a href="global.html#%25E7%2599%25BB%25E5%25BD%2595">登录</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Issue_login_credentials.html">Issue_login_credentials</a></li><li><a href="kexiafenBal.html">kexiafenBal</a></li></ul><h3>Global</h3><ul><li><a href="global.html#QryShangxiafen">QryShangxiafen</a></li><li><a href="global.html#accFiles">accFiles</a></li><li><a href="global.html#agtbal648">agtbal648</a></li><li><a href="global.html#allFileScore">allFileScore</a></li><li><a href="global.html#authChk">authChk</a></li><li><a href="global.html#callCmd">callCmd</a></li><li><a href="global.html#callFunPressEx">callFunPressEx</a></li><li><a href="global.html#call_func">call_func</a></li><li><a href="global.html#callrmt">callrmt</a></li><li><a href="global.html#checkAgtidErr">checkAgtidErr</a></li><li><a href="global.html#checkWhiteIp">checkWhiteIp</a></li><li><a href="global.html#check_login_credentials">check_login_credentials</a></li><li><a href="global.html#dsl_callFrmUiToBiz">dsl_callFrmUiToBiz</a></li><li><a href="global.html#dsl_callFunCmdMode">dsl_callFunCmdMode</a></li><li><a href="global.html#exit">exit</a></li><li><a href="global.html#explode">explode</a></li><li><a href="global.html#funtion_exist">funtion_exist</a></li><li><a href="global.html#getDbdir">getDbdir</a></li><li><a href="global.html#getLoginToken">getLoginToken</a></li><li><a href="global.html#http_get">http_get</a></li><li><a href="global.html#http_getSync">http_getSync</a></li><li><a href="global.html#http_get_core">http_get_core</a></li><li><a href="global.html#http_get_jqGet">http_get_jqGet</a></li><li><a href="global.html#http_get_jqGetSync">http_get_jqGetSync</a></li><li><a href="global.html#http_get_jqStyle">http_get_jqStyle</a></li><li><a href="global.html#includeEsm">includeEsm</a></li><li><a href="global.html#json_encode">json_encode</a></li><li><a href="global.html#json_encode_Err">json_encode_Err</a></li><li><a href="global.html#kick">kick</a></li><li><a href="global.html#loadToDataTable">loadToDataTable</a></li><li><a href="global.html#login">login</a></li><li><a href="global.html#loginLocal">loginLocal</a></li><li><a href="global.html#loginV2">loginV2</a></li><li><a href="global.html#oplog_qry">oplog_qry</a></li><li><a href="global.html#pipe">pipe</a></li><li><a href="global.html#qryAgtBal">qryAgtBal</a></li><li><a href="global.html#qryAgtBalINweb">qryAgtBalINweb</a></li><li><a href="global.html#refresh_login_token">refresh_login_token</a></li><li><a href="global.html#requireAutoload">requireAutoload</a></li><li><a href="global.html#requirex">requirex</a></li><li><a href="global.html#retry">retry</a></li><li><a href="global.html#score_orderQryShagnxiafenByUnameOrderid">score_orderQryShagnxiafenByUnameOrderid</a></li><li><a href="global.html#searchPlayer">searchPlayer</a></li><li><a href="global.html#setGlobalErrCatch">setGlobalErrCatch</a></li><li><a href="global.html#writeFileSyncV2">writeFileSyncV2</a></li><li><a href="global.html#writeFileV3">writeFileV3</a></li><li><a href="global.html#xiafen">xiafen</a></li><li><a href="global.html#xiafen745">xiafen745</a></li><li><a href="global.html#%25E4%25BF%259D%25E5%25AD%2598%25E7%2599%25BB%25E5%25BD%2595%25E5%2587%25AD%25E6%258D%25AE">保存登录凭据</a></li><li><a href="global.html#%25E5%25A6%2582%25E6%259E%259C%25E6%2598%25AF%25E7%2599%25BB%25E5%25BD%2595%25E5%2587%25AD%25E6%258D%25AE%25E6%2598%25AF%25E5%25AF%2586%25E7%25A0%2581%25E7%25B1%25BB%25E5%259E%258B%25E5%2588%2599%25E5%258F%2591%25E6%2594%25BE%25E7%2599%25BB%25E5%25BD%2595%25E5%2587%25AD%25E6%258D%25AE">如果是登录凭据是密码类型则发放登录凭据</a></li><li><a href="global.html#%25E6%25A3%2580%25E6%259F%25A5token">检查token</a></li><li><a href="global.html#%25E6%25A3%2580%25E6%259F%25A5%25E7%2599%25BB%25E5%25BD%2595%25E5%2587%25AD%25E6%258D%25AE">检查登录凭据</a></li><li><a href="global.html#%25E7%2599%25BB%25E5%25BD%2595%25E6%25B5%2581%25E7%25A8%258B">登录流程</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a> on Mon Sep 18 2023 20:39:47 GMT+0700 (Indochina Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a> on Fri Sep 22 2023 20:57:10 GMT+0700 (Indochina Time)
 </footer>
 
 <script> prettyPrint(); </script>

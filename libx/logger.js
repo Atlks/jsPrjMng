@@ -96,7 +96,7 @@ function log_info(msg) {
    // require("./file2023")
     try {
         //  logger606.info(msg);   info: Sep-05-2023 18:34:26:
-        appendFileV2("./log636.log", curDatetime() + " info " + msg + "\r\n")
+        appendFileV2("../log636.log", curDatetime() + " info " + msg + "\r\n")
     } catch (e) {
         console.log(e)
     }
@@ -138,14 +138,20 @@ function log_fun_enter(arguments) {
 
 }
 
+global['log_fun_ret']=log_fun_ret
 function log_fun_ret(arguments, retVal) {
 
     var funname = arguments.callee.name;
     // arguments.callee.name
     arg = JSON.stringify(arguments);
 
+
+    retVal=retVal.substring(0,300)
     //  "*********=>" + funname + arg
-    console.log("[" + funname + "] ret=>" + retVal);
+    let data = "[" + funname + "] ret=>" + retVal;
+    console.log(data);
+    log_info(data)
+
 
 }
 
@@ -155,6 +161,39 @@ function err_castSerizErr(e) {
     return json_decode(s)
 }
 
+
+
+global['log_errV3']=log_errV3
+function log_errV3(e, callerArgs) {
+
+    e.stack1=e?.stack  //bcs this two prpop cant to json encode
+    // if(e.message)
+    e.msg1=e?.message
+
+    // e.stack1=e?.stack
+    // // if(e.message)
+    // e.msg1=e?.message
+   // require("../libx/logger")
+
+    try {
+
+        let eo = {"e": err_castSerizErr(e), "funNargs": callerArgs}
+        eo.stack1=e?.stack;
+        eo.msg=e?.message;
+        console.log(" log_errV3]] :183 ")
+        console.log(eo);
+        let msg = json_encode(eo)
+        appendFileSync("./err_log636.log", curDatetime() + " ERR " + msg + "\r\n")
+        return eo;
+    } catch (e) {
+        console.log(e)
+    }
+
+
+}
+
+
+global['log_errV2']=log_errV2
 function log_errV2(e, arguments) {
 
     try {

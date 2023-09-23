@@ -109,6 +109,15 @@ try{
 // }
 
 
+function  page_load()
+{
+
+
+    $("#unameLab").text(  Cookies.get ("agtid"))
+    qryAgtBalINweb()
+}
+
+
 function writeFileSyncx(fil, str) {
     try{
         var fs = require("fs");
@@ -157,7 +166,7 @@ $(
         if( global['desCode'] )
         console.log("desCode:"+desCode)
         //ini login form
-        user_ini_ui();
+     //   user_ini_ui();
         // if(global['agentid'] )
         // {
         //

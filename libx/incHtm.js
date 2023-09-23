@@ -19,6 +19,7 @@ function includeX(headFile)
 global['includeXAjax']=includeXAjax
 function includeXAjax(headFile)
 {
+    log_fun_enter(arguments)
     let hedtx;
     if(isWinformEnv())
     {
@@ -26,10 +27,10 @@ function includeXAjax(headFile)
     }
     else
     {
-          hedtx=readFileSyncx("../"+headFile)
+          hedtx=readFileSyncx(__dirname+"/../"+headFile)
 
     }
-
+    log_fun_ret(arguments,hedtx)
     return hedtx;
   //  return "document.write('"+hedtx+"')";
     // hedtx)

@@ -32,7 +32,7 @@ function shangfen1236() {
       //  rzt = dsl_callFunCmdMode("ScoreTopup_shangfen", $("#uname_sxf").val(), $("#score_sxf").val())
         //  winlogger.info("[shangfen1236] rzt=>" +rzt);
 
-        http_get_jqGet("api?callfun=shangfen "+ $("#uname_sxf").val()+" "+ $("#score_sxf").val(),function (rzt){
+        http_get_jqGet(callrmtRstapiUrl()+"shangfen "+ $("#uname_sxf").val()+" "+ $("#score_sxf").val(),function (rzt){
 
 
 
@@ -53,9 +53,9 @@ function shangfen1236() {
                 }, 30)
 
             } else {
-                require(libdir + "excel")
-                let errmsg = errcodeMsg(rztobj.data.code)
-                alert("发生错误:" + errmsg + " ")
+
+
+                alert("发生错误:" + rztobj.errmsgx + " ")
             }
             // alert(rzt)
 

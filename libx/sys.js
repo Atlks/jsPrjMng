@@ -1,4 +1,38 @@
+
+function tipsNendThrowEx(提示内容) {
+
+
+    throw  "ex@" + 提示内容
+
+}
+
+
+global['requirex']=requirex
+/**
+ *
+ * @param f
+ */
+function requirex(f) {
+    try {
+        console.log(f)
+        require(f)
+    } catch (e) {
+        console.warn(e.message)
+    }
+
+}
+function tipsNend(提示内容) {
+
+    return ()=> {
+        throw  "ex@" + 提示内容
+    }
+}
+function callrmtRstapiUrl() {
+    return "callrmt?callfun=";
+}
+
 try {
+
     global['isWinformEnv'] = isWinformEnv
 } catch (e) {
 
@@ -34,6 +68,28 @@ function isset(varname) {
         return false;
     }
 
+}
+
+
+function ifx(条件, ...通过后执行的指令) {
+    // if(typeof  条件 =="function")
+    //     条件=条件()
+
+    console.log("[如果] cdt=>"+条件)
+    if (条件) {
+        {
+            let fns = arguments;
+            let rzt;
+
+            for (var i = 1; i < fns.length; i++) {
+                let f = fns[i];
+                // console.log("cur f is =>"+f)
+                rzt = f(rzt);
+
+            }
+            return rzt;
+        }
+    }
 }
 
 function isWinformEnv() {

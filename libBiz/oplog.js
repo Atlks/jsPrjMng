@@ -13,24 +13,32 @@ try {
 function oplog_add(rcd) {
 
     log_fun_enter(arguments)
-    if (isWinformEnv()) {
-        let rcdInShell = encodeURIComponent(JSON.stringify(rcd))
-        let f = encodeURIComponent("__rootdir__/db/opLogColl.json");
-        var hedtx = window.external.callFun("pdo_insert " + rcdInShell + " " + f);
-    } else {
 
-        var file;
-        if (__dirname.endsWith("libBiz"))
-            file = __dirname + "/../db/opLogColl.json";
-        else
-            file = __dirname + "/db/opLogColl.json";
+    try{
+        if (isWinformEnv()) {
+            let rcdInShell = encodeURIComponent(JSON.stringify(rcd))
+            let f = encodeURIComponent("__rootdir__/db/opLogColl.json");
+            var hedtx = window.external.callFun("pdo_insert " + rcdInShell + " " + f);
+        } else {
 
-        file=    oplog_logDbdir();
+            var file;
+            //todo here dep 5 lines
+            if (__dirname.endsWith("libBiz"))
+                file = __dirname + "/../db/opLogColl.json";
+            else
+                file = __dirname + "/db/opLogColl.json";
 
-        console.log(":29 f=>" + file)
-        pdo_insert(rcd, file);
+            file=    oplog_logDbdir();
 
+            console.log(":29 f=>" + file)
+            pdo_insert(rcd, file);
+
+        }
+    }catch (e) {
+        console.log(e)
+        log_errV2(e, arguments)
     }
+
 
 
 }
@@ -90,7 +98,7 @@ function oplog_qryINWebV2() {
     authChk()
     $().ready(function () {
         //do something
-        var rzt =http_get_jqGet("api?callfun=oplog_qry",function (rzt){
+        var rzt =http_get_jqGet(callrmtRstapiUrl()+"oplog_qry",function (rzt){
             columns = [
                 {data: 'agtid'},
                 {data: 'uname'},

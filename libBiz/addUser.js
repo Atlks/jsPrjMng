@@ -41,9 +41,14 @@ function adduserFm() {
 
 
 
-    http_get_jqGet("api?callfun=addUser "+uname+" "+nickname,function (data)
+    http_get_jqGet(callrmtRstapiUrl()+"addUser "+uname+" "+nickname,function (data)
     {
         console.log("[" + funname + "] rzt=>" + data)
+
+        if(data.startsWith("alrtEx"))
+        {
+            throw  data;
+        }
         rztobj = JSON.parse(data);
 
         // $("#loaddiv").hide();
@@ -100,6 +105,58 @@ async function addUser(uname, nickname) {
     console.log(url)
     log_info(url)
 
+
+
+
+    //判断是否存在
+    let rzt2= await searchPlayer(uname)
+    let rztobj = JSON.parse(rzt2);
+    if(rztobj.data.code==0)
+        throw "alrtEx@玩家已经存在"
+
+    // alert(rcd)
+
+    let rzt=   await http_get_jqStyle(url, function (data) {
+        rzt = data
+
+    }, jqFailFun)
+
+
+    try{//------------add other prop
+        let rzt2= await searchPlayer(uname)
+        let rztobj = JSON.parse(rzt2);
+
+
+        // "status": 0,
+        //     "userid": 32077089,
+        //     "account": "777",
+        //     "totalScore": 885.0,
+
+       let file = getDbdir()+"/userColl.json";
+
+        let rows=pdo_query({"account":uname},file)
+        if(rows.length==0)
+        {
+            let rcd2={"status":0,"totalScore":rztobj.data.totalScore,"userid":rztobj.data.userid,"nickname":nickname,"agtid": agtid,"account": uname,"time": curDatetimeV2()}
+
+            pdo_insert(rcd2, file);
+        }else
+        {
+            console.log("alread have row  uname=>"+uname)
+        }
+
+    }catch (e){
+        console.log(e)
+
+        // if(typeof  e =="string")
+        // if(e.startsWith("alrtEx"))
+        //         throw  e
+
+
+    }
+
+
+    //-----------add op log
     try {
         var rcd = {"agtid": agtid, "op": "添加用户", "uname": uname, "类型": "添加用户", "time": curDatetimeV2()}
 
@@ -109,11 +166,5 @@ async function addUser(uname, nickname) {
         log_errV2(e, arguments)
     }
 
-    // alert(rcd)
-
-    let rzt=   await http_get_jqStyle(url, function (data) {
-        rzt = data
-
-    }, jqFailFun)
     return rzt;
 }

@@ -38,7 +38,8 @@ try {
             console.log(msg)
             // alert(msg)  //for test
            // log_err()
-            log_err(":40 win.onerr"+msg)
+            console.log(":40 win.onerr"+msg)
+        //    log_err(":40 win.onerr"+msg)
             // if                (message.toString().indexOf("Datatables") >= 0)
             // {
             //     console.log( msg  )

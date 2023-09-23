@@ -48,9 +48,45 @@ function json_decode($s) {
     return JSON.parse($s)
 }
 
+/**
+ * cant encode err   if err ,use json_encode_Err
+ * @param $s
+ * @returns {string}
+ */
 function json_encode($s) {
     return JSON.stringify($s, null, 2)
 }
+
+
+/**
+ * json_encode_Err  json_encode_Err
+ * @param e
+ * @returns {string}
+ */
+function json_encode_Err(e)
+{
+//     e.stack1 = e?.stack  //bcs this two prpop cant to json encode
+// // if(e.message)
+//     e.msg1 = e?.message
+
+    let eobj = {"e":e,"stack": e.stack, "msg": e.message}
+
+    return json_encode(eobj)
+}
+
+
+global['json_encode_ErrRawErrObj']=json_encode_ErrRawErrObj
+function json_encode_ErrRawErrObj(e)
+{
+    e.stack1 = e?.stack  //bcs this two prpop cant to json encode
+// if(e.message)
+    e.msg1 = e?.message
+
+
+
+    return json_encode(e)
+}
+
 
 function  encodeShellCmd(rcd)
 {

@@ -4,17 +4,16 @@ global['qryAgtBal'] = qryAgtBal
 /**
  *
  */
-function qryAgtBalINweb()
-{
+function qryAgtBalINweb() {
 
     $("#loaddiv").show()
-    if(!window['agtid'])
-    {
+    if (!isLogin()) {
         $("#loaddiv").hide();
         return;
     }
 
-    let url = "api?callfun=qryAgtBal " + agtid;
+    let obj =getLoginToken()
+    let url =  callrmtRstapiUrl()+"qryAgtBal " + obj.agtid;
     console.log(url)
     var sccsFun = function (data) {
         let data1 = "[qryAgtBalINweb] rzt=>" + data;
@@ -29,19 +28,20 @@ function qryAgtBalINweb()
         $("#loaddiv").hide();
 
         //   rztobj=JSON.parse(rzt);
-        if(rztobj.errors)
-        {
-            let errobj={"url":url,"ret":data}
+        if (rztobj.errors) {
+            let errobj = {"url": url, "ret": data}
             log_err(errobj)
             alert("发生错误:" + data);
             return;
         }
 
 
-        if (rztobj.data.code == 0)
-        {
+        if (rztobj.data.code == 0) {
             //alert("此代理余额为:" + rztobj.data.score)
-            $("#agtBalLab").text(rztobj.data.score+"")
+            $("#agtBalLab").text(rztobj.data.score + "")
+        } else {
+            if (rztobj.errmsg)
+                alert(rztobj.errmsg)
         }
 
         $("#loaddiv").hide();
@@ -52,13 +52,13 @@ function qryAgtBalINweb()
     }
 
 
-
-    http_get_jqGet(url,sccsFun,jqFailFun)
+    http_get_jqGet(url, sccsFun, jqFailFun)
 
 }
 
 
-global['qryAgtBal']=qryAgtBal
+global['qryAgtBal'] = qryAgtBal
+
 /**
  * biz  qryAgtBal
  * @returns {Promise<*>}
@@ -73,31 +73,42 @@ async function qryAgtBal() {
     let _paraValue = ""
     let url = buildUrlNget_x(_paraValue, timestamp, 9); // apitype_agtBal
 
-    let rzt = await  http_get_jqStyle(url, null, jqFailFun)
+    let rzt = await http_get_jqStyle(url, null, jqFailFun)
 
-    // var sccsF=function (data) {
-    //
-    //     let data1 = "[agtbal648] rzt=>" + data;
-    //     console.log(data1)
-    //
-    //
-    //     log_info(data1);
-    //     rztobj = JSON.parse(data);
-    //
-    //     $("#loaddiv").hide();
-    //
-    //     return rztobj;
-    //
-    //
-    // }
-    //
-    // sccsF(rzt);
+    rztobj = JSON.parse(rzt);
+    if (rztobj.data.code != 0) {
+        let errmsg = errcodeMsg(rztobj.data.code)
+        rztobj.errmsg = errmsg;
+        rztobj.msg_to_ui=errmsg;
+        rztobj.type="ex";
+        rztobj.typex="ret_data_ex"
+        throw rztobj;
+    }
 
-   //   rztobj = JSON.parse(data);
-    return rzt ;
+
+    return rzt;
 }
 
 
+// var sccsF=function (data) {
+//
+//     let data1 = "[agtbal648] rzt=>" + data;
+//     console.log(data1)
+//
+//
+//     log_info(data1);
+//     rztobj = JSON.parse(data);
+//
+//     $("#loaddiv").hide();
+//
+//     return rztobj;
+//
+//
+// }
+//
+// sccsF(rzt);
+
+//   rztobj = JSON.parse(data);
 
 
 //   rztobj=JSON.parse(rzt);

@@ -118,7 +118,8 @@
 <div id="hddiv"></div>
 
 <script>
-    $( "#hddiv" ).load( "api?callfun=includeXAjax%20head.htm", function() {
+
+    $( "#hddiv" ).load( callrmtRstapiUrl()+ "includeXAjax%20head.htm&rdm="+ Math.random(), function() {
         $("#aIdx a").addClass("CurTab")
        // alert( "Load was performed." );
     });
@@ -196,7 +197,7 @@
 <script>
 
  //alert(   window.external)
-    user_ini_ui()
+    user_ini_uiV2()
 
 
 
@@ -206,7 +207,8 @@
 <script defer>
     window.setTimeout(function (){
        // agtbal648()
-        qryAgtBalINweb()
+        page_load()
+      //  qryAgtBalINweb()
     },500)
 
 </script>

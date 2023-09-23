@@ -34,7 +34,7 @@ function exitInfm() {
     a.md5key = null
     a.lgky = null
 
-    http_get_jqGet("api?callfun=exit")
+    http_get_jqGet(callrmtRstapiUrl()+"exit")
 
     console.log(agentid)
 }

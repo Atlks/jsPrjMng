@@ -80,6 +80,47 @@ function writeFileSyncx(fil, str) {
     fs.writeFileSync(fil, str);
 }
 
+global["readFileFromUploadFile"] = readFileFromUploadFile;
+
+/**
+ *
+ * @param req
+ * @returns {string}
+ */
+function readFileFromUploadFile(req) {
+    let avatar = req.files.file1;
+
+    //Use the mv() method to place the file in upload directory (i.e. "uploads")
+    // avatar.mv('./uploads/' + avatar.name)
+    let t = avatar.data.toString();
+    return t;
+}
+
+
+global['readExcelFromUploadFile']=readExcelFromUploadFile
+/**
+ *
+ * @param req
+ * @param rowRdr
+ * @returns {string|string}
+ */
+function readExcelFromUploadFile(req,rowRdr) {
+    let avatar = req.files.file1;
+
+
+
+    //Use the mv() method to place the file in upload directory (i.e. "uploads")
+     avatar.mv('tmp827.xlsx',(incomeMsg,f)=>{
+
+         let arg=arguments
+
+         readFromExcel('tmp827.xlsx',rowRdr)
+
+    })
+   // let t = avatar.mv
+  //  return t;
+}
+
 const {resolve} = require("path")
 global["resolve"] = resolve;
 global["readFileSyncx"] = readFileSyncx;
@@ -88,28 +129,35 @@ global["file_get_contentsx"] = readFileSyncx;
 
 function readFileSyncx(fil) {
 
-  log_enterFun(arguments)
-    // process.env.USERPROFILE +
-    //  let f = "@USERPROFILE@/lgky.json"
-    fil = fil.replace("__USERPROFILE__", process.env.USERPROFILE);
-    fil = fil.replace("__rootdir__", __dirname + "/../");
+    try{
+        log_fun_enter(arguments)
+        // process.env.USERPROFILE +
+        //  let f = "@USERPROFILE@/lgky.json"
+        fil = fil.replace("__USERPROFILE__", process.env.USERPROFILE);
+        fil = fil.replace("__rootdir__", __dirname + "/../");
 
 
-    //  filepath=>C:\modyfing\jbbot\zmng\cfg.js
-    console.log("93filepath=>" + resolve(fil))
+        //  filepath=>C:\modyfing\jbbot\zmng\cfg.js
+        console.log("93filepath=>" + resolve(fil))
 
-    if (!file_exists(fil))
-        return "";
+        if (!file_exists(fil))
+            return "";
 
-    var fs = require("fs");
-    var path = require("path");
-    //  fs.mkdirSync(path.dirname(fil), { recursive: true });
-    //   fs.mkdirSync(appRoot + '/css
+        var fs = require("fs");
+        var path = require("path");
+        //  fs.mkdirSync(path.dirname(fil), { recursive: true });
+        //   fs.mkdirSync(appRoot + '/css
 
 
-    let rt = fs.readFileSync(fil).toString();
-    console.log(" [readFileSyncx ] ret=>"+ rt.substring(0,300))
-    return rt;
+        let rt = fs.readFileSync(fil).toString();
+        console.log(" [readFileSyncx ] ret=>"+ rt.substring(0,300))
+        return rt;
+    }catch (e) {
+        console.log(e)
+        return  ""
+
+    }
+
 }
 
 global["file"] = file;

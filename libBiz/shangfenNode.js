@@ -11,7 +11,7 @@ async function  shangfen(uname, score) {
     orderid = sprintf("%s%s%s", agentid, timestamp, uname)
     _paraValue = sprintf(_paraValue, uname, score, orderid);
 
-    let url = buildUrlNget(_paraValue, timestamp, apitype_shangfen);
+    let url = buildUrlNgetV2(_paraValue, timestamp, apitype_shangfen);
 
 
     log_info(url);
@@ -25,7 +25,7 @@ async function  shangfen(uname, score) {
 
 
     try {
-        rztobj = JSON.parse(rzt);
+      var  rztobj = JSON.parse(rzt);
         if (rztobj.data.code == 0) {
             //  await import("../lowdbx/lowdbX.js")
 
@@ -48,7 +48,18 @@ async function  shangfen(uname, score) {
             await pdo_insert(rcd, file);
 
 
+        }else
+        {
+            require("../libx/sys")
+            require(libdir + "excel")
+            requirex("../libx/excel.js")
+            let errmsg = errcodeMsg(rztobj.data.code)
+            rztobj.typex="ex", rztobj.namex="Bls_ex"
+            rztobj.errmsgx=errmsg
+            return  rztobj;
+
         }
+
     } catch (e) {
         let eobj = {"stack": e.stack, "msg": e.message}
         log_err(eobj)

@@ -101,6 +101,13 @@ function loadToDataTableV2(jsonArr, tabid,columns123,order123) {
 
 }
 
+
+/**
+ * dep no order
+ * @param jsonArr
+ * @param tabid
+ * @param columns123
+ */
 function loadToDataTable(jsonArr, tabid,columns123) {
     // let table = new DataTable('#'+tabid);
     //  $('#'+tabid).DataTable( {

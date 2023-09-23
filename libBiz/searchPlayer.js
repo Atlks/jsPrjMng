@@ -1,6 +1,26 @@
+function arrToTable(arr) {
+    columns = [
+        {data: 'userid'},
+        {data: 'account'},
+        {data: 'nickname'},
+
+        {data: 'totalScore'},
+        {data: 'statStr'}
+    ]
+   for(i=0;i<arr.length;i++)
+   {
+       let curobj= arr[i]
+
+       curobj.statStr= window['playerStat' +curobj.status]
+   }
+
+// col cant be null,cant be "null" bdant be empty
+    loadToDataTableV2(arr, "app3", columns,[[0, "desc"]])
+}
+
 //  apitype_PlayerScore
 function playerNScore237() {
-    chkAop();
+   // chkAop();
     authChk()
 
     var funname = arguments.callee.name;
@@ -17,37 +37,35 @@ function playerNScore237() {
     $("#loaddiv").show()
 
 
-    let url = "api?callfun=searchPlayer " + $("#uname").val()
+    let url = callrmtRstapiUrl()+ "searchPlayer " + $("#uname").val()
     console.log(url)
     var sccsFun = function (data) {
-        console.log("[playerStat237] rzt=>" + data)
+        console.log("[playerNScore237] rzt=>" + data)
         rztobj = JSON.parse(data);
 
+        if(!rztobj.data)
+        {
+
+            arrToTable(rztobj);
+            $("#loaddiv").hide();
+            return;
+        }
 
         if (rztobj.data.code == 0) {
-            arr = [];
+          let  arr = [];
 
             rztobj.data.statStr = window['playerStat' + rztobj.data.status]
             arr.push(rztobj.data)
             //    console.log( window['loadToTable'])
+            arrToTable(arr);
 
-            columns = [
-                {data: 'userid'},
-                {data: 'account'},
-                {data: 'totalScore'},
-                {data: 'statStr'}
-            ]
-
-// col cant be null,cant be "null" bdant be empty
-            loadToDataTable(arr, "app3", columns)
-
-            $("#app3 tr").each(function (idx, item) {
-                // item.show();  item.css("display","");
-                //  alert(item)
-                //  alert($(item)[0])
-                $(item).css("display", "");
-                $(item).show();
-            })
+            // $("#app3 tr").each(function (idx, item) {
+            //     // item.show();  item.css("display","");
+            //     //  alert(item)
+            //     //  alert($(item)[0])
+            //     $(item).css("display", "");
+            //     $(item).show();
+            // })
         } else {
 
             alert(rztobj.errmsg )
@@ -85,6 +103,14 @@ function playerNScore237() {
 
 
 global['searchPlayer']=searchPlayer
+
+function searchPlayerAll() {
+
+    let file = getDbdir()+"/userColl.json";
+   // pdo_insert(rcd2, file);
+    return  pdo_query({},file);
+}
+
 /**
  * searchPlayersearchPlayer
  * @param uname
@@ -92,7 +118,13 @@ global['searchPlayer']=searchPlayer
  */
 async function searchPlayer(uname) {
 
+
+
     log_enterFun_console(arguments)
+
+
+    if(!uname)
+        return  searchPlayerAll()
     let timestamp = time();
 
     let _paraValue = sprintf("account=%s", uname);

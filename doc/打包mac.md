@@ -15,8 +15,8 @@ npm i crypto-js
     npm i  express
 npm i  silly-datetime
 
-npm i  electron node-fetch crypto-js express chalk esm-hook silly-datetime moment lowdb lodash node-xlsx
-
+npm i    node-fetch crypto-js express chalk esm-hook silly-datetime moment lowdb lodash node-xlsx
+npm i  cookie-parser
 
 直接electron xx.js模式运行找不到文件。。
 

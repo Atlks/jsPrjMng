@@ -1,11 +1,6 @@
-
-
-
-
-
 function callRmtFun($exprs, f, failF) {
 
-    let url="api?callfun="+$exprs;
+    let url = callrmtRstapiUrl() + $exprs;
 
     console.log(" [http_get_jqget] " + $url)
 
@@ -17,11 +12,10 @@ function callRmtFun($exprs, f, failF) {
     $.get($url, function (data) {
         console.log("[http_get_jqget] ret=>" + $url)
         log_info(" [jqGet] ret=>" + data);
-        if(f)
+        if (f)
             f(data)
     }, "text").fail(failF);
 }
-
 
 
 //node env
@@ -37,6 +31,43 @@ try {
 
 }
 
+
+global['http_get_jqStyle'] = http_get_jqStyle
+
+/**
+ *
+ * @param $url
+ * @param f dep sucessFun
+ * @param failF
+ */
+async function http_get_jqStyle($url, f, failF) {
+
+    console.log(" [http_get_jqget] " + $url)
+
+
+    // log_info("\r\n");
+
+    log_info("  [http_get_jqget] url=>" + $url);
+
+    //  const $ = require("jquery");
+    // $.ajaxSetup({
+    //      async:false
+    // } )  // cant find ajax setup
+
+    var rzt;
+    try {
+        rzt = await http_get($url);
+        console.log(":1240" + rzt)
+        return rzt;
+    } catch (e) {
+        checkWhiteIp(e, "");
+        checkAgtidErr(e);
+        throw  e
+    }
+
+}
+
+
 /**
  * checkWhiteIp n cvt ex type
  * @param e
@@ -49,8 +80,8 @@ function checkWhiteIp(e, uname) {
         let eobj = {
             "[checkWhiteIp]  cur uname": uname,
             "httpRzt": rzt,
-            "type": "ex","typex": "ip_auth_ex",
-            "httpStatuCode":e.httpStatuCode,
+            "type": "ex", "typex": "ip_auth_ex",
+            "httpStatuCode": e.httpStatuCode,
             "msg_to_ui": "发生错误，可能ip权限不足，需要加白" + rzt
         }
         throw eobj;
@@ -81,7 +112,13 @@ function buildUrlNget_x(_paraValue, timestamp, apitype_xxx) {
 global['buildUrlNgetV3'] = buildUrlNgetV3
 
 
-
+/**
+ *
+ * @param _paraValue
+ * @param timestamp
+ * @param apitype_shangfen
+ * @returns {*}
+ */
 function buildUrlNgetV3(_paraValue, timestamp, apitype_shangfen) {
 
     if (_paraValue == "__empty__")
@@ -89,11 +126,15 @@ function buildUrlNgetV3(_paraValue, timestamp, apitype_shangfen) {
     log_enterFun(arguments)
 
     authChk()
-    var paraValue = ""
+    let paraValue = ""
 
+    if (_paraValue == "")
+        _paraValue = "gameid=1"
+    else
+        _paraValue = _paraValue + "&gameid=1";
+
+    console.log("_paraValue raw==>"+_paraValue)
     paraValue = aes_encrypt_ecbX(_paraValue, desCode);
-
-
     md5key = md5(sprintf("%s%s%s", agentid, timestamp, md5Code));
 
 
@@ -105,13 +146,15 @@ function buildUrlNgetV3(_paraValue, timestamp, apitype_shangfen) {
 }
 
 
-try{
+try {
     require("./libx/aes.js")
-}catch(e){}
+} catch (e) {
+}
 
-try{
+try {
     require("./aes.js")
-}catch(e){}
+} catch (e) {
+}
 
 
 // v2 just for reflct jyeronsin
@@ -119,21 +162,8 @@ global['buildUrlNgetV2'] = buildUrlNgetV2
 
 function buildUrlNgetV2(_paraValue, timestamp, apitype_shangfen) {
 
-    if (_paraValue == "__empty__")
-        _paraValue = ""
-    log_enterFun(arguments)
 
-    authChk()
-
-    paraValue = aes_encrypt(aes_mode_ECB(), _paraValue, desCode);
-    md5key = md5(sprintf("%s%s%s", agentid, timestamp, md5Code));
-
-
-    $url_tpmplt = "https://ng.mqbsx.com/GameHandle?agentid=%s&timestamp=%s&type=%s&paraValue=%s&key=%s";
-    $url = sprintf($url_tpmplt, agentid, timestamp, apitype_shangfen, urlencode(paraValue), md5key);
-
-
-    return $url;
+    return buildUrlNgetV3(_paraValue, timestamp, apitype_shangfen);
 }
 
 
@@ -146,7 +176,8 @@ try {
 } catch (e) {
 }
 
-global['jqFailFun']=jqFailFun;
+global['jqFailFun'] = jqFailFun;
+
 function jqFailFun(jqXHR, textStatus, errorThrown) {
 
     $("#loaddiv").hide();
@@ -168,7 +199,7 @@ function jqFailFun(jqXHR, textStatus, errorThrown) {
 
 
     if (jqXHR.status == 400) {
-        alert("错误 检查参数 " + jqXHR.responseText);
+        alert("错误 检查参数  检查代理id和密钥 " + jqXHR.responseText);
         return;
     }
 

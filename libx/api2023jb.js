@@ -137,7 +137,7 @@ apitype_xiafen = 3;//3	玩家下分
 
 apitype_playerStat = 5;//玩家状态查询
 
-apitype_gameOrder = 6;// 玩家总分查询
+apitype_gameOrder = 6;//
 apitype_PlayerScore = 7;// 玩家总分查询
 global['apitype_PlayerScore'] = apitype_PlayerScore;
 console.log(":90L")
@@ -245,7 +245,7 @@ async function PlayerScoreQry(uname) {
     _paraValue = sprintf("account=%s", uname);
     echo("_paraValue==>" + _paraValue)
 
-    let url = buildUrlNget(_paraValue, timestamp, apitype_PlayerScore);
+    let url = buildUrlNgetV3(_paraValue, timestamp, apitype_PlayerScore);
     return (await http_get(url));
 
 }
@@ -415,21 +415,12 @@ function md5V2(data) {
 
 global['buildUrlNget'] = buildUrlNget
 
+
 function buildUrlNget(_paraValue, timestamp, apitype_shangfen) {
 
-    log_enterFun(arguments)
-
-    authChk()
-    require("./enc")
-    paraValue = aes_encrypt(aes_mode_ECB(), _paraValue, desCode);
-    md5key = md5V2(sprintf("%s%s%s", agentid, timestamp, md5Code));
 
 
-    $url_tpmplt = "https://ng.mqbsx.com/GameHandle?agentid=%s&timestamp=%s&type=%s&paraValue=%s&key=%s";
-    $url = sprintf($url_tpmplt, agentid, timestamp, apitype_shangfen, urlencode(paraValue), md5key);
-
-
-    return $url;
+    return buildUrlNgetV3(_paraValue, timestamp, apitype_shangfen);
 }
 
 

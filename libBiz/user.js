@@ -55,22 +55,30 @@ try {
 } catch (e) {
 }
 
-global['getLoginToken']=getLoginToken
+global['getLoginToken'] = getLoginToken
 // require("../libx/sys")
 // console.log(getLoginToken())
+
+/**
+ *
+ * @returns {{desCode: *, md5Code: *, agtid: *}|*|{}}
+ */
 function getLoginToken() {
 
-    let token={};
 
-    try{
-        token.agtid= localStorage.getItem("agtid" );
-        token.descode=localStorage.getItem("desCode" );
-        token.md5key=localStorage.getItem("md5Code" );
+    try {
+        let token = {};
+        token.agtid = localStorage.getItem("agtid");
+        token.descode = localStorage.getItem("desCode");
+        token.md5key = localStorage.getItem("md5Code");
         return token;
-    }catch (e)
-    {
+    } catch (e) {
         // only for web front use..
     }
+
+
+    //for api login chek
+    return global['visa'];
 
 
     // localStorage.setItem("agentid", a.agtid);
@@ -82,37 +90,34 @@ function getLoginToken() {
     //     "lgky": "111356,26916DD661300B25,1BC0036763DE22EC"
 
 
-    if ( isWinformEnv())
-         {
-       // process.env.USERPROFILE +
+    if (isWinformEnv()) {
+        // process.env.USERPROFILE +
         let f = "__USERPROFILE__/lgky.json"
         let cmd = "readFileSyncx " + encodeURIComponent(f);
         let txt = window.external.callFun(cmd)
 //alert(txt)
-       // alert(txt)
-        if(!txt || txt=="" || txt.length<5)
+        // alert(txt)
+        if (!txt || txt == "" || txt.length < 5)
             return
-         try{
-             let obj = JSON.parse(txt)
-             return obj;
-         }catch (e) {
-            let eobj={"cmd":cmd,"txt":txt,"e":e}
-             alert(JSON.stringify(eobj))
-         }
+        try {
+            let obj = JSON.parse(txt)
+            return obj;
+        } catch (e) {
+            let eobj = {"cmd": cmd, "txt": txt, "e": e}
+            alert(JSON.stringify(eobj))
+        }
 
 
-    }else
-    {
-       // require("./libx/file.js")
+    } else {
+        // require("./libx/file.js")
         let f = process.env.USERPROFILE + "/lgky.json"
-        let txt =  readFileSyncx(f)
-        if(!txt || txt=="")
+        let txt = readFileSyncx(f)
+        if (!txt || txt == "")
             return
 
         let obj = JSON.parse(txt)
         return obj;
     }
-
 
 
 }
@@ -130,7 +135,7 @@ function refresh_login_token() {
     else {
         //win env
         //   let callOBj={"fun":"log_fun_enter","args":arguments}
-     let   callOBj = "log_fun_enter " + Array.prototype.slice.apply(arguments).join(" ");
+        let callOBj = "log_fun_enter " + Array.prototype.slice.apply(arguments).join(" ");
         window.external.callFun(callOBj)
     }
 
@@ -166,12 +171,31 @@ function isLoginCore() {
     }
 }
 
+global['isExistUser']=isExistUser
+/**
+ *
+ * @param uname
+ * @returns {boolean}
+ */
+function  isExistUser(uname)
+{
+    let file = getDbdir()+"/userColl.json";
 
+    let rows=pdo_query({"account":uname},file)
+    if(rows.length==0)
+      return false
+    if(rows.length>0)
+        return true;
+}
 function isLogin() {
     log_fun_enter(arguments)
 
-    let obj =getLoginToken()
-
+    let obj = getLoginToken()
+    console.log("[8authChk ]getLoginToken:" + obj)
+    if (obj.agtid)
+        return true
+    else
+        return false;
     console.log("[8authChk ]agentid:" + obj.agentid)
     if (obj.agtid) {
         set_login_token(obj)
@@ -183,7 +207,7 @@ function isLogin() {
 
 
 function readFileAsJson(f) {
-console.log(":161readFileAsJson")
+    console.log(":161readFileAsJson")
     log_enterFun_console(arguments)
     console.log(f)
     let $s = readFileSyncx(f);
@@ -199,11 +223,12 @@ function process_env_USERPROFILE() {
 
 }
 
-try{
-    global['playerStatV2']=playerStatV2
-}catch (e) {
-    
+try {
+    global['playerStatV2'] = playerStatV2
+} catch (e) {
+
 }
+
 function playerStatV2() {
     chkAop();
     authChk()
@@ -239,20 +264,20 @@ function playerStatV2() {
 
         if (rztobj.data.code == 0) {
             arr = [];
-            rztobj.data.totalScore=""
-            rztobj.data.userid=""
+            rztobj.data.totalScore = ""
+            rztobj.data.userid = ""
             arr.push(rztobj.data)
             console.log(window['loadToTable'])
 
 
-            columns= [
-                { data: 'userid' },
-                { data: 'account' },
-                { data: 'totalScore' },
-                { data: 'status' }
+            columns = [
+                {data: 'userid'},
+                {data: 'account'},
+                {data: 'totalScore'},
+                {data: 'status'}
             ]
-         //   alert(JSON.stringify(arr))
-            loadToDataTable(arr, "app3",columns)
+            //   alert(JSON.stringify(arr))
+            loadToDataTable(arr, "app3", columns)
 
             $("#app3 tr").each(function (idx, item) {
                 // item.show();  item.css("display","");
@@ -281,14 +306,19 @@ function playerStatV2() {
 }
 
 
-
+/**
+ * dep todo   chk cookie from web api
+ * @returns {boolean}
+ */
 function authChk() {
+
+    return true;
     log_fun_enter(arguments)
 
 
-    let obj =  getLoginToken()
-  //  alert(obj)
-    if(!obj)
+    let obj = getLoginToken()
+    //  alert(obj)
+    if (!obj)
         throw "not_loginex@没有agtid,需要登录"
 
     console.log(obj)
@@ -311,7 +341,7 @@ function authChkCore() {
     log_fun_enter(arguments)
 
 
-    let obj =getLoginToken()
+    let obj = getLoginToken()
 
     console.log(obj)
     console.log("[8authChk ]agentid:" + obj.agentid)
@@ -331,7 +361,7 @@ function catchHdl(e, extype, catchFun) {
 
     if (typeof e === 'string') {
         //兼容性增强winform可能不支持str.startwith
-        if (startwithV2(e,extype)) {
+        if (startwithV2(e, extype)) {
 
             catchFun();
 
@@ -388,10 +418,22 @@ function showLoginArea() {
 }
 
 function user_ini_uiV2() {
-    if (isLogin())
-        showExitArea();
-    else
-        showLoginArea();
+    log_fun_enter(arguments)
+    if (isLogin()) {
+        console.log("[user_ini_uiV2] logined true")
+        // showExitArea
+        $("form").hide();
+        $("#loginFm").hide();
+        $("#logined").show();
+
+    } else {
+        console.log("[user_ini_uiV2] logined false")
+        //showLoginArea();
+        $("form").show();
+        $("#loginFm").show();
+        $("#logined").hide();
+    }
+
 
 }
 
@@ -415,14 +457,10 @@ function set_login_tokenV2(a) {
 
 function saveLoginFlag(a) {
 
-    writeFile(  "__USERPROFILE__/lgky.json", json_encode(a));
-    window['agentid'] = a.agtid
-    set_login_tokenV2(a)
+    // writeFile(  "__USERPROFILE__/lgky.json", json_encode(a));
+    // window['agentid'] = a.agtid
+    // set_login_tokenV2(a)
 }
-
-
-
-
 
 
 try {

@@ -30,4 +30,7 @@ function startWz(str, wz) {
 
 
 }
-
+global["长度"] = 长度;
+function 长度(字串) {
+    return 字串.length
+}

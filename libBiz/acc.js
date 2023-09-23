@@ -32,7 +32,7 @@ function orderQryShagnxiafen415() {
 
 
 
-        http_get_jqGet("api?callfun=QryShangxiafen",function (rzt){
+        http_get_jqGet(callrmtRstapiUrl()+"QryShangxiafen",function (rzt){
 
             let columns = [
                 {data: 'uname'},
@@ -41,7 +41,7 @@ function orderQryShagnxiafen415() {
                 {data: 'time'}
             ]
 
-            loadToDataTable(json_decode(rzt), "tab_sxf", columns)
+            loadToDataTableV2(json_decode(rzt), "tab_sxf", columns,[[3, "desc"]])
 
             //  window['loadToTable'](json_decode(rzt),"tab_sxf")
             // console.log("[playerStat237] rzt=>" + rzt)
