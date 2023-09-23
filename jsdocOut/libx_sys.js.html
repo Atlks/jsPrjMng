@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: libx/sys.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: libx/sys.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>
+function tipsNendThrowEx(提示内容) {
+
+
+    throw  "ex@" + 提示内容
+
+}
+
+
+global['requirex']=requirex
+/**
+ *
+ * @param f
+ */
+function requirex(f) {
+    try {
+        console.log(f)
+        require(f)
+    } catch (e) {
+        console.warn(e.message)
+    }
+
+}
+function tipsNend(提示内容) {
+
+    return ()=> {
+        throw  "ex@" + 提示内容
+    }
+}
+function callrmtRstapiUrl() {
+    return "callrmt?callfun=";
+}
+
+try {
+
+    global['isWinformEnv'] = isWinformEnv
+} catch (e) {
+
+}
+
+try {
+    window['isWinformEnv'] = isWinformEnv
+} catch (e) {
+
+}
+try {
+    window['isset'] = isset
+} catch (e) {
+
+}
+
+
+try {
+    global['isset'] = isset
+} catch (e) {
+
+}
+
+
+function isset(varname) {
+    try {
+        varname = trim(varname);
+        rzt = typeof (eval(varname));
+        return typeof (varname) != "undefined";
+    } catch (e) {
+        console.log("[43isset()] " + e.message);
+        //  console_log(e);
+        return false;
+    }
+
+}
+
+
+function ifx(条件, ...通过后执行的指令) {
+    // if(typeof  条件 =="function")
+    //     条件=条件()
+
+    console.log("[如果] cdt=>"+条件)
+    if (条件) {
+        {
+            let fns = arguments;
+            let rzt;
+
+            for (var i = 1; i &lt; fns.length; i++) {
+                let f = fns[i];
+                // console.log("cur f is =>"+f)
+                rzt = f(rzt);
+
+            }
+            return rzt;
+        }
+    }
+}
+
+function isWinformEnv() {
+
+    //if(isset("window.external"))
+    //  window.external &amp;&amp; window.external.external ex..   winformx
+    // window.external &amp;&amp; &amp;&amp; window.external.external==false .electr env
+    //
+    //  window.external ex just console env
+
+    //  alert(window.external)  //in eletr env is true..
+    //  alert( typeof window.external.callFun)  //in eletr env is false..
+    try {
+        if (window.external &amp;&amp; typeof window.external.callFun == "unknown") {
+
+
+            return true;
+        }
+        if (window.external &amp;&amp; typeof window.external.callFun == "undefined") {
+
+
+            return false;  //electron env
+
+
+        }
+
+
+    } catch (e) {
+        //console env just err
+        return false;
+    }
+
+    return false;
+
+
+    // alert(window.external.callFun)  无效调用参数可能会自东exe
+    try {
+        if (window.external.callFun) {
+            console.log(":62 winform env")
+            return true;
+        } else {
+            alert("54")
+            console.log(":68 not winform env")
+            return false;
+        }
+
+    } catch (e) {
+        alert("61")
+        ///  alert(e)
+        console.log(":74 not   winform env")
+        return false;
+    }
+
+}
+
+try {
+    if (!isset("global"))
+        window['global'] = [];
+} catch (e) {
+    console.log(e.message)
+
+}
+
+if (isWinformEnv())
+{
+
+    console.log(" cur env::"+isWinformEnv())
+    __dirname = "";
+}
+else
+{
+    console.log(" cur env::"+isWinformEnv())
+}
+
+global['curDatetimeV2']=curDatetimeV2
+function curDatetimeV2() {
+
+
+    return   formatDate(new Date())
+    // const date = new Date();
+    //  console.log(date.toLocaleString('en-US', { timeZone: 'America/New_York' })); // 2/16/2023, 8:25:05 AM
+
+
+    // return date.toLocaleString('zh-CN', {timeZone: 'utc'});
+}
+
+
+
+global['curDatetime'] = curDatetime
+
+function curDatetime() {
+
+
+  return   formatDate(new Date())
+   // const date = new Date();
+    //  console.log(date.toLocaleString('en-US', { timeZone: 'America/New_York' })); // 2/16/2023, 8:25:05 AM
+
+
+   // return date.toLocaleString('zh-CN', {timeZone: 'utc'});
+}
+
+
+function padTo2Digits(num) {
+    if(num.toString().length==1)
+        return ""+"0"+num;
+    else
+        return num;
+}
+
+function formatDate(date) {
+    return (
+        [
+            date.getFullYear(),
+            padTo2Digits(date.getMonth() + 1),
+            padTo2Digits(date.getDate()),
+        ].join('-') +
+        ' ' +
+        [
+            padTo2Digits(date.getHours()),
+            padTo2Digits(date.getMinutes()),
+            padTo2Digits(date.getSeconds()),
+        ].join(':')
+    );
+}
+
+// 👇️ 2021-10-24 16:21:23 (yyyy-mm-dd hh:mm:ss)
+//console.log();
+
+console.log(curDatetime())
+
+
+global['getLibdir'] = getLibdir
+
+function getLibdir() {
+    // _file=>C:\modyfing\jbbot\zmng\shangxiafen.htm
+    // if embed in htm...filename just htm path
+    // if(!__filename)
+    //     __filename=""
+
+
+    //   console.log("_file=>" + __filename)  //if in html file ,...just for html file path
+    //   console.log("__dirname=>" + __dirname)
+    try {
+        //   console.log(__dirname)
+        let libdir = __dirname + '/../libx/'
+// C:\modyfing\jbbot\zmng/../lib/
+        //   console.log(libdir)
+
+        const fs = require('fs');
+
+        //   console.log("exist dir:=>" + fs.existsSync(libdir))
+
+        if (!fs.existsSync(libdir)) {
+            //   console.log(libdir + " not exist")
+            libdir = __dirname + '/libx/'
+        }
+        //   console.log("libdir=>" + libdir)
+        return libdir;
+    } catch (e) {
+        return ""
+
+    }
+
+}
+
+
+
+
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Issue_login_credentials.html">Issue_login_credentials</a></li><li><a href="kexiafenBal.html">kexiafenBal</a></li></ul><h3>Global</h3><ul><li><a href="global.html#QryShangxiafen">QryShangxiafen</a></li><li><a href="global.html#accFiles">accFiles</a></li><li><a href="global.html#agtbal648">agtbal648</a></li><li><a href="global.html#allFileScore">allFileScore</a></li><li><a href="global.html#authChk">authChk</a></li><li><a href="global.html#callCmd">callCmd</a></li><li><a href="global.html#callFunPressEx">callFunPressEx</a></li><li><a href="global.html#call_func">call_func</a></li><li><a href="global.html#callrmt">callrmt</a></li><li><a href="global.html#checkAgtidErr">checkAgtidErr</a></li><li><a href="global.html#checkWhiteIp">checkWhiteIp</a></li><li><a href="global.html#check_login_credentials">check_login_credentials</a></li><li><a href="global.html#dsl_callFrmUiToBiz">dsl_callFrmUiToBiz</a></li><li><a href="global.html#dsl_callFunCmdMode">dsl_callFunCmdMode</a></li><li><a href="global.html#exit">exit</a></li><li><a href="global.html#explode">explode</a></li><li><a href="global.html#funtion_exist">funtion_exist</a></li><li><a href="global.html#getDbdir">getDbdir</a></li><li><a href="global.html#getLoginToken">getLoginToken</a></li><li><a href="global.html#http_get">http_get</a></li><li><a href="global.html#http_getSync">http_getSync</a></li><li><a href="global.html#http_get_core">http_get_core</a></li><li><a href="global.html#http_get_jqGet">http_get_jqGet</a></li><li><a href="global.html#http_get_jqGetSync">http_get_jqGetSync</a></li><li><a href="global.html#http_get_jqStyle">http_get_jqStyle</a></li><li><a href="global.html#includeEsm">includeEsm</a></li><li><a href="global.html#json_encode">json_encode</a></li><li><a href="global.html#json_encode_Err">json_encode_Err</a></li><li><a href="global.html#kick">kick</a></li><li><a href="global.html#loadToDataTable">loadToDataTable</a></li><li><a href="global.html#login">login</a></li><li><a href="global.html#loginLocal">loginLocal</a></li><li><a href="global.html#loginV2">loginV2</a></li><li><a href="global.html#oplog_qry">oplog_qry</a></li><li><a href="global.html#pipe">pipe</a></li><li><a href="global.html#qryAgtBal">qryAgtBal</a></li><li><a href="global.html#qryAgtBalINweb">qryAgtBalINweb</a></li><li><a href="global.html#refresh_login_token">refresh_login_token</a></li><li><a href="global.html#requireAutoload">requireAutoload</a></li><li><a href="global.html#requirex">requirex</a></li><li><a href="global.html#retry">retry</a></li><li><a href="global.html#score_orderQryShagnxiafenByUnameOrderid">score_orderQryShagnxiafenByUnameOrderid</a></li><li><a href="global.html#searchPlayer">searchPlayer</a></li><li><a href="global.html#setGlobalErrCatch">setGlobalErrCatch</a></li><li><a href="global.html#writeFileSyncV2">writeFileSyncV2</a></li><li><a href="global.html#writeFileV3">writeFileV3</a></li><li><a href="global.html#xiafen">xiafen</a></li><li><a href="global.html#xiafen745">xiafen745</a></li><li><a href="global.html#%25E4%25BF%259D%25E5%25AD%2598%25E7%2599%25BB%25E5%25BD%2595%25E5%2587%25AD%25E6%258D%25AE">保存登录凭据</a></li><li><a href="global.html#%25E5%25A6%2582%25E6%259E%259C%25E6%2598%25AF%25E7%2599%25BB%25E5%25BD%2595%25E5%2587%25AD%25E6%258D%25AE%25E6%2598%25AF%25E5%25AF%2586%25E7%25A0%2581%25E7%25B1%25BB%25E5%259E%258B%25E5%2588%2599%25E5%258F%2591%25E6%2594%25BE%25E7%2599%25BB%25E5%25BD%2595%25E5%2587%25AD%25E6%258D%25AE">如果是登录凭据是密码类型则发放登录凭据</a></li><li><a href="global.html#%25E6%25A3%2580%25E6%259F%25A5token">检查token</a></li><li><a href="global.html#%25E6%25A3%2580%25E6%259F%25A5%25E7%2599%25BB%25E5%25BD%2595%25E5%2587%25AD%25E6%258D%25AE">检查登录凭据</a></li><li><a href="global.html#%25E7%2599%25BB%25E5%25BD%2595%25E6%25B5%2581%25E7%25A8%258B">登录流程</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a> on Fri Sep 22 2023 20:57:10 GMT+0700 (Indochina Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

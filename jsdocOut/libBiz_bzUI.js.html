@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: libBiz/bzUI.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: libBiz/bzUI.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>
+console.log(72222222222)  // is execed...
+// function bindJsonToTable(json514) {
+//     console.log("in bind fu")
+//     createApp({
+//         setup() {
+//             const message = ref('Hello Vue!')
+//             const items = ref([json514])
+//             return {
+//                 items, message
+//             }
+//         }
+//     }).mount('#app3')
+// }
+
+//window.bindJsonToTable = bindJsonToTable
+//global['bindJsonToTable'] = bindJsonToTable
+//window['bindJsonToTable'] = bindJsonToTable
+try {
+    require("./fp_ati1990");
+    require("./php");
+    require("./fp_ati1990.js")
+} catch (e) {
+}
+
+if (isset("window"))
+    window['loadToTable'] = loadToTable
+
+
+function isset(varname) {
+    try {
+        varname = trim(varname);
+        rzt = typeof (eval(varname));
+        return typeof (varname) != "undefined";
+    } catch (e) {
+        console_log("[43isset()] " + e.message);
+        //  console_log(e);
+        return false;
+    }
+
+}
+
+
+function loadToDataTableV2(jsonArr, tabid,columns123,order123) {
+    // let table = new DataTable('#'+tabid);
+    //  $('#'+tabid).DataTable( {
+    //      data: [],
+    //      columns: [
+    //          { data: 'uname' },
+    //          { data: '类型' },
+    //          { data: 'score' },
+    //          { data: 'time' }
+    //      ]
+    //  } );
+
+    $.fn.dataTable.ext.errMode = 'none';
+
+    if (window['sxftab224'])
+        window['sxftab224'].destroy();
+
+    let dt224 = $('#' + tabid).DataTable({
+        data: jsonArr,
+        columns:  columns123,
+        order:order123,
+
+        language:{
+            "processing": "处理中...",
+            "lengthMenu": "显示 _MENU_ 项结果",
+            "zeroRecords": "没有匹配结果",
+            "info": "显示第 _START_ 至 _END_ 项结果，共 _TOTAL_ 项",
+            "infoEmpty": "显示第 0 至 0 项结果，共 0 项",
+            "infoFiltered": "(由 _MAX_ 项结果过滤)",
+            "infoPostFix": "",
+            "search": "搜索:",
+            "searchPlaceholder": "搜索...",
+            "url": "",
+            "emptyTable": "表中数据为空",
+            "loadingRecords": "载入中...",
+            "infoThousands": ",",
+            "paginate": {
+                "first": "首页",
+                "previous": "上页",
+                "next": "下页",
+                "last": "末页"
+            },
+            "aria": {
+                "paginate": {
+                    "first": "首页",
+                    "previous": "上页",
+                    "next": "下页",
+                    "last": "末页"
+                },
+                "sortAscending": "以升序排列此列",
+                "sortDescending": "以降序排列此列"
+            },
+            "thousands": "."
+        }
+    })
+    window['sxftab224'] = dt224;
+    $("#loaddiv").hide();
+
+}
+
+
+/**
+ * dep no order
+ * @param jsonArr
+ * @param tabid
+ * @param columns123
+ */
+function loadToDataTable(jsonArr, tabid,columns123) {
+    // let table = new DataTable('#'+tabid);
+    //  $('#'+tabid).DataTable( {
+    //      data: [],
+    //      columns: [
+    //          { data: 'uname' },
+    //          { data: '类型' },
+    //          { data: 'score' },
+    //          { data: 'time' }
+    //      ]
+    //  } );
+
+    $.fn.dataTable.ext.errMode = 'none';
+
+    if (window['sxftab224'])
+        window['sxftab224'].destroy();
+
+    let dt224 = $('#' + tabid).DataTable({
+        data: jsonArr,
+        columns:  columns123,
+
+        language:{
+            "processing": "处理中...",
+            "lengthMenu": "显示 _MENU_ 项结果",
+            "zeroRecords": "没有匹配结果",
+            "info": "显示第 _START_ 至 _END_ 项结果，共 _TOTAL_ 项",
+            "infoEmpty": "显示第 0 至 0 项结果，共 0 项",
+            "infoFiltered": "(由 _MAX_ 项结果过滤)",
+            "infoPostFix": "",
+            "search": "搜索:",
+            "searchPlaceholder": "搜索...",
+            "url": "",
+            "emptyTable": "表中数据为空",
+            "loadingRecords": "载入中...",
+            "infoThousands": ",",
+            "paginate": {
+                "first": "首页",
+                "previous": "上页",
+                "next": "下页",
+                "last": "末页"
+            },
+            "aria": {
+                "paginate": {
+                    "first": "首页",
+                    "previous": "上页",
+                    "next": "下页",
+                    "last": "末页"
+                },
+                "sortAscending": "以升序排列此列",
+                "sortDescending": "以降序排列此列"
+            },
+            "thousands": "."
+        }
+    })
+    window['sxftab224'] = dt224;
+    $("#loaddiv").hide();
+
+}
+
+function loadToTableVDataTable(jsonArr, tabid) {
+    // let table = new DataTable('#'+tabid);
+    //  $('#'+tabid).DataTable( {
+    //      data: [],
+    //      columns: [
+    //          { data: 'uname' },
+    //          { data: '类型' },
+    //          { data: 'score' },
+    //          { data: 'time' }
+    //      ]
+    //  } );
+
+    if (window['sxftab224'])
+        window['sxftab224'].destroy();
+
+    let dt224 = $('#' + tabid).DataTable({
+        data: jsonArr,
+        columns: [
+            {data: 'uname'},
+            {data: '类型'},
+            {data: 'score'},
+            {data: 'time'}
+        ]
+    })
+    window['sxftab224'] = dt224;
+
+}
+
+function loadToTable(json514, tableId) {
+
+
+    // window["sxf_app" + tableId] = createApp({
+    //
+    //
+    //     // exe order ,data ,crt,monted
+    //     data() {
+    //         console.log("------data meth")
+    //         return {items: json514, msg: 123}
+    //     }
+    //
+    //
+    // });
+    // window["sxf_app" + tableId].mount('#' + tableId)
+
+
+}
+//
+// if (isset("window"))
+//     window['loadToTableVue'] = loadToTableVue
+//
+//
+// global['loadToTableVue'] = loadToTableVue
+
+function __METHOD__(e) {
+    //Error
+    //     at loadToTableVue (C:\modyfing\jbbot\zmng\node_modules\ui.js:116:17)
+    //     at main (C:\modyfing\jbbot\zmng\node_modules\uiT.js:7:5)
+    let arr = e.stack.split("\n")
+    // var re = /(\w+)@|at (\w+) \(/g, st = e.stack, m;
+    // re.exec(st), m = re.exec(st);
+    // callerName = m[1] || m[2];
+    let funname = arr[1]
+    funname = funname.trim();
+    let brk = funname.indexOf("(")
+    funname = funname.substr(3, brk - 3)
+    return funname.trim();
+}
+
+// function loadToTableVue(jsonArr, appID) {
+//
+//
+//     //
+//
+//     //  var funname = arguments.callee.name;
+//     let funname;
+//     // var callerName;
+//     try {
+//         throw new Error();
+//     } catch (e) {
+//         funname = __METHOD__(e);
+//
+//     }
+//
+//
+//     // arguments.callee.name
+//     var arg = JSON.stringify(arguments);
+//     console.log("*********=>" + funname + arg);
+//
+//
+//     if (isset("window")) {
+//         if (window["tmple_" + appID]) {
+//             console.log("again enter , not need bek tmplt")
+//         } else {
+//             console.log("firsgt load ,bek tmplt")
+//             var tmplt = $("#" + appID).html();
+//             window["tmple_" + appID] = tmplt;
+//         }
+//
+//         if (window["sxf_app" + appID]) {
+//             console.log("---sxf_app destroy")
+//             window["sxf_app" + appID].unmount();
+//             $("#" + appID).html(window["tmple_" + appID])
+//
+//         }
+//
+//         window["sxf_app" + appID] = createApp({
+//
+//             data() {
+//                 console.log("------data meth，appid:" + appID)
+//                 return {items: jsonArr, msg: 123}
+//             }
+//
+//         });
+//         window["sxf_app" + appID].mount('#' + appID)
+//     }
+//
+//
+//     //  window["sxf_app" + tableId]=app
+//
+//     // setTimeout(()=>{
+//     //   //  app.unmount();
+//     // },500)
+//
+// }
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Issue_login_credentials.html">Issue_login_credentials</a></li><li><a href="kexiafenBal.html">kexiafenBal</a></li></ul><h3>Global</h3><ul><li><a href="global.html#QryShangxiafen">QryShangxiafen</a></li><li><a href="global.html#accFiles">accFiles</a></li><li><a href="global.html#agtbal648">agtbal648</a></li><li><a href="global.html#allFileScore">allFileScore</a></li><li><a href="global.html#authChk">authChk</a></li><li><a href="global.html#callCmd">callCmd</a></li><li><a href="global.html#callFunPressEx">callFunPressEx</a></li><li><a href="global.html#call_func">call_func</a></li><li><a href="global.html#callrmt">callrmt</a></li><li><a href="global.html#checkAgtidErr">checkAgtidErr</a></li><li><a href="global.html#checkWhiteIp">checkWhiteIp</a></li><li><a href="global.html#check_login_credentials">check_login_credentials</a></li><li><a href="global.html#dsl_callFrmUiToBiz">dsl_callFrmUiToBiz</a></li><li><a href="global.html#dsl_callFunCmdMode">dsl_callFunCmdMode</a></li><li><a href="global.html#exit">exit</a></li><li><a href="global.html#explode">explode</a></li><li><a href="global.html#funtion_exist">funtion_exist</a></li><li><a href="global.html#getDbdir">getDbdir</a></li><li><a href="global.html#getLoginToken">getLoginToken</a></li><li><a href="global.html#http_get">http_get</a></li><li><a href="global.html#http_getSync">http_getSync</a></li><li><a href="global.html#http_get_core">http_get_core</a></li><li><a href="global.html#http_get_jqGet">http_get_jqGet</a></li><li><a href="global.html#http_get_jqGetSync">http_get_jqGetSync</a></li><li><a href="global.html#http_get_jqStyle">http_get_jqStyle</a></li><li><a href="global.html#includeEsm">includeEsm</a></li><li><a href="global.html#json_encode">json_encode</a></li><li><a href="global.html#json_encode_Err">json_encode_Err</a></li><li><a href="global.html#kick">kick</a></li><li><a href="global.html#loadToDataTable">loadToDataTable</a></li><li><a href="global.html#login">login</a></li><li><a href="global.html#loginLocal">loginLocal</a></li><li><a href="global.html#loginV2">loginV2</a></li><li><a href="global.html#oplog_qry">oplog_qry</a></li><li><a href="global.html#pipe">pipe</a></li><li><a href="global.html#qryAgtBal">qryAgtBal</a></li><li><a href="global.html#qryAgtBalINweb">qryAgtBalINweb</a></li><li><a href="global.html#refresh_login_token">refresh_login_token</a></li><li><a href="global.html#requireAutoload">requireAutoload</a></li><li><a href="global.html#requirex">requirex</a></li><li><a href="global.html#retry">retry</a></li><li><a href="global.html#score_orderQryShagnxiafenByUnameOrderid">score_orderQryShagnxiafenByUnameOrderid</a></li><li><a href="global.html#searchPlayer">searchPlayer</a></li><li><a href="global.html#setGlobalErrCatch">setGlobalErrCatch</a></li><li><a href="global.html#writeFileSyncV2">writeFileSyncV2</a></li><li><a href="global.html#writeFileV3">writeFileV3</a></li><li><a href="global.html#xiafen">xiafen</a></li><li><a href="global.html#xiafen745">xiafen745</a></li><li><a href="global.html#%25E4%25BF%259D%25E5%25AD%2598%25E7%2599%25BB%25E5%25BD%2595%25E5%2587%25AD%25E6%258D%25AE">保存登录凭据</a></li><li><a href="global.html#%25E5%25A6%2582%25E6%259E%259C%25E6%2598%25AF%25E7%2599%25BB%25E5%25BD%2595%25E5%2587%25AD%25E6%258D%25AE%25E6%2598%25AF%25E5%25AF%2586%25E7%25A0%2581%25E7%25B1%25BB%25E5%259E%258B%25E5%2588%2599%25E5%258F%2591%25E6%2594%25BE%25E7%2599%25BB%25E5%25BD%2595%25E5%2587%25AD%25E6%258D%25AE">如果是登录凭据是密码类型则发放登录凭据</a></li><li><a href="global.html#%25E6%25A3%2580%25E6%259F%25A5token">检查token</a></li><li><a href="global.html#%25E6%25A3%2580%25E6%259F%25A5%25E7%2599%25BB%25E5%25BD%2595%25E5%2587%25AD%25E6%258D%25AE">检查登录凭据</a></li><li><a href="global.html#%25E7%2599%25BB%25E5%25BD%2595%25E6%25B5%2581%25E7%25A8%258B">登录流程</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a> on Fri Sep 22 2023 20:57:10 GMT+0700 (Indochina Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
