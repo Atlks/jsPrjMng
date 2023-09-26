@@ -9,9 +9,31 @@ function pdo_exec_query(qryDsl, dbfile) {
 }
 
 
+global["pdo_query_fromData"] = pdo_query_fromData
+/**
+ *
+ * @param qryDsl
+ * @param data
+ * @returns {string[]}
+ */
+function pdo_query_fromData(qryDsl, data)
+{
+    console.log("[pdo_query] qryDsl=>"+qryDsl)
+    const _ = require('lodash')
+    let rzt = _.filter(data, qryDsl)
+    console.log("[pdo_query]rzt is=>"+JSON.stringify(rzt).substring(0,300) )
+    return rzt;
+
+}
+
 global["pdo_query"] = pdo_query
 
-
+/**
+ *
+ * @param qryDsl
+ * @param dbfile
+ * @returns {string[]}
+ */
 function pdo_query(qryDsl, dbfile) {
 
     log_enterFun(arguments)
@@ -80,6 +102,12 @@ async function pdo_insert(rcd, dbfile) {
 
 global['pdo_insert_coreV2'] = pdo_insert_coreV2
 
+
+/**
+ *
+ * @param dbfile
+ * @returns {{data: (*), dbf, write: db.write}}
+ */
 function pdo_connV2(dbfile) {
 
     require("./file.js")
@@ -97,6 +125,40 @@ function pdo_connV2(dbfile) {
     return db;
 }
 
+global['pdo_connV3']=pdo_connV3
+/**
+ *
+ * @param dbfile
+ * @returns {{data: (*), dbf, write: db.write}}
+ */
+function pdo_connV3(dbfile) {
+
+    require("./file.js")
+
+    if (!file_exists(dbfile))
+        writeFileSyncx(dbfile, "[]");
+    let data2 = readFileAsJson(dbfile);
+
+    return data2;
+}
+
+global['pdo_save']=pdo_save
+/**
+ *
+ * @param data2
+ * @param file2
+ */
+function pdo_save(data2, file2) {
+    writeFileSyncx(file2, json_encode(data2));
+}
+
+
+/**
+ *
+ * @param rcd
+ * @param dbfile
+ * @returns {{data: *, dbf, write: write}}
+ */
 function pdo_insert_coreV2(rcd, dbfile) {
     //  alert("上分成功")
     log_enterFun(arguments)
@@ -126,4 +188,59 @@ function pdo_insert_coreV2(rcd, dbfile) {
 // Finally write db.data content to file
     db.write()
     return db;
+}
+
+
+/**
+ * conn mysql
+ * @returns {Connection}
+ */
+function getConn() {
+    path = require("path");
+    fs = require("fs");
+    mysql = require("mysql");
+    ini = require('ini');
+    var fs = require("fs");
+    var path = require("path");
+    const iopath = path.join(__dirname, '../.env'); // 引用Pos.ini的相对地址
+    const Info = ini.parse(fs.readFileSync(iopath, 'utf-8'));
+    console.log(Info)
+
+    var mysql = require('mysql');
+    var connection = mysql.createConnection({
+        host: Info.database.hostname,
+        user: Info.database.username,
+        password: Info.database.password,
+        database: Info.database.database
+    });
+
+    connection.connect();
+    return connection;
+}
+
+
+/**
+ *
+ * @param sql
+ * @param connection
+ * @param finishFun
+ */
+function query(sql,connection,finishFun) {
+    const {exec, execSync} = require('child_process');
+
+
+//    var connection = getConn();
+//token = "6510408569:AAHrrbsKgCvklwiFje_TKPF-ABMz0kdxn2c" // msg2025
+    token = "";
+    connection.query(sql, function (error, results, fields) {
+        if (error) throw error;
+        //  console.log(JSON.stringify(results));
+        token = results[0].s_value
+        console.log('The solution is: ', results[0].s_value);
+
+
+        finishFun(error, results, fields)
+    });
+    connection.end(); //要加不然唱起了回报个 conn close err。。。must add beir longt time
+    console.log(9999);
 }

@@ -122,7 +122,7 @@ try{
 
         process.on('unhandledRejection', function (err, promise) {
             try {
-                console.error('有Promise没有被捕获的失败函数', err.message);
+                console.error('有Promise被捕获的失败函数', err.message);
           console.error(err)
 require("./logger")
                 //  winlogger.error(ivkFundbg)

@@ -1,6 +1,4 @@
-async function call_func(fun, params) {
 
-}
 
 function  eval2023(){
 
@@ -40,6 +38,8 @@ async function dsl_callFrmUiToBiz(cmd) {
    return $rz;
 
 }
+
+
 
  //echo(111)
 

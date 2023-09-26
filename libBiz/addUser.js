@@ -92,9 +92,14 @@ function adduserFm() {
 
 }
 
-global['addUser']=addUser
-async function addUser(uname, nickname) {
-
+global['addUserCore']=addUserCore
+/**
+ *
+ * @param uname
+ * @param nickname
+ * @returns {Promise<void>}
+ */
+async function addUserCore(uname, nickname) {
     // _paraValue = sprintf("account=%s", $("#uname").val());
     let _paraValue = "account=%s&nickname=%s&headindex=0&linecode=10001_1&lastloginip=255.224.22.12&gamebackurl=www.test.com&logintype=1&gameid=0";
     _paraValue = sprintf(_paraValue, uname, nickname);
@@ -106,6 +111,24 @@ async function addUser(uname, nickname) {
     log_info(url)
 
 
+    // alert(rcd)
+
+    let rzt=   await http_get_jqStyle(url, function (data) {
+        rzt = data
+
+    }, jqFailFun)
+
+    console.log(rzt)
+}
+
+
+
+global['addUser']=addUser
+async function addUser(uname, nickname) {
+
+
+
+
 
 
     //判断是否存在
@@ -115,6 +138,19 @@ async function addUser(uname, nickname) {
         throw "alrtEx@玩家已经存在"
 
     // alert(rcd)
+
+
+    //---------------------add    user core
+
+    // _paraValue = sprintf("account=%s", $("#uname").val());
+    let _paraValue = "account=%s&nickname=%s&headindex=0&linecode=10001_1&lastloginip=255.224.22.12&gamebackurl=www.test.com&logintype=1&gameid=0";
+    _paraValue = sprintf(_paraValue, uname, nickname);
+
+    let timestamp = time();
+    echo("_paraValue==>" + _paraValue)
+    let url = buildUrlNget_x(_paraValue, timestamp, apitype_regLogin);
+    console.log(url)
+    log_info(url)
 
     let rzt=   await http_get_jqStyle(url, function (data) {
         rzt = data

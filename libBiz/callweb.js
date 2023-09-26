@@ -23,12 +23,26 @@
 //     }
 // }
 
+    global['incLibs']=incLibs
 var reqst;
 function incLibs() {
+
+    const { AsyncLocalStorage } = require('async_hooks');
+
+    const async_hooks = require('async_hooks');
+
+    // 返回当前异步作用域的asyncId
+    const eid = async_hooks.executionAsyncId();
+
+// 返回触发此异步操作的异步作用域的asyncId
+    const tid = async_hooks.triggerAsyncId();
+
+
+
     require("../libx/incHtm")
     require("../libx/autoload")
     require("../libBiz/searchPlayer")
-    requireAutoload("file,importUser,excel,logger,includeXAjaxNode,bzDb,user,sys,addUser,searchPlayer,oplog,ex,httpSync,bizHttp,incHtm,exit,login,qryAgtBal")
+    requireAutoload("sys,file,importUser,excel,logger,includeXAjaxNode,bzDb,user,sys,addUser,searchPlayer,oplog,ex,httpSync,bizHttp,incHtm,exit,login,qryAgtBal")
     require("../libx/logger")
     require("../libx/dsl")
     require("../libx/api2023jb")
@@ -74,28 +88,30 @@ function send(retTxt, res) {
         res.send(JSON.stringify(retTxt))
 }
 
-function sendLoginVisa(req) {
-    visa = {"agtid": req.cookies.agtid, "desCode": req.cookies.desCode, "md5Code": req.cookies.md5Code}
-    global['visa'] = visa
-    global['agtid'] = req.cookies.agtid
-    global['agentid'] = req.cookies.agtid
 
-    global['desCode'] = req.cookies.desCode
-    global['md5Code'] = req.cookies.md5Code
-}
+
+
+
 
 
 
 /**
- * // todo  太多余额 提示，，用户提交哦判重
+ * //
  * @param req
  * @param res
  * @returns {Promise<void>}
  */
 async function callrmt(req, res) {
+
+
+
+
     reqst=req
     global['req']=req
    // let avatar = req.files.file1;
+
+    //todo  setcooki to per req
+
 
     console.log("req querystr=>" + JSON.stringify(req.query))
     let callfun = req.query.callfun;
@@ -106,10 +122,15 @@ async function callrmt(req, res) {
     let fun = arr[0]
 
 
+    const curReqID=getcurReqID()
+
+
+
     //if fun need login ,login
     if (fun == "login" || fun=="importUser" || fun == "includeXAjax" || fun == "exit") {
 
     } else {
+        //if fun!=null
         //need login api
         if (!req.cookies.agtid) {
             //if not tokoen info  ,,,alert
@@ -117,7 +138,8 @@ async function callrmt(req, res) {
             return
         } else {
             //cookie login  if alread have visa,exch visa
-            //fun!="login" &  req.cookies
+            //if fun!="login" & has req.cookies
+            //set to global for this use...
             sendLoginVisa(req);
         }
     }
@@ -149,6 +171,8 @@ async function callrmt(req, res) {
         else
             res.send(json_encode_ErrRawErrObj(e))
     }
+
+    // todo should clr global visa  for next req
 
 }
 
@@ -235,12 +259,13 @@ function main() {
     app_web.use(cookieParser());
 
 // respond with "hello world" when a GET request is made to the homepage
-    app_web.get('/', (req, res) => {
-        res.send('okkk')
+    app_web.get('/dt', (req, res) => {
+       global['dt']="111"  // todo must str..beir conn long time timeout
+        res.send( global['dt'])
     })
 
     app_web.get('/abt', (req, res) => {
-        res.send('about')
+        res.send( global['dt'])
     })
 
 
@@ -259,7 +284,7 @@ function main() {
 
 
             res.send('tmot')
-        }, 15000)
+        }, 35000)
 
     })
 
@@ -271,7 +296,7 @@ function main() {
         let host = server.address().address
         let port = server.address().port
 
-        console.log("应用实例，访问地址为 http://localhost:%s", host, port)
+        console.log("应用实例，访问地址为 http://localhost:%s",  port)
 
     })
 

@@ -185,20 +185,49 @@ function loginInFm() {
 
 }
 
+global['sendLoginVisa']=sendLoginVisa
+  /**
+   * save visa to gloal thread local var map
+   * @param req
+   */
+  function sendLoginVisa(req) {
+      visa = {"agtid": req.cookies.agtid, "desCode": req.cookies.desCode, "md5Code": req.cookies.md5Code}
+
+
+      const curReqID=getcurReqID()
+      global['agtid'+curReqID]=req.cookies.agtid
+      global['agentid'+curReqID]=  global['agtid'+curReqID]
+      global['desCode'+curReqID] = req.cookies.desCode
+      global['md5Code'+curReqID] = req.cookies.md5Code
+      global['visa'+curReqID] =visa
+
+      let file=__dirname+"/../visas/visa"+curReqID+".json"
+
+      const fs = require("fs");
+      const path = require("path");
+      fs.mkdirSync(path.dirname(file), {recursive: true});
+      writeFileV3(file,json_encode(visa))
+
+
+  }
+
 
 global['login']=login
 
 /**
+ *  todo  jeig global is readly global var...another req should no global
  * login dsc
  * @param uNkey
  */
 async function login(uNkey) {
 
-
+     //    如果(不存在(凭据), 提示并终止(检查结果_凭据不存在)),
+    //    如果(长度(凭据.用户名) < 3, 提示并终止(检查结果_凭据无效_用户名无效)),
     let arr = uNkey.trim().split(",")
 
     //  localStorage.setItem("loginkey", $("#uid").val());
 
+    //todo here glboal var should del...readl global bcs...
     global['agentid'] = arr[0]
     global['desCode'] = arr[1]
     global['md5Code'] = arr[2]
@@ -214,17 +243,24 @@ async function login(uNkey) {
     a.descode = arr[1];
     a.md5key = arr[2]
     a.lgky = uNkey
-    saveLoginVisa(a)
+
+
+  //  saveLoginVisa(a)
 
 
     console.log("lgky arr:" + arr)
 
 
+    //-----检查凭据有效性
     let rzt = await qryAgtBal()
     let rztobj = JSON.parse(rzt);
     if (rztobj.type == "ex") {
         throw "alrtEx@" + rztobj.msg_to_ui
     }
+
+
+    //发放登录凭据(凭据.用户名)
+    //添加操作日志(
 
     return a;
 

@@ -13,6 +13,9 @@ global['requirex']=requirex
  * @param f
  */
 function requirex(f) {
+
+    if(!file_exists(f))
+        f="./"+f;
     try {
         console.log(f)
         require(f)
@@ -56,6 +59,21 @@ try {
 
 }
 
+
+global['getcurReqID']=getcurReqID
+/**
+ *  theard local
+ */
+function getcurReqID() {
+    const async_hooks = require('async_hooks');
+
+    // 返回当前异步作用域的asyncId
+    const eid = async_hooks.executionAsyncId();
+
+// 返回触发此异步操作的异步作用域的asyncId
+    const tid = async_hooks.triggerAsyncId();
+    return eid
+}
 
 function isset(varname) {
     try {

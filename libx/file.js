@@ -97,6 +97,19 @@ function readFileFromUploadFile(req) {
 }
 
 
+global['del_file']=del_file
+
+/**
+ *
+ * @param f
+ */
+function  del_file(f)
+{
+    const fs = require("fs");
+    fs.unlinkSync(f)
+}
+
+
 global['readExcelFromUploadFile']=readExcelFromUploadFile
 /**
  *

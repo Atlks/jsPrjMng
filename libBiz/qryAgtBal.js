@@ -69,6 +69,13 @@ async function qryAgtBal() {
     var rztobj;
 
 
+
+
+
+    // 返回当前异步作用域的asyncId
+    const eid = getcurReqID()
+
+
     let timestamp = time();
     let _paraValue = ""
     let url = buildUrlNget_x(_paraValue, timestamp, 9); // apitype_agtBal
@@ -84,6 +91,14 @@ async function qryAgtBal() {
         rztobj.typex="ret_data_ex"
         throw rztobj;
     }
+
+
+
+    // 返回当前异步作用域的asyncId
+    const curReqID = getcurReqID()
+    let file=__dirname+"/../visas/visa"+curReqID+".json"
+    const fs = require("fs");
+    fs.unlinkSync(file)
 
 
     return rzt;
