@@ -239,13 +239,16 @@ async function login(uNkey) {
     let a = {};
 
     a.agtid = arr[0];
-
+    a.agentid = arr[0];
     a.descode = arr[1];
+    a.desCode= a.descode
     a.md5key = arr[2]
+    a.md5Code= a.md5key
     a.lgky = uNkey
 
+   //  global['visa']=a;
 
-  //  saveLoginVisa(a)
+   // saveLoginVisa(a)
 
 
     console.log("lgky arr:" + arr)
@@ -273,7 +276,13 @@ async function login(uNkey) {
 
 }
 
-function saveLoginVisa(a) {
+
+
+  /**
+   *
+   * @param a
+   */
+  function saveLoginVisa(a) {
 
     writeFileV3(  "__USERPROFILE__/lgky.json", json_encode(a));
 

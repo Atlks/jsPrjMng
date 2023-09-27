@@ -105,8 +105,13 @@ global['del_file']=del_file
  */
 function  del_file(f)
 {
-    const fs = require("fs");
-    fs.unlinkSync(f)
+    try{
+        const fs = require("fs");
+        fs.unlinkSync(f)
+    }catch (e) {
+         log_errV2(e,arguments)
+    }
+
 }
 
 

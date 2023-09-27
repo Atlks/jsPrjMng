@@ -18,7 +18,7 @@ async function 流水(msg) {
   let txt=  QryShangxiafen(uname)
     rows=json_decode(txt)
 
-    let tmple="   {{ item.uname }} " +
+    let tmple="{{ item.uname }} " +
         "    {{ item.类型 }} " +
         "    {{ item.score }} " +
         "    {{ item.time }} \n"

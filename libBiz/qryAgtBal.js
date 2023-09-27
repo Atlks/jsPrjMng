@@ -6,6 +6,8 @@ global['qryAgtBal'] = qryAgtBal
  */
 function qryAgtBalINweb() {
 
+
+
     $("#loaddiv").show()
     if (!isLogin()) {
         $("#loaddiv").hide();
@@ -64,6 +66,8 @@ global['qryAgtBal'] = qryAgtBal
  * @returns {Promise<*>}
  */
 async function qryAgtBal() {
+
+    log_fun_enter(arguments)
     require("../libBiz/bizHttp")
     require("../libx/httpSync")
     var rztobj;
@@ -97,8 +101,9 @@ async function qryAgtBal() {
     // 返回当前异步作用域的asyncId
     const curReqID = getcurReqID()
     let file=__dirname+"/../visas/visa"+curReqID+".json"
-    const fs = require("fs");
-    fs.unlinkSync(file)
+    // const fs = require("fs");
+    // fs.unlinkSync(file)
+    del_file(file)
 
 
     return rzt;

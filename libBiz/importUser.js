@@ -1,5 +1,5 @@
 function importUserFm() {
-
+    authChkFrt()
     $("#fileInput").click()
 }
 

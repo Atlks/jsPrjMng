@@ -42,7 +42,7 @@ function incLibs() {
     require("../libx/incHtm")
     require("../libx/autoload")
     require("../libBiz/searchPlayer")
-    requireAutoload("sys,file,importUser,excel,logger,includeXAjaxNode,bzDb,user,sys,addUser,searchPlayer,oplog,ex,httpSync,bizHttp,incHtm,exit,login,qryAgtBal")
+    requireAutoload("kick,msgCmdCfg,saveMsgCmdCfg,sys,file,importUser,excel,logger,includeXAjaxNode,bzDb,user,sys,addUser,searchPlayer,oplog,ex,httpSync,bizHttp,incHtm,exit,login,qryAgtBal")
     require("../libx/logger")
     require("../libx/dsl")
     require("../libx/api2023jb")
@@ -104,7 +104,8 @@ function send(retTxt, res) {
 async function callrmt(req, res) {
 
 
-
+    const async_hooks = require('async_hooks');
+    global['async_hooks']=async_hooks
 
     reqst=req
     global['req']=req
@@ -124,7 +125,7 @@ async function callrmt(req, res) {
 
     const curReqID=getcurReqID()
 
-
+    global['req'+curReqID]=req
 
     //if fun need login ,login
     if (fun == "login" || fun=="importUser" || fun == "includeXAjax" || fun == "exit") {
@@ -149,9 +150,9 @@ async function callrmt(req, res) {
     requirex("../libBiz/" + fun + "Node.js")
 
     try {
-        let promise = await dsl_callFrmUiToBiz(callfun);
+        let rzt = await dsl_callFrmUiToBiz(callfun);
 
-        send(promise, res)
+        send(rzt, res)
 
     } catch (e) {
         if (e?.httpStatuCode)

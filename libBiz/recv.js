@@ -33,6 +33,7 @@ function main() {
 // main();
 
 
+//dep
 async function msg_recvHdlr(msg) {
 
     chatId = msg.chat.id;
@@ -72,7 +73,14 @@ function msg_recvListen(token, msg_recvHdlr) {
 
     // Listen for any kind of message. There are different kinds of
     // messages.
-    bot.on('message', msg_recvHdlr);
+    bot.on('message', async (msg) => {
+        try {
+            //must try ,beir msg cant cusm,svr alway push msg
+            await msg_recvHdlr(msg)
+        } catch (e) {
+            console.log(e)
+        }
+    });
 }
 
 require("../libx/incHtm")
@@ -84,16 +92,42 @@ requireAutoload("acc,QryShangxiafen,余额,帮助,流水,xiafen,下分tlgrm,recv
 global['msg_recv'] = msg_recv
 
 
+function getTrueCmd(msg_txt) {
+
+    var msg_txt=msg_txt.replace(/\d+./g,'')
+    let file = getDbdir() + "/msgcmdCfgMap_Coll.json";
+    let rows=pdo_query({},file)
+    for( row of rows)
+    {
+        var truecmd=row[msg_txt]
+        if(truecmd)
+            return truecmd
+    }
+
+    return undefined;
+}
+
 /**
  * shfen rcv msg
  * @param msg
  */
-async function msg_recv(msg, bot) {
+async function msg_recv(msg) {
     log_fun_enter(arguments)
     console.log(msg)
-    let txt = msg.text;
-    let arr = txt.split(" ")
-    let fun = arr[0]
+    let msg_txt = msg.text;
+    let arr = msg_txt.split(" ")
+    if(msg_txt.startsWith("上分") || msg_txt.startsWith("下分"))
+    {
+        arr=[]
+        var fun=msg_txt.replace(/\d+./g,'')
+    }else
+    {
+        var fun=arr[0]
+    }
+
+    var fun=getTrueCmd(msg_txt)
+
+  //  let fun = arr[0]
     if (file_exists("./" + fun + "tlgrm.js") || file_exists("./" + fun + ".js")) {
         requirex(fun + ".js")
         requirex(fun + "tlgrm.js")
@@ -106,6 +140,7 @@ async function msg_recv(msg, bot) {
 
         console.log("[msg_recv ] ret=>" + rzt)
     } else {
+
         await recv_nml_msg(msg)
 
     }

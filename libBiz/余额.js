@@ -1,4 +1,6 @@
 
+// inc   conn.asp
+//auto load here ,not caller is bettre todo
 
 global['余额']=余额
 

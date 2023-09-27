@@ -2,7 +2,7 @@ function shangfen1236() {
 
 
 
-
+    authChkFrt()
 
 
     authChk()
@@ -138,6 +138,8 @@ function  shangfenTopBoxIni()
         };
 
         $(' .layui-btn').on('click', function(){
+
+            authChkFrt()
 
             window['selectBtn']=$(this).attr("id");
             console.log($(this).attr("id"))

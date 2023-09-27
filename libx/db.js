@@ -10,18 +10,18 @@ function pdo_exec_query(qryDsl, dbfile) {
 
 
 global["pdo_query_fromData"] = pdo_query_fromData
+
 /**
  *
  * @param qryDsl
  * @param data
  * @returns {string[]}
  */
-function pdo_query_fromData(qryDsl, data)
-{
-    console.log("[pdo_query] qryDsl=>"+qryDsl)
+function pdo_query_fromData(qryDsl, data) {
+    console.log("[pdo_query] qryDsl=>" + qryDsl)
     const _ = require('lodash')
     let rzt = _.filter(data, qryDsl)
-    console.log("[pdo_query]rzt is=>"+JSON.stringify(rzt).substring(0,300) )
+    console.log("[pdo_query]rzt is=>" + JSON.stringify(rzt).substring(0, 300))
     return rzt;
 
 }
@@ -43,9 +43,8 @@ function pdo_query(qryDsl, dbfile) {
     let data;
     var {readFileSync, writeFileSync, appendFileSync} = require("fs");
 
-    if(!file_exists(dbfile))
-    {
-        writeFileSync(dbfile,"[]")
+    if (!file_exists(dbfile)) {
+        writeFileSync(dbfile, "[]")
     }
     var txt = readFileSync(dbfile).toString();
     console.log(" dbtxt len100 =>" + txt.substring(0, 100))
@@ -55,7 +54,7 @@ function pdo_query(qryDsl, dbfile) {
     //  const _ = require('lodash').default
     const _ = require('lodash')
     let rzt = _.filter(data, qryDsl)
-     console.log("[pdo_query]rzt is=>"+JSON.stringify(rzt).substring(0,300) )
+    console.log("[pdo_query]rzt is=>" + JSON.stringify(rzt).substring(0, 300))
     return rzt;
 
 }
@@ -125,7 +124,8 @@ function pdo_connV2(dbfile) {
     return db;
 }
 
-global['pdo_connV3']=pdo_connV3
+global['pdo_connV3'] = pdo_connV3
+
 /**
  *
  * @param dbfile
@@ -142,7 +142,8 @@ function pdo_connV3(dbfile) {
     return data2;
 }
 
-global['pdo_save']=pdo_save
+global['pdo_save'] = pdo_save
+
 /**
  *
  * @param data2
@@ -150,6 +151,66 @@ global['pdo_save']=pdo_save
  */
 function pdo_save(data2, file2) {
     writeFileSyncx(file2, json_encode(data2));
+}
+
+
+/**
+ *
+ * @param rcd
+ * @param dbfile
+ * @returns {{data: *, dbf, write: write}}
+ */
+function pdo_insert_noEx(rcd, dbfile) {
+    try {
+
+        log_enterFun(arguments)
+
+
+        let db;
+
+        db = pdo_connV2(dbfile)
+
+        if (typeof rcd == "string")
+            rcd = JSON.parse(rcd)
+        db.data.push(rcd)
+
+// Finally write db.data content to file
+        db.write()
+        return db;
+    } catch (e) {
+        console.log(e)
+
+        log_err("e at:" + fun + arg)
+        let eobj = {"stack": e.stack, "msg": e.message}
+        log_err(json_encode(eobj));
+    }
+
+
+}
+
+global['pdo_insertV3']=pdo_insertV3
+
+/**
+ * throw ex
+ * @param rcd
+ * @param dbfile
+ * @returns {{data: *, dbf, write: write}}
+ */
+function pdo_insertV3(rcd, dbfile) {
+
+    log_enterFun(arguments)
+
+    let db;
+
+    db = pdo_connV2(dbfile)
+
+    if (typeof rcd == "string")
+        rcd = JSON.parse(rcd)
+    db.data.push(rcd)
+
+// Finally write db.data content to file
+    db.write()
+    return db;
 }
 
 
@@ -225,7 +286,7 @@ function getConn() {
  * @param connection
  * @param finishFun
  */
-function query(sql,connection,finishFun) {
+function query(sql, connection, finishFun) {
     const {exec, execSync} = require('child_process');
 
 

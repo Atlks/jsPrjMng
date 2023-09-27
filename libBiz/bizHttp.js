@@ -134,12 +134,30 @@ function buildUrlNgetV3(_paraValue, timestamp, apitype_shangfen) {
         _paraValue = _paraValue + "&gameid=1";
 
     console.log("_paraValue raw==>"+_paraValue)
+    const curReqID=getcurReqID()
+    let req = global['req' + curReqID];
+    //   req.cookies
+    if(req)
+    {  //web env
+        var token=  getLoginToken()
+        var desCode=token.desCode
+        var agentid=token.agtid
+        var md5Code=token.md5Code
+
+    }else
+    { //maybe im env
+        var token= global['visa']
+        var desCode=token.desCode
+        var agentid=token.agtid
+        var md5Code=token.md5Code
+    }
+
     paraValue = aes_encrypt_ecbX(_paraValue, desCode);
-    md5key = md5(sprintf("%s%s%s", agentid, timestamp, md5Code));
+  let  md5key = md5(sprintf("%s%s%s", agentid, timestamp, md5Code));
 
 
-    $url_tpmplt = "https://ng.mqbsx.com/GameHandle?agentid=%s&timestamp=%s&type=%s&paraValue=%s&key=%s";
-    $url = sprintf($url_tpmplt, agentid, timestamp, apitype_shangfen, urlencode(paraValue), md5key);
+    let  $url_tpmplt = "https://ng.mqbsx.com/GameHandle?agentid=%s&timestamp=%s&type=%s&paraValue=%s&key=%s";
+    let  $url = sprintf($url_tpmplt, agentid, timestamp, apitype_shangfen, urlencode(paraValue), md5key);
 
 
     return $url;

@@ -128,11 +128,11 @@ try {
 }
 
 global['log_fun_enter']=log_fun_enter
-function log_fun_enter(arguments) {
+function log_fun_enter(argsx) {
 
-    var funname = arguments.callee.name;
+    var funname = argsx.callee.name;
     // arguments.callee.name
-    arg = JSON.stringify(arguments);
+    arg = JSON.stringify(argsx);
     console.log("*********=>" + funname + arg);
     log_info("*********=>" + funname + arg)
 

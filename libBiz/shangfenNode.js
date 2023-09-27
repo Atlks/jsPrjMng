@@ -44,7 +44,7 @@ async function  shangfen(uname, score) {
 
 
             let file = dbdir+"opLogColl.json";
-            var rcd = {"agtid":agtid,"op": "上分操作", "uname": uname, "score": score, "类型": "上分", "time": curDateTime()}
+            var rcd = {"agtid":agtid,"txt":"上分"+ score,"op": "上分操作", "uname": uname, "score": score, "类型": "上分", "time": curDateTime()}
             await pdo_insert(rcd, file);
 
 

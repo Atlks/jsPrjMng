@@ -1,122 +1,248 @@
-2023-09-25 18:08:22 ERR unhandledRejection
-2023-09-25 18:08:22 ERR {
-  "stack": "ReferenceError: getcurReqID is not defined\n    at callrmt (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\callweb.js:130:20)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at cookieParser (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\cookie-parser\\index.js:71:5)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)",
-  "msg": "getcurReqID is not defined"
-}
-2023-09-25 18:08:23 ERR unhandledRejection
-2023-09-25 18:08:23 ERR {
-  "stack": "ReferenceError: getcurReqID is not defined\n    at callrmt (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\callweb.js:130:20)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at cookieParser (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\cookie-parser\\index.js:71:5)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)",
-  "msg": "getcurReqID is not defined"
-}
-2023-09-25 18:08:44 ERR unhandledRejection
-2023-09-25 18:08:44 ERR {
-  "stack": "ReferenceError: getcurReqID is not defined\n    at callrmt (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\callweb.js:130:20)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at cookieParser (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\cookie-parser\\index.js:71:5)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)",
-  "msg": "getcurReqID is not defined"
-}
-2023-09-25 18:08:44 ERR unhandledRejection
-2023-09-25 18:08:44 ERR {
-  "stack": "ReferenceError: getcurReqID is not defined\n    at callrmt (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\callweb.js:130:20)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at cookieParser (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\cookie-parser\\index.js:71:5)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)",
-  "msg": "getcurReqID is not defined"
-}
-2023-09-26 13:21:16 ERR e at:http_get{"0":"https://ng.mqbsx.com/GameHandle?agentid=111356&timestamp=1695709275000&type=0&paraValue=NJelKKc8KKmZa%2BcneXiT1Y8kDXbC%2BFc3xVBKup1D%2B%2BdnigcYgUSEG2emud9dexzxnbJGStoPzGNg5bXMtDElumn3iUs3IGhdWKYgdVI6BcbE%2BUREG0vLHxbpBOFj8VR9AMqQjOhIoUsTIGZCktdBAgKhJIgkuvUiqMQ73q5%2FieE4Gz0lhjz4W43Rg5OhdJ0fBrOqrzLD4mu20ZzItALlTkpsB9MhWWL1AgPzT7uK7ZQ%3D&key=333ea929f023cbd640aa7c558392b066"}
-2023-09-26 13:21:16 ERR {"type":"ex","fun":"[http_get_core]","url":"https://ng.mqbsx.com/GameHandle?agentid=111356&timestamp=1695709275000&type=0&paraValue=NJelKKc8KKmZa%2BcneXiT1Y8kDXbC%2BFc3xVBKup1D%2B%2BdnigcYgUSEG2emud9dexzxnbJGStoPzGNg5bXMtDElumn3iUs3IGhdWKYgdVI6BcbE%2BUREG0vLHxbpBOFj8VR9AMqQjOhIoUsTIGZCktdBAgKhJIgkuvUiqMQ73q5%2FieE4Gz0lhjz4W43Rg5OhdJ0fBrOqrzLD4mu20ZzItALlTkpsB9MhWWL1AgPzT7uK7ZQ%3D&key=333ea929f023cbd640aa7c558392b066","httpStatuCode":404,"httpRzt_clr":"{\"maintype\":\"/GameHandle\",\"type\":0,\"data\":{\"account\":\"\",\"code\":-17,\"url\":\"exists ipKeyrs_keyId_206_1720023143\"}}"}
-2023-09-26 13:36:51 ERR e at:上分{"0":"上分","1":[{"message_id":6,"from":{"id":879006550,"is_bot":false,"first_name":"十 jarkas 大鱼 刘洋 汤姆","username":"Xxx0079468"},"chat":{"id":-4038077884,"title":"msgNode","type":"group","all_members_are_administrators":true},"date":1695709535,"text":"上分"}]}
-2023-09-26 13:36:57 ERR {}
-2023-09-26 13:37:18 ERR e at:上分{"0":"上分","1":[{"message_id":6,"from":{"id":879006550,"is_bot":false,"first_name":"十 jarkas 大鱼 刘洋 汤姆","username":"Xxx0079468"},"chat":{"id":-4038077884,"title":"msgNode","type":"group","all_members_are_administrators":true},"date":1695709535,"text":"上分"}]}
-2023-09-26 13:37:18 ERR {}
-2023-09-26 13:38:09 ERR e at:http_get{"0":"https://ng.mqbsx.com/GameHandle?agentid=111356&timestamp=1695710277000&type=2&paraValue=NJelKKc8KKmZa%2BcneXiT1W7BOqR3ZkKAyRA35RdQ9UBaqRdMIhR4Zn6mv2sCiIK6LYIo6YDw0Ox3t6VrvcicdPsRY9UvzfWnRYjEqh4BIDlXkVXtysBAKALJ9LPGUlcy&key=f05e85ea3a66d8cc048b1908cfa11214"}
-2023-09-26 13:38:09 ERR {"type":"system","errno":"EAI_AGAIN","code":"EAI_AGAIN","erroredSysCall":"getaddrinfo"}
-2023-09-26 13:38:09 ERR e at:上分{"0":"上分","1":[{"message_id":6,"from":{"id":879006550,"is_bot":false,"first_name":"十 jarkas 大鱼 刘洋 汤姆","username":"Xxx0079468"},"chat":{"id":-4038077884,"title":"msgNode","type":"group","all_members_are_administrators":true},"date":1695709535,"text":"上分"}]}
-2023-09-26 13:38:09 ERR {
-  "type": "system",
-  "errno": "EAI_AGAIN",
-  "code": "EAI_AGAIN",
-  "erroredSysCall": "getaddrinfo"
-}
-2023-09-26 14:24:56 ERR {"stack":"TypeError: Cannot read properties of undefined (reading 'agtid')\n    at shangfen (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\shangfenNode.js:33:50)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async String.上分 (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\上分tlgrm.js:15:17)\n    at async call_func (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:79:12)\n    at async TelegramBot.msg_recv (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\recv.js:99:9)","msg":"Cannot read properties of undefined (reading 'agtid')"}
-2023-09-26 14:54:36 ERR unhandledRejection
-2023-09-26 14:54:36 ERR alrtEx@玩家已经存在
-2023-09-26 14:54:36 ERR unhandledRejection
-2023-09-26 14:54:36 ERR alrtEx@玩家已经存在
-2023-09-26 14:54:36 ERR unhandledRejection
-2023-09-26 14:54:36 ERR alrtEx@玩家已经存在
-2023-09-26 14:54:36 ERR unhandledRejection
-2023-09-26 14:54:36 ERR alrtEx@玩家已经存在
-2023-09-26 14:54:46 ERR {"stack":"TypeError: Cannot read properties of undefined (reading 'agtid')\n    at shangfen (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\shangfenNode.js:33:50)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async String.上分 (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\上分tlgrm.js:30:17)\n    at async call_func (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:79:12)\n    at async TelegramBot.msg_recv (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\recv.js:102:17)","msg":"Cannot read properties of undefined (reading 'agtid')"}
-2023-09-26 14:54:58 ERR {"stack":"TypeError: Cannot read properties of undefined (reading 'agtid')\n    at shangfen (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\shangfenNode.js:33:50)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async String.上分 (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\上分tlgrm.js:30:17)\n    at async call_func (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:79:12)\n    at async TelegramBot.msg_recv (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\recv.js:102:17)","msg":"Cannot read properties of undefined (reading 'agtid')"}
-2023-09-26 14:55:00 ERR {"stack":"TypeError: Cannot read properties of undefined (reading 'agtid')\n    at shangfen (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\shangfenNode.js:33:50)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async String.上分 (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\上分tlgrm.js:30:17)\n    at async call_func (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:79:12)\n    at async TelegramBot.msg_recv (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\recv.js:102:17)","msg":"Cannot read properties of undefined (reading 'agtid')"}
-2023-09-26 14:55:01 ERR {"stack":"TypeError: Cannot read properties of undefined (reading 'agtid')\n    at shangfen (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\shangfenNode.js:33:50)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async String.上分 (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\上分tlgrm.js:30:17)\n    at async call_func (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:79:12)\n    at async TelegramBot.msg_recv (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\recv.js:102:17)","msg":"Cannot read properties of undefined (reading 'agtid')"}
-2023-09-26 15:03:40 ERR unhandledRejection
-2023-09-26 15:03:40 ERR alrtEx@玩家已经存在
-2023-09-26 15:04:07 ERR unhandledRejection
-2023-09-26 15:04:07 ERR alrtEx@玩家已经存在
-2023-09-26 15:04:07 ERR {"stack":"TypeError: Cannot read properties of undefined (reading 'agtid')\n    at shangfen (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\shangfenNode.js:33:50)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async String.上分 (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\上分tlgrm.js:30:17)\n    at async call_func (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:79:12)\n    at async TelegramBot.msg_recv (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\recv.js:102:17)","msg":"Cannot read properties of undefined (reading 'agtid')"}
-2023-09-26 15:05:16 ERR unhandledRejection
-2023-09-26 15:05:16 ERR alrtEx@玩家已经存在
-2023-09-26 16:24:03 ERR unhandledRejection
-2023-09-26 16:24:03 ERR {
-  "stack": "ReferenceError: sendLoginVisa is not defined\n    at callrmt (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\callweb.js:143:13)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at cookieParser (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\cookie-parser\\index.js:71:5)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)",
-  "msg": "sendLoginVisa is not defined"
-}
-2023-09-26 16:24:04 ERR unhandledRejection
-2023-09-26 16:24:04 ERR {
-  "stack": "ReferenceError: sendLoginVisa is not defined\n    at callrmt (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\callweb.js:143:13)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at cookieParser (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\cookie-parser\\index.js:71:5)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)",
-  "msg": "sendLoginVisa is not defined"
-}
-2023-09-26 16:24:29 ERR e at:qryAgtBal{"0":"qryAgtBal","1":["111356"]}
-2023-09-26 16:24:29 ERR {}
-2023-09-26 16:24:29 ERR {
+2023-09-27 20:51:03 ERR e at:login{"0":"login","1":["111356,26916DD661300B25,1BC0036763DE22EC"]}
+2023-09-27 20:51:03 ERR {}
+2023-09-27 20:51:03 ERR {
   "e": {
-    "stack1": "ReferenceError: desCode is not defined\n    at buildUrlNgetV3 (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\bizHttp.js:137:46)\n    at buildUrlNgetV2 (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\bizHttp.js:166:12)\n    at buildUrlNget_x (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\bizHttp.js:105:15)\n    at String.qryAgtBal (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\qryAgtBal.js:81:15)\n    at call_func (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:79:23)\n    at dsl_callFrmUiToBiz (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:37:20)\n    at callrmt (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\callweb.js:152:29)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\route.js:114:3)",
-    "msg1": "desCode is not defined"
+    "stack1": "TypeError: Cannot read properties of undefined (reading 'desCode')\n    at buildUrlNgetV3 (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\bizHttp.js:145:31)\n    at buildUrlNgetV2 (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\bizHttp.js:195:12)\n    at buildUrlNget_x (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\bizHttp.js:105:15)\n    at qryAgtBal (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\qryAgtBal.js:85:15)\n    at String.login (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\login.js:258:21)\n    at call_func (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:79:23)\n    at dsl_callFrmUiToBiz (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:37:20)\n    at callrmt (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\callweb.js:153:25)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\route.js:144:13)",
+    "msg1": "Cannot read properties of undefined (reading 'desCode')"
   },
   "funNargs": "*********=>callrmt[]",
-  "stack1": "ReferenceError: desCode is not defined\n    at buildUrlNgetV3 (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\bizHttp.js:137:46)\n    at buildUrlNgetV2 (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\bizHttp.js:166:12)\n    at buildUrlNget_x (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\bizHttp.js:105:15)\n    at String.qryAgtBal (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\qryAgtBal.js:81:15)\n    at call_func (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:79:23)\n    at dsl_callFrmUiToBiz (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:37:20)\n    at callrmt (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\callweb.js:152:29)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\route.js:114:3)",
-  "msg": "desCode is not defined"
+  "stack1": "TypeError: Cannot read properties of undefined (reading 'desCode')\n    at buildUrlNgetV3 (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\bizHttp.js:145:31)\n    at buildUrlNgetV2 (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\bizHttp.js:195:12)\n    at buildUrlNget_x (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\bizHttp.js:105:15)\n    at qryAgtBal (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\qryAgtBal.js:85:15)\n    at String.login (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\login.js:258:21)\n    at call_func (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:79:23)\n    at dsl_callFrmUiToBiz (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:37:20)\n    at callrmt (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\callweb.js:153:25)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\route.js:144:13)",
+  "msg": "Cannot read properties of undefined (reading 'desCode')"
 }
-2023-09-26 17:57:46 ERR unhandledRejection
-2023-09-26 17:57:46 ERR cant find fun ex@ fun=》下分
-2023-09-26 17:58:30 ERR unhandledRejection
-2023-09-26 17:58:30 ERR cant find fun ex@ fun=》下分
-2023-09-26 17:59:08 ERR e at:下分{"0":"下分","1":[{"message_id":34,"from":{"id":879006550,"is_bot":false,"first_name":"十 jarkas 大鱼 刘洋 汤姆","username":"Xxx0079468"},"chat":{"id":-4038077884,"title":"msgNode","type":"group","all_members_are_administrators":true},"date":1695725949,"text":"下分 100"}]}
-2023-09-26 17:59:08 ERR {}
-2023-09-26 17:59:08 ERR unhandledRejection
-2023-09-26 17:59:08 ERR {
-  "stack": "ReferenceError: xiafen is not defined\n    at String.下分 (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\下分tlgrm.js:30:17)\n    at call_func (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:79:23)\n    at TelegramBot.msg_recv (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\recv.js:105:25)\n    at TelegramBot.emit (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\eventemitter3\\index.js:182:35)\n    at TelegramBot.processUpdate (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\node-telegram-bot-api\\src\\telegram.js:680:12)\n    at C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\node-telegram-bot-api\\src\\telegramPolling.js:110:22\n    at Array.forEach (<anonymous>)\n    at C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\node-telegram-bot-api\\src\\telegramPolling.js:106:17\n    at tryCatcher (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\bluebird\\js\\release\\promise.js:547:31)\n    at Promise._settlePromise (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\bluebird\\js\\release\\promise.js:604:18)\n    at Promise._settlePromise0 (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\bluebird\\js\\release\\promise.js:649:10)\n    at Promise._settlePromises (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\bluebird\\js\\release\\promise.js:729:18)\n    at _drainQueueStep (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\bluebird\\js\\release\\async.js:93:12)\n    at _drainQueue (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\bluebird\\js\\release\\async.js:86:9)\n    at Async._drainQueues (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\bluebird\\js\\release\\async.js:102:5)\n    at Async.drainQueues (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\bluebird\\js\\release\\async.js:15:14)\n    at process.processImmediate (node:internal/timers:478:21)\n    at process.callbackTrampoline (node:internal/async_hooks:130:17)",
-  "msg": "xiafen is not defined"
+2023-09-27 20:51:04 ERR {
+  "e": {
+    "errno": -4058,
+    "syscall": "unlink",
+    "code": "ENOENT",
+    "path": "C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz/../visas/visa122.json"
+  },
+  "fun": "del_file",
+  "args": {
+    "0": "C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz/../visas/visa122.json"
+  }
 }
-2023-09-26 17:59:09 ERR unhandledRejection
-2023-09-26 17:59:09 ERR alrtEx@玩家已经存在
-2023-09-26 17:59:27 ERR e at:下分{"0":"下分","1":[{"message_id":35,"from":{"id":879006550,"is_bot":false,"first_name":"十 jarkas 大鱼 刘洋 汤姆","username":"Xxx0079468"},"chat":{"id":-4038077884,"title":"msgNode","type":"group","all_members_are_administrators":true},"date":1695725967,"text":"下分 100"}]}
-2023-09-26 17:59:27 ERR {}
-2023-09-26 17:59:27 ERR unhandledRejection
-2023-09-26 17:59:27 ERR {
-  "stack": "ReferenceError: xiafen is not defined\n    at String.下分 (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\下分tlgrm.js:30:17)\n    at call_func (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:79:23)\n    at TelegramBot.msg_recv (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\recv.js:105:25)\n    at TelegramBot.emit (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\eventemitter3\\index.js:182:35)\n    at TelegramBot.processUpdate (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\node-telegram-bot-api\\src\\telegram.js:680:12)\n    at C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\node-telegram-bot-api\\src\\telegramPolling.js:110:22\n    at Array.forEach (<anonymous>)\n    at C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\node-telegram-bot-api\\src\\telegramPolling.js:106:17\n    at tryCatcher (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\bluebird\\js\\release\\promise.js:547:31)\n    at Promise._settlePromise (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\bluebird\\js\\release\\promise.js:604:18)\n    at Promise._settlePromise0 (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\bluebird\\js\\release\\promise.js:649:10)\n    at Promise._settlePromises (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\bluebird\\js\\release\\promise.js:729:18)\n    at _drainQueueStep (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\bluebird\\js\\release\\async.js:93:12)\n    at _drainQueue (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\bluebird\\js\\release\\async.js:86:9)\n    at Async._drainQueues (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\bluebird\\js\\release\\async.js:102:5)\n    at Async.drainQueues (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\bluebird\\js\\release\\async.js:15:14)\n    at process.processImmediate (node:internal/timers:478:21)\n    at process.callbackTrampoline (node:internal/async_hooks:130:17)",
-  "msg": "xiafen is not defined"
+2023-09-27 20:51:05 ERR {
+  "e": {
+    "errno": -4058,
+    "syscall": "unlink",
+    "code": "ENOENT",
+    "path": "C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz/../visas/visa519.json"
+  },
+  "fun": "del_file",
+  "args": {
+    "0": "C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz/../visas/visa519.json"
+  }
 }
-2023-09-26 17:59:27 ERR unhandledRejection
-2023-09-26 17:59:27 ERR alrtEx@玩家已经存在
-2023-09-26 17:59:57 ERR unhandledRejection
-2023-09-26 17:59:57 ERR alrtEx@玩家已经存在
-2023-09-26 18:05:10 ERR unhandledRejection
-2023-09-26 18:05:10 ERR cant find fun ex@ fun=》下分
-2023-09-26 18:09:09 ERR unhandledRejection
-2023-09-26 18:09:09 ERR alrtEx@玩家已经存在
-2023-09-26 18:17:05 ERR unhandledRejection
-2023-09-26 18:17:05 ERR alrtEx@玩家已经存在
-2023-09-26 18:18:32 ERR unhandledRejection
-2023-09-26 18:18:32 ERR alrtEx@玩家已经存在
-2023-09-26 18:53:22 ERR e at:流水{"0":"流水","1":[{"message_id":59,"from":{"id":879006550,"is_bot":false,"first_name":"十 jarkas 大鱼 刘洋 汤姆","username":"Xxx0079468"},"chat":{"id":-4038077884,"title":"msgNode","type":"group","all_members_are_administrators":true},"date":1695729203,"text":"流水"}]}
-2023-09-26 18:53:22 ERR {}
-2023-09-26 18:53:22 ERR unhandledRejection
-2023-09-26 18:53:22 ERR {
-  "stack": "ReferenceError: QryShangxiafen is not defined\n    at String.流水 (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\流水.js:18:13)\n    at call_func (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:79:23)\n    at TelegramBot.msg_recv (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\recv.js:105:25)\n    at TelegramBot.emit (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\eventemitter3\\index.js:182:35)\n    at TelegramBot.processUpdate (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\node-telegram-bot-api\\src\\telegram.js:680:12)\n    at C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\node-telegram-bot-api\\src\\telegramPolling.js:110:22\n    at Array.forEach (<anonymous>)\n    at C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\node-telegram-bot-api\\src\\telegramPolling.js:106:17\n    at tryCatcher (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\bluebird\\js\\release\\promise.js:547:31)\n    at Promise._settlePromise (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\bluebird\\js\\release\\promise.js:604:18)\n    at Promise._settlePromise0 (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\bluebird\\js\\release\\promise.js:649:10)\n    at Promise._settlePromises (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\bluebird\\js\\release\\promise.js:729:18)\n    at _drainQueueStep (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\bluebird\\js\\release\\async.js:93:12)\n    at _drainQueue (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\bluebird\\js\\release\\async.js:86:9)\n    at Async._drainQueues (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\bluebird\\js\\release\\async.js:102:5)\n    at Async.drainQueues (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\bluebird\\js\\release\\async.js:15:14)\n    at process.processImmediate (node:internal/timers:478:21)\n    at process.callbackTrampoline (node:internal/async_hooks:130:17)",
-  "msg": "QryShangxiafen is not defined"
+2023-09-27 20:51:11 ERR e at:oplog_qry{"0":"oplog_qry","1":[]}
+2023-09-27 20:51:11 ERR {}
+2023-09-27 20:51:11 ERR {
+  "e": {
+    "stack1": "TypeError: Cannot read properties of undefined (reading 'agtid')\n    at getDbdir (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\bzDb.js:13:42)\n    at oplog_logDbdir (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\oplog.js:85:16)\n    at String.oplog_qry (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\oplog.js:60:19)\n    at call_func (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:79:23)\n    at dsl_callFrmUiToBiz (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:37:20)\n    at callrmt (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\callweb.js:153:25)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)",
+    "msg1": "Cannot read properties of undefined (reading 'agtid')"
+  },
+  "funNargs": "*********=>callrmt[]",
+  "stack1": "TypeError: Cannot read properties of undefined (reading 'agtid')\n    at getDbdir (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\bzDb.js:13:42)\n    at oplog_logDbdir (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\oplog.js:85:16)\n    at String.oplog_qry (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\oplog.js:60:19)\n    at call_func (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:79:23)\n    at dsl_callFrmUiToBiz (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:37:20)\n    at callrmt (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\callweb.js:153:25)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)",
+  "msg": "Cannot read properties of undefined (reading 'agtid')"
 }
-2023-09-26 18:54:02 ERR e at:流水{"0":"流水","1":[{"message_id":60,"from":{"id":879006550,"is_bot":false,"first_name":"十 jarkas 大鱼 刘洋 汤姆","username":"Xxx0079468"},"chat":{"id":-4038077884,"title":"msgNode","type":"group","all_members_are_administrators":true},"date":1695729243,"text":"流水"}]}
-2023-09-26 18:54:02 ERR {}
-2023-09-26 18:54:02 ERR unhandledRejection
-2023-09-26 18:54:02 ERR {
-  "stack": "ReferenceError: Acc_logDbdir is not defined\n    at QryShangxiafen (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\QryShangxiafen.js:12:18)\n    at String.流水 (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\流水.js:18:13)\n    at call_func (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:79:23)\n    at TelegramBot.msg_recv (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\recv.js:105:25)\n    at TelegramBot.emit (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\eventemitter3\\index.js:182:35)\n    at TelegramBot.processUpdate (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\node-telegram-bot-api\\src\\telegram.js:680:12)\n    at C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\node-telegram-bot-api\\src\\telegramPolling.js:110:22\n    at Array.forEach (<anonymous>)\n    at C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\node-telegram-bot-api\\src\\telegramPolling.js:106:17\n    at tryCatcher (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\bluebird\\js\\release\\promise.js:547:31)\n    at Promise._settlePromise (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\bluebird\\js\\release\\promise.js:604:18)\n    at Promise._settlePromise0 (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\bluebird\\js\\release\\promise.js:649:10)\n    at Promise._settlePromises (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\bluebird\\js\\release\\promise.js:729:18)\n    at _drainQueueStep (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\bluebird\\js\\release\\async.js:93:12)\n    at _drainQueue (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\bluebird\\js\\release\\async.js:86:9)\n    at Async._drainQueues (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\bluebird\\js\\release\\async.js:102:5)\n    at Async.drainQueues (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\bluebird\\js\\release\\async.js:15:14)\n    at process.processImmediate (node:internal/timers:478:21)\n    at process.callbackTrampoline (node:internal/async_hooks:130:17)",
-  "msg": "Acc_logDbdir is not defined"
+2023-09-27 20:51:20 ERR e at:readMsgCmdCfg{"0":"readMsgCmdCfg","1":[]}
+2023-09-27 20:51:20 ERR {}
+2023-09-27 20:51:20 ERR {
+  "e": {
+    "stack1": "TypeError: Cannot read properties of undefined (reading 'agtid')\n    at getDbdir (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\bzDb.js:13:42)\n    at String.readMsgCmdCfg (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\msgCmdCfg.js:13:16)\n    at call_func (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:79:23)\n    at dsl_callFrmUiToBiz (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:37:20)\n    at callrmt (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\callweb.js:153:25)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\index.js:284:15",
+    "msg1": "Cannot read properties of undefined (reading 'agtid')"
+  },
+  "funNargs": "*********=>callrmt[]",
+  "stack1": "TypeError: Cannot read properties of undefined (reading 'agtid')\n    at getDbdir (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\bzDb.js:13:42)\n    at String.readMsgCmdCfg (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\msgCmdCfg.js:13:16)\n    at call_func (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:79:23)\n    at dsl_callFrmUiToBiz (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:37:20)\n    at callrmt (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\callweb.js:153:25)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\index.js:284:15",
+  "msg": "Cannot read properties of undefined (reading 'agtid')"
+}
+2023-09-27 20:51:27 ERR e at:QryShangxiafen{"0":"QryShangxiafen","1":[]}
+2023-09-27 20:51:27 ERR {}
+2023-09-27 20:51:27 ERR {
+  "e": {
+    "stack1": "TypeError: Cannot read properties of undefined (reading 'agtid')\n    at getDbdir (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\bzDb.js:13:42)\n    at Acc_logDbdir (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\acc.js:42:16)\n    at String.QryShangxiafen (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\QryShangxiafen.js:12:18)\n    at call_func (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:79:23)\n    at dsl_callFrmUiToBiz (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:37:20)\n    at callrmt (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\callweb.js:153:25)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)",
+    "msg1": "Cannot read properties of undefined (reading 'agtid')"
+  },
+  "funNargs": "*********=>callrmt[]",
+  "stack1": "TypeError: Cannot read properties of undefined (reading 'agtid')\n    at getDbdir (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\bzDb.js:13:42)\n    at Acc_logDbdir (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\acc.js:42:16)\n    at String.QryShangxiafen (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\QryShangxiafen.js:12:18)\n    at call_func (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:79:23)\n    at dsl_callFrmUiToBiz (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:37:20)\n    at callrmt (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\callweb.js:153:25)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)",
+  "msg": "Cannot read properties of undefined (reading 'agtid')"
+}
+2023-09-27 20:51:32 ERR e at:oplog_qry{"0":"oplog_qry","1":[]}
+2023-09-27 20:51:32 ERR {}
+2023-09-27 20:51:32 ERR {
+  "e": {
+    "stack1": "TypeError: Cannot read properties of undefined (reading 'agtid')\n    at getDbdir (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\bzDb.js:13:42)\n    at oplog_logDbdir (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\oplog.js:85:16)\n    at String.oplog_qry (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\oplog.js:60:19)\n    at call_func (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:79:23)\n    at dsl_callFrmUiToBiz (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:37:20)\n    at callrmt (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\callweb.js:153:25)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)",
+    "msg1": "Cannot read properties of undefined (reading 'agtid')"
+  },
+  "funNargs": "*********=>callrmt[]",
+  "stack1": "TypeError: Cannot read properties of undefined (reading 'agtid')\n    at getDbdir (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\bzDb.js:13:42)\n    at oplog_logDbdir (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\oplog.js:85:16)\n    at String.oplog_qry (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\oplog.js:60:19)\n    at call_func (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:79:23)\n    at dsl_callFrmUiToBiz (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:37:20)\n    at callrmt (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\callweb.js:153:25)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)",
+  "msg": "Cannot read properties of undefined (reading 'agtid')"
+}
+2023-09-27 21:07:26 ERR {
+  "e": {
+    "errno": -4058,
+    "syscall": "unlink",
+    "code": "ENOENT",
+    "path": "C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz/../visas/visa1327.json"
+  },
+  "fun": "del_file",
+  "args": {
+    "0": "C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz/../visas/visa1327.json"
+  }
+}
+2023-09-27 21:55:35 ERR e at:login{"0":"login","1":["111356,26916DD661300B25,1BC0036763DE22EC"]}
+2023-09-27 21:55:35 ERR {}
+2023-09-27 21:55:35 ERR {
+  "e": {
+    "stack1": "ReferenceError: uNkey is not defined\n    at getLoginToken (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\user.js:99:18)\n    at buildUrlNgetV3 (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\bizHttp.js:142:21)\n    at buildUrlNgetV2 (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\bizHttp.js:184:12)\n    at buildUrlNget_x (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\bizHttp.js:105:15)\n    at qryAgtBal (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\qryAgtBal.js:85:15)\n    at String.login (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\login.js:258:21)\n    at call_func (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:79:23)\n    at dsl_callFrmUiToBiz (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:37:20)\n    at callrmt (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\callweb.js:153:25)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)",
+    "msg1": "uNkey is not defined"
+  },
+  "funNargs": "*********=>callrmt[]",
+  "stack1": "ReferenceError: uNkey is not defined\n    at getLoginToken (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\user.js:99:18)\n    at buildUrlNgetV3 (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\bizHttp.js:142:21)\n    at buildUrlNgetV2 (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\bizHttp.js:184:12)\n    at buildUrlNget_x (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\bizHttp.js:105:15)\n    at qryAgtBal (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\qryAgtBal.js:85:15)\n    at String.login (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\login.js:258:21)\n    at call_func (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:79:23)\n    at dsl_callFrmUiToBiz (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:37:20)\n    at callrmt (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\callweb.js:153:25)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)",
+  "msg": "uNkey is not defined"
+}
+2023-09-27 21:55:36 ERR {
+  "e": {
+    "errno": -4058,
+    "syscall": "unlink",
+    "code": "ENOENT",
+    "path": "C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz/../visas/visa1774.json"
+  },
+  "fun": "del_file",
+  "args": {
+    "0": "C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz/../visas/visa1774.json"
+  }
+}
+2023-09-27 21:55:38 ERR {"stack":"TypeError: Cannot read properties of undefined (reading 'query')\n    at getLoginToken (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\user.js:85:13)\n    at String.shangfen (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\shangfenNode.js:32:25)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async call_func (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:79:12)\n    at async dsl_callFrmUiToBiz (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:37:14)\n    at async callrmt (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\callweb.js:153:19)","msg":"Cannot read properties of undefined (reading 'query')"}
+2023-09-27 21:55:38 ERR e at:xiafen{"0":"xiafen","1":["777","1"]}
+2023-09-27 21:55:38 ERR {}
+2023-09-27 21:55:38 ERR {
+  "e": {
+    "stack1": "TypeError: Cannot read properties of undefined (reading 'query')\n    at getLoginToken (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\user.js:85:13)\n    at getDbdir (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\bzDb.js:12:17)\n    at String.xiafen (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\xiafen.js:110:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async call_func (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:79:12)\n    at async dsl_callFrmUiToBiz (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:37:14)\n    at async callrmt (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\callweb.js:153:19)",
+    "msg1": "Cannot read properties of undefined (reading 'query')"
+  },
+  "funNargs": "*********=>callrmt[]",
+  "stack1": "TypeError: Cannot read properties of undefined (reading 'query')\n    at getLoginToken (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\user.js:85:13)\n    at getDbdir (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\bzDb.js:12:17)\n    at String.xiafen (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\xiafen.js:110:16)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async call_func (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:79:12)\n    at async dsl_callFrmUiToBiz (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:37:14)\n    at async callrmt (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\callweb.js:153:19)",
+  "msg": "Cannot read properties of undefined (reading 'query')"
+}
+2023-09-27 21:55:44 ERR e at:addUser{"0":"addUser","1":["111","1"]}
+2023-09-27 21:55:44 ERR "alrtEx@玩家已经存在"
+2023-09-27 21:55:44 ERR {
+  "e": "alrtEx@玩家已经存在",
+  "funNargs": "*********=>callrmt[]"
+}
+2023-09-27 21:57:25 ERR e at:login{"0":"login","1":["111356,26916DD661300B25,1BC0036763DE22EC"]}
+2023-09-27 21:57:25 ERR {}
+2023-09-27 21:57:25 ERR {
+  "e": {
+    "stack1": "ReferenceError: uNkey is not defined\n    at getLoginToken (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\user.js:99:18)\n    at buildUrlNgetV3 (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\bizHttp.js:142:21)\n    at buildUrlNgetV2 (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\bizHttp.js:184:12)\n    at buildUrlNget_x (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\bizHttp.js:105:15)\n    at qryAgtBal (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\qryAgtBal.js:85:15)\n    at String.login (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\login.js:258:21)\n    at call_func (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:79:23)\n    at dsl_callFrmUiToBiz (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:37:20)\n    at callrmt (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\callweb.js:153:25)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)",
+    "msg1": "uNkey is not defined"
+  },
+  "funNargs": "*********=>callrmt[]",
+  "stack1": "ReferenceError: uNkey is not defined\n    at getLoginToken (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\user.js:99:18)\n    at buildUrlNgetV3 (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\bizHttp.js:142:21)\n    at buildUrlNgetV2 (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\bizHttp.js:184:12)\n    at buildUrlNget_x (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\bizHttp.js:105:15)\n    at qryAgtBal (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\qryAgtBal.js:85:15)\n    at String.login (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\login.js:258:21)\n    at call_func (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:79:23)\n    at dsl_callFrmUiToBiz (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:37:20)\n    at callrmt (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\callweb.js:153:25)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)",
+  "msg": "uNkey is not defined"
+}
+2023-09-27 21:59:09 ERR e at:http_get{"0":"https://ng.mqbsx.com/GameHandle?agentid=login&timestamp=1695826747000&type=9&paraValue=UyhVjVMHO1z5ki9sTiqeyw%3D%3D&key=b81ada159b8697af53189b03b08e07b3"}
+2023-09-27 21:59:09 ERR {"type":"ex","fun":"[http_get_core]","url":"https://ng.mqbsx.com/GameHandle?agentid=login&timestamp=1695826747000&type=9&paraValue=UyhVjVMHO1z5ki9sTiqeyw%3D%3D&key=b81ada159b8697af53189b03b08e07b3","httpStatuCode":400,"httpRzt_clr":"{\"type\":\"https://tools.ietf.org/html/rfc7231#section-6.5.1\",\"title\":\"One or more validation errors occurred.\",\"status\":400,\"traceId\":\"|8d22b10d-411521f39c280ca1.\",\"errors\":{\"agentid\":[\"The value 'login' is not valid.\"]}}"}
+2023-09-27 21:59:09 ERR e at:login{"0":"login","1":["111356,26916DD661300B25,1BC0036763DE22EC"]}
+2023-09-27 21:59:09 ERR {
+  "type": "ex",
+  "fun": "[http_get_core]",
+  "url": "https://ng.mqbsx.com/GameHandle?agentid=login&timestamp=1695826747000&type=9&paraValue=UyhVjVMHO1z5ki9sTiqeyw%3D%3D&key=b81ada159b8697af53189b03b08e07b3",
+  "httpStatuCode": 400,
+  "httpRzt_clr": "{\"type\":\"https://tools.ietf.org/html/rfc7231#section-6.5.1\",\"title\":\"One or more validation errors occurred.\",\"status\":400,\"traceId\":\"|8d22b10d-411521f39c280ca1.\",\"errors\":{\"agentid\":[\"The value 'login' is not valid.\"]}}"
+}
+2023-09-27 21:59:09 ERR {
+  "e": {
+    "type": "ex",
+    "fun": "[http_get_core]",
+    "url": "https://ng.mqbsx.com/GameHandle?agentid=login&timestamp=1695826747000&type=9&paraValue=UyhVjVMHO1z5ki9sTiqeyw%3D%3D&key=b81ada159b8697af53189b03b08e07b3",
+    "httpStatuCode": 400,
+    "httpRzt_clr": "{\"type\":\"https://tools.ietf.org/html/rfc7231#section-6.5.1\",\"title\":\"One or more validation errors occurred.\",\"status\":400,\"traceId\":\"|8d22b10d-411521f39c280ca1.\",\"errors\":{\"agentid\":[\"The value 'login' is not valid.\"]}}"
+  },
+  "funNargs": "*********=>callrmt[]"
+}
+2023-09-27 21:59:31 ERR e at:http_get{"0":"https://ng.mqbsx.com/GameHandle?agentid=login&timestamp=1695826744000&type=9&paraValue=UyhVjVMHO1z5ki9sTiqeyw%3D%3D&key=968ce52ebf91017a338d222e0560e2ac"}
+2023-09-27 21:59:31 ERR {"type":"ex","fun":"[http_get_core]","url":"https://ng.mqbsx.com/GameHandle?agentid=login&timestamp=1695826744000&type=9&paraValue=UyhVjVMHO1z5ki9sTiqeyw%3D%3D&key=968ce52ebf91017a338d222e0560e2ac","httpStatuCode":400,"httpRzt_clr":"{\"type\":\"https://tools.ietf.org/html/rfc7231#section-6.5.1\",\"title\":\"One or more validation errors occurred.\",\"status\":400,\"traceId\":\"|8d22b113-411521f39c280ca1.\",\"errors\":{\"agentid\":[\"The value 'login' is not valid.\"]}}"}
+2023-09-27 21:59:31 ERR e at:login{"0":"login","1":["111356,26916DD661300B25,1BC0036763DE22EC"]}
+2023-09-27 21:59:31 ERR {
+  "type": "ex",
+  "fun": "[http_get_core]",
+  "url": "https://ng.mqbsx.com/GameHandle?agentid=login&timestamp=1695826744000&type=9&paraValue=UyhVjVMHO1z5ki9sTiqeyw%3D%3D&key=968ce52ebf91017a338d222e0560e2ac",
+  "httpStatuCode": 400,
+  "httpRzt_clr": "{\"type\":\"https://tools.ietf.org/html/rfc7231#section-6.5.1\",\"title\":\"One or more validation errors occurred.\",\"status\":400,\"traceId\":\"|8d22b113-411521f39c280ca1.\",\"errors\":{\"agentid\":[\"The value 'login' is not valid.\"]}}"
+}
+2023-09-27 21:59:31 ERR {
+  "e": {
+    "type": "ex",
+    "fun": "[http_get_core]",
+    "url": "https://ng.mqbsx.com/GameHandle?agentid=login&timestamp=1695826744000&type=9&paraValue=UyhVjVMHO1z5ki9sTiqeyw%3D%3D&key=968ce52ebf91017a338d222e0560e2ac",
+    "httpStatuCode": 400,
+    "httpRzt_clr": "{\"type\":\"https://tools.ietf.org/html/rfc7231#section-6.5.1\",\"title\":\"One or more validation errors occurred.\",\"status\":400,\"traceId\":\"|8d22b113-411521f39c280ca1.\",\"errors\":{\"agentid\":[\"The value 'login' is not valid.\"]}}"
+  },
+  "funNargs": "*********=>callrmt[]"
+}
+2023-09-27 22:00:56 ERR {
+  "e": {
+    "errno": -4058,
+    "syscall": "unlink",
+    "code": "ENOENT",
+    "path": "C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz/../visas/visa72.json"
+  },
+  "fun": "del_file",
+  "args": {
+    "0": "C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz/../visas/visa72.json"
+  }
+}
+2023-09-27 22:01:26 ERR e at:xiafen{"0":"xiafen","1":["777","1"]}
+2023-09-27 22:01:26 ERR {}
+2023-09-27 22:01:26 ERR {
+  "e": {
+    "stack1": "ReferenceError: agtid is not defined\n    at String.xiafen (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\xiafen.js:111:25)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async call_func (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:79:12)\n    at async dsl_callFrmUiToBiz (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:37:14)\n    at async callrmt (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\callweb.js:153:19)",
+    "msg1": "agtid is not defined"
+  },
+  "funNargs": "*********=>callrmt[]",
+  "stack1": "ReferenceError: agtid is not defined\n    at String.xiafen (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\xiafen.js:111:25)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async call_func (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:79:12)\n    at async dsl_callFrmUiToBiz (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:37:14)\n    at async callrmt (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\callweb.js:153:19)",
+  "msg": "agtid is not defined"
+}
+2023-09-27 22:02:24 ERR e at:xiafen{"0":"xiafen","1":["777","1"]}
+2023-09-27 22:02:24 ERR {}
+2023-09-27 22:02:24 ERR {
+  "e": {
+    "stack1": "ReferenceError: agentid is not defined\n    at String.xiafen (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\xiafen.js:87:33)\n    at call_func (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:79:23)\n    at dsl_callFrmUiToBiz (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:37:20)\n    at callrmt (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\callweb.js:153:25)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\index.js:346:12)",
+    "msg1": "agentid is not defined"
+  },
+  "funNargs": "*********=>callrmt[]",
+  "stack1": "ReferenceError: agentid is not defined\n    at String.xiafen (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\xiafen.js:87:33)\n    at call_func (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:79:23)\n    at dsl_callFrmUiToBiz (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:37:20)\n    at callrmt (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\callweb.js:153:25)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\modyfing\\apiprj\\jbbot\\zmng\\node_modules\\express\\lib\\router\\index.js:346:12)",
+  "msg": "agentid is not defined"
+}
+2023-09-27 22:04:04 ERR {
+  "e": {
+    "errno": -4058,
+    "syscall": "unlink",
+    "code": "ENOENT",
+    "path": "C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz/../visas/visa91.json"
+  },
+  "fun": "del_file",
+  "args": {
+    "0": "C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz/../visas/visa91.json"
+  }
+}
+2023-09-27 22:04:08 ERR {
+  "e": {
+    "errno": -4058,
+    "syscall": "unlink",
+    "code": "ENOENT",
+    "path": "C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz/../visas/visa177.json"
+  },
+  "fun": "del_file",
+  "args": {
+    "0": "C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz/../visas/visa177.json"
+  }
+}
+2023-09-27 22:04:08 ERR {"stack":"ReferenceError: agtid is not defined\n    at String.shangfen (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\shangfenNode.js:37:32)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async call_func (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:79:12)\n    at async dsl_callFrmUiToBiz (C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ref.js:37:14)\n    at async callrmt (C:\\modyfing\\apiprj\\jbbot\\zmng\\libBiz\\callweb.js:153:19)","msg":"agtid is not defined"}
+2023-09-27 22:04:14 ERR e at:addUser{"0":"addUser","1":["111","1"]}
+2023-09-27 22:04:14 ERR "alrtEx@玩家已经存在"
+2023-09-27 22:04:14 ERR {
+  "e": "alrtEx@玩家已经存在",
+  "funNargs": "*********=>callrmt[]"
 }

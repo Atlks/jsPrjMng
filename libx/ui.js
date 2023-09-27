@@ -1,4 +1,15 @@
-import {createApp, ref} from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
+//import {createApp, ref} from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
+
+
+function  loadToForm(data,formname)
+{
+    $.each(data, function(key, value) {
+        $('#'+formname+' [name="' + key + '"]').val(value);
+    });
+
+
+}
+
 
 
 console.log(72222222222)  // is execed...

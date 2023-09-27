@@ -67,6 +67,7 @@ global['getcurReqID']=getcurReqID
 function getcurReqID() {
     const async_hooks = require('async_hooks');
 
+  //  let async_hooks=global['async_hooks']
     // 返回当前异步作用域的asyncId
     const eid = async_hooks.executionAsyncId();
 

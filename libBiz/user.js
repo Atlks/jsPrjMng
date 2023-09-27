@@ -76,9 +76,63 @@ function getLoginToken() {
         // only for web front use..
     }
 
+    if(global['visa'])
+        return  global['visa']   //env im im env
+
+    const curReqID = getcurReqID()
+    let req = global['req' + curReqID];
+    //   req.cookies
+    // if(req)
+    // {
+    if(req)
+    {
+        if (req.query.callfun.startsWith("login")) {
+            let callfun = req.query.callfun;
+            callfun = callfun.trim()
+            let arrx = callfun.split(" ");
+            arrx=array_filter(arrx);
+            let fun = arrx[0]
+            let kystr = arrx[1]
+         let   uNkey=kystr
+
+            let arr=uNkey.split(",")
+            let a = {};
+
+            a.agtid = arr[0];
+            a.agentid = arr[0];
+            a.descode = arr[1];
+            a.desCode = a.descode
+            a.md5key = arr[2]
+            a.md5Code = a.md5key
+            a.lgky = uNkey
+            return a;
+            // var token=  getLoginToken()
+            // var desCode=token.desCode
+            // var agentid=token.agtid
+            // var md5Code=token.md5Code
+
+        }
+        else {
+            //normal model
+            let reqQry = req.query;  //msg cmd cfg
+            var desCode = req.cookies.desCode
+            var agentid = req.cookies.agtid
+            var md5Code = req.cookies.md5Code
+            return  req.cookies;
+        }
+    }
+
+
+    // }else
+    // { //maybe im env
+    //     var token=  getLoginToken()
+    //     var desCode=token.desCode
+    //     var agentid=token.agtid
+    //     var md5Code=token.md5Code
+    // }
 
     //for api login chek
-    return global['visa'];
+    //   return global['visa'];
 
 
     // localStorage.setItem("agentid", a.agtid);
@@ -171,22 +225,23 @@ function isLoginCore() {
     }
 }
 
-global['isExistUser']=isExistUser
+global['isExistUser'] = isExistUser
+
 /**
  *
  * @param uname
  * @returns {boolean}
  */
-function  isExistUser(uname)
-{
-    let file = getDbdir()+"/userColl.json";
+function isExistUser(uname) {
+    let file = getDbdir() + "/userColl.json";
 
-    let rows=pdo_query({"account":uname},file)
-    if(rows.length==0)
-      return false
-    if(rows.length>0)
+    let rows = pdo_query({"account": uname}, file)
+    if (rows.length == 0)
+        return false
+    if (rows.length > 0)
         return true;
 }
+
 function isLogin() {
     log_fun_enter(arguments)
 
@@ -230,6 +285,7 @@ try {
 }
 
 function playerStatV2() {
+    authChkFrt()
     chkAop();
     authChk()
 
@@ -305,6 +361,13 @@ function playerStatV2() {
 
 }
 
+
+function authChkFrt() {
+    if (Cookies.get('agtid')) {
+    } else {
+        throw "not_loginex@没有agtid,需要登录"
+    }
+}
 
 /**
  * dep todo   chk cookie from web api

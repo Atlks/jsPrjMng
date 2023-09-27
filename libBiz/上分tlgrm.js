@@ -13,7 +13,7 @@ async function 上分(msg) {
     let acc = msg.from.username
     let nknm = msg.from.first_name
     try{
-        addUser(acc, nknm)
+        await addUser(acc, nknm)
     }catch (e)
     {
         console.warn(e)
@@ -25,12 +25,16 @@ async function 上分(msg) {
     arr = txt.split(" ")
 
 
-    let score = arr[1]
+    let score =  txt.replace(/[^0-9]/ig,"");
+        //arr[1]
 
     let uname = await shangfen(acc, score)
 
+
+    await updateBal(acc)
+
       const bot = global['bot']
-       bot.sendMessage(msg.chat.id,"ok",{reply_to_message_id: msg.message_id})
+       await bot.sendMessage(msg.chat.id, "ok", {reply_to_message_id: msg.message_id})
     return uname
 
 }

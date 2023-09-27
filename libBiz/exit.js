@@ -62,6 +62,7 @@ function exit() {
     a.descode = null;
     a.md5key = null
     a.lgky = null
-    writeFile("__USERPROFILE__/lgky.json",json_encode(a))
+    //bcsd maybe im env need use
+   // writeFile("__USERPROFILE__/lgky.json",json_encode(a))
     console.log(agentid)
 }

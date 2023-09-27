@@ -20,6 +20,7 @@ function arrToTable(arr) {
 
 //  apitype_PlayerScore
 function playerNScore237() {
+    authChkFrt()
    // chkAop();
     authChk()
 
@@ -133,7 +134,7 @@ async function searchPlayer(uname) {
     //  alert("url=>"+url)
     var rzt;
     try {
-        rzt = await http_get($url);
+        rzt = await http_get(url);
         console.log(":1240" + rzt)
 
         let rztobj = JSON.parse(rzt);

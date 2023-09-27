@@ -12,7 +12,7 @@ try {
  *
  */
 function xiafen745() {
-
+    authChkFrt()
     authChk()
 
 
@@ -82,6 +82,9 @@ async function xiafen(uname, score) {
     log_enterFun(arguments)
     authChk()
 
+    let visa=getLoginToken();
+   let  agentid=visa.agtid
+
     timestamp = time();
     _paraValue = "account=%s&score=%s&orderid=%s";
     orderid = sprintf("%s%s%s", agentid, timestamp, uname)
@@ -108,7 +111,8 @@ async function xiafen(uname, score) {
     // includeEsm("../lowdbx/lowdbX.js")
     // await import("../lowdbx/lowdbX.js")
     let file = getDbdir()+"/opLogColl.json";
-    var rcd = {"agtid": agtid, "op": "下分操作", "uname": uname, "score": score, "类型": "下分", "time": curDateTime()}
+//    let visa=getLoginToken();
+    var rcd = {"agtid": visa.agtid, "op": "下分操作", "uname": uname,"txt":"下分"+ score,"score": score, "类型": "下分", "time": curDateTime()}
     pdo_insert(rcd, file);
 
     //-------------add score log
