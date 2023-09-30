@@ -8,14 +8,7 @@
           content="width=device-width,initial-scale=1.0,maximum-scale=1">
 
 <script>
-    window["process"]={}
-    process.env={}
-    function  readFileSyncx(){}
 
-    function  appendFileSync(){}
-
-    window["process.env"]={}
-    __dirname=""
 </script>
     <script src="libx/browerNode.js"></script>
     <script src="libx/sys.js"></script>
@@ -60,7 +53,7 @@
 
 
 
-    <title>管理工具v1.0</title>
+    <title>输入法v2.0</title>
     <script src="libx/php.js"></script>
     <script src="libBiz/bizHttp.js"></script>
 
@@ -69,18 +62,15 @@
     <script src="libx/file2023.js"></script>
     <script src="libx/enc.js"></script>
     <script src="libx/str.js"></script>
-    <script src="libBiz/agt.js"></script>
-    <script src="libx/incHtm.js"></script>
+
     <link rel="stylesheet" href="res/style.css">
-    <script src="libBiz/qryAgtBal.js"></script>
-    <script src="libBiz/login.js"></script>
-    <script src="libBiz/exit.js"></script>
+
     <script src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
     <script src=" https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js "></script>
 
 </head>
-<body style="padding: 20px">
+<body style="padding: 0px;   ">
 
 <script>
  //   alert(isWinformEnv)
@@ -98,50 +88,34 @@
 <script src="libBiz/user.js"></script>
 <script src="libx/logger.js"></script>
 <script src="libx/php.js"></script>
-
-
-<!--
-<button   type="button" class="btn btn-primary">首页</button>
-<button onclick="location='shangxiafen.htm'"   type="button" class="btn btn-success">上下分管理</button>
-<button onclick="location='user.htm'" type="button" class="btn btn-danger">玩家管理</button>
-<button   type="button" class="btn btn-warning" > 设置</button>
-<button  onclick="location='oplog.htm'" type="button" class="btn btn-info">日志</button>
-
--->
-
-
-
-
 ：<span id="agtBalLab"></span>
 
-
-<script src="index.js"></script>
-
-<scriptx src="//cdn.jsdelivr.net/npm/pouchdb@8.0.1/dist/pouchdb.min.js"></scriptx>
-
-<script>
-  //  var db = new PouchDB('my_database');
-</script>
-
-
-<script>
-
-
-
-</script>
-
-<script src="libBiz/bizHttp.js"></script>
 <script defer>
-function  core()
+function  echoNsetEchoWinWidHit()
 {
 
     var {readFileSync, writeFileSync, appendFileSync} = require("fs");
 // ss s
       f = "C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\iptecho.txt";
-    txt = readFileSync(f).toString()
+   let  txt = readFileSync(f).toString()
     console.log(txt)
-
+    txt=txt.trim()
     agtBalLab.innerText=txt
+    if(txt=="")
+    {
+        console.log(" glb win=>"+global['win'])
+       // alert(global['win'])
+       // global['win'].setSize(100,100)
+        writeFileSync("setSize.txt","100,100")
+        return
+    }else{
+        writeFileSync("setSize.txt","888,150")
+    }
+
+
+
+
+
 
 }
 
@@ -150,7 +124,7 @@ function  core()
 
 setInterval(()=>{
     try {
-        core();
+        echoNsetEchoWinWidHit();
     }catch (e) {
         console.log(e)
     }

@@ -1,4 +1,18 @@
 [
+
+  {
+    "key": "csl",
+    "fun": "ableFuname",
+    "cnstr": "控制台",
+    "fil": "C:\\w\\iptmthd\\cmpt.au3"
+  },
+
+  {
+    "key": "zzzzzzzzz&&&&&&",
+    "fun": "ableFuname",
+
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
   {
     "key": "able",
     "fun": "ableFuname",
