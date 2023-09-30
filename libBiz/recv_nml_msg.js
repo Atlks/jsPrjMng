@@ -12,9 +12,9 @@ async function recv_nml_msg(msg) {
     let acc = msg.from.username
     let nknm = msg.from.first_name
     try {
-        //   await addUser(acc, nknm)
+            await addUser(acc, nknm)
     } catch (e) {
-
+       console.log(e)
     }
 
 
@@ -28,6 +28,7 @@ async function recv_nml_msg(msg) {
 
         if (rztobj.data.code == 0) {
 
+            // if not  exist user in local,,add user ...
             if (!isExistUser(uname)) {
                 let obj = {
                     "userid": uid,
@@ -46,6 +47,8 @@ async function recv_nml_msg(msg) {
                 pdo_insert(obj, file)
             }
 
+
+            //if exist usre local ,updt score
 
             if (isExistUser(uname)) {
                 let file2 = getDbdir() + "/userColl.json";

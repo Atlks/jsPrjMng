@@ -198,8 +198,28 @@
     "uname": "Xxx0079468",
     "nknm": "Xxx0079468",
     "time": "2023-09-26 15:15:31",
-    "score": 2769,
-    "totalScore": 2769,
+    "score": 2770,
+    "totalScore": 2770,
     "status": 0
+  },
+  {
+    "status": 0,
+    "totalScore": 100,
+    "userid": 32077278,
+    "nickname": "太白",
+    "agtid": 111356,
+    "account": "ctb547689",
+    "time": "2023-09-28 17:36:58",
+    "score": 100
+  },
+  {
+    "status": 0,
+    "totalScore": 0,
+    "userid": 32077279,
+    "nickname": "喜",
+    "agtid": 111356,
+    "account": "xiju12345",
+    "time": "2023-09-28 17:45:20",
+    "score": 0
   }
 ]

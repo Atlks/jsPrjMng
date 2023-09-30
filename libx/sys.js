@@ -16,6 +16,11 @@ function requirex(f) {
 
     if(!file_exists(f))
         f="./"+f;
+    if(!file_exists(f))
+        f="./libBiz/"+f;
+
+
+
     try {
         console.log(f)
         require(f)

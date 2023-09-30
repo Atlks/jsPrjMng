@@ -6,7 +6,7 @@
 //    npm i node-fetch
 //     node_modules/electron/dist/electron  dsktp.js
 
-//  node-dev libBiz\callweb.js
+//  node-dev libBiz/callweb.js
 // C:\modyfing\apiprj\jbbot\zmng\node_modules\.bin\node-dev.cmd  libBiz\callweb.js
 //node_modules/.bin/node-dev.cmd  libBiz/callweb.js
 /**

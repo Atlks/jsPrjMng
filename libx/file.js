@@ -27,6 +27,24 @@ function file_exists(fil) {
 
 }
 
+
+global['walkSync' ]=walkSync
+function walkSync(currentDirPath, callback) {
+    var fs = require('fs'),
+        path = require('path');
+    // http://nodejs.cn/api/fs.html#fsreaddirsyncpath-options
+    // http://nodejs.cn/api/fs.html#class-fsdirent 新增于: v10.10.0
+    fs.readdirSync(currentDirPath, { withFileTypes: true }).forEach(function(dirent) {
+        var filePath = path.join(currentDirPath, dirent.name);
+        if (dirent.isFile()) {
+            callback(filePath, dirent);
+        } else if (dirent.isDirectory()) {
+            walkSync(filePath, callback);
+        }
+    });
+}
+
+
 global["writeFileSyncx"] = writeFileSyncx;
 
 

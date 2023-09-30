@@ -86,7 +86,7 @@ function msg_recvListen(token, msg_recvHdlr) {
 require("../libx/incHtm")
 require("../libx/autoload")
 require("../libBiz/searchPlayer")
-requireAutoload("acc,QryShangxiafen,余额,帮助,流水,xiafen,下分tlgrm,recv_nml_msg,errHdlr,shangfenNode,shangfen,上分tlgrm,crpto,sys,file,importUser,excel,logger,includeXAjaxNode,bzDb,user,sys,addUser,searchPlayer,oplog,ex,httpSync,bizHttp,incHtm,exit,login,qryAgtBal")
+requireAutoload("php,sendMsg,acc,QryShangxiafen,余额,帮助,流水,xiafen,下分tlgrm,recv_nml_msg,errHdlr,shangfenNode,shangfen,上分tlgrm,crpto,sys,file,importUser,excel,logger,includeXAjaxNode,bzDb,user,sys,addUser,searchPlayer,oplog,ex,httpSync,bizHttp,incHtm,exit,login,qryAgtBal")
 
 
 global['msg_recv'] = msg_recv
@@ -94,13 +94,12 @@ global['msg_recv'] = msg_recv
 
 function getTrueCmd(msg_txt) {
 
-    var msg_txt=msg_txt.replace(/\d+./g,'')
+    var msg_txt = msg_txt.replace(/\d+/g, '')
     let file = getDbdir() + "/msgcmdCfgMap_Coll.json";
-    let rows=pdo_query({},file)
-    for( row of rows)
-    {
-        var truecmd=row[msg_txt]
-        if(truecmd)
+    let rows = pdo_query({}, file)
+    for (row of rows) {
+        var truecmd = row[msg_txt]
+        if (truecmd)
             return truecmd
     }
 
@@ -116,21 +115,37 @@ async function msg_recv(msg) {
     console.log(msg)
     let msg_txt = msg.text;
     let arr = msg_txt.split(" ")
-    if(msg_txt.startsWith("上分") || msg_txt.startsWith("下分"))
-    {
-        arr=[]
-        var fun=msg_txt.replace(/\d+./g,'')
-    }else
-    {
-        var fun=arr[0]
+    if (msg_txt.startsWith("上分") || msg_txt.startsWith("下分")) {
+        arr = []
+        var fun = msg_txt.replace(/\d+./g, '')
+    } else {
+        var fun = arr[0]
     }
 
-    var fun=getTrueCmd(msg_txt)
+    var fun = getTrueCmd(msg_txt)
+    if(!fun)
+        fun="帮助"
 
-  //  let fun = arr[0]
-    if (file_exists("./" + fun + "tlgrm.js") || file_exists("./" + fun + ".js")) {
-        requirex(fun + ".js")
-        requirex(fun + "tlgrm.js")
+
+    try {//add user
+        recv_nml_msg(msg)
+    } catch (e) {
+        console.log(e)
+    }
+
+    requirex(fun + ".js")
+    requirex(fun + "tlgrm.js")
+
+    var msgFunFileMap={"下分":"cashoutMsgHdl","上分":"cashinMsgHdl","余额":"balMsgHdl","帮助":"help"}
+
+    //  let fun = arr[0]
+   //if (file_exists("../libBiz/" + fun + "tlgrm.js") || file_exists("../libBiz/" + fun + ".js")) {
+
+    if(funtion_exist(fun))
+    {
+        console.log(" file_ exists xx.js  ")
+
+
         let acc = msg.from.username
 
         let argarr = [];
@@ -140,7 +155,7 @@ async function msg_recv(msg) {
 
         console.log("[msg_recv ] ret=>" + rzt)
     } else {
-
+        console.log(" file_not exists xx.js  recv_nml_msg(msg)")
         await recv_nml_msg(msg)
 
     }

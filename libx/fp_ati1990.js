@@ -113,7 +113,7 @@ function funtion_exist(funcName) {
         return false
     }
 }
-
+global['funtion_exist']=funtion_exist
 
 function __METHOD__(e) {
     //Error

@@ -26,7 +26,8 @@ async function 余额(msg) {
     if (rztobj.data.code == 0) {
 
         const bot = global['bot']
-        bot.sendMessage(msg.chat.id,"余额为："+rztobj.data.totalScore,{reply_to_message_id: msg.message_id})
+     //   bot.sendMessage
+        sendMsg(msg.chat.id,"余额为："+rztobj.data.totalScore,{reply_to_message_id: msg.message_id})
 
 
     }

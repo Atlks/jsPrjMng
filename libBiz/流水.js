@@ -32,6 +32,9 @@ async function 流水(msg) {
         output=output+tmp;
 
     }
+
+    if(output=="")
+        output="流水为空"
    // let txt="格式为: 上分100 下分100 余额 流水"
     const bot = global['bot']
     bot.sendMessage(msg.chat.id,""+output,{reply_to_message_id: msg.message_id})
