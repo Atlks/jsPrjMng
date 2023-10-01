@@ -2,56 +2,69 @@
 var buff = ""
 var {readFileSync, writeFileSync, appendFileSync} = require("fs");
 const fs = require('fs')
+require("./file")
 
-
-/**
- * la law 法律
+/** la
+ * la law 法律 lk 类库喜欢  lk 喜欢 lk 喜欢 lib
  */
-function  main()
-{
+function main() {
     const prcsmd = require("child_process");
     const filePath = 'C:\\w\\iptmthd\\keysdir\\'
     console.log(`正在监听 ${filePath}`);
-    fs.watch(filePath, (event, filename) => {
-        console.log("event=>" + event)
-        console.log("filename=>" + filename)
-        try {
-            if (event == "change") {
-                if (global[event + filename])
-                    return
-                global[event + filename] = true;// read
-                console.log(`${filename}文件发生更新`)
-                let curiptWd = readFileSync(filePath + "/" + filename).toString()
-                console.log(curiptWd)
-                curiptWdLow = curiptWd.toLowerCase()
-                if (curiptWdLow == "{space}" || curiptWdLow == "{enter}") {
-                    console.log("out buff=>" + buff)
-                    findWdByBufpartNwrtToUi(buff)
-                    buff = ""
-                    setEchoWinTxt(buff);
-                }
-                if (curiptWdLow == "{backspace}") {
-                    console.log("  buff=>" + buff)
-                    let lastIdx = buff.length - 1
-                    buff = buff.substring(0, lastIdx)
+    fs_watch(filePath, watchHdlr)
 
-                    console.log("  buff=>" + buff)
-                    findWdLstByPartwd(buff)
-                }
-                if (curiptWd.startsWith("{")) {
-                    return;
-                } else {
-                    buff = buff + curiptWd;
-                    console.log("buff=>" + buff)
-                    findWdLstByPartwd(buff)
-                }
-            }
-        } catch (e) {
-            console.log(e)
+}
+
+/**
+ *lk
+ * @param event
+ * @param filename
+ */
+function watchHdlr(event, filename, filePath) {
+    if (event == "change") {
+        if (global[event + filename])
+            return
+        global[event + filename] = true;// read
+        console.log(`${filename}文件发生更新`)
+        let curiptWd = readFileSync(filePath + "/" + filename).toString()
+        console.log(curiptWd)
+        curiptWdLow = curiptWd.toLowerCase()
+        if (curiptWdLow == "{space}" ) {
+            console.log("out buff=>" + buff)
+            findWdByBufpartNwrtToUi(buff)
+            buff = ""
+            setEchoWinTxt(buff);
+            return;
+        } else if (  curiptWdLow == "{enter}") {
+            //    alf 字母表 alf
+
+          //  wrtToUi(buff)
+            buff = ""
+            setEchoWinTxt(buff);
+            return;
         }
 
-    })
+        else if (curiptWdLow == "{backspace}") {
+            console.log("  buff=>" + buff)
+            let lastIdx = buff.length - 1
+            buff = buff.substring(0, lastIdx)
+            buff = buff.trim();
+            console.log("  buff=>" + buff)
+            //  alf 字母表  alf
 
+
+            findWdLstByPartwd(buff)
+            return;
+        } else if (curiptWd.startsWith("{")) {
+            return;
+        } else {
+            //nml alfbt
+            buff = buff + curiptWd;
+            console.log("buff=>" + buff)
+            findWdLstByPartwd(buff)
+            return;
+        }
+    }
 }
 
 // txt = readFileSync(iomapfile)
@@ -69,30 +82,13 @@ function setEchoWinTxt(echoWinTxt) {
 }
 
 
-/** csl cs
- * undefined undefi nedundefined undefined
- * undefined
- * undefined  law 法律 jst 就 我 nam 名字
- *  law  law law last  last
- * law LAW LAW LAW LAW LAW law
- * @param buff
- * @constructor
- */
-function findWdByBufpartNwrtToUi(buff) {
-
-    console.log("[iptBufToUI]"+ JSON.stringify(arguments) )
-   let cnstr=findWdByBufpart(buff)
-    if(!cnstr)
-        return
-    console.log("[Buf2wdWrtToUI]cnstr=>"+cnstr)
-
-
+function wrtToUi(cnstr) {
     try {
         let exe = "C:\\prgrm\\AutoIt3\\AutoIt3.exe"
         let cmd = exe + "  writeToUi.au3 " + cnstr;
 
         console.log(cmd)
-       // return
+        // return
         var prcsmd = require('child_process');
         // let rzt =
         prcsmd.execSync(cmd, {
@@ -106,6 +102,40 @@ function findWdByBufpartNwrtToUi(buff) {
         console.log(e)
 
     }
+}
+
+/** csl cs
+ * undefined undefi nedundefined undefined
+ * undefined
+ * undefined  law 法律 jst 就 我 nam 名字
+ *  law  law law last  last nm 我们 nam 名字
+ * law LAW LAW LAW LAW LAW law
+ * @param buff
+ * @constructor
+ */
+function findWdByBufpartNwrtToUi(buff) {
+
+    console.log("[iptBufToUI]" + JSON.stringify(arguments))
+    let cnstr = findWdByBufpart(buff)
+
+    // if(cnstr==undefined)
+    //     return  ""; //  alf 字母表 // alf a alf alf // // //   alf alf alf alf alf  alf
+    if (!cnstr) {
+        // undefined cant find wd,,then try first wd
+        //or more thabn two ,also chs firstg wd 单词 sbs 空格 空格sbt   sbst 特殊
+        let rows = findWdLstByPartwdList(buff)
+        if (rows.length >= 1)
+        {
+            cnstr=rows[0].cnstr
+            console.log("[findWdByBufpartNwrtToUi] first wd is=>"+cnstr)
+           // return wd;
+        }
+        else
+            return ""
+    }
+//cnstr is can find  ....
+    console.log("[Buf2wdWrtToUI]cnstr=>" + cnstr)
+    wrtToUi(cnstr);
 
 }
 
@@ -117,6 +147,8 @@ function findWdByBufpartNwrtToUi(buff) {
  */
 function findWdByBufpart(curiptWd) {
 
+    if (curiptWd == "")
+        throw "curiptWd is empty"
 
     iomapfile = "C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ipt_iomap.json"
 
@@ -132,7 +164,7 @@ function findWdByBufpart(curiptWd) {
         return
     showecho = ""
     for (jsonobj of jsonarr) {
-        if (jsonobj.key==(curiptWd)) {
+        if (jsonobj.key == (curiptWd)) {
             return jsonobj.cnstr
         }
 
@@ -140,11 +172,46 @@ function findWdByBufpart(curiptWd) {
 
 }
 
+
+function findWdLstByPartwdList(curWdpart) {
+    if (curWdpart == "") {
+        setEchoWinTxt("");
+        return ""
+    }
+
+
+    iomapfile = "C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ipt_iomap.json"
+
+    var {readFileSync, writeFileSync, appendFileSync} = require("fs");
+    txt = readFileSync(iomapfile)
+    jsonarr = JSON.parse(txt)
+
+
+    //  curiptWd = readFileSync(cuript).toString()
+    curWdpart = curWdpart.toLowerCase()
+
+    if (curWdpart.startsWith("{"))
+        return
+    showecho = ""
+    let rows = []
+    for (jsonobj of jsonarr) {
+        if (jsonobj.key.startsWith(curWdpart)) {
+            rows.push(jsonobj)
+        }
+
+    }
+    return rows
+}
+
 /**
  *
  * @param curWdpart
  */
 function findWdLstByPartwd(curWdpart) {
+    if (curWdpart == "") {
+        setEchoWinTxt("");
+        return ""
+    }
 
 
     iomapfile = "C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ipt_iomap.json"

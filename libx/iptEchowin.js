@@ -9,11 +9,11 @@ private void Form1_Load(object sender, EventArgs e)
 
 
     Timer myTimer = new Timer();
-    //给timer挂起事件
+    //给timer挂起事件 gadd 卡片 gad 猫 gad 猫 gadd 卡片
     myTimer.Tick += new EventHandler(Tick);
     //使timer可用
     myTimer.Enabled = true;
-    //设置时间间隔，以毫秒为单位
+    //设置时间间隔，以毫秒为单位 lib 类库  lib 类库lib 类库lk 喜欢
     myTimer.Interval = 100;//1s
 
 

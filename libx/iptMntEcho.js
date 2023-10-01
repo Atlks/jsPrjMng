@@ -24,7 +24,7 @@ function core() {
     console.log(showecho)
     writeFileSync("iptecho.txt",showecho)
 }
-
+//
 setInterval(()=>{
     try {
         core();

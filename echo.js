@@ -57,7 +57,7 @@ app.on('ready', () => {
 
     electron.dialog.showErrorBox('title', JSON.stringify(mousePos));
     console.log(mousePos);
-    setWinPosNsize()
+   // setWinPosNsize()
 });
 appendFileSync("log636echo.log", "999")
 console.log(999)
@@ -117,9 +117,9 @@ function createWindow() {
 
 // la  l l  aaaa la kkk law  law  la
 // set sieze la  law l law law l st
-// tbr
+// tbr sg
 /**
- * set win wz mouse pos  ,,n ech win size
+ * set win wz mouse pos  ,,n ech win size l la
  */
 function  setWinPosNsize()
 {
@@ -128,7 +128,7 @@ function  setWinPosNsize()
             var electron = require('electron');
             var mousePos = electron.screen.getCursorScreenPoint();
 
-            global['win'].setPosition(100, mousePos.y + 60)
+       //     global['win'].setPosition(100, mousePos.y + 60)
 
             var {readFileSync, writeFileSync, appendFileSync} = require("fs");
           let   txt = readFileSync("setSize.txt").toString()
@@ -138,7 +138,7 @@ function  setWinPosNsize()
             global['win'].setSize(wid, ht)
         } catch (e) {
             console.log(e)
-           // throw e
+           // throw e la
         }
 
     }, 200)

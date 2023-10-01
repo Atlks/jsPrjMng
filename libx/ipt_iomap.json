@@ -1,16 +1,229 @@
 [
+  {
+    "key": "fmt",
+    "cnstr": "格式",
+    "fil": "cmpt"
+  },
 
+  {
+    "key": "advs",
+    "cnstr": "高级",
+    "fil": "cmpt"
+  },
+  {
+    "key": "fst",
+    "cnstr": "第一个",
+    "fil": "cmpt"
+  },
+  {
+    "key": "prgl",
+    "cnstr": "编程语言",
+    "fil": "cmpt"
+  },
+  {
+    "key": "lan",
+    "cnstr": "语言",
+    "fil": "cmpt"
+  },
+
+  {
+    "key": "impt",
+    "cnstr": "重要",
+    "fil": "cmpt"
+  },
+  {
+    "key": "excpt",
+    "cnstr": "异常",
+    "fil": "cmpt"
+  },
+
+  {
+    "key": "smp",
+    "cnstr": "简单",
+    "fil": "cmpt"
+  },
+
+  {
+    "key": "lv",
+    "cnstr": "爱",
+    "fil": "cmpt"
+  },
+
+  {
+    "key": "smpjh",
+    "cnstr": "简化",
+    "fil": "cmpt"
+  },
+
+  {
+    "key": "kklt",
+    "cnstr": "计算",
+    "fil": "cmpt"
+  },
+  {
+    "key": "cclt",
+    "cnstr": "计算",
+    "fil": "cmpt"
+  },
+
+  {
+    "key": "skd",
+    "cnstr": "日程",
+    "fil": "cmpt"
+  },
+  {
+    "key": "df",
+    "cnstr": "不同",
+    "fil": "cmpt"
+  },
+  {
+    "key": "sbs",
+    "cnstr": "空格",
+    "fil": "cmpt"
+  },
+  {
+    "key": "chg",
+
+    "cnstr": "改变",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+
+
+  {
+    "key": "sbsh",
+
+    "cnstr": "特殊",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+
+  {
+    "key": "sbsts",
+
+    "cnstr": "特殊",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+
+  {
+    "key": "dev",
+    "cnstr": "开发",
+    "fil": "cmpt"
+  },
+  {
+    "key": "optm",
+    "cnstr": "优化",
+    "fil": "cmpt"
+  },
+  {
+    "key": "iptm",
+    "cnstr": "输入法",
+    "fil": "cmpt"
+  },
+  {
+    "key": "sgl",
+    "cnstr": "单身",
+    "fil": "nml"
+  },
+  {
+    "key": "c",
+    "cnstr": "看见",
+    "fil": "nml"
+  },
+  {
+    "key": "d",
+    "cnstr": "天",
+    "fil": "nml"
+  },
+
+  {
+    "key": "chr",
+    "cnstr": "字符",
+    "fil": "nml"
+  },
+  {
+    "key": "etr",
+    "cnstr": "回车",
+    "fil": "nml"
+  },
+
+
+  {
+    "key": "r",
+    "cnstr": "是",
+    "fil": "nml"
+  },
+
+  {
+    "key": "t",
+    "cnstr": "真实",
+    "fil": "nml"
+  },
+
+  {
+    "key": "b",
+    "cnstr": "是",
+    "fil": "nml"
+  },
+
+  {
+    "key": "o",
+    "cnstr": "零",
+    "fil": "nml"
+  },
+  {
+    "key": "hi",
+    "cnstr": "高",
+    "fil": "nml"
+  },
+
+  {
+    "key": "g",
+    "cnstr": "好",
+    "fil": "nml"
+  },
+
+
+  {
+    "key": "f",
+    "cnstr": "false",
+    "fil": "nml"
+  },
+
+  {
+    "key": "alfbt",
+    "cnstr": "字母表",
+    "fil": "nml"
+  }
+
+,
+  {
+    "key": "gad",
+    "cnstr": "猫",
+    "fil": "nml"
+  },
+  {
+    "key": "gadd",
+    "cnstr": "卡片",
+    "fil": "nml"
+  },
+  {
+    "key": "lk",
+    "cnstr": "喜欢",
+    "fil": "nml"
+  },
+  {
+    "key": "lib",
+    "cnstr": "类库",
+    "fil": "cmpt"
+  },
   {
     "key": "csl",
     "fun": "ableFuname",
     "cnstr": "控制台",
     "fil": "C:\\w\\iptmthd\\cmpt.au3"
   },
-
   {
     "key": "zzzzzzzzz&&&&&&",
     "fun": "ableFuname",
-
     "fil": "C:\\w\\iptmthd\\basicE850.au3"
   },
   {
@@ -7567,12 +7780,7 @@
     "cnstr": "输出",
     "fil": "C:\\w\\iptmthd\\iptMizi.au3"
   },
-  {
-    "key": "sbs",
-    "fun": "spc2",
-    "cnstr": "特殊",
-    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
-  },
+
   {
     "key": "prblm",
     "fun": "prblm",

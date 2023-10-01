@@ -196,6 +196,29 @@ function readFileSyncx(fil) {
 
 }
 
+global["fs_watch"] = fs_watch;
+
+/**
+ *
+ * @param filePath
+ * @param hdlr
+ */
+function  fs_watch(filePath,hdlr)
+{
+    const fs = require('fs')
+    fs.watch(filePath, (event, filename) => {
+        console.log("event=>" + event)
+        console.log("filename=>" + filename)
+        try {
+            hdlr(event, filename,filePath)
+        } catch (e) {
+            console.log(e)
+        }
+
+    })
+}
+
+
 global["file"] = file;
 global["file_readLines"] = file;
 
