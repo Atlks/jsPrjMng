@@ -22,4 +22,8 @@ apimng.jbpc28.top
 
 
 
+node_modules/.bin/node-dev  libBiz/callweb.js
+
+node_modules/.bin/node-dev  libBiz/callweb.js &
+
 

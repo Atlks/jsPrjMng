@@ -12,7 +12,7 @@ async function recv_nml_msg(msg) {
     let acc = msg.from.username
     let nknm = msg.from.first_name
     try {
-            await addUser(acc, nknm)
+            await  addUserAtRmt(acc,nknm)
     } catch (e) {
        console.log(e)
     }
@@ -25,8 +25,9 @@ async function recv_nml_msg(msg) {
         let uid = rztobj.data.userid
         let nknm = rztobj.data.account
 
-
+        // if have user in rmt
         if (rztobj.data.code == 0) {
+
 
             // if not  exist user in local,,add user ...
             if (!isExistUser(uname)) {

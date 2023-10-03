@@ -198,19 +198,19 @@
     "uname": "Xxx0079468",
     "nknm": "Xxx0079468",
     "time": "2023-09-26 15:15:31",
-    "score": 2770,
-    "totalScore": 2770,
+    "score": 2745,
+    "totalScore": 2745,
     "status": 0
   },
   {
     "status": 0,
-    "totalScore": 100,
+    "totalScore": 200,
     "userid": 32077278,
     "nickname": "太白",
     "agtid": 111356,
     "account": "ctb547689",
     "time": "2023-09-28 17:36:58",
-    "score": 100
+    "score": 200
   },
   {
     "status": 0,
@@ -221,5 +221,49 @@
     "account": "xiju12345",
     "time": "2023-09-28 17:45:20",
     "score": 0
+  },
+  {
+    "userid": 32077282,
+    "account": "mouzy888",
+    "nickname": "mouzy888",
+    "agtid": 111356,
+    "uid": 32077282,
+    "uname": "mouzy888",
+    "nknm": "mouzy888",
+    "time": "2023-10-02 14:08:01",
+    "totalScore": 12,
+    "score": 12,
+    "status": 0
+  },
+  {
+    "status": 0,
+    "totalScore": 0,
+    "userid": 32077289,
+    "nickname": "91033",
+    "agtid": "111356",
+    "account": "91034",
+    "time": "2023-10-02 21:13:24"
+  },
+  {
+    "status": 0,
+    "totalScore": 0,
+    "userid": 32077290,
+    "nickname": "91033",
+    "agtid": "111356",
+    "account": "910305",
+    "time": "2023-10-02 21:14:37"
+  },
+  {
+    "userid": 32077281,
+    "account": "HP9001",
+    "nickname": "HP9001",
+    "agtid": 111356,
+    "uid": 32077281,
+    "uname": "HP9001",
+    "nknm": "HP9001",
+    "time": "2023-10-03 13:40:02",
+    "totalScore": 1432,
+    "score": 1432,
+    "status": 0
   }
 ]

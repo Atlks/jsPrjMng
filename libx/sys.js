@@ -29,14 +29,31 @@ function requirex(f) {
     }
 
 }
+
+
+//console.log(is_int("12"))
+/**
+ *判断是否整数
+ * @param num
+ */
+function  is_int(num)
+{
+   return  parseInt(num)==parseFloat(num)
+}
 function tipsNend(提示内容) {
 
     return ()=> {
         throw  "ex@" + 提示内容
     }
 }
+
+/**
+ *
+ * @returns {string}
+ */
 function callrmtRstapiUrl() {
-    return "callrmt?callfun=";
+
+    return "callrmt?nocache348="+Math.random()+"&callfun=";
 }
 
 try {
@@ -223,6 +240,37 @@ function padTo2Digits(num) {
         return num;
 }
 
+
+global['idBasetime']=idBasetime
+/**
+ *
+ * @param date
+ * @returns {string}
+ */
+function idBasetime() {
+    let date=new Date()
+    return (
+        [
+            date.getFullYear(),
+            padTo2Digits(date.getMonth() + 1),
+            padTo2Digits(date.getDate()),
+        ].join('') +
+        '_' +
+        [
+            padTo2Digits(date.getHours()),
+            padTo2Digits(date.getMinutes()),
+            padTo2Digits(date.getSeconds()),
+        ].join('')
+    );
+}
+
+
+
+/**
+ *
+ * @param date
+ * @returns {string}
+ */
 function formatDate(date) {
     return (
         [

@@ -18,6 +18,7 @@ function http_get_jqGet($url, f, failF) {
         log_info(" [jqGet] ret=>" + data);
         if(f)
         f(data)
+        return data;
     }, "text").fail(failF);
 }
 

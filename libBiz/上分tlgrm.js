@@ -22,20 +22,23 @@ async function 上分(msg) {
 
 
     let txt = msg. text;
-    arr = txt.split(" ")
+   let  arr = txt.split(" ")
 
 
     let score =  txt.replace(/[^0-9]/ig,"");
         //arr[1]
 
-    let uname = await shangfen(acc, score)
+   // let uname = await shangfen(acc, score)
+   // await updateBal(acc)
 
+    let dbfile = getDbdir()+"/cashinAplctn.json";
+    let rcd={"id":idBasetime(),"uname":acc,"cashio":"上分","amt":score,"time": curDatetimeV2()}
+     pdo_insertV3(rcd,dbfile)
 
-    await updateBal(acc)
 
       const bot = global['bot']
-       await bot.sendMessage(msg.chat.id, "ok", {reply_to_message_id: msg.message_id})
-    return uname
+       await bot.sendMessage(msg.chat.id, "提交完毕，请等待审核", {reply_to_message_id: msg.message_id})
+    return
 
 }
 

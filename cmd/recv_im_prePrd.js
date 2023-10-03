@@ -1,6 +1,10 @@
-//  nohup node_modules/.bin/node-dev cmd/recv_im_prePrd.js &
-
+//  nohup
+//
+//
+//  node_modules/.bin/node-dev cmd/recv_im_prePrd.js &
+//  node_modules/.bin/node-dev lib
 // node cmd/recv_im_prePrd.js
+//node_modules/.bin/node-dev cmd/recv_im_prePrd.js
 // todo secury ...shangfen >>>cashin  xiafen>>cashout
 // shf xiafen goto js file dync repl;ace...
 

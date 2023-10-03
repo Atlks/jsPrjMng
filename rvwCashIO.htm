@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title> 审核</title>
     <meta name="viewport"
           content="width=device-width,initial-scale=1.0,maximum-scale=1">
 
     <script>
-        window["global"]=[]
         window["process"]={}
+        window["global"]=[]
         process.env={}
+        function  readFileSyncx(){}
         function  appendFileV2(){}
 
-        function  readFileSyncx(){}
         function  require(){}
         function  appendFileSync(){}
         function  file_exists(){}
@@ -61,8 +61,19 @@
     <script type="module" src="libx/ui.js"></script>
 
     <script src="libx/httpSync.js"></script>
+    <script src="libBiz/qry_cashin_aplctn.js"></script>
+    <script src="libBiz/shangfen.js"></script>
+    <script src="libBiz/xiafen.js"></script>
+    <script src="libBiz/rvw_pass.js"></script>
+    <script src="libBiz/rvw_rfs.js"></script>
 </head>
 <body>
+<style>
+    .accptbtn{
+        margin: 0px; margin-left: 5px; padding: 3px;
+    }
+
+</style>
 <script src="libx/profill.js"></script>
 
 
@@ -71,7 +82,7 @@
 
 <script>
     $( "#hddiv" ).load( callrmtRstapiUrl()+ "includeXAjax%20head.htm", function() {
-        $("#aOplg a").addClass("CurTab")
+        $("#aRvw a").addClass("CurTab")
     });
 
 
@@ -187,7 +198,7 @@
 <p></p>
 <div class="card" id="app_oplog">
     <div class="card-header">
-        操作记录   <button class="btn btn-primary" disabled id="loaddiv" style="xdisplay:none ">
+        上下分申请记录   <button class="btn btn-primary" disabled id="loaddiv" style="xdisplay:none ">
         <span class="spinner-border spinner-border-sm"></span>
         Loading..
     </button>
@@ -198,11 +209,12 @@
         <table class="table" id="tab_oplog">
             <thead>
             <tr>
-                <td>代理id</td>
                 <td>玩家id</td>
-
-                <td style="">操作</td>
-                <td>操作时间</td>
+                <td style="">上下分</td>
+                <td>分值</td>
+                <td>时间</td>
+                <td>状态</td>
+                <td>操作</td>
             </tr>
             </thead>
             <tbody>
@@ -230,7 +242,7 @@
 
 <script defer >
 
-    oplog_qryINWebV2()
+    qryCashinOutAplctnFmevt()
 
 
 </script>

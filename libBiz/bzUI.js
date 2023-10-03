@@ -41,6 +41,18 @@ function isset(varname) {
 }
 
 
+
+// //重新设置数据
+// var table = $('#myTable').DataTable();
+// table.clear();
+// table.rows.add(newData).draw();
+/**
+ *
+ * @param jsonArr
+ * @param tabid
+ * @param columns123
+ * @param order123
+ */
 function loadToDataTableV2(jsonArr, tabid,columns123,order123) {
     // let table = new DataTable('#'+tabid);
     //  $('#'+tabid).DataTable( {
@@ -62,7 +74,7 @@ function loadToDataTableV2(jsonArr, tabid,columns123,order123) {
         data: jsonArr,
         columns:  columns123,
         order:order123,
-
+        buttons: ['colvis', 'excel', 'print'],
         language:{
             "processing": "处理中...",
             "lengthMenu": "显示 _MENU_ 项结果",

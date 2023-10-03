@@ -102,7 +102,7 @@ function oplog_qryINWebV2() {
             columns = [
                 {data: 'agtid'},
                 {data: 'uname'},
-                {data: '类型'},
+                {data: 'txt'},
                 {data: 'time'}
             ]
 
@@ -123,6 +123,9 @@ function oplog_qryINWebV2() {
     });
 
 }
+
+
+
 
 
 function oplog_qryINWeb() {

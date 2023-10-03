@@ -63,7 +63,7 @@ function adduserFm() {
 
 
         if (rztobj.data.code == 0) {
-            alert("ok")
+            alert("成功")
             arr = [];
             arr.push(rztobj.data)
             //    console.log( window['loadToTable'])
@@ -158,6 +158,8 @@ async function addUser(uname, nickname) {
     }, jqFailFun)
 
 
+    let visa=getLoginToken()
+    let agtid=visa.agtid
     try{//------------add other prop
         let rzt2= await searchPlayer(uname)
         let rztobj = JSON.parse(rzt2);
@@ -167,12 +169,13 @@ async function addUser(uname, nickname) {
         //     "userid": 32077089,
         //     "account": "777",
         //     "totalScore": 885.0,
-
+        //is user not exist add user
        let file = getDbdir()+"/userColl.json";
 
         let rows=pdo_query({"account":uname},file)
         if(rows.length==0)
         {
+
             let rcd2={"status":0,"totalScore":rztobj.data.totalScore,"userid":rztobj.data.userid,"nickname":nickname,"agtid": agtid,"account": uname,"time": curDatetimeV2()}
 
             pdo_insert(rcd2, file);
@@ -194,7 +197,7 @@ async function addUser(uname, nickname) {
 
     //-----------add op log
     try {
-        var rcd = {"agtid": agtid, "op": "添加用户", "uname": uname, "类型": "添加用户", "time": curDatetimeV2()}
+        var rcd = {"txt": "添加用户","agtid": agtid, "op": "添加用户", "uname": uname, "类型": "添加用户", "time": curDatetimeV2()}
 
         oplog_add(rcd)
     } catch (e) {

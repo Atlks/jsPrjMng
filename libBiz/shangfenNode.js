@@ -6,6 +6,9 @@ async function  shangfen(uname, score) {
     authChk()  //alslo refresh global agtid des md5key
   //  require("./fp_ati1990")
 
+    let visa=getLoginToken();
+    let agentid=visa.agtid
+    let agtid =visa.agtid
     timestamp = time();
     _paraValue = "account=%s&score=%s&orderid=%s";
     orderid = sprintf("%s%s%s", agentid, timestamp, uname)

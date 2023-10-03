@@ -51,6 +51,10 @@ function chkSxfUname() {
     if ($("#score_sxf").val() == "") {
         throw ("上下分不能为空")
     }
+
+    if(!is_int($("#score_sxf").val())){
+        throw ("上下分需为整数")
+    }
 }
 
 function orderQryShagnxiafen415() {

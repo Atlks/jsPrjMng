@@ -40,14 +40,43 @@ try {
 
     // console.log(e)
 }
+function padTo2Digits(num) {
+    if(num.toString().length==1)
+        return ""+"0"+num;
+    else
+        return num;
+}
 
 
 function curDateTime() {
-    var sd = require('silly-datetime');
-    var time = sd.format(new Date(), 'YYYY-MM-DD HH:mm:ss');
-    return time;
+  //  require("./str")
+    // var sd = require('silly-datetime');
+    // var time = sd.format(new Date(), 'YYYY-MM-DD HH:mm:ss');
+     return formatDate(new Date());
 }
 
+ //console.log(curDateTime())
+
+/**
+ *
+ * @param date
+ * @returns {string}
+ */
+function formatDate(date) {
+    return (
+        [
+            date.getFullYear(),
+            padTo2Digits(date.getMonth() + 1),
+            padTo2Digits(date.getDate()),
+        ].join('-') +
+        ' ' +
+        [
+            padTo2Digits(date.getHours()),
+            padTo2Digits(date.getMinutes()),
+            padTo2Digits(date.getSeconds()),
+        ].join(':')
+    );
+}
 
 function array_sum(arr) {
     var sum = 0;

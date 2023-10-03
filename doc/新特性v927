@@ -12,3 +12,22 @@ fx bug若干
 npm i  express-fileupload
 
 
+
+
+新特性v927
+
+新增 审核模块
+功能  im里面上下分申请
+后台显示审核列表
+审核通过，拒绝
+
+
+
+fx bug若干
+
+优化
+去除lowdb 模块
+
+
+ ftr 特性
+

@@ -3,6 +3,21 @@ function strpos(string, find, start) {
 
 }
 
+
+global['padTo2Digits']=padTo2Digits
+/**
+ *
+ * @param num
+ * @returns {*|string}
+ */
+function padTo2Digits(num) {
+    if(num.toString().length==1)
+        return ""+"0"+num;
+    else
+        return num;
+}
+
+
 String.prototype.startWith=function(str){
     var reg=new RegExp("^"+str);
     return reg.test(this);

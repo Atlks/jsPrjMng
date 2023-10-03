@@ -33,7 +33,7 @@ function saveMsgCmdCfg() {
     saveSingleCmdItem(req.query.cashout, file);
     saveSingleCmdItem(req.query.ls, file);
     saveSingleCmdItem(req.query.bal, file);
-    return "ok"
+    return "完成"
 
 }
 

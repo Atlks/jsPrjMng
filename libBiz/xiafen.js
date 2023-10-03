@@ -8,6 +8,42 @@ try {
 }
 
 
+function  cashoutAjax(uname,amt,scssFun)
+{
+
+    http_get_jqGet(callrmtRstapiUrl()+"xiafen " + uname+" "+ amt, function (rzt) {
+
+        //  {"maintype":"/GameHandle","type":7,"data":{"code":0,"agentid":111356,"linecode":"10001_1","status":0,"userid":32076939,"account":"uname1","totalScore":300.0,"integralvalue":6.0,"addscore":300.0,"subscore":0.0,"addscoretimes":2,"subscoretimes":0,"totalwinlose":0.0,"totalrevenue":0.0}}
+        console.log("[cashoutAjax] rzt=>" + rzt)
+        rztobj = JSON.parse(rzt);
+        //if have e有rr
+        if (rztobj.msg_to_ui)
+            alert(rztobj.msg_to_ui)
+
+        else if (rztobj.data.code == 0) {
+            alert("下分成功")
+            if(scssFun)
+                scssFun(rzt)
+
+        } else if (rztobj.data.code) {
+            //let errmsg = errcodeMsg(rztobj.data.code)
+            alert("发生错误:" +rztobj. errmsg + " ")
+        } else
+        {
+            console.log(rzt)
+        }
+          //  alert("发生错误" + rzt)
+        //   alert(rzt)
+
+
+     //   $("#loaddiv").hide();
+
+
+    })
+
+}
+
+
 /**
  *
  */
@@ -42,7 +78,6 @@ function xiafen745() {
             rztobj = JSON.parse(rzt);
             if (rztobj.msg_to_ui)
                 alert(rztobj.msg_to_ui)
-
             else if (rztobj.data.code == 0) {
                 alert("下分成功")
                 playerNScore237();
@@ -53,7 +88,10 @@ function xiafen745() {
                 //let errmsg = errcodeMsg(rztobj.data.code)
                 alert("发生错误:" +rztobj. errmsg + " ")
             } else
-                alert("发生错误" + rzt)
+            {
+                console.log(rzt)
+            }
+               // alert("发生错误" + rzt)
             //   alert(rzt)
 
 

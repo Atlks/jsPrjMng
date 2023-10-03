@@ -89,7 +89,7 @@ require("../libBiz/searchPlayer")
 requireAutoload("php,sendMsg,acc,QryShangxiafen,余额,帮助,流水,xiafen,下分tlgrm,recv_nml_msg,errHdlr,shangfenNode,shangfen,上分tlgrm,crpto,sys,file,importUser,excel,logger,includeXAjaxNode,bzDb,user,sys,addUser,searchPlayer,oplog,ex,httpSync,bizHttp,incHtm,exit,login,qryAgtBal")
 
 
-global['msg_recv'] = msg_recv
+
 
 
 function getTrueCmd(msg_txt) {
@@ -106,6 +106,9 @@ function getTrueCmd(msg_txt) {
     return undefined;
 }
 
+
+
+global['msg_recv'] = msg_recv
 /**
  * shfen rcv msg
  * @param msg
@@ -128,7 +131,7 @@ async function msg_recv(msg) {
 
 
     try {//add user
-        recv_nml_msg(msg)
+        await recv_nml_msg(msg)
     } catch (e) {
         console.log(e)
     }

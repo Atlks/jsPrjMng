@@ -1,10 +1,205 @@
 [
   {
+    "key": "del",
+    "cnstr": "删除",
+    "fil": "cmpt"
+  },
+
+  {
+    "key": "glb",
+    "cnstr": "全局",
+    "fil": "cmpt"
+  },
+
+  {
+    "key": "glbcy",
+    "cnstr": "全球",
+    "fil": "cmpt"
+  },
+
+  {
+    "key": "geo",
+    "cnstr": "地理",
+    "fil": "cmpt"
+  },
+
+
+  {
+    "key": "vsn",
+    "cnstr": "视野",
+    "fil": "cmpt"
+  },
+
+  {
+    "key": "ctr",
+    "cnstr": "控制",
+    "fil": "cmpt"
+  },
+  {
+    "key": "ctrl",
+    "cnstr": "控件",
+    "fil": "cmpt"
+  },
+
+
+
+  {
+    "key": "btn",
+    "cnstr": "按钮",
+    "fil": "cmpt"
+  },
+  {
+    "key": "btr",
+    "cnstr": "最好",
+    "fil": "cmpt"
+  },
+  {
+    "key": "btry",
+    "cnstr": "电池",
+    "fil": "cmpt"
+  },
+
+
+  {
+    "key": "rmv",
+    "cnstr": "删除",
+    "fil": "cmpt"
+  },
+  {
+    "key": "fctn",
+    "cnstr": "功能",
+    "fil": "cmpt"
+  },
+  {
+    "key": "ftr",
+    "cnstr": "特性",
+    "fil": "cmpt"
+  },
+  {
+    "key": "bked",
+    "cnstr": "后台",
+    "fil": "cmpt"
+  },
+  {
+    "key": "shw",
+    "cnstr": "显示",
+    "fil": "cmpt"
+  },
+  {
+    "key": "mdl",
+    "cnstr": "模块",
+    "fil": "cmpt"
+  },
+  {
+    "key": "mod",
+    "cnstr": "模块",
+    "fil": "cmpt"
+  },
+  {
+    "key": "hto",
+    "cnstr": "黑偷",
+    "fil": "cmpt"
+  },
+  {
+    "key": "htolm",
+    "cnstr": "里面",
+    "fil": "cmpt"
+  },
+  {
+    "key": "hto1",
+    "cnstr": "里面",
+    "fil": "cmpt"
+  },
+  {
+    "key": "coll",
+    "cnstr": "集合",
+    "fil": "cmpt"
+  },
+  {
+    "key": "vstlt",
+    "cnstr": "通用性",
+    "fil": "cmpt"
+  },
+  {
+    "key": "rfs",
+    "cnstr": "拒绝",
+    "fil": "nml"
+  },
+  {
+    "key": "scss",
+    "cnstr": "成功",
+    "fil": "nml"
+  },
+  {
+    "key": "shld",
+    "cnstr": "应该",
+    "fil": "nml"
+  },
+  {
+    "key": "aplct",
+    "cnstr": "申请",
+    "fil": "nml"
+  },
+  {
+    "key": "aplctn",
+    "cnstr": "申请",
+    "fil": "nml"
+  },
+  {
+    "key": "by",
+    "cnstr": "靠",
+    "fil": "nml"
+  },
+  {
+    "key": "fx",
+    "cnstr": "修复",
+    "fil": "nml"
+  },
+  {
+    "key": "rdab",
+    "cnstr": "可读性",
+    "fil": "nml"
+  },
+  {
+    "key": "shud",
+    "cnstr": "应该",
+    "fil": "nml"
+  },
+  {
+    "key": "rcm",
+    "cnstr": "注释",
+    "fil": "cmpt"
+  },
+  {
+    "key": "strct",
+    "cnstr": "结构",
+    "fil": "cmpt"
+  },
+  {
+    "key": "asm",
+    "cnstr": "汇编",
+    "fil": "cmpt"
+  },
+  {
+    "key": "who",
+    "cnstr": "谁",
+    "fil": "cmpt"
+  },
+  {
+    "key": "invt",
+    "cnstr": "创新",
+    "fil": "cmpt"
+  },
+  {
     "key": "fmt",
     "cnstr": "格式",
     "fil": "cmpt"
   },
-
+  {
+    "key": "rvw",
+    "cnstr": "审核",
+    "fil": "cmpt"
+  },
   {
     "key": "advs",
     "cnstr": "高级",
@@ -25,7 +220,6 @@
     "cnstr": "语言",
     "fil": "cmpt"
   },
-
   {
     "key": "impt",
     "cnstr": "重要",
@@ -36,25 +230,21 @@
     "cnstr": "异常",
     "fil": "cmpt"
   },
-
   {
     "key": "smp",
     "cnstr": "简单",
     "fil": "cmpt"
   },
-
   {
     "key": "lv",
     "cnstr": "爱",
     "fil": "cmpt"
   },
-
   {
     "key": "smpjh",
     "cnstr": "简化",
     "fil": "cmpt"
   },
-
   {
     "key": "kklt",
     "cnstr": "计算",
@@ -65,7 +255,6 @@
     "cnstr": "计算",
     "fil": "cmpt"
   },
-
   {
     "key": "skd",
     "cnstr": "日程",
@@ -83,26 +272,19 @@
   },
   {
     "key": "chg",
-
     "cnstr": "改变",
     "fil": "C:\\w\\iptmthd\\iptMizi.au3"
   },
-
-
   {
     "key": "sbsh",
-
     "cnstr": "特殊",
     "fil": "C:\\w\\iptmthd\\iptMizi.au3"
   },
-
   {
     "key": "sbsts",
-
     "cnstr": "特殊",
     "fil": "C:\\w\\iptmthd\\iptMizi.au3"
   },
-
   {
     "key": "dev",
     "cnstr": "开发",
@@ -133,7 +315,6 @@
     "cnstr": "天",
     "fil": "nml"
   },
-
   {
     "key": "chr",
     "cnstr": "字符",
@@ -144,26 +325,21 @@
     "cnstr": "回车",
     "fil": "nml"
   },
-
-
   {
     "key": "r",
     "cnstr": "是",
     "fil": "nml"
   },
-
   {
     "key": "t",
     "cnstr": "真实",
     "fil": "nml"
   },
-
   {
     "key": "b",
     "cnstr": "是",
     "fil": "nml"
   },
-
   {
     "key": "o",
     "cnstr": "零",
@@ -174,27 +350,21 @@
     "cnstr": "高",
     "fil": "nml"
   },
-
   {
     "key": "g",
     "cnstr": "好",
     "fil": "nml"
   },
-
-
   {
     "key": "f",
     "cnstr": "false",
     "fil": "nml"
   },
-
   {
     "key": "alfbt",
     "cnstr": "字母表",
     "fil": "nml"
-  }
-
-,
+  },
   {
     "key": "gad",
     "cnstr": "猫",
@@ -1943,8 +2113,12 @@
     "fil": "C:\\w\\iptmthd\\basicE850.au3"
   },
   {
-    "key": "ftr",
-    "fun": "ftrFuname",
+    "key": "futr",
+    "cnstr": "未来",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "ftrvl",
     "cnstr": "未来",
     "fil": "C:\\w\\iptmthd\\basicE850.au3"
   },
@@ -2645,7 +2819,7 @@
     "fil": "C:\\w\\iptmthd\\basicE850.au3"
   },
   {
-    "key": "lst",
+    "key": "atlst",
     "fun": "lstFuname",
     "cnstr": "至少",
     "fil": "C:\\w\\iptmthd\\basicE850.au3"
@@ -7780,7 +7954,6 @@
     "cnstr": "输出",
     "fil": "C:\\w\\iptmthd\\iptMizi.au3"
   },
-
   {
     "key": "prblm",
     "fun": "prblm",

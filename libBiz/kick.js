@@ -27,7 +27,7 @@ async function kick(uname) {
     let req = global['req' + curReqID]
     let agtid = req.cookies.agtid
 
-    var rcd = {"agtid": agtid, "op": "踢玩家下线", "uname": uname, "类型": "踢玩家下线", "time": curDateTime()}
+    var rcd = {"agtid": agtid, "op": "踢玩家下线", "uname": uname, "类型": "踢玩家下线","txt":"踢玩家下线", "time": curDateTime()}
     pdo_insert(rcd, file);
 
     let rzt = ""
@@ -120,7 +120,7 @@ function player_kickInform() {
                         let errmsgObj = retObj.errors;
                         alert("发生错误" + JSON.stringify(errmsgObj))
                     } else
-                        alert("ok")
+                        alert("完成")
                 }
 
 
