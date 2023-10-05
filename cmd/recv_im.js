@@ -1,6 +1,6 @@
 
-
-// todo secury ...shangfen >>>cashin  xiafen>>cashout
+// todo sxf must have nmb
+// todo secury map ...shangfen >>>cashin  xiafen>>cashout
 // shf xiafen goto js file dync repl;ace...
 
 require("../libBiz/recv.js")
@@ -16,6 +16,7 @@ global['md5Code']="1BC0036763DE22EC"
 global['agtid']=global['agentid']
 visa={"agtid":global['agtid'], "desCode":global['desCode'],"md5Code":global['md5Code'] }
 global['visa']=visa
+global['grpid']=-4038077884
 
 
 msg_recvListen(token,msg_recv)

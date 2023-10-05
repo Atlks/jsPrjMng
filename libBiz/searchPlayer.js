@@ -103,8 +103,10 @@ function playerNScore237() {
 // rztobj=JSON.parse(rzt);
 
 
-global['searchPlayer']=searchPlayer
-
+/**
+ *
+ * @returns {string[]}
+ */
 function searchPlayerAll() {
 
     let file = getDbdir()+"/userColl.json";
@@ -112,6 +114,51 @@ function searchPlayerAll() {
     return  pdo_query({},file);
 }
 
+
+global['findPlayer']=findPlayer
+/**
+ *
+ * @param uname
+ * @returns {Promise<*|string[]|string>}
+ */
+async function findPlayer(uname) {
+
+
+
+    log_enterFun_console(arguments)
+
+
+    if(!uname)
+        return  searchPlayerAll()
+    let timestamp = time();
+
+    let _paraValue = sprintf("account=%s", uname);
+    echo("_paraValue==>" + _paraValue)
+    let url = buildUrlNget_x(_paraValue, timestamp, apitype_PlayerScore);
+    //  alert("url=>"+url)
+    var rzt;
+    try {
+        rzt = await http_get(url);
+        console.log(":1240" + rzt)
+
+        let rztobj = JSON.parse(rzt);
+        if (rztobj.data.code != 0) {
+
+            let errmsg = errcodeMsg(rztobj.data.code)
+            rztobj.errmsg = errmsg;
+         //   rzt = JSON.stringify(rztobj)
+        }
+
+        return rztobj;
+    } catch (e) {
+        checkWhiteIp(e, "");
+        checkAgtidErr(e);
+    }
+
+
+}
+
+global['searchPlayer']=searchPlayer
 /**
  * searchPlayersearchPlayer
  * @param uname

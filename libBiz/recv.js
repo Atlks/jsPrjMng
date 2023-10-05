@@ -146,7 +146,7 @@ async function msg_recv(msg) {
 
     if(funtion_exist(fun))
     {
-        console.log(" file_ exists xx.js  ")
+        console.log(" funtion_exist exists   "+fun)
 
 
         let acc = msg.from.username
@@ -156,9 +156,9 @@ async function msg_recv(msg) {
 
         let rzt = await call_func(fun, argarr)
 
-        console.log("[msg_recv ] ret=>" + rzt)
+       // console.log("[msg_recv ] ret=>" + rzt)
     } else {
-        console.log(" file_not exists xx.js  recv_nml_msg(msg)")
+        console.log( sprintf("not   funtion_exist  %s  recv_nml_msg(msg)",fun))
         await recv_nml_msg(msg)
 
     }

@@ -6,6 +6,55 @@
   },
 
   {
+    "key": "ntfy",
+    "cnstr": "通知",
+    "fil": "cmpt"
+  },
+  {
+    "key": "doc",
+    "cnstr": "文档",
+    "fil": "cmpt"
+  },
+
+
+
+  {
+    "key": "dwn",
+    "cnstr": "下面",
+    "fil": "cmpt"
+  },
+
+
+  {
+    "key": "prcslc",
+    "cnstr": "流程",
+    "fil": "cmpt"
+  },
+  {
+    "key": "tech",
+    "cnstr": "技术",
+    "fil": "cmpt"
+  },
+
+  {
+    "key": "bot",
+    "cnstr": "机器人",
+    "fil": "cmpt"
+  },
+
+  {
+    "key": "rbtjcr",
+    "cnstr": "机器人",
+    "fil": "cmpt"
+  },
+
+  {
+    "key": "ntfy",
+    "cnstr": "通知",
+    "fil": "cmpt"
+  },
+
+  {
     "key": "glb",
     "cnstr": "全局",
     "fil": "cmpt"
@@ -2476,9 +2525,17 @@
     "cnstr": "患病的",
     "fil": "C:\\w\\iptmthd\\basicE850.au3"
   },
+
+
   {
-    "key": "imprtnt",
-    "fun": "imprtntFuname",
+    "key": "ehc",
+
+    "cnstr": "增强",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "imptnt",
+
     "cnstr": "重要的",
     "fil": "C:\\w\\iptmthd\\basicE850.au3"
   },
@@ -8313,5 +8370,70 @@
     "fun": "examplefunction",
     "cnstr": "by the way",
     "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+
+
+  {
+    "key": "ctrlkz",
+    "cnstr": "控制",
+    "fil": "cmpt"
+  },
+
+
+  {
+    "key": "stmt",
+    "cnstr": "语句",
+    "fil": "cmpt"
+  },
+
+
+  {
+    "key": "fd",
+    "cnstr": "食物",
+    "fil": "cmpt"
+  },
+
+  {
+    "key": "abbr",
+    "cnstr": "缩写",
+    "fil": "cmpt"
+  },
+
+
+
+  {
+    "key": "imprv",
+    "cnstr": "提升",
+    "fil": "cmpt"
+  },
+  {
+    "key": "iprv",
+    "cnstr": "提升",
+    "fil": "cmpt"
+  },
+
+  {
+    "key": "fwd",
+    "cnstr": "向前",
+    "fil": "cmpt"
+  },
+  {
+    "key": "fdr",
+    "cnstr": "文件夹",
+    "fil": "cmpt"
+  },
+
+
+  {
+    "key": "sbt",
+    "cnstr": "支持",
+    "fil": "cmpt"
+  },
+
+
+  {
+    "key": "rcc",
+    "cnstr": "循环",
+    "fil": "cmpt"
   }
 ]

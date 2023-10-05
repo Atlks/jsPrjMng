@@ -21,7 +21,11 @@
 //         requirex("./libx/"+lib+".js")
 //         requirex("./libBiz/"+lib+".js")
 //     }
-// }
+// }  显示
+
+
+//dep todo ..should mv to 到cmd forld
+
 
     global['incLibs']=incLibs
 var reqst;
