@@ -5,6 +5,41 @@
     "fil": "cmpt"
   },
 
+
+  {
+    "key": "cate",
+    "cnstr": "分类",
+    "fil": "cmpt"
+  },
+
+  {
+    "key": "nbr",
+    "cnstr": "数字",
+    "fil": "cmpt"
+  },
+  {
+    "key": "mtr",
+    "cnstr": "物资",
+    "fil": "cmpt"
+  },
+
+  {
+    "key": "type",
+    "cnstr": "类型",
+    "fil": "cmpt"
+  },
+  {
+    "key": "int",
+    "cnstr": "整数",
+    "fil": "cmpt"
+  },
+  {
+    "key": "nmrc",
+    "cnstr": "数值",
+    "fil": "cmpt"
+  },
+
+
   {
     "key": "ntfy",
     "cnstr": "通知",
