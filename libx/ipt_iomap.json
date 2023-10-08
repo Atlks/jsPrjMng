@@ -6,6 +6,44 @@
   },
 
 
+
+
+  {
+    "key": "spt",
+    "cnstr": "支持",
+    "fil": "cmpt"
+  },
+
+  {
+    "key": "sprt",
+    "cnstr": "运动",
+    "fil": "cmpt"
+  },
+
+  {
+    "key": "sbrt",
+    "cnstr": "运动",
+    "fil": "cmpt"
+  },
+  {
+    "key": "smr",
+    "cnstr": "总结",
+    "fil": "cmpt"
+  },
+
+
+  {
+    "key": "ptn",
+    "cnstr": "分区",
+    "fil": "cmpt"
+  },
+
+  {
+    "key": "ptsh",
+    "cnstr": "分区",
+    "fil": "cmpt"
+  },
+
   {
     "key": "cate",
     "cnstr": "分类",
@@ -23,9 +61,47 @@
     "fil": "cmpt"
   },
 
+
+
+  {
+    "key": "lgc",
+    "cnstr": "逻辑",
+    "fil": "cmpt"
+  },
+
+
+  {
+    "key": "dtstrc",
+    "cnstr": "数据结构",
+    "fil": "cmpt"
+  },
+
   {
     "key": "type",
     "cnstr": "类型",
+    "fil": "cmpt"
+  },
+
+
+
+  {
+    "key": "splt",
+    "cnstr": "分离",
+    "fil": "cmpt"
+  },
+
+
+
+  {
+    "key": "algo",
+    "cnstr": "算法",
+    "fil": "cmpt"
+  },
+
+
+  {
+    "key": "eq",
+    "cnstr": "等于",
     "fil": "cmpt"
   },
   {
@@ -654,10 +730,12 @@
     "cnstr": "赞同",
     "fil": "C:\\w\\iptmthd\\basicE850.au3"
   },
+
+
   {
     "key": "arch",
-    "fun": "archFuname",
-    "cnstr": "拱",
+
+    "cnstr": "架构拱",
     "fil": "C:\\w\\iptmthd\\basicE850.au3"
   },
   {

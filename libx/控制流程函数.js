@@ -1,5 +1,11 @@
 global['如果'] = 如果
 
+/**
+ *if fp mode
+ * @param 条件
+ * @param 通过后执行的指令集
+
+ */
 function 如果(条件, ...通过后执行的指令集) {
     // if(typeof  条件 =="function")
     //     条件=条件()
@@ -11,7 +17,7 @@ function 如果(条件, ...通过后执行的指令集) {
                 let fns = arguments;
                 let rzt;
 
-                for (var i = 1; i < fns.length; i++) {
+                for (let i = 1; i < fns.length; i++) {
                     let f = fns[i];
                     // console.log("cur f is =>"+f)
                     rzt = f(rzt);
@@ -38,6 +44,11 @@ function 返回结果(结果) {
 
 global['返回'] = 返回
 
+/**
+ *
+ * @param 结果
+ * @returns {function(): *}
+ */
 function 返回(结果) {
     return () => 结果;
 }
@@ -45,14 +56,33 @@ function 返回(结果) {
 
 global['执行指令序列'] = 执行指令序列
 
-function 循环(操作序列, 单条操作指令) {
-    console.log(操作序列)
-    for (操作 of 操作序列) {
-        单条操作指令(操作);
+/**
+ *
+ * @param 集合
+ * @param 单条操作指令
+ */
+function 循环(集合, 单条操作指令) {
+    console.log(集合)
+    for (let 单条数据 of 集合) {
+        单条操作指令(单条数据);
     }
 }
 
+function 循环FP(集合, 单条操作指令) {
+    console.log(集合)
+    return ()=>{
+        for (let 单条数据 of 集合) {
+            单条操作指令(单条数据);
+        }
+    }
 
+}
+
+/**
+ *  use raw mode ,also fp
+ * @param 操作序列
+
+ */
 function 执行指令序列(...操作序列) {
     return () => {
         for (操作 of 操作序列) {
@@ -64,7 +94,7 @@ function 执行指令序列(...操作序列) {
 }
 
 /**
- *
+ *use cns mode
  * @param 操作序列
 
  */

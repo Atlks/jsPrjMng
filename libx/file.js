@@ -10,6 +10,7 @@ global["dirname"] = dirname;
 global['readFileAsJson'] = readFileAsJson
 
 function readFileAsJson(f) {
+    require("./enc")
     return json_decode(readFileSyncx(f));
 }
 
@@ -27,6 +28,15 @@ function file_exists(fil) {
 
 }
 
+
+function filesize(lastptn) {
+    if (!file_exists(lastptn))
+        return 0
+    const fs = require('fs');
+    const sttObj = fs.statSync(lastptn)
+
+    return sttObj.size;
+}
 
 global['walkSync' ]=walkSync
 function walkSync(currentDirPath, callback) {

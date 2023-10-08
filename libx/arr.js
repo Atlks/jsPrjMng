@@ -17,3 +17,8 @@ function map_filter_reduce(arr) {
     }, 0);
     return sum;
 }
+
+global["array_merge"] = array_merge;
+function array_merge(rzt_all, rzt) {
+    return rzt_all.concat(rzt);
+}

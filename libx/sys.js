@@ -241,6 +241,15 @@ function padTo2Digits(num) {
 }
 
 
+global['copyProp'] = copyProp
+
+function copyProp(frm, to) {
+    for (let key in frm) {
+        // console.log(frm, frm[key])
+        to[key] = frm[key];
+    }
+}
+
 global['idBasetime']=idBasetime
 /**
  *
