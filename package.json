@@ -7,8 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
     "jsdoc": "jsdoc   -r -c  jsdoc-conf.json -R README.md -d jsdocOut",
-    "startweb": "node_modules/.bin/node-dev  libBiz/callweb.js",
+    "startweb": "node_m odules/.bin/node-dev  libBiz/callweb.js",
     "startweb2": "node  libBiz/callweb.js",
+    "prd": "node-dev  cmd/call_fun_web_prd.js ",
+    "pre": "node-dev  cmd/call_fun_web_preprd.js ",
+
     "runcmdf": "npm run startweb"
   },
   "keywords": [],
