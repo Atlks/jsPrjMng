@@ -6,6 +6,33 @@
   },
 
 
+  {
+    "key": "nf",
+    "cnstr": "刀子",
+    "fil": "cmpt"
+  },
+
+
+  {
+    "key": "gem",
+    "cnstr": "宝石",
+    "fil": "cmpt"
+  },
+  {
+    "key": "gm",
+    "cnstr": "宝石",
+    "fil": "cmpt"
+  },
+  {
+    "key": "gmys",
+    "cnstr": "游戏",
+    "fil": "cmpt"
+  },
+  {
+    "key": "gam",
+    "cnstr": "游戏",
+    "fil": "cmpt"
+  },
 
 
   {
