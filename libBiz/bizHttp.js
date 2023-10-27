@@ -107,6 +107,9 @@ function buildUrlNget_x(_paraValue, timestamp, apitype_xxx) {
 
 
 }
+require("../libx/err")
+require("../libx/crpto")
+require("./user")
 
 
 global['buildUrlNgetV3'] = buildUrlNgetV3
@@ -155,8 +158,11 @@ function buildUrlNgetV3(_paraValue, timestamp, apitype_shangfen) {
     paraValue = aes_encrypt_ecbX(_paraValue, desCode);
   let  md5key = md5(sprintf("%s%s%s", agentid, timestamp, md5Code));
 
+  // let www="https://ng.mqbsx.com"
 
-    let  $url_tpmplt = "https://ng.mqbsx.com/GameHandle?agentid=%s&timestamp=%s&type=%s&paraValue=%s&key=%s";
+
+
+    let  $url_tpmplt = apiurl2023+"/GameHandle?agentid=%s&timestamp=%s&type=%s&paraValue=%s&key=%s";
     let  $url = sprintf($url_tpmplt, agentid, timestamp, apitype_shangfen, urlencode(paraValue), md5key);
 
 

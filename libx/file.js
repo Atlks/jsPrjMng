@@ -2,8 +2,14 @@
 
 global["file_exists"] = file_exists;
 
-var {join, dirname} = require('path')
-var {dirname} = require("path");
+try{
+    var {join, dirname} = require('path')
+    var {dirname} = require("path");
+
+}catch (e){
+
+}
+
 
 
 global["dirname"] = dirname;
@@ -22,7 +28,7 @@ function file_exists(fil) {
     const fs = require('fs');
 
     const filePath = '/path/to/file';
-
+   // const fs = require("fs");
     return (fs.existsSync(fil))
 
 
@@ -167,11 +173,17 @@ function readExcelFromUploadFile(req,rowRdr) {
   //  return t;
 }
 
-const {resolve} = require("path")
-global["resolve"] = resolve;
-global["readFileSyncx"] = readFileSyncx;
-global["file_get_contents"] = readFileSyncx;
-global["file_get_contentsx"] = readFileSyncx;
+try{
+    const {resolve} = require("path")
+    global["resolve"] = resolve;
+    global["readFileSyncx"] = readFileSyncx;
+    global["file_get_contents"] = readFileSyncx;
+    global["file_get_contentsx"] = readFileSyncx;
+}catch (e){
+
+}
+
+
 
 function readFileSyncx(fil) {
 
@@ -236,8 +248,12 @@ function file(f) {
     t = readFileSyncx(f)
     return t.split("\r\n")
 }
+try{
+    var {readFileSync, writeFileSync, appendFileSync} = require("fs");
+}catch (e){
 
-var {readFileSync, writeFileSync, appendFileSync} = require("fs");
+}
+
 const path = require("path");
 const ini = require("ini");
 const fs = require("fs");

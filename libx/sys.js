@@ -1,4 +1,3 @@
-
 function tipsNendThrowEx(提示内容) {
 
 
@@ -6,19 +5,38 @@ function tipsNendThrowEx(提示内容) {
 
 }
 
+global['parse_ini_file'] = parse_ini_file
 
-global['requirex']=requirex
+/**
+ *
+ * @param fil
+ * @returns {{[p: string]: any}}
+ */
+function parse_ini_file(fil) {
+    const path = require("path");
+   // var ini = require('ini');
+    const ini = require("ini");
+    const fs = require("fs");
+    // const iopath = path.join(__dirname, '../cfg.ini'); // 引用Pos.ini的相对地址
+    const Info = ini.parse(fs.readFileSync(fil, 'utf-8'));
+    return Info
+}
+
+require("./file")
+
+
+global['requirex'] = requirex
+
 /**
  *
  * @param f
  */
 function requirex(f) {
 
-    if(!file_exists(f))
-        f="./"+f;
-    if(!file_exists(f))
-        f="./libBiz/"+f;
-
+    if (!file_exists(f))
+        f = "./" + f;
+    if (!file_exists(f))
+        f = "./libBiz/" + f;
 
 
     try {
@@ -36,13 +54,13 @@ function requirex(f) {
  *判断是否整数
  * @param num
  */
-function  is_int(num)
-{
-   return  parseInt(num)==parseFloat(num)
+function is_int(num) {
+    return parseInt(num) == parseFloat(num)
 }
+
 function tipsNend(提示内容) {
 
-    return ()=> {
+    return () => {
         throw  "ex@" + 提示内容
     }
 }
@@ -53,7 +71,7 @@ function tipsNend(提示内容) {
  */
 function callrmtRstapiUrl() {
 
-    return "callrmt?nocache348="+Math.random()+"&callfun=";
+    return "callrmt?nocache348=" + Math.random() + "&callfun=";
 }
 
 try {
@@ -82,14 +100,15 @@ try {
 }
 
 
-global['getcurReqID']=getcurReqID
+global['getcurReqID'] = getcurReqID
+
 /**
  *  theard local
  */
 function getcurReqID() {
     const async_hooks = require('async_hooks');
 
-  //  let async_hooks=global['async_hooks']
+    //  let async_hooks=global['async_hooks']
     // 返回当前异步作用域的asyncId
     const eid = async_hooks.executionAsyncId();
 
@@ -116,7 +135,7 @@ function ifx(条件, ...通过后执行的指令) {
     // if(typeof  条件 =="function")
     //     条件=条件()
 
-    console.log("[如果] cdt=>"+条件)
+    console.log("[如果] cdt=>" + 条件)
     if (条件) {
         {
             let fns = arguments;
@@ -194,22 +213,20 @@ try {
 
 }
 
-if (isWinformEnv())
-{
+if (isWinformEnv()) {
 
-    console.log(" cur env::"+isWinformEnv())
+    console.log(" cur env::" + isWinformEnv())
     __dirname = "";
-}
-else
-{
-    console.log(" cur env::"+isWinformEnv())
+} else {
+    console.log(" cur env::" + isWinformEnv())
 }
 
-global['curDatetimeV2']=curDatetimeV2
+global['curDatetimeV2'] = curDatetimeV2
+
 function curDatetimeV2() {
 
 
-    return   formatDate(new Date())
+    return formatDate(new Date())
     // const date = new Date();
     //  console.log(date.toLocaleString('en-US', { timeZone: 'America/New_York' })); // 2/16/2023, 8:25:05 AM
 
@@ -218,24 +235,23 @@ function curDatetimeV2() {
 }
 
 
-
 global['curDatetime'] = curDatetime
 
 function curDatetime() {
 
 
-  return   formatDate(new Date())
-   // const date = new Date();
+    return formatDate(new Date())
+    // const date = new Date();
     //  console.log(date.toLocaleString('en-US', { timeZone: 'America/New_York' })); // 2/16/2023, 8:25:05 AM
 
 
-   // return date.toLocaleString('zh-CN', {timeZone: 'utc'});
+    // return date.toLocaleString('zh-CN', {timeZone: 'utc'});
 }
 
 
 function padTo2Digits(num) {
-    if(num.toString().length==1)
-        return ""+"0"+num;
+    if (num.toString().length == 1)
+        return "" + "0" + num;
     else
         return num;
 }
@@ -250,14 +266,15 @@ function copyProp(frm, to) {
     }
 }
 
-global['idBasetime']=idBasetime
+global['idBasetime'] = idBasetime
+
 /**
  *
  * @param date
  * @returns {string}
  */
 function idBasetime() {
-    let date=new Date()
+    let date = new Date()
     return (
         [
             date.getFullYear(),
@@ -272,7 +289,6 @@ function idBasetime() {
         ].join('')
     );
 }
-
 
 
 /**

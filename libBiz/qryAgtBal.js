@@ -57,8 +57,16 @@ function qryAgtBalINweb() {
     http_get_jqGet(url, sccsFun, jqFailFun)
 
 }
+require("../libx/php")
+require("../libx/sys")
+try{
+    requirex("../libx/php")
+    requirex("../libx/logger")
+}catch (e){
 
+}
 
+ // https://dtinterface.1saeda.com
 global['qryAgtBal'] = qryAgtBal
 
 /**
@@ -67,6 +75,8 @@ global['qryAgtBal'] = qryAgtBal
  */
 async function qryAgtBal() {
 
+    require("../libx/logger")
+    requirex("../libx/logger")
     log_fun_enter(arguments)
     require("../libBiz/bizHttp")
     require("../libx/httpSync")

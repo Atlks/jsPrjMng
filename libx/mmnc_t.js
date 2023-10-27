@@ -1,11 +1,11 @@
 require("./enc")
 require("./mmnc")
 
-basewd=""  // f..k
+basewd="fk()"  // f
 offst=1;
-slt=""
+slt="slt"
 
-for(let i=3;i<10;i++)
+for(let i=1;i<10;i++)
 {
     console.log("\r\n\r\n\r\n---------------\r\n")
     let s=basewd+i+slt;

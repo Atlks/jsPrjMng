@@ -16,6 +16,7 @@ const bot = new TelegramBot(token, {polling: false});
 //   bot.sendMessage()
 global['bot'] = bot
 
-
-
+global['apiurl2023'] = "https://dtinterface.1saeda.com"
 require("../libBiz/callweb")
+
+
