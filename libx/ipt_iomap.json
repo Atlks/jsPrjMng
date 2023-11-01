@@ -5,6 +5,23 @@
     "fil": "cmpt"
   },
 
+  {
+    "key": "slvjj",
+    "cnstr": "解决",
+    "fil": "cmpt"
+  },
+
+  {
+    "key": "ocp",
+    "cnstr": "占用",
+    "fil": "cmpt"
+  },
+  {
+    "key": "slph",
+    "cnstr": "滑",
+    "fil": "cmpt"
+  },
+
 
   {
     "key": "nf",

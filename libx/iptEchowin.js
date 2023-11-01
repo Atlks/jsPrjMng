@@ -24,7 +24,7 @@
 // {
 //     try
 //     {
-//         string f = "C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\iptecho.txt";
+//         string f = "C:\\modyfing\\apiprj\\jbbot\\zmng\\libx\\ipt_echo.txt";
 //         string content = File.ReadAllText(f, Encoding.UTF8);
 //         label1.Text = content;
 //     }catch (Exception ex)

@@ -70,7 +70,7 @@ function getlib(basename) {
         f = __dirname + "/../"+basename;
 
     // if (libdir)
-    //     f = libdir + "/../cfg.ini";
+    //     f = libdir + "/../cfgDep.ini";
     return f;
 }
 

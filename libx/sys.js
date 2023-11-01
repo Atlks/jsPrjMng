@@ -5,19 +5,32 @@ function tipsNendThrowEx(提示内容) {
 
 }
 
+
+
+
+
+global['timeStamp'] = timeStamp
+function timeStamp() {
+    var timestamp = Date.parse(new Date());
+    return timestamp;
+}
+
+//console.log(timeStamp())
+
 global['parse_ini_file'] = parse_ini_file
 
 /**
+ * not rcm use ini file..just use cmd cfg togthr file btr..
  *
  * @param fil
- * @returns {{[p: string]: any}}
+
  */
 function parse_ini_file(fil) {
     const path = require("path");
    // var ini = require('ini');
     const ini = require("ini");
     const fs = require("fs");
-    // const iopath = path.join(__dirname, '../cfg.ini'); // 引用Pos.ini的相对地址
+    // const iopath = path.join(__dirname, '../cfgDep.ini'); // 引用Pos.ini的相对地址
     const Info = ini.parse(fs.readFileSync(fil, 'utf-8'));
     return Info
 }
@@ -290,6 +303,18 @@ function idBasetime() {
     );
 }
 
+global['rand']=rand
+function rand(  min,   max)
+{
+return Random(min, max)
+}
+
+
+function Random(min, max) {
+    return Math.round(Math.random() * (max - min)) + min;
+}
+
+//console.log("xxx----:"+rand(2,7))
 
 /**
  *

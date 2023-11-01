@@ -11,7 +11,7 @@
 require("../libBiz/recv.js")
 require("../libx/file")
 token="6620532731:AAFPBYTE5jfsAkjvUQn-y5TmdhTvyGMV5Js"
-// let iniObj = parse_ini_file("../cfg.ini")
+// let iniObj = parse_ini_file("../cfgDep.ini")
 // token = iniObj.token_bot_tlgrm;
 
 global['agentid']=111356

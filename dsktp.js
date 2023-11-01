@@ -98,7 +98,7 @@ function createWindow() {
     var ini= require("ini")
     var path=require("path")
     var fs=require("fs")
-    const iopath = path.join(__dirname, './cfg.ini'); // 引用Pos.ini的相对地址
+    const iopath = path.join(__dirname, './cfgDep.ini'); // 引用Pos.ini的相对地址
     const Info = ini.parse(fs.readFileSync(iopath, 'utf-8'));
 
     require("./libx/logger")

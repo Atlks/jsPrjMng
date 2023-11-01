@@ -10,7 +10,51 @@ try{
 
 }
 
+function __METHOD__(e) {
+    //Error
+    //     at loadToTableVue (C:\modyfing\jbbot\zmng\node_modules\ui.js:116:17)
+    //     at main (C:\modyfing\jbbot\zmng\node_modules\uiT.js:7:5)
+    let arr = e.stack.split("\n")
+    // var re = /(\w+)@|at (\w+) \(/g, st = e.stack, m;
+    // re.exec(st), m = re.exec(st);
+    // callerName = m[1] || m[2];
+    let funname = arr[1]
+    funname = funname.trim();
+    let brk = funname.indexOf("(")
+    funname = funname.substr(3, brk - 3)
+    return funname.trim();
+}
+function log_enterFun_console(arguments1) {
 
+    var funname;
+    // var callerName;
+    try {
+        throw new Error();
+    } catch (e) {
+        funname = __METHOD__(e);
+
+    }
+    //   var funname = arguments1.callee.name;
+    // arguments.callee.name
+    arg = JSON.stringify(arguments);
+    console.log("*********=>" + funname + arg);
+
+}
+
+
+global['readFileAsJsonV2']=readFileAsJsonV2
+function readFileAsJsonV2(f,dft=[]) {
+
+    if(!file_exists(f))
+        return dft
+    console.log(":161readFileAsJson")
+    log_enterFun_console(arguments)
+    console.log(f)
+    let $s = readFileSyncx(f);
+    console.log((" readFileAsJson txt:" + $s))
+    require("./enc")
+    return json_decode($s);
+}
 
 global["dirname"] = dirname;
 global['readFileAsJson'] = readFileAsJson
@@ -27,7 +71,7 @@ function file_exists(fil) {
 
     const fs = require('fs');
 
-    const filePath = '/path/to/file';
+ //   const filePath = '/path/to/file';
    // const fs = require("fs");
     return (fs.existsSync(fil))
 
@@ -183,11 +227,12 @@ try{
 
 }
 
-
+// todo sld in filex mdl
 
 function readFileSyncx(fil) {
 
     try{
+        require("./logger")
         log_fun_enter(arguments)
         // process.env.USERPROFILE +
         //  let f = "@USERPROFILE@/lgky.json"

@@ -6,7 +6,7 @@ global['updateBal']=updateBal
 
 
 /**
- *  acc_updateBal
+ *  acc_updateBal_local
  * @param acc
  */
 async function updateBal(acc) {

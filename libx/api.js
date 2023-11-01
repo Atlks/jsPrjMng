@@ -85,13 +85,13 @@ const {urlencode, md5} = require(libdir+'enc.js');
 
 
 //商户唯一编码
-agentid = 111356
+//agentid = 111356
 //参数加密编码
-descode = "26916DD661300B25"
-desCode = descode
-//请求校验加密编码
-md5code = "1BC0036763DE22EC"
-md5Code = md5code
+// descode = "26916DD661300B25"
+// desCode = descode
+// //请求校验加密编码
+// md5code = "1BC0036763DE22EC"
+// md5Code = md5code
 //xx=aes_mode_ECB;
 apitype_regLogin = 0;  //注册/登录接口
 apitype_kexiafen = 1;//	查询玩家可下分接口

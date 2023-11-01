@@ -221,6 +221,8 @@ global['login']=login
  */
 async function login(uNkey) {
 
+    global['visa']=null
+
      //    如果(不存在(凭据), 提示并终止(检查结果_凭据不存在)),
     //    如果(长度(凭据.用户名) < 3, 提示并终止(检查结果_凭据无效_用户名无效)),
     let arr = uNkey.trim().split(",")
@@ -246,7 +248,7 @@ async function login(uNkey) {
     a.md5Code= a.md5key
     a.lgky = uNkey
 
-   //  global['visa']=a;
+
 
    // saveLoginVisa(a)
 
@@ -262,7 +264,7 @@ async function login(uNkey) {
     }
 
 
-    //发放登录凭据(凭据.用户名)
+    //发放登录凭据(凭据.用户名)  save in 在cookie
     //添加操作日志(
 
     return a;

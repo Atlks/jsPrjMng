@@ -51,13 +51,16 @@
   },
   {
     "userid": 32077089,
-    "account": 777,
+    "account": "777",
     "nickname": 77,
     "agtid": 111356,
     "uid": 32077089,
     "uname": 777,
     "nknm": 77,
-    "time": "2023-09-23 20:58:59"
+    "time": "2023-09-23 20:58:59",
+    "score": 88,
+    "totalScore": 88,
+    "status": 0
   },
   {
     "userid": 32077087,

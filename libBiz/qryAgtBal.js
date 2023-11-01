@@ -93,7 +93,7 @@ async function qryAgtBal() {
     let timestamp = time();
     let _paraValue = ""
     let url = buildUrlNget_x(_paraValue, timestamp, 9); // apitype_agtBal
-
+log_info(url)
     let rzt = await http_get_jqStyle(url, null, jqFailFun)
 
     rztobj = JSON.parse(rzt);

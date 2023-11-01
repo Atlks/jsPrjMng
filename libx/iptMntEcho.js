@@ -25,7 +25,7 @@
 //
 //     }
 //     console.log(showecho)
-//     writeFileSync("iptecho.txt",showecho)
+//     writeFileSync("ipt_echo.txt",showecho)
 // }
 // //
 // setInterval(()=>{

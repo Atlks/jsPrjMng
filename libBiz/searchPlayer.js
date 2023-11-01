@@ -1,3 +1,5 @@
+
+
 function arrToTable(arr) {
     columns = [
         {data: 'userid'},
@@ -5,6 +7,7 @@ function arrToTable(arr) {
         {data: 'nickname'},
 
         {data: 'totalScore'},
+        {data: 'allbet'},
         {data: 'statStr'}
     ]
    for(i=0;i<arr.length;i++)
@@ -19,6 +22,9 @@ function arrToTable(arr) {
 }
 
 //  apitype_PlayerScore
+/**
+ * searchPlayerClk
+ */
 function playerNScore237() {
     authChkFrt()
    // chkAop();
@@ -159,6 +165,42 @@ async function findPlayer(uname) {
 }
 
 global['searchPlayer']=searchPlayer
+global['sumAllbet']=sumAllbet
+function sumAllbet(userid) {
+    try{
+
+        let file = __dirname + "/../db_zhudan/zhudan_uid"+userid;
+//let rows = pdo_query({"account": uname}, file)
+         if(!file_exists(file))
+             return  null
+        var {readFileSync, writeFileSync, appendFileSync} = require("fs");
+        var txt = readFileSync(file).toString();
+        console.log(" dbtxt len100 =>" + txt.substring(0, 100))
+        let data_rows = JSON.parse(txt)
+
+        require("esm-hook");
+//  const _ = require('lodash').default
+        const _ = require('lodash')
+
+
+        let modifiedArr = data_rows.map(function(element){
+            return element.AllBet;
+        });
+
+
+        require("../libx/arr"  +   "")
+
+        console.log(  array_sum(modifiedArr) )
+        let arraySum = array_sum(modifiedArr);
+        arraySum=arraySum.toFixed(2)
+        return  arraySum ;
+    }catch (e) {
+        log_errV3(e,"userid:"+userid)
+    }
+
+
+}
+
 /**
  * searchPlayersearchPlayer
  * @param uname
@@ -189,8 +231,12 @@ async function searchPlayer(uname) {
 
             let errmsg = errcodeMsg(rztobj.data.code)
             rztobj.errmsg = errmsg;
+
             rzt = JSON.stringify(rztobj)
+
         }
+        rztobj.data.allbet=sumAllbet(rztobj.data.userid)
+        rzt = JSON.stringify(rztobj)
 
         return rzt;
     } catch (e) {

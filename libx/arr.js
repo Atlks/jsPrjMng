@@ -8,8 +8,20 @@ function array_sum(arr) {
     return sum;
 }
 
+ //— 返回输入数组中指定列的值
+function array_column()
+{
+
+}
 
 
+// function array_sum(arr){
+//     var sum = 0;
+//     var sum = arr.reduce(function (prev, curr) {
+//         return prev + curr;
+//     }, 0);
+//     return sum;
+// }
 function map_filter_reduce(arr) {
     var sum = 0;
     var sum = arr.reduce(function (prev, curr) {

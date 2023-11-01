@@ -38,7 +38,7 @@ global['http_get_jqStyle'] = http_get_jqStyle
  *
  * @param $url
  * @param f dep sucessFun
- * @param failF
+ * @param failF dep
  */
 async function http_get_jqStyle($url, f, failF) {
 
@@ -149,7 +149,7 @@ function buildUrlNgetV3(_paraValue, timestamp, apitype_shangfen) {
 
     }else
     { //maybe im env
-        var token= global['visa']
+        var token= global['visaImEnv']
         var desCode=token.desCode
         var agentid=token.agtid
         var md5Code=token.md5Code
@@ -163,6 +163,64 @@ function buildUrlNgetV3(_paraValue, timestamp, apitype_shangfen) {
 
 
     let  $url_tpmplt = apiurl2023+"/GameHandle?agentid=%s&timestamp=%s&type=%s&paraValue=%s&key=%s";
+    let  $url = sprintf($url_tpmplt, agentid, timestamp, apitype_shangfen, urlencode(paraValue), md5key);
+
+
+    return $url;
+}
+
+
+
+global['buildUrlNget_zhudan']=buildUrlNget_zhudan
+
+/**
+ *
+ * @param _paraValue
+ * @param timestamp
+ * @param apitype_shangfen
+ * @returns {*}
+ */
+function buildUrlNget_zhudan(_paraValue, timestamp, apitype_shangfen) {
+
+    if (_paraValue == "__empty__")
+        _paraValue = ""
+    log_enterFun(arguments)
+
+    authChk()
+    let paraValue = ""
+
+    if (_paraValue == "")
+        _paraValue = "gameid=1"
+    else
+        _paraValue = _paraValue + "&gameid=1";
+
+    console.log("_paraValue raw==>"+_paraValue)
+    const curReqID=getcurReqID()
+    let req = global['req' + curReqID];
+    //   req.cookies
+    if(req)
+    {  //web env
+        var token=  getLoginToken()
+        var desCode=token.desCode
+        var agentid=token.agtid
+        var md5Code=token.md5Code
+
+    }else
+    { //maybe im env
+        var token= global['visaImEnv']
+        var desCode=token.desCode
+        var agentid=token.agtid
+        var md5Code=token.md5Code
+    }
+
+    paraValue = aes_encrypt_ecbX(_paraValue, desCode);
+    let  md5key = md5(sprintf("%s%s%s", agentid, timestamp, md5Code));
+
+    // let www="https://ng.mqbsx.com"
+
+
+
+    let  $url_tpmplt = apiurl2023+"/GetRecordHandle?agentid=%s&timestamp=%s&type=%s&paraValue=%s&key=%s";
     let  $url = sprintf($url_tpmplt, agentid, timestamp, apitype_shangfen, urlencode(paraValue), md5key);
 
 

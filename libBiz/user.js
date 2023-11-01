@@ -76,26 +76,25 @@ function getLoginToken() {
         // only for web front use..
     }
 
-    if(global['visa'])
-        return  global['visa']   //env im im env
+    if (global['visaImEnv'])
+        return global['visaImEnv']   //env im im env
 
     const curReqID = getcurReqID()
     let req = global['req' + curReqID];
     //   req.cookies
     // if(req)
     // {
-    if(req)
-    {
+    if (req) {
         if (req.query.callfun.startsWith("login")) {
             let callfun = req.query.callfun;
             callfun = callfun.trim()
             let arrx = callfun.split(" ");
-            arrx=array_filter(arrx);
+            arrx = array_filter(arrx);
             let fun = arrx[0]
             let kystr = arrx[1]
-         let   uNkey=kystr
+            let uNkey = kystr
 
-            let arr=uNkey.split(",")
+            let arr = uNkey.split(",")
             let a = {};
 
             a.agtid = arr[0];
@@ -111,14 +110,13 @@ function getLoginToken() {
             // var agentid=token.agtid
             // var md5Code=token.md5Code
 
-        }
-        else {
+        } else {
             //normal model
             let reqQry = req.query;  //msg cmd cfg
             var desCode = req.cookies.desCode
             var agentid = req.cookies.agtid
             var md5Code = req.cookies.md5Code
-            return  req.cookies;
+            return req.cookies;
         }
     }
 
@@ -260,7 +258,18 @@ function isLogin() {
     }
 }
 
+global['readFileAsJsonV2']=readFileAsJsonV2
+function readFileAsJsonV2(f,dft=[]) {
 
+    if(!file_exists(f))
+        return dft
+    console.log(":161readFileAsJson")
+    log_enterFun_console(arguments)
+    console.log(f)
+    let $s = readFileSyncx(f);
+    console.log((" readFileAsJson txt:" + $s))
+    return json_decode($s);
+}
 function readFileAsJson(f) {
     console.log(":161readFileAsJson")
     log_enterFun_console(arguments)
@@ -362,14 +371,9 @@ function playerStatV2() {
 }
 
 
+global['addUserAtRmt'] = addUserAtRmt
 
-
-global['addUserAtRmt']=addUserAtRmt
 async function addUserAtRmt(uname, nickname) {
-
-
-
-
 
 
     //判断是否存在
@@ -393,12 +397,10 @@ async function addUserAtRmt(uname, nickname) {
     console.log(url)
     log_info(url)
 
-    let rzt=   await http_get_jqStyle(url, function (data) {
+    let rzt = await http_get_jqStyle(url, function (data) {
         rzt = data
 
     }, jqFailFun)
-
-
 
 
     return rzt;

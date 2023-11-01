@@ -179,7 +179,8 @@ async function callrmt(req, res) {
             res.send(json_encode_ErrRawErrObj(e))
     }
 
-    // todo should clr global visa  for next req
+    // todox should clr global visa  for next req
+    global['visa']=null
 
 }
 

@@ -419,7 +419,7 @@ function pdo_insertV5(param, uid123Coll99,storedir) {
 global['pdo_insertV4'] = pdo_insertV4
 
 /**
- *
+ *  ist wz ptn
  * @param rcd
  * @param collName
  * @returns {{data: *, dbf, write: write}}

@@ -10,7 +10,7 @@ global['pdo_queryV5'] = pdo_queryV5
  * @param qryDsl
  * @param collName
  * @param storedir
- * @returns {*[]}
+ *
  */
 function pdo_queryV5(qryDsl, collName,storedir) {
     log_enterFun(arguments)

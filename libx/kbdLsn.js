@@ -78,7 +78,7 @@ main()
  * @param echoWinTxt
  */
 function setEchoWinTxt(echoWinTxt) {
-    writeFileSync("iptecho.txt", echoWinTxt)
+    writeFileSync("ipt_echo.txt", echoWinTxt)
 }
 
 
@@ -235,7 +235,7 @@ function findWdLstByPartwd(curWdpart) {
     }
     console.log(showecho)
     setEchoWinTxt(showecho);
-    // writeFileSync("iptecho.txt",showecho)
+    // writeFileSync("ipt_echo.txt",showecho)
 }
 
 // setInterval(()=>{
