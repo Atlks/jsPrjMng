@@ -1,8 +1,88 @@
 //const _ = require("lodash");
 
+global['addScore']=addScore
+/**
+ *
+ * @param uname
+ * @param score
+ * @returns {Promise<any|string>}
+ */
+async function addScore(uname, score) {
+    log_enterFun(arguments)
+    authChk()  //alslo refresh global agtid des md5key
+    //  require("./fp_ati1990")
+
+    //-----------add socre net rmt
+
+    let visa = getLoginToken();
+    let agentid = visa.agtid
+    let agtid = visa.agtid
+    timestamp = time();
+    _paraValue = "account=%s&score=%s&orderid=%s";
+    orderid = sprintf("%s%s%s", agentid, timestamp, uname)
+    _paraValue = sprintf(_paraValue, uname, score, orderid);
+
+    let url = buildUrlNgetV2(_paraValue, timestamp, apitype_shangfen);
 
 
-global['updateBal']=updateBal
+    log_info(url);
+    let rzt = ""
+    try {
+        rzt = await http_get(url);
+    } catch (e) {
+        checkWhiteIp(e, uname);
+        checkAgtidErr(e);
+    }
+
+
+    //-------------------------add local score log op
+    try {
+        var rztobj = JSON.parse(rzt);
+        if (rztobj.data.code == 0) {
+            //  await import("../lowdbx/lowdbX.js")
+
+            let visa = getLoginToken()
+            let dbdir = __dirname + "/../db/" + visa.agtid + "/";
+            console.log("dbdir=>" + dbdir)
+
+
+            var rcd = {"agtid": agtid, "uname": uname, "score": score, "类型": "上分", "time": curDateTime()}
+            let dbfile = dbdir + "scoreLogColl.json";
+            await pdo_insert(rcd, dbfile);
+
+
+//----------------------updt score local
+            await updtUserScore(uname)
+
+
+        } else {
+            require("../libx/sys")
+            require(libdir + "excel")
+            requirex("../libx/excel.js")
+            let errmsg = errcodeMsg(rztobj.data.code)
+            rztobj.typex = "ex", rztobj.namex = "Bls_ex"
+            rztobj.errmsgx = errmsg
+            return rztobj;
+
+        }
+
+    } catch (e) {
+        let eobj = {"stack": e.stack, "msg": e.message}
+        log_err(eobj)
+    }
+
+
+    // else
+    //     alert(rzt)
+
+
+    return rzt;
+
+
+}
+
+
+global['updateBal'] = updateBal
 
 
 /**
@@ -36,10 +116,10 @@ async function updateBal(acc) {
     }
 }
 
-global['Acc_logDbdir']=Acc_logDbdir
-function Acc_logDbdir()
-{
-   let dbfile =getDbdir()+"scoreLogColl.json";
+global['Acc_logDbdir'] = Acc_logDbdir
+
+function Acc_logDbdir() {
+    let dbfile = getDbdir() + "scoreLogColl.json";
     return dbfile;
 }
 
@@ -52,7 +132,7 @@ function chkSxfUname() {
         throw ("上下分不能为空")
     }
 
-    if(!is_int($("#score_sxf").val())){
+    if (!is_int($("#score_sxf").val())) {
         throw ("上下分需为整数")
     }
 }
@@ -72,8 +152,7 @@ function orderQryShagnxiafen415() {
     setTimeout(function () {
 
 
-
-        http_get_jqGet(callrmtRstapiUrl()+"QryShangxiafen",function (rzt){
+        http_get_jqGet(callrmtRstapiUrl() + "QryShangxiafen", function (rzt) {
 
             let columns = [
                 {data: 'uname'},
@@ -82,7 +161,7 @@ function orderQryShagnxiafen415() {
                 {data: 'time'}
             ]
 
-            loadToDataTableV2(json_decode(rzt), "tab_sxf", columns,[[3, "desc"]])
+            loadToDataTableV2(json_decode(rzt), "tab_sxf", columns, [[3, "desc"]])
 
             //  window['loadToTable'](json_decode(rzt),"tab_sxf")
             // console.log("[playerStat237] rzt=>" + rzt)
@@ -96,9 +175,7 @@ function orderQryShagnxiafen415() {
             })
             $("#loaddiv").hide()
         })
-       // rzt = dsl_callFunCmdMode("score_orderQryShagnxiafen", $("#uname").val())
-
-
+        // rzt = dsl_callFunCmdMode("score_orderQryShagnxiafen", $("#uname").val())
 
 
     }, 50)
@@ -109,8 +186,8 @@ function orderQryShagnxiafen415() {
 /**
  * QryShangxiafen shangfen xiafen kexiafen
  */
-function accFiles()
-{}
+function accFiles() {
+}
 
 
 try {

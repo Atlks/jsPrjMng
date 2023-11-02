@@ -14,6 +14,12 @@ function timeStamp() {
     var timestamp = Date.parse(new Date());
     return timestamp;
 }
+function timeStamp_sec() {
+    var timestamp = Math.round(new Date() / 1000);
+    return timestamp;
+}
+
+
 
 //console.log(timeStamp())
 

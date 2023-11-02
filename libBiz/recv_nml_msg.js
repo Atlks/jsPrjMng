@@ -4,7 +4,7 @@ global['recv_nml_msg'] = recv_nml_msg
 
 
 /**
- *
+ * if mnl msg,add u
  * @param msg
  */
 async function recv_nml_msg(msg) {

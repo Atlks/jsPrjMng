@@ -2,6 +2,12 @@
 //only for node ivk cant in js
 global["shangfen"] = shangfen;
 
+
+/**
+ * updtUserScore local
+ * @param uname
+ * @returns {Promise<void>}
+ */
 async function updtUserScore(uname) {
   // let obj=await  findPlayer(uname)
     try{

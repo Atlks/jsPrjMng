@@ -1,8 +1,10 @@
 
-// todo sxf must have nmb
+// grp nm  msgNode
+// todo sxf must have nmbr
 // todo secury map ...shangfen >>>cashin  xiafen>>cashout
 // shf xiafen goto js file dync repl;ace...
 
+require("../libBiz/反水")
 require("../libBiz/recv.js")
 require("../libx/file")
 token="6411257533:AAFQI8JMckmNy9HXFdXLU_9cLnLDeyi-5Hc"
@@ -16,8 +18,10 @@ global['md5Code']="1BC0036763DE22EC"
 global['agtid']=global['agentid']
 visa={"agtid":global['agtid'], "desCode":global['desCode'],"md5Code":global['md5Code'] }
 global['visa']=visa
-global['grpid']=-4038077884
 
+global['visaImEnv']=visa
+global['grpid']=-4038077884
+global['apiurl2023'] = "https://ng.mqbsx.com"
 
 msg_recvListen(token,msg_recv)
 

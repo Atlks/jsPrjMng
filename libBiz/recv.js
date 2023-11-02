@@ -103,6 +103,9 @@ function getTrueCmd(msg_txt) {
             return truecmd
     }
 
+    if(msg_txt=="反水")
+        return  msg_txt
+
     return undefined;
 }
 
@@ -128,6 +131,7 @@ async function msg_recv(msg) {
     var fun = getTrueCmd(msg_txt)
     if(!fun)
         fun="帮助"
+
 
 
     try {//add user

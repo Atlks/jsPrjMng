@@ -125,7 +125,7 @@ global['findPlayer']=findPlayer
 /**
  *
  * @param uname
- * @returns {Promise<*|string[]|string>}
+ * @returns {Promise<*>}
  */
 async function findPlayer(uname) {
 

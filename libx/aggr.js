@@ -1,10 +1,12 @@
+
+global['sumColV2']=sumColV2
 /**
  *
  * @param rows
  * @param colMapFun
  * @returns {number}
  */
-function sumCol(colMapFun,rows) {
+function sumColV2(colMapFun,rows) {
     let data_rows =rows
 
 

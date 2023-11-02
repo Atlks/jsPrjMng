@@ -258,6 +258,12 @@ function isLogin() {
     }
 }
 
+function  find()
+{
+    searchPlayer()
+    findPlayer
+}
+
 global['readFileAsJsonV2']=readFileAsJsonV2
 function readFileAsJsonV2(f,dft=[]) {
 
