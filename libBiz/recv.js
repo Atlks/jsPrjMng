@@ -86,10 +86,7 @@ function msg_recvListen(token, msg_recvHdlr) {
 require("../libx/incHtm")
 require("../libx/autoload")
 require("../libBiz/searchPlayer")
-requireAutoload("php,sendMsg,acc,QryShangxiafen,余额,帮助,流水,xiafen,下分tlgrm,recv_nml_msg,errHdlr,shangfenNode,shangfen,上分tlgrm,crpto,sys,file,importUser,excel,logger,includeXAjaxNode,bzDb,user,sys,addUser,searchPlayer,oplog,ex,httpSync,bizHttp,incHtm,exit,login,qryAgtBal")
-
-
-
+requireAutoload("反水,cashback,php,sendMsg,acc,QryShangxiafen,余额,帮助,流水,xiafen,下分tlgrm,recv_nml_msg,errHdlr,shangfenNode,shangfen,上分tlgrm,crpto,sys,file,importUser,excel,logger,includeXAjaxNode,bzDb,user,sys,addUser,searchPlayer,oplog,ex,httpSync,bizHttp,incHtm,exit,login,qryAgtBal")
 
 
 function getTrueCmd(msg_txt) {
@@ -103,22 +100,32 @@ function getTrueCmd(msg_txt) {
             return truecmd
     }
 
-    if(msg_txt=="反水")
-        return  msg_txt
+    if (msg_txt == "反水")
+        return msg_txt
 
     return undefined;
 }
 
 
-
 global['msg_recv'] = msg_recv
+
 /**
  * shfen rcv msg
  * @param msg
  */
 async function msg_recv(msg) {
+
+
     log_fun_enter(arguments)
     console.log(msg)
+
+    let chatId_grpid = msg.chat.id;
+    if (global['grpid'] != chatId_grpid) {
+       console.log(msg)
+        return
+    }
+
+
     let msg_txt = msg.text;
     let arr = msg_txt.split(" ")
     if (msg_txt.startsWith("上分") || msg_txt.startsWith("下分")) {
@@ -129,9 +136,13 @@ async function msg_recv(msg) {
     }
 
     var fun = getTrueCmd(msg_txt)
-    if(!fun)
-        fun="帮助"
+    if (!fun)
+    {
+        fun = "帮助none"
+        return
+    }
 
+    //  bcs othter grp,dont need hosiw help
 
 
     try {//add user
@@ -143,14 +154,13 @@ async function msg_recv(msg) {
     requirex(fun + ".js")
     requirex(fun + "tlgrm.js")
 
-    var msgFunFileMap={"下分":"cashoutMsgHdl","上分":"cashinMsgHdl","余额":"balMsgHdl","帮助":"help"}
+    var msgFunFileMap = {"下分": "cashoutMsgHdl", "上分": "cashinMsgHdl", "余额": "balMsgHdl", "帮助": "help"}
 
     //  let fun = arr[0]
-   //if (file_exists("../libBiz/" + fun + "tlgrm.js") || file_exists("../libBiz/" + fun + ".js")) {
+    //if (file_exists("../libBiz/" + fun + "tlgrm.js") || file_exists("../libBiz/" + fun + ".js")) {
 
-    if(funtion_exist(fun))
-    {
-        console.log(" funtion_exist exists   "+fun)
+    if (funtion_exist(fun)) {
+        console.log(" funtion_exist exists   " + fun)
 
 
         let acc = msg.from.username
@@ -160,9 +170,9 @@ async function msg_recv(msg) {
 
         let rzt = await call_func(fun, argarr)
 
-       // console.log("[msg_recv ] ret=>" + rzt)
+        // console.log("[msg_recv ] ret=>" + rzt)
     } else {
-        console.log( sprintf("not   funtion_exist  %s  recv_nml_msg(msg)",fun))
+        console.log(sprintf("not   funtion_exist  %s  recv_nml_msg(msg)", fun))
         await recv_nml_msg(msg)
 
     }

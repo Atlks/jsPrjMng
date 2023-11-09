@@ -1,1 +1,1 @@
-node C:\modyfing\apiprj\jbbot\zmng\libBiz\orderPull_rdm.js
+node C:\modyfing\apiprj\jbbot\zmng\libBiz\orderPull_rdm_wk.js

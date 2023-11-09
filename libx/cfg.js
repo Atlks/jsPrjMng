@@ -1,13 +1,13 @@
 
-global['readCfg'] = readCfg
+global['readCfgAsTxt'] = readCfgAsTxt
 
-function readCfg() {
+function readCfgAsTxt(file) {
     const curReqID = getcurReqID()
 
     let req = global['req' + curReqID];
 
     let obj = req.query;  //msg cmd cfgx.js
-    let file =__dirname+'/../cfg.ini';
+
 
     var fs = require('fs');
     return  fs.readFileSync(file).toString()
@@ -19,11 +19,11 @@ function readCfg() {
 //inc db.conn
 
 
-global['saveCfg'] = saveCfg
+global['saveCfgFrmRq'] = saveCfgFrmRq
 
 
 
-function saveCfg() {
+function saveCfgFrmRq(f) {
     const curReqID = getcurReqID()
 
     let req = global['req' + curReqID];
@@ -32,13 +32,13 @@ function saveCfg() {
   //  let file = getDbdir() + "/msgcmdCfg_Coll.json";
 
 
-    let txt=req.query.cfgTxt;
+     let txt=req.query.cfgTxt;
     if(txt.length<5)
-        return
+        return 
 
     var fs = require('fs');
 
-    fs.writeFileSync(  __dirname+'/../cfg.ini', txt );
+    fs.writeFileSync( f, txt );
 
 
 

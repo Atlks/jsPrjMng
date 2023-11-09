@@ -112,13 +112,26 @@
 
     }
 
-
+//-----------rd cfg
   let url = callrmtRstapiUrl()+ "readCfg"
   http_get_jqGet(url,function (data) {
        if(data.length<5)
            return
 
-        $("#cfgTxt").val(data)
+      try{
+           //err blck
+          JSON.parse(data)
+        //  throw "data err"
+      }catch (e) {
+
+           //ok cfg
+          $("#cfgTxt").val(data)
+            console.log(e)
+
+      }
+
+
+
 
   },jqFailFun)
 

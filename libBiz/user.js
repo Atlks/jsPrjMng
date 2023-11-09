@@ -273,15 +273,20 @@ function readFileAsJsonV2(f,dft=[]) {
     log_enterFun_console(arguments)
     console.log(f)
     let $s = readFileSyncx(f);
-    console.log((" readFileAsJson txt:" + $s))
+    console.log((" readFileAsJson txt:" + $s.substr(0,300)))
     return json_decode($s);
 }
+
+
+global['readFileAsJson']=readFileAsJson
 function readFileAsJson(f) {
     console.log(":161readFileAsJson")
     log_enterFun_console(arguments)
     console.log(f)
     let $s = readFileSyncx(f);
-    console.log((" readFileAsJson txt:" + $s))
+    if($s.trim()=="")
+        $s="[]"
+    console.log((" readFileAsJson txt:" +   $s.substr(0,300)))
     return json_decode($s);
 }
 

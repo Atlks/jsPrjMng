@@ -1,11 +1,22 @@
+https://apimng.jbpc28.top/index.html
+新版本部署了117
+增加了注单记录搜集与展示
+反水配置等
+注单统计
+反水记录
+
+prd env uid
+uid29310938
+
+
+
+
 新特性v927
 
 新增
 用户导入功能
 im tg功能
 自定义tg指令功能
-
-
 fx bug若干
 
 
@@ -27,7 +38,5 @@ fx bug若干
 
 优化
 去除lowdb 模块
-
-
- ftr 特性
+ftr 特性
 

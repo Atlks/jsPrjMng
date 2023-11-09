@@ -56,7 +56,7 @@ async function http_get_jqStyle($url, f, failF) {
 
     var rzt;
     try {
-        rzt = await http_get($url);
+        rzt = await http_get($url,{ timeout: 10000 });
         console.log(":1240" + rzt)
         return rzt;
     } catch (e) {

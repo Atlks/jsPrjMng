@@ -18,7 +18,13 @@ function sumColV2(colMapFun,rows) {
 
     console.log(  array_sum(modifiedArr) )
     let arraySum = array_sum(modifiedArr);
-    arraySum=arraySum.toFixed(2)
+    try{
+        arraySum=arraySum.toFixed(2)
+    }catch (e)
+    {
+        console.log(e)
+    }
+
     return  arraySum ;
 
 

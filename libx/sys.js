@@ -5,6 +5,20 @@ function tipsNendThrowEx(提示内容) {
 
 }
 
+global['nbr_fmt_fix2'] = nbr_fmt_fix2
+function nbr_fmt_fix2(arraySum)
+{
+    try{
+        arraySum=arraySum.toFixed(2)
+    }catch (e)
+    {
+        console.log(e)
+    }
+    return  arraySum
+
+}
+
+
 
 
 

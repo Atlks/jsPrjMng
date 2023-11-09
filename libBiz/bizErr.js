@@ -16,14 +16,14 @@ function errcodeMsgNodeEnv(errcode) {
 
 // excel文件类径
     try {
-        excelFilePath = __dirname + '/./cfg/errcode.xlsx'
+      var  excelFilePath = __dirname + '/./cfg/errcode.xlsx'
         console.log(excelFilePath)
     } catch (e) {
         console.log(e)
     }
 
     try {
-        excelFilePath = __dirname + '/../cfg/errcode.xlsx';
+        var   excelFilePath = __dirname + '/../cfg/errcode.xlsx';
         console.log(excelFilePath)
     } catch (e) {
         console.log(e)

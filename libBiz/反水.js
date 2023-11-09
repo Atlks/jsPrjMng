@@ -14,6 +14,22 @@ function get_alreadyFsAmt(userid) {
     return fsAmt;
 }
 
+function get_alreadyFsAmtV2(userid) {
+
+
+    let visa = getLoginToken()
+    let dbdir = __dirname + "/../db/" + visa.agtid + "/";
+    let dbf = dbdir + "cashbackLog.json"
+
+    //  let dbf = __dirname + "/../db_zhudan/zhudan_uid" + user.data.userid;
+    console.log(dbf)
+    let dtRows = pdo_query({"userid":userid},dbf)
+    if(!dtRows)
+        return  0
+    let fsAmt = sumColV2((e) => e.fsAmt, dtRows)
+    return fsAmt;
+}
+
 function addFslogRcd(userid, fslogRcd) {
     let visa = getLoginToken()
     let dbdir = __dirname + "/../db/" + visa.agtid + "/";
@@ -47,7 +63,7 @@ async function 反水(msg) {
 
     //zhudan_uid32077260
 
-    let dbf = __dirname + "/../db_zhudan/zhudan_uid" + user.data.userid;
+    let dbf = __dirname + "/../db_zhudan/zhudan_uid" + user.data.userid+".json";
     console.log(dbf)
     let dtRows = readFileAsJsonV2(dbf, [])
     if (dtRows.length == 0) {
@@ -59,7 +75,7 @@ async function 反水(msg) {
         return
     }
     require("../libx/aggr")
-    let allbet = sumColV2((e) => e.AllBet, dtRows)
+    let allbet = sumColV2((e) => e.ValidBet, dtRows)
 
     let fsRat = getFsRat()
     if (fsRat > 0.05) {
@@ -71,8 +87,9 @@ async function 反水(msg) {
 
     }
     let feshweiAmt = allbet * fsRat;
-    let alreadyFsAmt = get_alreadyFsAmt(user.data.userid);
+    let alreadyFsAmt = get_alreadyFsAmtV2(user.data.userid);
     let fsFnl = feshweiAmt - alreadyFsAmt
+    fsFnl=fsFnl.toFixed(2)
     if (fsFnl <= 0) {
 
         let output = "已经反水完成"
@@ -86,9 +103,14 @@ async function 反水(msg) {
 
     let fslogRcd = user.data;
     fslogRcd.fsAmt = fsFnl
-    addFslogRcd(user.data.userid, fslogRcd)
+    fslogRcd.tmstmp=timeStamp()
+    fslogRcd.dttm=curDatetimeV2()
+    addFslogRcdV2(user.data.userid, fslogRcd)
 
-    let output = "完成，反水金额：" + fsFnl.toFixed(2)
+
+    fsFnl= nbr_fmt_fix2(fsFnl)
+    let output = "完成，反水金额："  +fsFnl
+    console.log(output)
     // let txt="格式为: 上分100 下分100 余额 流水"
     const bot = global['bot']
     bot.sendMessage(msg.chat.id, "" + output, {reply_to_message_id: msg.message_id})

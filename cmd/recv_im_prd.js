@@ -1,43 +1,35 @@
-
 // grp nm  msgNode
-//
+//  
 // todo secury map ...shangfen >>>cashin  xiafen>>cashout
 // shf xiafen goto js file dync repl;ace...
 
-
-token="6411257533:AAFQI8JMckmNy9HXFdXLU_9cLnLDeyi-5Hc"
-global['grpid']=-4038077884
-
+// fs bot   jbyxw_bot
+token = "6643664645:AAHTiqen1zXDRdMDhl8j8Kz25ebY9xQaEpc"
+// let iniObj = parse_ini_file("../cfgDep.ini")
+// token = iniObj.token_bot_tlgrm;
+global['grpid'] = -1001847884546
 let keystr = "111523,DDDCB686535395BC,B7A4A36327A085A7"
-global['apiurl2023'] = "https://ng.mqbsx.com"
 
 
-//todo maybe rcm need
-  keystr = "111523,DDDCB686535395BC,B7A4A36327A085A7"
 global['apiurl2023'] = "https://dtinterface.1saeda.com"
-
 
 
 require("../libBiz/反水")
 require("../libBiz/recv.js")
 require("../libx/file")
+
 global['agentid'] = keystr.split(",")[0]
 global['desCode'] = keystr.split(",")[1]
 global['md5Code'] = keystr.split(",")[2]
-// global['agentid']=111356
-// global['desCode']="26916DD661300B25"
-// global['md5Code']="1BC0036763DE22EC"
 
-global['agtid']=global['agentid']
-visa={"agtid":global['agtid'], "desCode":global['desCode'],"md5Code":global['md5Code'] }
-global['visa']=visa
+global['agtid'] = global['agentid']
+visa = {"agtid": global['agtid'], "desCode": global['desCode'], "md5Code": global['md5Code']}
+global['visa'] = visa
 
-global['visaImEnv']=visa
+global['visaImEnv'] = visa
 
 
-
-msg_recvListen(token,msg_recv)
-
+msg_recvListen(token, msg_recv)
 
 
 async function msg_recvHdlrV2(msg) {

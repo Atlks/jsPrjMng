@@ -47,6 +47,9 @@ function pdo_query(qryDsl, dbfile) {
         writeFileSync(dbfile, "[]")
     }
     var txt = readFileSync(dbfile).toString();
+    if(txt.trim()=="")
+        txt="[]"
+
     console.log(" dbtxt len100 =>" + txt.substring(0, 100))
     data = JSON.parse(txt)
 

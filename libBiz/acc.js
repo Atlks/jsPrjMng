@@ -82,6 +82,19 @@ async function addScore(uname, score) {
 }
 
 
+async function updtUserScore(uname) {
+    // let obj=await  findPlayer(uname)
+    try{
+        await  updateBal(uname)
+    }catch (e) {
+        log_errV3(e,uname)
+    }
+
+
+
+}
+
+
 global['updateBal'] = updateBal
 
 

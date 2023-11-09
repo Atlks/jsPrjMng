@@ -26,12 +26,18 @@ async function pulldt(startTime, startTimex) {
 
     const _ = require('lodash')
     for (const v of rztobj.data.list) {
-        let dbf = __dirname + "/../db_zhudan/zhudan_uid" + v.UserID;
-        let dtRows = readFileAsJsonV2(dbf, [])
+        try{
+            let dbf = __dirname + "/../db_zhudan/zhudan_uid" + v.UserID+".json";
+            console.log(dbf)
+            let dtRows = readFileAsJsonV2(dbf, [])
 
-        if (!_.find(dtRows, {'ObjectID': v.ObjectID})) {
-            pdo_insertV3(v, dbf)
+            if (!_.find(dtRows, {'ObjectID': v.ObjectID})) {
+                pdo_insertV3(v, dbf)
+            }
+        }catch (e) {
+            console.log(e)
         }
+
 
 
     }
@@ -43,7 +49,7 @@ async function main() {
     require("../libx/excel")
 
     var fs = require("fs");
-    let rt = fs.readFileSync("c:/key.txt").toString();
+    let rt = fs.readFileSync(__dirname+"/../_noup/key.txt").toString();
     rt = rt.trim();
     key = rt.split(",")
     token = {}
@@ -79,7 +85,7 @@ async function main() {
     while (true)
     {
         try{
-            let startDt=timestamp-rand(0,3) * 24 * 3600 * 1000
+            let startDt=timestamp-rand(0,5) * 24 * 3600 * 1000
 
             let startTime = startDt+ rand(0,24) * 3600 * 1000
             //只保留三个月数据only save 3month dat..doc said..

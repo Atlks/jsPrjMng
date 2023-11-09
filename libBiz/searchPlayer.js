@@ -184,7 +184,7 @@ function sumAllbet(userid) {
 
 
         let modifiedArr = data_rows.map(function(element){
-            return element.AllBet;
+            return element.ValidBet;
         });
 
 
@@ -219,6 +219,7 @@ async function searchPlayer(uname) {
 
     let _paraValue = sprintf("account=%s", uname);
     echo("_paraValue==>" + _paraValue)
+    require("./bizHttp")
     let url = buildUrlNget_x(_paraValue, timestamp, apitype_PlayerScore);
     //  alert("url=>"+url)
     var rzt;
