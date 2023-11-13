@@ -1,6 +1,6 @@
 
 // node cmd/calcAllbetTmr.js
-
+global['apiurl2023'] = "https://dtinterface.1saeda.com"
 function  main()
 {
     require("../libBiz/searchPlayer")
@@ -45,6 +45,11 @@ function  main()
 }
 
 setInterval(function (){
-    main()
+    require("../libx/err.js")
+    try{
+        main()
+    }catch (e) {
+        console.log(e)
+    }
 },3000)
 

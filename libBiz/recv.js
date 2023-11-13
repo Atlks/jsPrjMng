@@ -102,6 +102,8 @@ function getTrueCmd(msg_txt) {
 
     if (msg_txt == "反水")
         return msg_txt
+    if(msg_txt == "返水")
+        return "反水"
 
     return undefined;
 }

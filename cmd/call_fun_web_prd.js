@@ -1,10 +1,10 @@
 
 
 
+global['apiurl2023'] = "https://dtinterface.1saeda.com"
+global['token']="6643664645:AAHTiqen1zXDRdMDhl8j8Kz25ebY9xQaEpc"
 
-global['token']="6620532731:AAFPBYTE5jfsAkjvUQn-y5TmdhTvyGMV5Js"
-
-global['grpid']=-4038077884
+global['grpid']=-1001847884546
 
 // nohup node_modules/.bin/node-dev  cmd/call_fun_web_preprd.js &
 
@@ -16,7 +16,7 @@ const bot = new TelegramBot(token, {polling: false});
 //   bot.sendMessage()
 global['bot'] = bot
 
-global['apiurl2023'] = "https://dtinterface.1saeda.com"
+
 require("../libBiz/callweb")
 
 

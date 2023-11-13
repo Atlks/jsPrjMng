@@ -26,7 +26,7 @@ async function pulldt(startTime, startTimex) {
 
     const _ = require('lodash')
     for (const v of rztobj.data.list) {
-        let dbf = __dirname + "/../db_zhudan/zhudan_uid" + v.UserID;
+        let dbf = __dirname + "/../db_zhudan/zhudan_uid" + v.UserID+".json";
         let dtRows = readFileAsJsonV2(dbf, [])
 
         if (!_.find(dtRows, {'ObjectID': v.ObjectID})) {
@@ -38,12 +38,16 @@ async function pulldt(startTime, startTimex) {
 }
 
 async function main() {
+
+    require("../libx/err")
     require("./qryAgtBal")
 
     require("../libx/excel")
 
     var fs = require("fs");
-    let rt = fs.readFileSync("c:/key.txt").toString();
+
+    let rt = fs.readFileSync(__dirname+"/../_noup/key.txt").toString();
+
     rt = rt.trim();
     key = rt.split(",")
     token = {}

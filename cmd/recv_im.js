@@ -6,7 +6,7 @@
 
 
 token="6411257533:AAFQI8JMckmNy9HXFdXLU_9cLnLDeyi-5Hc"
-global['grpid']=-4038077884
+global['grpid']=-4038077884    //msgnode grpname
 
 let keystr = "111523,DDDCB686535395BC,B7A4A36327A085A7"
 global['apiurl2023'] = "https://ng.mqbsx.com"

@@ -46,7 +46,7 @@ function incLibs() {
     require("../libx/incHtm")
     require("../libx/autoload")
     require("../libBiz/searchPlayer")
-    requireAutoload("zhudanMng,cashback,cfgx,xiafen,rvw_pass,rvw_rfs,qry_cashin_aplctn,kick,msgCmdCfg,saveMsgCmdCfg,sys,file,importUser,excel,logger,includeXAjaxNode,bzDb,user,sys,addUser,searchPlayer,oplog,ex,httpSync,bizHttp,incHtm,exit,login,qryAgtBal")
+    requireAutoload("bal_ttlbal,zhudanMng,cashback,cfgx,xiafen,rvw_pass,rvw_rfs,qry_cashin_aplctn,kick,msgCmdCfg,saveMsgCmdCfg,sys,file,importUser,excel,logger,includeXAjaxNode,bzDb,user,sys,addUser,searchPlayer,oplog,ex,httpSync,bizHttp,incHtm,exit,login,qryAgtBal")
     require("../libx/logger")
     requirex("qry_cashin_aplctn")
     require("../libx/dsl")
@@ -74,6 +74,7 @@ function incLibs() {
     require("../libBiz/shangfen.js");
     require("../libBiz/shangfenNode.js")
     require("./qry_cashin_aplctn.js")
+    require("../libBiz/bal_ttlbal.js")
 }
 
 

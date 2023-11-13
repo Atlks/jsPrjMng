@@ -169,7 +169,7 @@ global['sumAllbet']=sumAllbet
 function sumAllbet(userid) {
     try{
 
-        let file = __dirname + "/../db_zhudan/zhudan_uid"+userid;
+        let file = __dirname + "/../db_zhudan/zhudan_uid"+userid+".json";
 //let rows = pdo_query({"account": uname}, file)
          if(!file_exists(file))
              return  null

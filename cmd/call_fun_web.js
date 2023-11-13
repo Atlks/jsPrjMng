@@ -18,6 +18,6 @@ global['bot'] = bot
 
 
  global['apiurl2023'] = "https://ng.mqbsx.com"
-// global['apiurl2023'] = "https://dtinterface.1saeda.com"
+  global['apiurl2023'] = "https://dtinterface.1saeda.com"
 
 require("../libBiz/callweb")

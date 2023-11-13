@@ -12,7 +12,10 @@ function sumColV2(colMapFun,rows) {
 
 
     let modifiedArr = data_rows.map(colMapFun);
-
+    modifiedArr=modifiedArr.filter((e)=>{
+        if(e)
+            return true;
+    })
 
     require("../libx/arr"  +   "")
 
@@ -22,7 +25,9 @@ function sumColV2(colMapFun,rows) {
         arraySum=arraySum.toFixed(2)
     }catch (e)
     {
-        console.log(e)
+        console.warn("...warning...")
+        console.warn(e)
+       // console.log(e)
     }
 
     return  arraySum ;

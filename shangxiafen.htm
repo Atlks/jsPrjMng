@@ -69,6 +69,7 @@
 
     <script src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <script src="libBiz/kick.js"></script>
+    <script src="libBiz/bal_ttlbal.js"></script>
 </head>
 <body style="padding: 9px">
 <script src="libx/profill.js"></script>
@@ -118,7 +119,7 @@
 上下分：
 --><input type="text" value="" id="score" name="fname" style="width: 80px;display: none">
 
-<button onclick="playerNScore237()" type="button" class="btn btn-success" style="width00: 100%">搜索</button>
+<button id="schBtn" onclick="playerNScore237()" type="button" class="btn btn-success" style="width00: 100%">搜索</button>
 
 
 <button onclick="PlayerKexiafenBal638()" type="button" class="btn btn-primary"
@@ -390,6 +391,8 @@
             </table>
         </div>
     </div>
+
+总余额:<span id="ttlbalLbl"></span>
     <script>
 
 
@@ -401,12 +404,21 @@
 
 
     </script>
+<script >
+
+    ttlbal_inweb()
+</script>
+
 
 
     <script>
         shangfenTopBoxIni()
+
         // alert(curDatetime())
       //  log_err(555)
     </script>
+<script>
+    schBtn.click()
+</script>
 </body>
 </html>

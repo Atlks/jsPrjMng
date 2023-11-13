@@ -1,0 +1,21 @@
+[
+  {
+    "code": 0,
+    "agentid": 111523,
+    "linecode": "10001_1",
+    "status": 0,
+    "userid": 29310938,
+    "account": "Xxx0079468",
+    "totalScore": 3.25,
+    "integralvalue": 6,
+    "addscore": 3.25,
+    "subscore": 0,
+    "addscoretimes": 5,
+    "subscoretimes": 0,
+    "totalwinlose": 0,
+    "totalrevenue": 0,
+    "fsAmt": "0.65",
+    "tmstmp": 1699692632000,
+    "dttm": "2023-11-11 15:50:32"
+  }
+]

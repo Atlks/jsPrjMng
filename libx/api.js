@@ -157,24 +157,24 @@ async function reg(uname, pwd, nickname) {
 
 }
 global["reg"]=reg;
-global["shangfen"]=shangfen;
-
-
-
-async function shangfen(uname, score) {
-
-
-
-
-    timestamp = time();
-    _paraValue = "account=%s&score=%s&orderid=%s";
-    orderid=sprintf("%s%s%s",agentid,timestamp,uname)
-    _paraValue = sprintf(_paraValue, uname, score,orderid);
-
-    let url =   buildUrlNget(_paraValue,timestamp);
-    return  (await http_get( url));
-
-}
+// global["shangfen"]=shangfen;
+//
+//
+//
+// async function shangfen(uname, score) {
+//
+//
+//
+//
+//     timestamp = time();
+//     _paraValue = "account=%s&score=%s&orderid=%s";
+//     orderid=sprintf("%s%s%s",agentid,timestamp,uname)
+//     _paraValue = sprintf(_paraValue, uname, score,orderid);
+//
+//     let url =   buildUrlNget(_paraValue,timestamp);
+//     return  (await http_get( url));
+//
+// }
 
 
   function buildUrlNget(_paraValue,timestamp) {

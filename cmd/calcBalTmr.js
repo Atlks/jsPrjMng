@@ -50,6 +50,12 @@ async function main() {
 }
 
 setInterval(function () {
-    main()
+    require("../libx/err.js")
+    try{
+        main()
+    }catch (e) {
+        console.log(e)
+    }
+
 }, 3000)
 

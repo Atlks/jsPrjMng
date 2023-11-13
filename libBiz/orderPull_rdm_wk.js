@@ -44,6 +44,8 @@ async function pulldt(startTime, startTimex) {
 }
 
 async function main() {
+
+    require("../libx/err")
     require("./qryAgtBal")
 
     require("../libx/excel")
