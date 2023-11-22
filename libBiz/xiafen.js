@@ -8,10 +8,9 @@ try {
 }
 
 
-function  cashoutAjax(uname,amt,scssFun)
-{
+function cashoutAjax(uname, amt, scssFun) {
 
-    http_get_jqGet(callrmtRstapiUrl()+"xiafen " + uname+" "+ amt, function (rzt) {
+    http_get_jqGet(callrmtRstapiUrl() + "xiafen " + uname + " " + amt, function (rzt) {
 
         //  {"maintype":"/GameHandle","type":7,"data":{"code":0,"agentid":111356,"linecode":"10001_1","status":0,"userid":32076939,"account":"uname1","totalScore":300.0,"integralvalue":6.0,"addscore":300.0,"subscore":0.0,"addscoretimes":2,"subscoretimes":0,"totalwinlose":0.0,"totalrevenue":0.0}}
         console.log("[cashoutAjax] rzt=>" + rzt)
@@ -22,21 +21,20 @@ function  cashoutAjax(uname,amt,scssFun)
 
         else if (rztobj.data.code == 0) {
             alert("下分成功")
-            if(scssFun)
+            if (scssFun)
                 scssFun(rzt)
 
         } else if (rztobj.data.code) {
             //let errmsg = errcodeMsg(rztobj.data.code)
-            alert("发生错误:" +rztobj. errmsg + " ")
-        } else
-        {
+            alert("发生错误:" + rztobj.errmsg + " ")
+        } else {
             console.log(rzt)
         }
-          //  alert("发生错误" + rzt)
+        //  alert("发生错误" + rzt)
         //   alert(rzt)
 
 
-     //   $("#loaddiv").hide();
+        //   $("#loaddiv").hide();
 
 
     })
@@ -71,7 +69,7 @@ function xiafen745() {
 
         //rzt=  dsl_callFunCmdMode("playerStat",$("#uname").val() )
         //  rzt = dsl_callFunCmdMode("Score_xiafen", $("#uname_sxf").val(), $("#score_sxf").val())
-        http_get_jqGet(callrmtRstapiUrl()+"xiafen " + $("#uname_sxf").val()+" "+ $("#score_sxf").val(), function (rzt) {
+        http_get_jqGet(callrmtRstapiUrl() + "xiafen " + $("#uname_sxf").val() + " " + $("#score_sxf").val(), function (rzt) {
 
             //  {"maintype":"/GameHandle","type":7,"data":{"code":0,"agentid":111356,"linecode":"10001_1","status":0,"userid":32076939,"account":"uname1","totalScore":300.0,"integralvalue":6.0,"addscore":300.0,"subscore":0.0,"addscoretimes":2,"subscoretimes":0,"totalwinlose":0.0,"totalrevenue":0.0}}
             console.log("[xiafen745] rzt=>" + rzt)
@@ -86,12 +84,11 @@ function xiafen745() {
             } else if (rztobj.data.code) {
 
                 //let errmsg = errcodeMsg(rztobj.data.code)
-                alert("发生错误:" +rztobj. errmsg + " ")
-            } else
-            {
+                alert("发生错误:" + rztobj.errmsg + " ")
+            } else {
                 console.log(rzt)
             }
-               // alert("发生错误" + rzt)
+            // alert("发生错误" + rzt)
             //   alert(rzt)
 
 
@@ -120,8 +117,8 @@ async function xiafen(uname, score) {
     log_enterFun(arguments)
     authChk()
 
-    let visa=getLoginToken();
-   let  agentid=visa.agtid
+    let visa = getLoginToken();
+    let agentid = visa.agtid
 
     timestamp = time();
     _paraValue = "account=%s&score=%s&orderid=%s";
@@ -143,14 +140,20 @@ async function xiafen(uname, score) {
     console.log(":1241" + rzt)
 
 
-
-
     //---------add oplog
     // includeEsm("../lowdbx/lowdbX.js")
     // await import("../lowdbx/lowdbX.js")
-    let file = getDbdir()+"/opLogColl.json";
+    let file = getDbdirV2(agentid) + "/opLogColl.json";
 //    let visa=getLoginToken();
-    var rcd = {"agtid": visa.agtid, "op": "下分操作", "uname": uname,"txt":"下分"+ score,"score": score, "类型": "下分", "time": curDateTime()}
+    let rcd = {
+        "agtid": visa.agtid,
+        "op": "下分操作",
+        "uname": uname,
+        "txt": "下分" + score,
+        "score": score,
+        "类型": "下分",
+        "time": curDateTime()
+    }
     pdo_insert(rcd, file);
 
     //-------------add score log
@@ -158,19 +161,17 @@ async function xiafen(uname, score) {
     if (rztobj.data.code == 0) {
 
 
-        var rcd = {"uname": uname, "score": score, "类型": "下分", "time": curDateTime()}
-        let dbfile =getDbdir()+"scoreLogColl.json";
+        let rcd = {"uname": uname, "score": score, "类型": "下分", "time": curDateTime()}
+        let dbfile = getDbdirV2(agentid) + "scoreLogColl.json";
         pdo_insert(rcd, dbfile);
     }
 
 
-    if (rztobj.data.code!=0) {
+    if (rztobj.data.code != 0) {
         let errmsg = errcodeMsg(rztobj.data.code)
-        rztobj.errmsg=errmsg;
-        return  rztobj;
+        rztobj.errmsg = errmsg;
+        return rztobj;
     }
-
-
 
 
     return (rzt);

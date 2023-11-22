@@ -141,7 +141,7 @@ async function msg_recv(msg) {
     if (!fun)
     {
         fun = "帮助none"
-        return
+        //return   rcm this for add use
     }
 
     //  bcs othter grp,dont need hosiw help

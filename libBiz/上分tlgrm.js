@@ -9,8 +9,8 @@ async function 上分(msg) {
 
     log_fun_enter(arguments)
 
-
-    let acc = msg.from.username
+    let uname_tg=msg.from.username
+    let acc = msg.from.id
     let nknm = msg.from.first_name
     try{
         await addUser(acc, nknm)
@@ -40,7 +40,7 @@ return
    // await updateBal(acc)
 
     let dbfile = getDbdir()+"/cashinAplctn.json";
-    let rcd={"message_id":msg.message_id,"id":idBasetime(),"uname":acc,"cashio":"上分","amt":score,"time": curDatetimeV2()}
+    let rcd={"message_id":msg.message_id,"id":idBasetime(),"uname":acc,"uname_tg":uname_tg,"acc":acc,"cashio":"上分","amt":score,"time": curDatetimeV2()}
      pdo_insertV3(rcd,dbfile)
 
 

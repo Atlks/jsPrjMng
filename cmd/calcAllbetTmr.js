@@ -7,7 +7,7 @@ function  main()
     require("../libBiz/bzDb")
     require("../libBiz/user")
 
-
+   //---- todo  noet use
    let kf= __dirname+"/../_noup/key.txt"
 
     var fs = require("fs");
@@ -19,6 +19,8 @@ function  main()
     token.desCode = key[1]
     token.md5Code = key[2]
     global['visaImEnv'] = token
+
+    //--------statrt
 
 //let dbf = __dirname + "/../db_zhudan/zhudan_uid" + v.UserID;
     let file = getDbdir()+"/userColl.json";

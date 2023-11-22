@@ -8,11 +8,19 @@ function array_sum(arr) {
     return sum;
 }
 
- //— 返回输入数组中指定列的值
-function array_column()
-{
 
+global["array_column"] = array_column;
+ //— 返回输入数组中指定列的值
+function array_column(data_rows,clmnName)
+{
+    let modifiedArr = data_rows.map(function(element){
+        return element[clmnName];
+    });
+    return modifiedArr
 }
+
+
+
 
 
 // function array_sum(arr){

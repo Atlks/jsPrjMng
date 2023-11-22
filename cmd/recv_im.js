@@ -8,12 +8,17 @@
 token="6411257533:AAFQI8JMckmNy9HXFdXLU_9cLnLDeyi-5Hc"
 global['grpid']=-4038077884    //msgnode grpname
 
-let keystr = "111523,DDDCB686535395BC,B7A4A36327A085A7"
+let keystr = "111526"
 global['apiurl2023'] = "https://ng.mqbsx.com"
 
 
 //todo maybe rcm need
-  keystr = "111523,DDDCB686535395BC,B7A4A36327A085A7"
+let kf= __dirname+"/../_noup/key.txt"
+
+var fs = require("fs");
+let rt = fs.readFileSync(kf).toString();
+keystr = rt.trim();
+
 global['apiurl2023'] = "https://dtinterface.1saeda.com"
 
 

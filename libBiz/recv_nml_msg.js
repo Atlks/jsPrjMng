@@ -9,18 +9,24 @@ global['recv_nml_msg'] = recv_nml_msg
  */
 async function recv_nml_msg(msg) {
     //if nml msg ,add user first
-    let acc = msg.from.username
+    let acc_tgid = msg.from.id
     let nknm = msg.from.first_name
     try {
-            await  addUserAtRmt(acc,nknm)
+        let rzt2 = await searchPlayer(acc_tgid)
+        let rztobj = JSON.parse(rzt2);
+        // if have user in rmt
+        if (rztobj.data.code == 71) {
+            await  addUserAtRmt(acc_tgid,nknm)
+        }
+
     } catch (e) {
        console.log(e)
     }
 
-
+    // -------updt loc user score
     try {
-        let uname = acc
-        let rzt2 = await searchPlayer(uname)
+        let uname = acc_tgid
+        let rzt2 = await searchPlayer(acc_tgid)
         let rztobj = JSON.parse(rzt2);
         let uid = rztobj.data.userid
         let nknm = rztobj.data.account
@@ -30,10 +36,10 @@ async function recv_nml_msg(msg) {
 
 
             // if not  exist user in local,,add user ...
-            if (!isExistUser(uname)) {
+            if (!isExistUser(acc_tgid)) {
                 let obj = {
                     "userid": uid,
-                    "account": uname,
+                    "account": acc_tgid,
                     "nickname": nknm,
                     "agtid": global['agentid'],
                     "uid": uid,
@@ -51,10 +57,10 @@ async function recv_nml_msg(msg) {
 
             //if exist usre local ,updt score
 
-            if (isExistUser(uname)) {
+            if (isExistUser(acc_tgid)) {
                 let file2 = getDbdir() + "/userColl.json";
                 let data2_conn =pdo_connV3(file2)
-                let rzt = pdo_query_fromData({"account": uname},data2_conn )
+                let rzt = pdo_query_fromData({"account": acc_tgid},data2_conn )
                 rzt[0]['score'] = rztobj.data.totalScore
                 rzt[0]['totalScore'] =rztobj. data.totalScore
                 rzt[0]['status'] = rztobj.data.status

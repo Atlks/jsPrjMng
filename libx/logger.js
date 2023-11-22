@@ -185,6 +185,45 @@ function err_castSerizErr(e) {
 }
 
 
+global['log_errV4']=log_errV4
+
+/**
+ *
+ * @param e maybe str,num,obj
+ * @param callerArgsX
+
+ */
+function log_errV4(e, callerArgsX) {
+
+
+    //if(e obj)  add stk msg prp for json endocde
+    try{
+        e.stack1=e?.stack  //bcs this two prpop cant to json encode
+
+        e.msg1=e?.message
+    }catch (e3){
+        console.log(e3)
+    }
+
+
+
+    try {
+
+        let eo = {"e": e, "funNargs": callerArgsX}
+
+        console.log(" log_errV3]] :183 ")
+        console.log(eo);
+        let msg = json_encode(eo)
+        appendFileSync("./err_log636.log", curDatetime() + " ERR " + msg + "\r\n")
+        return eo;
+    } catch (e4) {
+        console.log(e4)
+    }
+
+
+}
+
+
 
 global['log_errV3']=log_errV3
 function log_errV3(e, callerArgs) {

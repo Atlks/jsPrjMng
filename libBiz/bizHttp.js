@@ -170,6 +170,41 @@ function buildUrlNgetV3(_paraValue, timestamp, apitype_shangfen) {
 }
 
 
+global['buildUrlNgetV4'] = buildUrlNgetV4
+
+function buildUrlNgetV4(_paraValue,  apitype_shangfen,visa) {
+
+    let timestamp = time();
+    if (_paraValue == "__empty__")
+        _paraValue = ""
+    log_enterFun(arguments)
+
+    authChk()
+    let paraValue = ""
+
+    if (_paraValue == "")
+        _paraValue = "gameid=1"
+    else
+        _paraValue = _paraValue + "&gameid=1";
+
+    console.log("_paraValue raw==>"+_paraValue)
+
+
+    paraValue = aes_encrypt_ecbX(_paraValue, visa.desCode);
+    let  md5key = md5(sprintf("%s%s%s", visa.agtid, timestamp, visa.md5Code));
+
+    // let www="https://ng.mqbsx.com"
+
+
+
+    let  $url_tpmplt = apiurl2023+"/GameHandle?agentid=%s&timestamp=%s&type=%s&paraValue=%s&key=%s";
+    let  $url = sprintf($url_tpmplt, visa.agtid, timestamp, apitype_shangfen, urlencode(paraValue), md5key);
+
+
+    return $url;
+}
+
+
 
 global['buildUrlNget_zhudan']=buildUrlNget_zhudan
 

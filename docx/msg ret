@@ -1,0 +1,12 @@
+{
+  message_id: 1833785,
+  from: {
+    id: 879006550,
+    is_bot: false,
+    first_name: &#x27;十 jarkas 大鱼 刘洋 汤姆&#x27;,
+    username: &#x27;Xxx0079468&#x27;
+  },
+  chat: { id: -1001847884546, title: &#x27;金貝集團-捕鱼电玩城&#x27;, type: &#x27;supergroup&#x27; },
+  date: 1700638399,
+  text: &#x27;余额&#x27;
+}

@@ -36,6 +36,8 @@ async function pulldt(startTime, startTimex) {
             }
         }catch (e) {
             console.log(e)
+
+            log_errV4(e,v)
         }
 
 
@@ -93,11 +95,12 @@ async function main() {
             //只保留三个月数据only save 3month dat..doc said..
             // let untiltime=timestamp-100 * 24 * 3600 * 1000
             //  服务器端
-
+               //throw 22
             await pulldt(startTime, 0);
         }catch (e)
         {
             console.log(e)
+            log_errV4(e,"")
         }
 
     }

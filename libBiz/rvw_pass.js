@@ -3,19 +3,20 @@ global['rvw_passCore'] = rvw_passCore
 /**
  *
  *
- * @param uname
+ * @param uname_acc
+ *
  * @param cashio
  * @param amt
  * @param rowid
  */
 async function rvw_passCore(uname, cashio, amt, rowid) {
 
-    const curReqID=getcurReqID()
+    const curReqID = getcurReqID()
     let req = global['req' + curReqID];
     //   req.cookies
-    if(req) {  //web env
+    if (req) {  //web env
         var token = getLoginToken()
-        global['visaImEnv']=token
+        global['visaImEnv'] = token
 
     }
 
@@ -30,7 +31,7 @@ async function rvw_passCore(uname, cashio, amt, rowid) {
         console.log(rzt)
 
         let row = rzt[0]
-        if ("已处理"==row['stat'] )
+        if ("已处理" == row['stat'])
             return
         row['stat'] = "已处理"
         row['statShow'] = "已通过"
@@ -38,29 +39,37 @@ async function rvw_passCore(uname, cashio, amt, rowid) {
 
 
 //----------
-        let acc2 = await findPlayer(uname)
-        console.log("当前 余额")
-        console.log(acc2)
+//         let acc2 = await findPlayer(uname)
+//         console.log("当前 余额")
+//         console.log(acc2)
 
         shangfen(uname, amt);
 
-        //
+
+        const curReqID = getcurReqID()
+        let req = global['req' + curReqID];
+        //   req.cookies
+        if (req) {  //web env
+            var token = getLoginToken()
+            var visa=token
+            var desCode = token.desCode
+            var agentid = token.agtid
+        }
 
 
-        const bot = global['bot']
 
-        let acc = await findPlayer(uname)
-        let text = sprintf("上分%s审核通过成功,当前 余额:" + acc.data.totalScore, amt);
-       console.log(text)
-        await bot.sendMessage(global['grpid'], text, {reply_to_message_id: row.message_id})
-        //
 
-        // setTimeout(async function () {
-        //     let acc = await findPlayer(uname)
-        //     let text = sprintf("上分%s审核通过成功,当前余额:" + acc.data.totalScore, amt);
-        //     await bot.sendMessage(global['grpid'], text, {})
-        //
-        // }, 10000)
+        setTimeout(async function () {
+
+          //  let visa={"agentid":agentid,"desCode":desCode}
+            let acc = await findPlayerV2(uname, visa)
+            let text = sprintf("上分%s审核通过成功,当前 余额:" + acc.data.totalScore, amt);
+            console.log(text)
+
+            const bot = global['bot']
+            await bot.sendMessage(global['grpid'], text, {reply_to_message_id: row.message_id})
+
+        }, 10000)
 
 
     }
@@ -85,15 +94,40 @@ async function rvw_passCore(uname, cashio, amt, rowid) {
         xiafen(uname, amt);
 
 
-        let acc = await findPlayer(uname)
-        const bot = global['bot']
-        let text = sprintf("下分%s审核通过成功,当前余额:" + acc.data.totalScore, amt);
-        await bot.sendMessage(global['grpid'], text, {reply_to_message_id: row.message_id})
+
+        //------get id
+        const curReqID = getcurReqID()
+        let req = global['req' + curReqID];
+        //   req.cookies
+        if (req) {  //web env
+            var token = getLoginToken()
+            var visa=token
+            var desCode = token.desCode
+            var agentid = token.agtid
+        }
+
+
+
+
+        setTimeout(async function () {
+
+            //  let visa={"agentid":agentid,"desCode":desCode}
+            let acc = await findPlayerV2(uname, visa)
+            let text = sprintf("下分%s审核通过成功,当前余额:" + acc.data.totalScore, amt);
+            console.log(text)
+
+            const bot = global['bot']
+            await bot.sendMessage(global['grpid'], text, {reply_to_message_id: row.message_id})
+
+        }, 10000)
+
+
+
 
     }
 
 
-    global['visaImEnv']=null
+    global['visaImEnv'] = null
 }
 
 
@@ -107,7 +141,7 @@ function rvw_passAjax(row, scssFun) {
         return
     }
 
-    let uname = row.uname;
+    let uname = row.uname; //act is acc,tg_uid
     let amt = row.amt
     http_get_jqGet(callrmtRstapiUrl() + "rvw_passCore " + uname + " " + row.cashio + " " + amt + " " + row.id, function (rzt) {
 

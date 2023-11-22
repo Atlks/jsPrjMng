@@ -4,7 +4,10 @@
 
 global['token']="6411257533:AAFQI8JMckmNy9HXFdXLU_9cLnLDeyi-5Hc"
 
-global['grpid']=-4038077884
+global['grpid']=-4038077884   //msgnode
+
+global['apiurl2023'] = "https://ng.mqbsx.com"
+global['apiurl2023'] = "https://dtinterface.1saeda.com"
 
 // nohup node_modules/.bin/node-dev  cmd/call_fun_web.js &
 
@@ -17,7 +20,6 @@ const bot = new TelegramBot(token, {polling: false});
 global['bot'] = bot
 
 
- global['apiurl2023'] = "https://ng.mqbsx.com"
-  global['apiurl2023'] = "https://dtinterface.1saeda.com"
+
 
 require("../libBiz/callweb")

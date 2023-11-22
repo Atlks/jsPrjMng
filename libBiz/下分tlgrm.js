@@ -14,7 +14,9 @@ async function 下分(msg) {
     log_fun_enter(arguments)
 
 
-    let acc = msg.from.username
+
+    let uname_tg=msg.from.username
+    let acc = msg.from.id
     let nknm = msg.from.first_name
     try{
         await addUser(acc, nknm)
@@ -44,7 +46,7 @@ async function 下分(msg) {
    // await updateBal(acc)
 
     let dbfile = getDbdir()+"/cashinAplctn.json";
-    let rcd={"message_id":msg.message_id,"id":idBasetime(),"uname":acc,"cashio":"下分","amt":score,"time": curDatetimeV2()}
+    let rcd={"message_id":msg.message_id,"id":idBasetime(),"nknm":nknm,"uname_tg":uname_tg,"uid_tg":acc,"acc":acc,"uname":acc,"cashio":"下分","amt":score,"time": curDatetimeV2()}
     pdo_insertV3(rcd,dbfile)
 
 

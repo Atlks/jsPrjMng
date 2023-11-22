@@ -23,9 +23,9 @@ function get_alreadyFsAmtV2(userid) {
 
     //  let dbf = __dirname + "/../db_zhudan/zhudan_uid" + user.data.userid;
     console.log(dbf)
-    let dtRows = pdo_query({"userid":userid},dbf)
-    if(!dtRows)
-        return  0
+    let dtRows = pdo_query({"userid": userid}, dbf)
+    if (!dtRows)
+        return 0
     let fsAmt = sumColV2((e) => e.fsAmt, dtRows)
     return fsAmt;
 }
@@ -41,14 +41,14 @@ function getFsRat() {
 
     var ini = require('ini');
     var fs = require('fs');
-    let file ='../cfg.ini';
+    let file = __dirname + '/../cfg.ini';
     var config = ini.parse(fs.readFileSync(file, 'utf-8'));
-    console.log(config. 反水比率);
-    return config. 反水比率;
+    console.log(config.反水比率);
+    return config.反水比率;
 }
 
 function fmtRatePst(fsRat) {
-    return fsRat*100+"%";
+    return fsRat * 100 + "%";
 }
 
 async function outputToIm(acc, allbet, fsRat, fsFnl) {
@@ -76,13 +76,13 @@ async function 反水(msg) {
     log_fun_enter(arguments)
 
 
-    let acc = msg.from.username
+    let acc = msg.from.id
 
     let user = await findPlayer(acc)
 
     //zhudan_uid32077260
 
-    let dbf = __dirname + "/../db_zhudan/zhudan_uid" + user.data.userid+".json";
+    let dbf = __dirname + "/../db_zhudan/zhudan_uid" + user.data.userid + ".json";
     console.log(dbf)
     let dtRows = readFileAsJsonV2(dbf, [])
     if (dtRows.length == 0) {
@@ -108,9 +108,9 @@ async function 反水(msg) {
     let feshweiAmt = allbet * fsRat;
     let alreadyFsAmt = get_alreadyFsAmtV2(user.data.userid);
     let fsFnl = feshweiAmt - alreadyFsAmt
-    if(fsFnl<=0)
-        fsFnl=0
-    fsFnl= nbr_fmt_fix2(fsFnl)
+    if (fsFnl <= 0)
+        fsFnl = 0
+    fsFnl = nbr_fmt_fix2(fsFnl)
     if (fsFnl <= 0) {
 
         let output = await outputToIm(acc, allbet, fsRat, fsFnl);
@@ -124,12 +124,12 @@ async function 反水(msg) {
 
     let fslogRcd = user.data;
     fslogRcd.fsAmt = fsFnl
-    fslogRcd.tmstmp=timeStamp()
-    fslogRcd.dttm=curDatetimeV2()
-    addFslogRcdV2(user.data.userid, fslogRcd)
+    fslogRcd.tmstmp = timeStamp()
+    fslogRcd.dttm = curDatetimeV2()
+    addFslogRcdV2("notuse", fslogRcd)
 
 
-    fsFnl= nbr_fmt_fix2(fsFnl)
+    fsFnl = nbr_fmt_fix2(fsFnl)
     let output = await outputToIm(acc, allbet, fsRat, fsFnl);
     // let txt="格式为: 上分100 下分100 余额 流水"
     const bot = global['bot']

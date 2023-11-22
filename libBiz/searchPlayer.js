@@ -18,7 +18,7 @@ function arrToTable(arr) {
    }
 
 // col cant be null,cant be "null" bdant be empty
-    loadToDataTableV2(arr, "app3", columns,[[0, "desc"]])
+    loadToDataTableV2(arr, "app3", columns,[[3, "desc"]])
 }
 
 //  apitype_PlayerScore
@@ -164,6 +164,8 @@ async function findPlayer(uname) {
 
 }
 
+
+
 global['searchPlayer']=searchPlayer
 global['sumAllbet']=sumAllbet
 function sumAllbet(userid) {
@@ -206,18 +208,18 @@ function sumAllbet(userid) {
  * @param uname
  * @returns {*}
  */
-async function searchPlayer(uname) {
+async function searchPlayer(acc) {
 
 
 
     log_enterFun_console(arguments)
 
 
-    if(!uname)
+    if(!acc)
         return  searchPlayerAll()
     let timestamp = time();
 
-    let _paraValue = sprintf("account=%s", uname);
+    let _paraValue = sprintf("account=%s", acc);
     echo("_paraValue==>" + _paraValue)
     require("./bizHttp")
     let url = buildUrlNget_x(_paraValue, timestamp, apitype_PlayerScore);

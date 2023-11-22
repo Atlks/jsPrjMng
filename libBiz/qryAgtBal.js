@@ -23,9 +23,14 @@ function qryAgtBalINweb() {
 
 
         log_info(data1);
-        rztobj = JSON.parse(data);
+        if(data.includes("not_loginex@"))
+        {
+            alert("登录超时")
+            return
+        }
+     let   rztobj = JSON.parse(data);
 
-        rztobj = JSON.parse(data);
+
 
         $("#loaddiv").hide();
 

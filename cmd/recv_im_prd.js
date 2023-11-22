@@ -8,7 +8,12 @@ token = "6643664645:AAHTiqen1zXDRdMDhl8j8Kz25ebY9xQaEpc"
 // let iniObj = parse_ini_file("../cfgDep.ini")
 // token = iniObj.token_bot_tlgrm;
 global['grpid'] = -1001847884546
-let keystr = "111523,DDDCB686535395BC,B7A4A36327A085A7"
+let keystr = ""
+let kf= __dirname+"/../_noup/key.txt"
+
+var fs = require("fs");
+let rt = fs.readFileSync(kf).toString();
+keystr = rt.trim();
 
 
 global['apiurl2023'] = "https://dtinterface.1saeda.com"

@@ -59,6 +59,47 @@ global['getLoginToken'] = getLoginToken
 // require("../libx/sys")
 // console.log(getLoginToken())
 
+
+
+global['findPlayerV2']=findPlayerV2
+async function findPlayerV2(uname,visa) {
+
+
+
+    log_enterFun_console(arguments)
+
+
+    if(!uname)
+        return  searchPlayerAll()
+    let timestamp = time();
+
+    let _paraValue = sprintf("account=%s", uname);
+    echo("_paraValue==>" + _paraValue)
+    let url = buildUrlNgetV4(_paraValue,   apitype_PlayerScore,visa);
+    //  alert("url=>"+url)
+    var rzt;
+    try {
+        rzt = await http_get(url);
+        console.log(":1240" + rzt)
+
+        let rztobj = JSON.parse(rzt);
+        if (rztobj.data.code != 0) {
+
+            let errmsg = errcodeMsg(rztobj.data.code)
+            rztobj.errmsg = errmsg;
+            //   rzt = JSON.stringify(rztobj)
+        }
+
+        return rztobj;
+    } catch (e) {
+        checkWhiteIp(e, "");
+        checkAgtidErr(e);
+    }
+
+
+}
+
+
 /**
  *
  * @returns {{desCode: *, md5Code: *, agtid: *}|*|{}}
@@ -227,13 +268,13 @@ global['isExistUser'] = isExistUser
 
 /**
  *
- * @param uname
+ * @param acc
  * @returns {boolean}
  */
-function isExistUser(uname) {
+function isExistUser(acc) {
     let file = getDbdir() + "/userColl.json";
 
-    let rows = pdo_query({"account": uname}, file)
+    let rows = pdo_query({"account": acc}, file)
     if (rows.length == 0)
         return false
     if (rows.length > 0)

@@ -1,9 +1,9 @@
 require("./enc")
 require("./mmnc")
 
-basewd="fk()"  // f
+basewd="fff"  // f
 offst=1;
-slt="slt"
+slt=""
 
 for(let i=1;i<10;i++)
 {
