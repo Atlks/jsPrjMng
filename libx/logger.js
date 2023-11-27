@@ -45,20 +45,21 @@ try {
 }
 
 
-try{
+try {
     require("./sys")
-}catch (e) {
-    
+} catch (e) {
+
 }
 
-try{
+try {
     require("./libx/sys")
-}catch (e) {
+} catch (e) {
 
 }
+
 function appendFileSyncAllenv(f, msg) {
     //alert("appendFileSyncAllenv")
-   
+
     if (isWinformEnv()) {
 
         callOBj = "appendFileSync " + encodeURIComponent(f) + " " + encodeURIComponent(msg);
@@ -68,7 +69,7 @@ function appendFileSyncAllenv(f, msg) {
     } else {
         //win env   node env
         let fs = require("fs");
-      //  alert(fs)
+        //  alert(fs)
 
         fs.appendFileSync(f, msg)
     }
@@ -77,23 +78,28 @@ function appendFileSyncAllenv(f, msg) {
 // require("./sys")
 // appendFileSyncAllenv("log906.log","aaa")
 
-try{
+try {
     require("./file2023")
-}catch (e){}
-try{
+} catch (e) {
+}
+try {
     require("./libx/file2023")
-}catch (e){}
+} catch (e) {
+}
 
-try{
+try {
     require("./sys")
-}catch (e){}
-try{
+} catch (e) {
+}
+try {
     require("./libx/sys")
-}catch (e){}
+} catch (e) {
+}
 
-global['log_info']=log_info
+global['log_info'] = log_info
+
 function log_info(msg) {
-   // require("./file2023")
+    // require("./file2023")
     try {
         //  logger606.info(msg);   info: Sep-05-2023 18:34:26:
         appendFileV2("../log636.log", curDatetime() + " info " + msg + "\r\n")
@@ -102,6 +108,19 @@ function log_info(msg) {
     }
 
 }
+
+global['log_infoV2'] = log_infoV2
+function log_infoV2(msg,logf) {
+    // require("./file2023")
+    try {
+        //  logger606.info(msg);   info: Sep-05-2023 18:34:26:
+        appendFileV2(logf, curDatetime() + " info " + msg + "\r\n")
+    } catch (e) {
+        console.log(e)
+    }
+
+}
+
 global['__METHOD__'] = __METHOD__
 
 function __METHOD__(e) {
@@ -118,6 +137,7 @@ function __METHOD__(e) {
     funname = funname.substr(3, brk - 3)
     return funname.trim();
 }
+
 function log_enterFun_console(arguments1) {
 
     var funname;
@@ -128,14 +148,19 @@ function log_enterFun_console(arguments1) {
         funname = __METHOD__(e);
 
     }
- //   var funname = arguments1.callee.name;
+    //   var funname = arguments1.callee.name;
     // arguments.callee.name
     arg = JSON.stringify(arguments);
     console.log("*********=>" + funname + arg);
 
 }
 
-global['log_enterFun']=log_enterFun
+global['log_enterFun'] = log_enterFun
+
+/**
+ * only log console  dep,use log_console
+ * @param arguments
+ */
 function log_enterFun(arguments) {
 
     var funname = arguments.callee.name;
@@ -150,7 +175,8 @@ try {
 } catch (e) {
 }
 
-global['log_fun_enter']=log_fun_enter
+global['log_fun_enter'] = log_fun_enter
+
 function log_fun_enter(argsx) {
 
     var funname = argsx.callee.name;
@@ -161,7 +187,42 @@ function log_fun_enter(argsx) {
 
 }
 
-global['log_fun_ret']=log_fun_ret
+global['log_fun_enterV2'] = log_fun_enterV2
+
+function log_fun_enterV2(argsx,logf) {
+
+    var funname = argsx.callee.name;
+    // arguments.callee.name
+    arg = JSON.stringify(argsx);
+    console.log("*********=>" + funname + arg);
+    log_infoV2("*********=>" + funname + arg,logf)
+
+}
+
+
+global['log_fun_retV2'] = log_fun_retV2
+
+function log_fun_retV2(arguments, retVal,logf) {
+
+    var funname = arguments.callee.name;
+    // arguments.callee.name
+  let  arg = JSON.stringify(arguments);
+
+
+  let retShowStr= JSON.stringify(retVal)
+    retShowStr = retShowStr.substring(0, 300)
+    //  "*********=>" + funname + arg
+    let data = "[" + funname + "] ret=>" + retShowStr;
+    console.log(data);
+    log_infoV2(data,logf)
+
+
+}
+
+
+
+global['log_fun_ret'] = log_fun_ret
+
 function log_fun_ret(arguments, retVal) {
 
     var funname = arguments.callee.name;
@@ -169,7 +230,7 @@ function log_fun_ret(arguments, retVal) {
     arg = JSON.stringify(arguments);
 
 
-    retVal=retVal.substring(0,300)
+    retVal = retVal.substring(0, 300)
     //  "*********=>" + funname + arg
     let data = "[" + funname + "] ret=>" + retVal;
     console.log(data);
@@ -185,7 +246,7 @@ function err_castSerizErr(e) {
 }
 
 
-global['log_errV4']=log_errV4
+global['log_errV4'] = log_errV4
 
 /**
  *
@@ -197,14 +258,13 @@ function log_errV4(e, callerArgsX) {
 
 
     //if(e obj)  add stk msg prp for json endocde
-    try{
-        e.stack1=e?.stack  //bcs this two prpop cant to json encode
+    try {
+        e.stack1 = e?.stack  //bcs this two prpop cant to json encode
 
-        e.msg1=e?.message
-    }catch (e3){
+        e.msg1 = e?.message
+    } catch (e3) {
         console.log(e3)
     }
-
 
 
     try {
@@ -224,24 +284,56 @@ function log_errV4(e, callerArgsX) {
 }
 
 
+global['log_errV5'] = log_errV5
 
-global['log_errV3']=log_errV3
+function log_errV5(e, callerArgsX, logf) {
+
+
+    //if(e obj)  add stk msg prp for json endocde
+    try {
+        e.stack1 = e?.stack  //bcs this two prpop cant to json encode
+
+        e.msg1 = e?.message
+    } catch (e3) {
+        console.log(e3)
+    }
+
+
+    try {
+
+        let eo = {"e": e, "funNargs": callerArgsX}
+
+        console.log(" log_errV3]] :183 ")
+        console.log(eo);
+        let msg = json_encode(eo)
+        appendFileSync(logf, curDatetime() + " ERR " + msg + "\r\n")
+        return eo;
+    } catch (e4) {
+        console.log(e4)
+    }
+
+
+}
+
+
+global['log_errV3'] = log_errV3
+
 function log_errV3(e, callerArgs) {
 
-    e.stack1=e?.stack  //bcs this two prpop cant to json encode
+    e.stack1 = e?.stack  //bcs this two prpop cant to json encode
     // if(e.message)
-    e.msg1=e?.message
+    e.msg1 = e?.message
 
     // e.stack1=e?.stack
     // // if(e.message)
     // e.msg1=e?.message
-   // require("../libx/logger")
+    // require("../libx/logger")
 
     try {
 
         let eo = {"e": err_castSerizErr(e), "funNargs": callerArgs}
-        eo.stack1=e?.stack;
-        eo.msg=e?.message;
+        eo.stack1 = e?.stack;
+        eo.msg = e?.message;
         console.log(" log_errV3]] :183 ")
         console.log(eo);
         let msg = json_encode(eo)
@@ -255,7 +347,8 @@ function log_errV3(e, callerArgs) {
 }
 
 
-global['log_errV2']=log_errV2
+global['log_errV2'] = log_errV2
+
 function log_errV2(e, arguments) {
 
     try {
@@ -289,7 +382,7 @@ function errorSeriz(e) {
 }
 
 
-global['log_err']=log_err
+global['log_err'] = log_err
 
 function log_err(e) {
     // require("./fp_ati1990")
@@ -313,7 +406,8 @@ function log_err(e) {
     }
 }
 
-global['log_warn']=log_warn
+global['log_warn'] = log_warn
+
 function log_warn(e) {
     require("./fp_ati1990")
     try {

@@ -1,5 +1,22 @@
 
-global['sumColV2']=sumColV2
+
+global['sumColV3']=sumColV3
+/**
+ *
+ * @param rows
+ * @param colMapFun
+ * @returns {number}
+ */
+function sumColV3(colName,rows) {
+    require("./arr")
+    let data_rows =  array_column(rows,colName)
+    return  array_sumV2(data_rows)
+
+}
+
+
+
+    global['sumColV2']=sumColV2
 /**
  *
  * @param rows
@@ -30,7 +47,7 @@ function sumColV2(colMapFun,rows) {
        // console.log(e)
     }
 
-    return  arraySum ;
+    return  parseFloat(arraySum) ;
 
 
 

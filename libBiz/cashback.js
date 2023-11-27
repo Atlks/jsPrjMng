@@ -11,7 +11,9 @@ function listFslogRcd(userid, fslogRcd) {
     let visa = getLoginToken()
     let dbdir = __dirname + "/../db/" + visa.agtid + "/";
     let dbf = dbdir + "cashbackLog.json"
-    return pdo_query({},dbf)
+    let pdoQuery = pdo_query({},dbf);
+    pdoQuery=pdoQuery.sort((a,b)=>b.tmstmp-a.tmstmp)
+    return pdoQuery
 }
 
 /**

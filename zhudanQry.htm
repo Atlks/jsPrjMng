@@ -62,6 +62,8 @@
 
     <script src="libx/httpSync.js"></script>
     <script src="libBiz/zhudanMng.js"></script>
+    <script src="libx/aggr.js"></script>
+    <script src="libx/arr.js"></script>
 </head>
 <body>
 <script src="libx/profill.js"></script>
@@ -195,8 +197,20 @@
     </div>
     <div class="card-body">
 
-      用户id： <input type="text"  value="" id="uid" name="uid" style="width: 100px">
+        <div style="display: none">
+            用户id： <input type="text"  value="" id="uid" name="uid" style="width: 100px">
+
+        </div>
+
+        账户： <input type="text"  value="" id="acc" name="acc" style="width: 100px">
+
+        <input placeholder="起始日期" type="date"  value="" id="dt1" name="dt1" stylex="width: 100px">
+        <input placeholder="结束时间" type="date"  value="" id="dt2" name="dt2" stylex="width: 100px">
+
        <button id="schBtn" style=" margin: 0px" onclick="clk634()" class="btn btn-primary">查询</button>
+
+      <p></p> 有效投注：<span id="avdBetSum"></span>
+
         <table class="table" id="tab_oplog">
             <thead>
             <tr>

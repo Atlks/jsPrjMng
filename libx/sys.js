@@ -5,14 +5,57 @@ function tipsNendThrowEx(提示内容) {
 
 }
 
+global['isNumber'] = isNumber
+function isNumber(a){
+
+    if(a=="")
+        return  false;
+
+    if(a==null)
+        return  false;
+
+
+    if(a==undefined)
+        return  false;
+
+    if(isNaN(Number(a,10))){
+
+        return false
+
+    }
+
+    else{
+
+        return true
+
+    }
+
+}
+
 global['nbr_fmt_fix2'] = nbr_fmt_fix2
 function nbr_fmt_fix2(arraySum)
 {
+    try{
+        arraySum=parseFloat(arraySum)
+    }catch (e)
+    {
+
+    }
+
     try{
         arraySum=arraySum.toFixed(2)
     }catch (e)
     {
         console.log(e)
+    }
+
+
+
+    try{
+        arraySum=parseFloat(arraySum)
+    }catch (e)
+    {
+
     }
     return  arraySum
 

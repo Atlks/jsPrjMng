@@ -10,6 +10,36 @@ try{
 
 }
 
+global["writeFileJson"] = writeFileJson;
+function writeFileJson(fil, obj) {
+    try{
+        var fs = require("fs");
+        var path = require("path");
+        fs.mkdirSync(path.dirname(fil), {recursive: true});
+        //   fs.mkdirSync(appRoot + '/css
+
+        fs.writeFileSync(fil, json_encode(obj));
+    }catch (e)
+    {
+        console.log(e)
+    }
+
+}
+
+
+
+
+
+global["readFileAsArr"] = readFileAsArr;
+function readFileAsArr(f) {
+
+
+    var fs = require("fs");
+    let rt = fs.readFileSync(f).toString();
+    rt = rt.trim();
+    const  idss = rt.split(",")
+    return idss
+}
 function __METHOD__(e) {
     //Error
     //     at loadToTableVue (C:\modyfing\jbbot\zmng\node_modules\ui.js:116:17)

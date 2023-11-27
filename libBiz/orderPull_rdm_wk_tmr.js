@@ -86,7 +86,7 @@ async function main() {
     let timestamp = timeStamp();
 
   //  rand(2,7)
-    while (true)
+   // while (true)
     {
         try{
             let startDt=timestamp-rand(0,3) * 24 * 3600 * 1000
