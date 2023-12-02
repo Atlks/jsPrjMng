@@ -178,7 +178,7 @@ function  getIDsWhtlst()
  */
 async function 反水(msg) {
 
-
+    return
 
     let fslogf1 = "fslog.log";
     log_infoV2("\r\n\r\n\r\n-----------start反水-----", fslogf1)
