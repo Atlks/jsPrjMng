@@ -1,0 +1,9 @@
+[
+  {
+    "callfun": "saveMsgCmdCfg",
+    "cashin": "上分-上-充值",
+    "cashout": "下分-下-提现",
+    "ls": "流水-水",
+    "bal": "余额-余"
+  }
+]

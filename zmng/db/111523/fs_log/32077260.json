@@ -1,0 +1,19 @@
+[
+  {
+    "code": 0,
+    "agentid": 111356,
+    "linecode": "10001_1",
+    "status": 0,
+    "userid": 32077260,
+    "account": "Xxx0079468",
+    "totalScore": 2766.78,
+    "integralvalue": 6,
+    "addscore": 3291.78,
+    "subscore": 525,
+    "addscoretimes": 57,
+    "subscoretimes": 18,
+    "totalwinlose": 0,
+    "totalrevenue": 0,
+    "fsAmt": 0.13555
+  }
+]

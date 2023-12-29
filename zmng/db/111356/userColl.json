@@ -1,0 +1,272 @@
+[
+  {
+    "userid": 32077146,
+    "account": 88,
+    "nickname": 8,
+    "agtid": 111356,
+    "uid": 32077146,
+    "uname": 88,
+    "nknm": 8,
+    "time": "2023-09-23 20:58:59"
+  },
+  {
+    "userid": 32077123,
+    "account": 555,
+    "nickname": 55,
+    "agtid": 111356,
+    "uid": 32077123,
+    "uname": 555,
+    "nknm": 55,
+    "time": "2023-09-23 20:58:59"
+  },
+  {
+    "userid": 32077119,
+    "account": 666,
+    "nickname": 6,
+    "agtid": 111356,
+    "uid": 32077119,
+    "uname": 666,
+    "nknm": 6,
+    "time": "2023-09-23 20:58:59"
+  },
+  {
+    "userid": 32077118,
+    "account": 77,
+    "nickname": 7,
+    "agtid": 111356,
+    "uid": 32077118,
+    "uname": 77,
+    "nknm": 7,
+    "time": "2023-09-23 20:58:59"
+  },
+  {
+    "userid": 32077117,
+    "account": 99,
+    "nickname": 9,
+    "agtid": 111356,
+    "uid": 32077117,
+    "uname": 99,
+    "nknm": 9,
+    "time": "2023-09-23 20:58:59"
+  },
+  {
+    "userid": 32077089,
+    "account": "777",
+    "nickname": 77,
+    "agtid": 111356,
+    "uid": 32077089,
+    "uname": 777,
+    "nknm": 77,
+    "time": "2023-09-23 20:58:59",
+    "score": 88,
+    "totalScore": 88,
+    "status": 0
+  },
+  {
+    "userid": 32077087,
+    "account": 444,
+    "nickname": 444,
+    "agtid": 111356,
+    "uid": 32077087,
+    "uname": 444,
+    "nknm": 444,
+    "time": "2023-09-23 20:58:59"
+  },
+  {
+    "userid": 32077086,
+    "account": 22,
+    "nickname": 222,
+    "agtid": 111356,
+    "uid": 32077086,
+    "uname": 22,
+    "nknm": 222,
+    "time": "2023-09-23 20:58:59"
+  },
+  {
+    "userid": 32077085,
+    "account": 33,
+    "nickname": 33,
+    "agtid": 111356,
+    "uid": 32077085,
+    "uname": 33,
+    "nknm": 33,
+    "time": "2023-09-23 20:58:59"
+  },
+  {
+    "userid": 32077084,
+    "account": 888,
+    "nickname": 888,
+    "agtid": 111356,
+    "uid": 32077084,
+    "uname": 888,
+    "nknm": 888,
+    "time": "2023-09-23 20:58:59"
+  },
+  {
+    "userid": 32077082,
+    "account": 999,
+    "nickname": 999,
+    "agtid": 111356,
+    "uid": 32077082,
+    "uname": 999,
+    "nknm": 999,
+    "time": "2023-09-23 20:58:59"
+  },
+  {
+    "userid": 32077073,
+    "account": 222,
+    "nickname": 222,
+    "agtid": 111356,
+    "uid": 32077073,
+    "uname": 222,
+    "nknm": 222,
+    "time": "2023-09-23 20:58:59"
+  },
+  {
+    "userid": 32077072,
+    "account": 1111,
+    "nickname": 1111,
+    "agtid": 111356,
+    "uid": 32077072,
+    "uname": 1111,
+    "nknm": 1111,
+    "time": "2023-09-23 20:58:59"
+  },
+  {
+    "userid": 32077068,
+    "account": 0,
+    "nickname": 0,
+    "agtid": 111356,
+    "uid": 32077068,
+    "uname": 0,
+    "nknm": 0,
+    "time": "2023-09-23 20:58:59"
+  },
+  {
+    "userid": 32077018,
+    "account": "u1",
+    "nickname": "u1nicknm",
+    "agtid": 111356,
+    "uid": 32077018,
+    "uname": "u1",
+    "nknm": "u1nicknm",
+    "time": "2023-09-23 20:58:59"
+  },
+  {
+    "userid": 32076958,
+    "account": "u2",
+    "nickname": "u2nknm",
+    "agtid": 111356,
+    "uid": 32076958,
+    "uname": "u2",
+    "nknm": "u2nknm",
+    "time": "2023-09-23 20:58:59"
+  },
+  {
+    "userid": 32076939,
+    "account": "uname1",
+    "nickname": "uname1nknm",
+    "agtid": 111356,
+    "uid": 32076939,
+    "uname": "uname1",
+    "nknm": "uname1nknm",
+    "time": "2023-09-23 20:58:59"
+  },
+  {
+    "userid": 32076933,
+    "account": "userAccount323",
+    "nickname": "usernickname",
+    "agtid": 111356,
+    "uid": 32076933,
+    "uname": "userAccount323",
+    "nknm": "usernickname",
+    "time": "2023-09-23 20:58:59"
+  },
+  {
+    "userid": 32074575,
+    "account": 5497585361,
+    "nickname": "骚哥",
+    "agtid": 111356,
+    "uid": 32074575,
+    "uname": 5497585361,
+    "nknm": "骚哥",
+    "time": "2023-09-23 20:58:59"
+  },
+  {
+    "userid": 32077260,
+    "account": "Xxx0079468",
+    "nickname": "Xxx0079468",
+    "agtid": 111356,
+    "uid": 32077260,
+    "uname": "Xxx0079468",
+    "nknm": "Xxx0079468",
+    "time": "2023-09-26 15:15:31",
+    "score": 2768.43,
+    "totalScore": 2768.43,
+    "status": 0
+  },
+  {
+    "status": 0,
+    "totalScore": 750,
+    "userid": 32077278,
+    "nickname": "太白",
+    "agtid": 111356,
+    "account": "ctb547689",
+    "time": "2023-09-28 17:36:58",
+    "score": 750
+  },
+  {
+    "status": 0,
+    "totalScore": 0,
+    "userid": 32077279,
+    "nickname": "喜",
+    "agtid": 111356,
+    "account": "xiju12345",
+    "time": "2023-09-28 17:45:20",
+    "score": 0
+  },
+  {
+    "userid": 32077282,
+    "account": "mouzy888",
+    "nickname": "mouzy888",
+    "agtid": 111356,
+    "uid": 32077282,
+    "uname": "mouzy888",
+    "nknm": "mouzy888",
+    "time": "2023-10-02 14:08:01",
+    "totalScore": 12,
+    "score": 12,
+    "status": 0
+  },
+  {
+    "status": 0,
+    "totalScore": 0,
+    "userid": 32077289,
+    "nickname": "91033",
+    "agtid": "111356",
+    "account": "91034",
+    "time": "2023-10-02 21:13:24"
+  },
+  {
+    "status": 0,
+    "totalScore": 0,
+    "userid": 32077290,
+    "nickname": "91033",
+    "agtid": "111356",
+    "account": "910305",
+    "time": "2023-10-02 21:14:37"
+  },
+  {
+    "userid": 32077281,
+    "account": "HP9001",
+    "nickname": "HP9001",
+    "agtid": 111356,
+    "uid": 32077281,
+    "uname": "HP9001",
+    "nknm": "HP9001",
+    "time": "2023-10-03 13:40:02",
+    "totalScore": 1432,
+    "score": 1432,
+    "status": 0
+  }
+]

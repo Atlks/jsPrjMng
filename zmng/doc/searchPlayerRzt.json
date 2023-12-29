@@ -1,0 +1,28 @@
+{
+  "maintype": "/GameHandle",
+  "type": 7,
+  "data": {
+    "code": 0,
+    "agentid": 111356,
+    "linecode": "10001_1",
+    "status": 0,
+    "userid": 32077221,
+    "account": "159499900",
+    "totalScore": 0.0,
+    "integralvalue": 6.0,
+    "addscore": 0.0,
+    "subscore": 0.0,
+    "addscoretimes": 0,
+    "subscoretimes": 0,
+    "totalwinlose": 0.0,
+    "totalrevenue": 0.0
+  }
+}
+
+{"maintype":"/GameHandle","type":7,"data":
+{"code":0,"agentid":111356,"linecode":"10001_1",
+  "status":0,"userid":32077089,
+  "account":"777","totalScore":875.0,
+  "integralvalue":6.0,"addscore":1199.0,
+  "subscore":324.0,"addscoretimes":60,"subscoretimes":53,
+  "totalwinlose":0.0,"totalrevenue":0.0}}

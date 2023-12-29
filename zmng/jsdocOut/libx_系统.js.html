@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: libx/系统.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: libx/系统.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>function 提示(提示信息) {
+    console.log(提示信息)
+}
+
+
+global['显示']=显示
+function  显示(s)
+{
+    console.log(s)
+}
+
+global['当前时间']=当前时间
+function 当前时间()
+{
+    return curDateTime()
+}
+
+
+
+global['执行指令序列']=执行指令序列
+
+/**
+ *
+ * @param 操作序列
+
+ */
+function 执行指令序列(操作序列) {
+    return  ()=>{
+        循环(操作序列,)
+        for(操作 of 操作序列)
+        {
+            操作();
+        }
+
+
+    }
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Issue_login_credentials.html">Issue_login_credentials</a></li><li><a href="kexiafenBal.html">kexiafenBal</a></li></ul><h3>Global</h3><ul><li><a href="global.html#QryShangxiafen">QryShangxiafen</a></li><li><a href="global.html#accFiles">accFiles</a></li><li><a href="global.html#agtbal648">agtbal648</a></li><li><a href="global.html#allFileScore">allFileScore</a></li><li><a href="global.html#authChk">authChk</a></li><li><a href="global.html#buildUrlNgetV3">buildUrlNgetV3</a></li><li><a href="global.html#callCmd">callCmd</a></li><li><a href="global.html#callFunPressEx">callFunPressEx</a></li><li><a href="global.html#call_func">call_func</a></li><li><a href="global.html#callrmt">callrmt</a></li><li><a href="global.html#checkAgtidErr">checkAgtidErr</a></li><li><a href="global.html#checkWhiteIp">checkWhiteIp</a></li><li><a href="global.html#check_login_credentials">check_login_credentials</a></li><li><a href="global.html#dsl_callFrmUiToBiz">dsl_callFrmUiToBiz</a></li><li><a href="global.html#dsl_callFunCmdMode">dsl_callFunCmdMode</a></li><li><a href="global.html#errcodeMsgNodeEnv">errcodeMsgNodeEnv</a></li><li><a href="global.html#exit">exit</a></li><li><a href="global.html#explode">explode</a></li><li><a href="global.html#funtion_exist">funtion_exist</a></li><li><a href="global.html#getDbdir">getDbdir</a></li><li><a href="global.html#getLoginToken">getLoginToken</a></li><li><a href="global.html#http_get">http_get</a></li><li><a href="global.html#http_getSync">http_getSync</a></li><li><a href="global.html#http_get_core">http_get_core</a></li><li><a href="global.html#http_get_jqGet">http_get_jqGet</a></li><li><a href="global.html#http_get_jqGetSync">http_get_jqGetSync</a></li><li><a href="global.html#http_get_jqStyle">http_get_jqStyle</a></li><li><a href="global.html#importUser">importUser</a></li><li><a href="global.html#importUserUploadUserdt">importUserUploadUserdt</a></li><li><a href="global.html#includeEsm">includeEsm</a></li><li><a href="global.html#isExistUser">isExistUser</a></li><li><a href="global.html#json_encode">json_encode</a></li><li><a href="global.html#json_encode_Err">json_encode_Err</a></li><li><a href="global.html#kick">kick</a></li><li><a href="global.html#loadToDataTable">loadToDataTable</a></li><li><a href="global.html#login">login</a></li><li><a href="global.html#loginLocal">loginLocal</a></li><li><a href="global.html#loginV2">loginV2</a></li><li><a href="global.html#oplog_qry">oplog_qry</a></li><li><a href="global.html#pipe">pipe</a></li><li><a href="global.html#qryAgtBal">qryAgtBal</a></li><li><a href="global.html#qryAgtBalINweb">qryAgtBalINweb</a></li><li><a href="global.html#readExcelFromUploadFile">readExcelFromUploadFile</a></li><li><a href="global.html#readFileFromUploadFile">readFileFromUploadFile</a></li><li><a href="global.html#readFromExcel">readFromExcel</a></li><li><a href="global.html#refresh_login_token">refresh_login_token</a></li><li><a href="global.html#requireAutoload">requireAutoload</a></li><li><a href="global.html#requirex">requirex</a></li><li><a href="global.html#retry">retry</a></li><li><a href="global.html#score_orderQryShagnxiafenByUnameOrderid">score_orderQryShagnxiafenByUnameOrderid</a></li><li><a href="global.html#searchPlayer">searchPlayer</a></li><li><a href="global.html#setGlobalErrCatch">setGlobalErrCatch</a></li><li><a href="global.html#upload">upload</a></li><li><a href="global.html#uploadIni">uploadIni</a></li><li><a href="global.html#writeFileSyncV2">writeFileSyncV2</a></li><li><a href="global.html#writeFileV3">writeFileV3</a></li><li><a href="global.html#xiafen">xiafen</a></li><li><a href="global.html#xiafen745">xiafen745</a></li><li><a href="global.html#%25E4%25BF%259D%25E5%25AD%2598%25E7%2599%25BB%25E5%25BD%2595%25E5%2587%25AD%25E6%258D%25AE">保存登录凭据</a></li><li><a href="global.html#%25E5%25A6%2582%25E6%259E%259C%25E5%2587%25AD%25E6%258D%25AE%25E7%25B1%25BB%25E5%259E%258B%25E6%2598%25AFtoken%25E9%25AA%258C%25E8%25AF%2581%25E6%25A8%25A1%25E5%25BC%258F%25E5%2588%2599%25E6%25A3%2580%25E6%259F%25A5token">如果凭据类型是token验证模式则检查token</a></li><li><a href="global.html#%25E5%25A6%2582%25E6%259E%259C%25E5%2587%25AD%25E6%258D%25AE%25E7%25B1%25BB%25E5%259E%258B%25E6%2598%25AF%25E5%25AF%2586%25E7%25A0%2581%25E9%25AA%258C%25E8%25AF%2581%25E6%25A8%25A1%25E5%25BC%258F%25E5%2588%2599%25E6%25A3%2580%25E6%259F%25A5%25E5%25AF%2586%25E7%25A0%2581">如果凭据类型是密码验证模式则检查密码</a></li><li><a href="global.html#%25E5%25A6%2582%25E6%259E%259C%25E6%2598%25AF%25E7%2599%25BB%25E5%25BD%2595%25E5%2587%25AD%25E6%258D%25AE%25E6%2598%25AF%25E5%25AF%2586%25E7%25A0%2581%25E7%25B1%25BB%25E5%259E%258B%25E5%2588%2599%25E5%258F%2591%25E6%2594%25BE%25E7%2599%25BB%25E5%25BD%2595%25E5%2587%25AD%25E6%258D%25AE">如果是登录凭据是密码类型则发放登录凭据</a></li><li><a href="global.html#%25E5%25AF%2586%25E7%25A0%2581%25E9%2594%2599%25E8%25AF%25AF">密码错误</a></li><li><a href="global.html#%25E6%2589%25A7%25E8%25A1%258C%25E6%258C%2587%25E4%25BB%25A4%25E5%25BA%258F%25E5%2588%2597">执行指令序列</a></li><li><a href="global.html#%25E6%25A3%2580%25E6%259F%25A5%25E7%2599%25BB%25E5%25BD%2595%25E5%2587%25AD%25E6%258D%25AE">检查登录凭据</a></li><li><a href="global.html#%25E7%2599%25BB%25E5%25BD%2595%25E6%25B5%2581%25E7%25A8%258B">登录流程</a></li><li><a href="global.html#%25E8%25BF%2594%25E5%259B%259E%25E7%25BB%2593%25E6%259E%259C">返回结果</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a> on Sat Sep 23 2023 21:14:32 GMT+0700 (Indochina Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

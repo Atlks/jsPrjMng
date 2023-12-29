@@ -1,0 +1,42 @@
+https://apimng.jbpc28.top/index.html
+新版本部署了117
+增加了注单记录搜集与展示
+反水配置等
+注单统计
+反水记录
+
+prd env uid
+uid29310938
+
+
+
+
+新特性v927
+
+新增
+用户导入功能
+im tg功能
+自定义tg指令功能
+fx bug若干
+
+
+npm i  express-fileupload
+
+
+
+
+新特性v927
+
+新增 审核模块
+功能  im里面上下分申请
+后台显示审核列表
+审核通过，拒绝
+
+
+
+fx bug若干
+
+优化
+去除lowdb 模块
+ftr 特性
+

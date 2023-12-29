@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1">
+
+    <script>
+        window["global"]=[]
+        window["process"]={}
+        process.env={}
+        function  readFileSyncx(){}
+        function  require(){}
+        function  appendFileSync(){}
+        function  file_exists(){}
+        function  mkdirSync(){}
+        function  appendFileV2(){}
+
+        function  log_err(e){ console.log(e) }
+        window["process.env"]={}
+        __dirname=""
+    </script>
+
+    <script src="libx/sys.js"></script>
+    <script src="libx/browerNode.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.7.0.js"
+            integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+            crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="res/style.css">
+
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css"/>
+
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
+
+    <script src="libx/errHdlr.js"></script>
+    <script src="libBiz/user.js"></script>
+    <script src="libBiz/acc.js"></script>
+
+
+    <link rel="stylesheet" href="https://layui.itze.cn/layui-v2.6.8/layui/css/layui.css">
+    <script src="https://layui.itze.cn/layui-v2.6.8/layui/layui.js"></script>
+    <script src="libx/dsl.js"></script>
+    <script src="libx/logger.js"></script>
+    <script src="libx/php.js"></script>
+    <script src="libx/jq.js"></script>
+    <script src="libBiz/bizHttp.js"></script>
+    <script src="libBiz/bzUI.js"></script>
+    <script src="libx/str.js"></script>
+    <script src="libx/enc.js"></script>
+    <script src="libBiz/shangfen.js"></script>
+    <script src="libBiz/xiafen.js"></script>
+    <script src="libBiz/searchPlayer.js"></script>
+
+    <script src="libx/httpSync.js"></script>
+    <script src="libBiz/QryShangxiafen.js"></script>
+    <script src="libBiz/importUser.js"></script>
+    <script src=" https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js "></script>
+
+    <script src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="libBiz/kick.js"></script>
+    <script src="libBiz/bal_ttlbal.js"></script>
+</head>
+<body style="padding: 9px">
+<script src="libx/profill.js"></script>
+<style>
+
+
+</style>
+
+<!--
+<scriptx>
+
+    if (isWinformEnv()) {
+        var hedtx = window.external.callFun("readFileSyncx __rootdir__/head.htm");
+    } else {
+        var hedtx = readFileSyncx("./head.htm")
+    }
+
+    document.write(hedtx)
+
+</scriptx>
+-->
+
+
+<!-- hed-->
+<div id="hddiv"></div>
+
+<script>
+    $( "#hddiv" ).load( callrmtRstapiUrl()+"includeXAjax%20head.htm", function() {
+        $("#aSxf a").addClass("CurTab")
+        $("#aSxf").css("color", "red");
+    });
+
+
+    //   $("#aUser").css("color","red");
+</script>
+<!-- hed-->
+
+
+
+
+
+<p></p>
+
+账号：<input type="text" onchange00="uname_sxf.value=this.value" value="" id="uname" name="fname" style="width: 100px">
+
+<!--
+上下分：
+--><input type="text" value="" id="score" name="fname" style="width: 80px;display: none">
+
+<button id="schBtn" onclick="playerNScore237()" type="button" class="btn btn-success" style="width00: 100%">搜索</button>
+
+
+<button onclick="PlayerKexiafenBal638()" type="button" class="btn btn-primary"
+        style="width00: 100%">查询可下分
+</button>
+
+
+<input style="display: none" type="file" onchange="importUserUploadUserdt()" id="fileInput" name="fileInput">
+<button onclick="importUserFm()" type="button" class="btn btn-success" style="width00: 100%">导入用户</button>
+
+
+<button onclick="playerStatV2()" type="button" class="btn btn-success" style="display: none; width00: 100%">
+    玩家状态查询
+</button>
+
+<button class="btn btn-primary" disabled id="loaddiv2" style="xdisplay:none ">
+    <span class="spinner-border spinner-border-sm"></span>
+    Loading..
+</button>
+
+
+<p></p>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end Modal -->
+
+
+<div class="container" style="width: 100%; max-width: 100%;padding: 5px">
+    <div class="row" style="width: 100%">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    玩家管理
+
+                    <button id="sfbtn" data-method="notice" data-bs-toggle="modal"
+                            onclick00="shangfen1236()" type="button" class="layui-btn btn btn-primary"
+                            style="margin: 0px">上分
+                    </button>
+                    <button id="xfbtn" data-method="notice" onclick00="xiafen745()" type="button"
+                            class=" layui-btn btn btn-primary" style="margin: 0px">下分
+                    </button>
+
+
+                    <button class="btn btn-primary" disabled id="loaddiv" style="xdisplay:none ">
+                        <span class="spinner-border spinner-border-sm"></span>
+                        Loading..
+                    </button>
+                    <button onclick="player_kickInform()" type="button" class="btn btn-danger" style="width00: 100%">
+                        踢玩家下线
+                    </button>
+                </div>
+                <div class="card-body">
+
+
+                    <table class="table" id="app3">
+                        <thead>
+                        <tr>
+                            <td>玩家id</td>
+                            <td>账号</td>
+                            <td>昵称</td>
+                            <td>余额</td>
+                            <td>总投注金额</td>
+                            <td>玩家状态</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        <tr v-for="item in items" class="hid" style="display: none">
+
+                            <td>{{ item.userid }}</td>
+                            <td>{{ item.account }}</td>
+                            <td>{{ item.nickname }}</td>
+                            <td> {{ item.totalScore }}</td>
+                            <td> {{ item.allbet }}</td>
+                            <td>{{ item.status }}</td>
+                        </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+
+        </div>
+        <div class="col">
+
+
+            <div class="card" id="app_sxfV2">
+                <div class="card-header">
+                    上下分记录
+                    <button onclick="orderQryShagnxiafen415()" type="button" class="btn btn-primary"
+                            style="margin: 0px; width00: 100%">刷新
+                    </button>
+
+                    <span style="width: 0px"> </span>
+                    <button onclick="orderQryShagnxiafen415()" type="button" class="btn btn-primary"
+                            style="width00: 100%">查询上下分
+                    </button>
+
+
+
+
+
+                </div>
+                <div class="card-body">
+
+
+                    <table class="table" id="tab_sxf">
+                        <thead>
+                        <tr>
+                            <td>玩家账号</td>
+                            <td>类型</td>
+                            <td>变动金额</td>
+                            <td>时间</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr v-for="item in items" style="display: none ">
+
+                            <td> {{ item.uname }}</td>
+                            <td>{{ item.类型 }}</td>
+                            <td> {{ item.score }}</td>
+                            <td>{{ item.time }}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+    <!--
+   <div id="app">{{ message }}</div>
+
+
+   <ul id="app2">
+     <li v-for="item in items">
+       {{ item.message }}
+     </li>
+
+   </ul>
+
+
+    const app1 = createApp({
+       setup() {
+         const message = ref('Hello Vue!')
+         return {
+           message
+         }
+       }
+     }).mount('#app')
+
+
+
+     const app2 = createApp({
+       setup() {
+         const message = ref('Hello Vue!')
+         const items = ref([{ message: 'Foo' }, { message: 'Bar' }])
+         return {
+           items,message
+         }
+       }
+     }).mount('#app2')
+   -->
+
+    <script type="module">
+
+
+    </script>
+
+    <script defer type="module">
+        //defer not take effect ..must type module,then can invk behide the bindJsonToTable
+        var json514 = {
+            "maintype": "/GameHandle",
+            "type": 7,
+            "data": {
+                "code": 0,
+                "agentid": 111356,
+                "linecode": "10001_1",
+                "status": 0,
+                "userid": 32076939,
+                "account": "uname1",
+                "totalScore": 300.0,
+                "integralvalue": 6.0,
+                "addscore": 300.0,
+                "subscore": 0.0,
+                "addscoretimes": 2,
+                "subscoretimes": 0,
+                "totalwinlose": 0.0,
+                "totalrevenue": 0.0
+            }
+        };
+        //console.log( window['bindJsonToTable']) //all undef
+        //console.log( global['bindJsonToTable'])
+        // window['bindJsonToTable'](json514)
+
+
+    </script>
+    <!--
+     <ul id="app">
+    <li v-for="item in items">
+      {{ item.message }}
+    </li>
+
+     </ul>
+    <script>
+      const { createApp, ref } = Vue
+
+      const app1 = createApp({
+        /* ... */
+      })
+      app1.mount('#app')
+
+      createApp({
+        setup() {
+          const message = ref('Hello vue!')
+          const items = ref([{ message: 'Foo' }, { message: 'Bar' }])
+          return {
+            message
+          }
+        }
+      }).mount('#app')
+    </script>
+
+    -->
+
+
+    <p></p>
+
+
+    <p></p>
+
+
+    <div class="card" style="display: none">
+        <div class="card-header">
+            下分记录
+        </div>
+        <div class="card-body">
+
+
+            <table class="table">
+                <tr>
+                    <td>玩家id</td>
+                    <td>昵称</td>
+                    <td>分数</td>
+                    <td>所属群</td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+总余额:<span id="ttlbalLbl"></span>
+    <script>
+
+
+        $("#loaddiv").hide();
+        $("#loaddiv2").hide();
+    </script>
+
+    <script src="shangxiafen.js">
+
+
+    </script>
+<script >
+
+    ttlbal_inweb()
+</script>
+
+
+
+    <script>
+        shangfenTopBoxIni()
+
+        // alert(curDatetime())
+      //  log_err(555)
+    </script>
+<script>
+    schBtn.click()
+</script>
+</body>
+</html>

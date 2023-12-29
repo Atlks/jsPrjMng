@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: libBiz/login.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: libBiz/login.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>  chkRzt_pass="pass";
+  chkRzt_crdtNotExist="chkRzt_crdtNotExist"
+  chkRzt_unameFmtErr="chkRzt_unameFmtErr"
+  chkRzt_unameNotExist="chkRzt_unameNotExist"
+  function not_exist(凭据) {
+      if(凭据)
+          return  false;
+      return true;
+  }
+
+  function NotExistUname(用户名) {
+      return undefined;
+  }
+
+
+  function chkPass(检查结果) {
+      return 检查结果
+  }
+
+
+  function chkNotPass(检查结果) {
+      return !chkPass(检查结果);
+  }
+
+  function if_login_credent_isPwdType_issueLoginCrdt(凭据) {
+      return undefined;
+  }
+
+  function addOplog(用户用户名登录时间当前时间) {
+      return undefined;
+  }
+
+  /**
+   * loginV2
+   * @param 凭据
+   */
+  function loginV2(凭据) {
+
+
+      let 检查结果 = check_login_credentials(凭据);
+      ifx(chkPass(检查结果),
+          if_login_credent_isPwdType_issueLoginCrdt(凭据),
+          addOplog("用户 (@用户名@)登录，时间 @当前时间@")
+
+
+      )
+
+      ifx(chkNotPass(检查结果), tipsNend(检查结果))
+
+
+  }
+
+  /**
+ * 检查登录凭据
+ */
+function check_login_credentials(凭据)
+{
+    ifx(not_exist(凭据), tipsNend(chkRzt_crdtNotExist))
+    ifx( 凭据.用户名.length &lt; 3, tipsNend(chkRzt_unameFmtErr))
+    ifx(NotExistUname(凭据.用户名), tipsNend(chkRzt_unameNotExist))
+    // 如果(凭据.类型 == "密码", 检查密码(凭据))
+    // 如果(凭据.类型 == "cookie", 检查cookie(凭据))
+
+    return chkRzt_pass;
+}
+
+
+  /**
+   * 发放登录凭据
+   * @param 用户名
+
+   * @constructor
+   */
+  function Issue_login_credentials(用户名) {
+
+    过期日 = 计算过期日("@当前日期@+7")
+    return () => {
+
+        console.log("发放登录凭据....")
+        var 登录凭据 = {"用户名": 用户名, "过期日": 过期日, "签名": "4546fdafsd"};
+        登录凭据.加密效验码 = md5(用户名 + 过期日)
+        保存登录凭据(登录凭据)
+    }
+
+}
+
+
+
+
+
+function loginInFm() {
+
+
+    if (!$("#uid").val().trim()) {
+        alert("代理id,秘钥不能为空");
+        return;
+    }
+
+    let arr = $("#uid").val().trim().split(",")
+    if(arr.length&lt;3)
+    {
+        alert("格式不对，检查格式为》：    代理id,descode,md5code")
+        return;
+    }
+
+
+
+    global['agentid'] = arr[0]
+    global['desCode'] = arr[1]
+    global['md5Code'] = arr[2]
+    window['agtid'] = arr[0]
+    window['agentid'] = arr[0]
+    window['desCode'] = arr[1]
+    window['md5Code'] = arr[2]
+
+    let a = {};
+
+    a.agtid = arr[0];
+
+    a.descode = arr[1];
+    a.md5key = arr[2]
+    a.lgky = $("#uid").val()
+    window['curvisa']=a
+
+
+
+    //saveLoginVisa  in fm
+
+    var sucsFun= function (dt){
+
+      console.log(" ajax sucsFun dt=> "+dt)
+        let rtobj=JSON.parse(dt)
+        if(rtobj?.type=="ex")
+        {
+            alert(rtobj.errmsg)
+            return;
+        }
+
+      //  alert("sucsFun")
+        Cookies.set ("agtid",curvisa.agtid,{ expires: 7, path: '/' });
+        Cookies.set("desCode",curvisa.descode,{ expires: 7, path: '/' });
+        Cookies.set ("md5Code", curvisa.md5key,{ expires: 7, path: '/' });
+
+
+        Cookies.set('name', 'value', { expires: 7, path: '/' })
+       let a= window['curvisa']
+        localStorage.setItem("agtid", a.agtid);
+          localStorage.setItem("agentid", a.agtid);
+          localStorage.setItem("desCode", a.descode);
+          localStorage.setItem("md5Code",a.md5key);
+
+
+        qryAgtBalINweb()
+       //   cookie aleway err ,cant find jq cooke plugin
+        // $.cookie ("agtid",a.agtid,{ expires: 7, path: '/' });
+        // $.cookie ("desCode",a.descode,{ expires: 7, path: '/' });
+        // $.cookie ("md5Code", arr[2],{ expires: 7, path: '/' });
+        //set window var
+        $("#unameLab").text(a.agtid)
+        $("form").hide();
+        $("#logined").show();
+        window.location.reload()
+    }
+    http_get_jqGet(callrmtRstapiUrl()+"login "+$("#uid").val().trim(),sucsFun,jqFailFun)
+
+
+
+
+    console.log("lgky arr:" + arr)
+
+    // Cookies.set('loginkey', a.agtid.trim(), {expires: 7})
+    //
+    // let loginkey = Cookies.get('loginkey');
+    // console.log("lgky:" + loginkey)
+    // let arr2 = loginkey.trim().split(",")
+
+
+
+    //console.log(json_encode(a))
+    // writeFileSyncx(__dirname + "/cfg.json", json_encode(a));
+    //alert("ok")
+
+
+
+
+}
+
+global['sendLoginVisa']=sendLoginVisa
+  /**
+   * save visa to gloal thread local var map
+   * @param req
+   */
+  function sendLoginVisa(req) {
+      visa = {"agtid": req.cookies.agtid, "desCode": req.cookies.desCode, "md5Code": req.cookies.md5Code}
+
+
+      const curReqID=getcurReqID()
+      global['agtid'+curReqID]=req.cookies.agtid
+      global['agentid'+curReqID]=  global['agtid'+curReqID]
+      global['desCode'+curReqID] = req.cookies.desCode
+      global['md5Code'+curReqID] = req.cookies.md5Code
+      global['visa'+curReqID] =visa
+
+      let file=__dirname+"/../visas/visa"+curReqID+".json"
+
+      const fs = require("fs");
+      const path = require("path");
+      fs.mkdirSync(path.dirname(file), {recursive: true});
+      writeFileV3(file,json_encode(visa))
+
+
+  }
+
+
+global['login']=login
+
+/**
+ *  todo  jeig global is readly global var...another req should no global
+ * login dsc
+ * @param uNkey
+ */
+async function login(uNkey) {
+
+     //    如果(不存在(凭据), 提示并终止(检查结果_凭据不存在)),
+    //    如果(长度(凭据.用户名) &lt; 3, 提示并终止(检查结果_凭据无效_用户名无效)),
+    let arr = uNkey.trim().split(",")
+
+    //  localStorage.setItem("loginkey", $("#uid").val());
+
+    //todo here glboal var should del...readl global bcs...
+    global['agentid'] = arr[0]
+    global['desCode'] = arr[1]
+    global['md5Code'] = arr[2]
+
+    // localStorage.setItem("agentid", arr[0]);
+    // localStorage.setItem("desCode", arr[1]);
+    // localStorage.setItem("md5Code", arr[2]);
+
+    let a = {};
+
+    a.agtid = arr[0];
+    a.agentid = arr[0];
+    a.descode = arr[1];
+    a.desCode= a.descode
+    a.md5key = arr[2]
+    a.md5Code= a.md5key
+    a.lgky = uNkey
+
+   //  global['visa']=a;
+
+   // saveLoginVisa(a)
+
+
+    console.log("lgky arr:" + arr)
+
+
+    //-----检查凭据有效性
+    let rzt = await qryAgtBal()
+    let rztobj = JSON.parse(rzt);
+    if (rztobj.type == "ex") {
+        throw "alrtEx@" + rztobj.msg_to_ui
+    }
+
+
+    //发放登录凭据(凭据.用户名)
+    //添加操作日志(
+
+    return a;
+
+    // Cookies.set('loginkey', a.agtid.trim(), {expires: 7})
+    //
+    // let loginkey = Cookies.get('loginkey');
+    // console.log("lgky:" + loginkey)
+    // let arr2 = loginkey.trim().split(",")
+
+
+}
+
+
+
+  /**
+   *
+   * @param a
+   */
+  function saveLoginVisa(a) {
+
+    writeFileV3(  "__USERPROFILE__/lgky.json", json_encode(a));
+
+  try{
+      window['agentid'] = a.agtid
+      set_login_tokenV2(a)
+  }catch (e)
+  {
+      console.log(e)
+  }
+
+}
+
+
+/**
+ * DEP
+ */
+function loginLocal() {
+    // a = {};
+    //
+    // a.agtid = $("#uid").val();
+    // a.descode = $("#password").val();
+    // a.md5key = $("#md5key").val();
+    //  require("./libx/file.js")
+
+    if (!$("#uid").val().trim()) {
+        alert("代理id,秘钥不能为空");
+        return;
+    }
+
+    let arr = $("#uid").val().trim().split(",")
+
+    //  localStorage.setItem("loginkey", $("#uid").val());
+
+    global['agentid'] = arr[0]
+    global['desCode'] = arr[1]
+    global['md5Code'] = arr[2]
+
+    // localStorage.setItem("agentid", arr[0]);
+    // localStorage.setItem("desCode", arr[1]);
+    // localStorage.setItem("md5Code", arr[2]);
+
+    let a = {};
+
+    a.agtid = arr[0];
+
+    a.descode = arr[1];
+    a.md5key = arr[2]
+    a.lgky = $("#uid").val()
+    saveLoginFlag(a)
+
+
+
+    console.log("lgky arr:" + arr)
+
+    // Cookies.set('loginkey', a.agtid.trim(), {expires: 7})
+    //
+    // let loginkey = Cookies.get('loginkey');
+    // console.log("lgky:" + loginkey)
+    // let arr2 = loginkey.trim().split(",")
+
+    $("#unameLab").text(a.agtid)
+
+    //console.log(json_encode(a))
+    // writeFileSyncx(__dirname + "/cfg.json", json_encode(a));
+    //alert("ok")
+
+    $("form").hide();
+    $("#logined").show();
+
+
+}
+
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Issue_login_credentials.html">Issue_login_credentials</a></li><li><a href="findWdByBufpartNwrtToUi.html">findWdByBufpartNwrtToUi</a></li><li><a href="kexiafenBal.html">kexiafenBal</a></li></ul><h3>Global</h3><ul><li><a href="global.html#QryShangxiafen">QryShangxiafen</a></li><li><a href="global.html#accFiles">accFiles</a></li><li><a href="global.html#accpt2423">accpt2423</a></li><li><a href="global.html#addUserCore">addUserCore</a></li><li><a href="global.html#agtbal648">agtbal648</a></li><li><a href="global.html#allFileScore">allFileScore</a></li><li><a href="global.html#authChk">authChk</a></li><li><a href="global.html#bin2hex">bin2hex</a></li><li><a href="global.html#buildUrlNgetV3">buildUrlNgetV3</a></li><li><a href="global.html#callCmd">callCmd</a></li><li><a href="global.html#callFunPressEx">callFunPressEx</a></li><li><a href="global.html#call_func">call_func</a></li><li><a href="global.html#callrmt">callrmt</a></li><li><a href="global.html#callrmtRstapiUrl">callrmtRstapiUrl</a></li><li><a href="global.html#cashinAjax">cashinAjax</a></li><li><a href="global.html#checkAgtidErr">checkAgtidErr</a></li><li><a href="global.html#checkWhiteIp">checkWhiteIp</a></li><li><a href="global.html#check_login_credentials">check_login_credentials</a></li><li><a href="global.html#del_file">del_file</a></li><li><a href="global.html#dsl_callFrmUiToBiz">dsl_callFrmUiToBiz</a></li><li><a href="global.html#dsl_callFunCmdMode">dsl_callFunCmdMode</a></li><li><a href="global.html#errcodeMsgNodeEnv">errcodeMsgNodeEnv</a></li><li><a href="global.html#exchLoginVisa%25E4%25BA%25A4%25E6%258D%25A2visa">exchLoginVisa交换visa</a></li><li><a href="global.html#exit">exit</a></li><li><a href="global.html#explode">explode</a></li><li><a href="global.html#findPlayer">findPlayer</a></li><li><a href="global.html#findWdByBufpart">findWdByBufpart</a></li><li><a href="global.html#findWdLstByPartwd">findWdLstByPartwd</a></li><li><a href="global.html#formatDate">formatDate</a></li><li><a href="global.html#fs_watch">fs_watch</a></li><li><a href="global.html#funtion_exist">funtion_exist</a></li><li><a href="global.html#geneMmncCrpt">geneMmncCrpt</a></li><li><a href="global.html#getConn">getConn</a></li><li><a href="global.html#getDbdir">getDbdir</a></li><li><a href="global.html#getLoginToken">getLoginToken</a></li><li><a href="global.html#getcurReqID">getcurReqID</a></li><li><a href="global.html#hex2bin">hex2bin</a></li><li><a href="global.html#hexToStr">hexToStr</a></li><li><a href="global.html#http_get">http_get</a></li><li><a href="global.html#http_getSync">http_getSync</a></li><li><a href="global.html#http_get_core">http_get_core</a></li><li><a href="global.html#http_get_jqGet">http_get_jqGet</a></li><li><a href="global.html#http_get_jqGetSync">http_get_jqGetSync</a></li><li><a href="global.html#http_get_jqStyle">http_get_jqStyle</a></li><li><a href="global.html#idBasetime">idBasetime</a></li><li><a href="global.html#importUser">importUser</a></li><li><a href="global.html#importUserUploadUserdt">importUserUploadUserdt</a></li><li><a href="global.html#includeEsm">includeEsm</a></li><li><a href="global.html#isExistUser">isExistUser</a></li><li><a href="global.html#is_int">is_int</a></li><li><a href="global.html#json_encode">json_encode</a></li><li><a href="global.html#json_encode_Err">json_encode_Err</a></li><li><a href="global.html#kick">kick</a></li><li><a href="global.html#loadToDataTable">loadToDataTable</a></li><li><a href="global.html#loadToDataTableV2">loadToDataTableV2</a></li><li><a href="global.html#login">login</a></li><li><a href="global.html#loginLocal">loginLocal</a></li><li><a href="global.html#loginV2">loginV2</a></li><li><a href="global.html#main">main</a></li><li><a href="global.html#md5">md5</a></li><li><a href="global.html#msg_recv">msg_recv</a></li><li><a href="global.html#msg_recvListen">msg_recvListen</a></li><li><a href="global.html#oplog_qry">oplog_qry</a></li><li><a href="global.html#padTo2Digits">padTo2Digits</a></li><li><a href="global.html#parse_ini_file">parse_ini_file</a></li><li><a href="global.html#pdo_connV2">pdo_connV2</a></li><li><a href="global.html#pdo_connV3">pdo_connV3</a></li><li><a href="global.html#pdo_insertV3">pdo_insertV3</a></li><li><a href="global.html#pdo_insertV4">pdo_insertV4</a></li><li><a href="global.html#pdo_insertV5">pdo_insertV5</a></li><li><a href="global.html#pdo_insert_coreV2">pdo_insert_coreV2</a></li><li><a href="global.html#pdo_insert_noEx">pdo_insert_noEx</a></li><li><a href="global.html#pdo_query">pdo_query</a></li><li><a href="global.html#pdo_queryV2">pdo_queryV2</a></li><li><a href="global.html#pdo_queryV5">pdo_queryV5</a></li><li><a href="global.html#pdo_query_fromData">pdo_query_fromData</a></li><li><a href="global.html#pdo_save">pdo_save</a></li><li><a href="global.html#pdo_saveV2">pdo_saveV2</a></li><li><a href="global.html#pdo_saveV5">pdo_saveV5</a></li><li><a href="global.html#pipe">pipe</a></li><li><a href="global.html#ptn_getLastPtn">ptn_getLastPtn</a></li><li><a href="global.html#ptn_getPartns">ptn_getPartns</a></li><li><a href="global.html#ptn_getPartnsLast">ptn_getPartnsLast</a></li><li><a href="global.html#ptn_newprtn">ptn_newprtn</a></li><li><a href="global.html#qryAgtBal">qryAgtBal</a></li><li><a href="global.html#qryAgtBalINweb">qryAgtBalINweb</a></li><li><a href="global.html#qryCashinOutAplctnFmevt">qryCashinOutAplctnFmevt</a></li><li><a href="global.html#qry_cashin_aplctn">qry_cashin_aplctn</a></li><li><a href="global.html#query">query</a></li><li><a href="global.html#readExcelFromUploadFile">readExcelFromUploadFile</a></li><li><a href="global.html#readFileFromUploadFile">readFileFromUploadFile</a></li><li><a href="global.html#readFromExcel">readFromExcel</a></li><li><a href="global.html#recv_nml_msg">recv_nml_msg</a></li><li><a href="global.html#refresh_login_token">refresh_login_token</a></li><li><a href="global.html#requireAutoload">requireAutoload</a></li><li><a href="global.html#requirex">requirex</a></li><li><a href="global.html#retry">retry</a></li><li><a href="global.html#rvw_passAjax">rvw_passAjax</a></li><li><a href="global.html#rvw_passCore">rvw_passCore</a></li><li><a href="global.html#rvw_rfs">rvw_rfs</a></li><li><a href="global.html#saveLoginVisa">saveLoginVisa</a></li><li><a href="global.html#score_orderQryShagnxiafenByUnameOrderid">score_orderQryShagnxiafenByUnameOrderid</a></li><li><a href="global.html#searchPlayer">searchPlayer</a></li><li><a href="global.html#searchPlayerAll">searchPlayerAll</a></li><li><a href="global.html#sendLoginVisa">sendLoginVisa</a></li><li><a href="global.html#setEchoWinTxt">setEchoWinTxt</a></li><li><a href="global.html#setGlobalErrCatch">setGlobalErrCatch</a></li><li><a href="global.html#sha256hash">sha256hash</a></li><li><a href="global.html#sha256hashFromHex32bit">sha256hashFromHex32bit</a></li><li><a href="global.html#updateBal">updateBal</a></li><li><a href="global.html#upload">upload</a></li><li><a href="global.html#uploadIni">uploadIni</a></li><li><a href="global.html#watchHdlr">watchHdlr</a></li><li><a href="global.html#writeFileSyncV2">writeFileSyncV2</a></li><li><a href="global.html#writeFileV3">writeFileV3</a></li><li><a href="global.html#xiafen">xiafen</a></li><li><a href="global.html#xiafen745">xiafen745</a></li><li><a href="global.html#%25E4%25B8%258A%25E5%2588%2586">上分</a></li><li><a href="global.html#%25E4%25B8%258B%25E5%2588%2586">下分</a></li><li><a href="global.html#%25E4%25BD%2599%25E9%25A2%259D">余额</a></li><li><a href="global.html#%25E4%25BF%259D%25E5%25AD%2598%25E7%2599%25BB%25E5%25BD%2595%25E5%2587%25AD%25E6%258D%25AE">保存登录凭据</a></li><li><a href="global.html#%25E5%25A6%2582%25E6%259E%259C">如果</a></li><li><a href="global.html#%25E5%25B8%25AE%25E5%258A%25A9">帮助</a></li><li><a href="global.html#%25E5%25BE%25AA%25E7%258E%25AF">循环</a></li><li><a href="global.html#%25E6%2589%25A7%25E8%25A1%258C%25E6%258C%2587%25E4%25BB%25A4%25E5%25BA%258F%25E5%2588%2597">执行指令序列</a></li><li><a href="global.html#%25E6%2589%25A7%25E8%25A1%258C%25E6%258C%2587%25E4%25BB%25A4%25E5%25BA%258F%25E5%2588%2597FP">执行指令序列FP</a></li><li><a href="global.html#%25E6%25A0%25B8%25E9%25AA%258C%25E5%25AF%2586%25E7%25A0%2581%25E9%2594%2599%25E8%25AF%25AF">核验密码错误</a></li><li><a href="global.html#%25E6%25B5%2581%25E6%25B0%25B4">流水</a></li><li><a href="global.html#%25E7%2599%25BB%25E5%25BD%2595%25E6%25B5%2581%25E7%25A8%258B">登录流程</a></li><li><a href="global.html#%25E7%2599%25BB%25E5%25BD%2595%25E6%25B5%2581%25E7%25A8%258Btoken%25E6%25A8%25A1%25E5%25BC%258F">登录流程token模式</a></li><li><a href="global.html#%25E7%2599%25BB%25E5%25BD%2595%25E6%25B5%2581%25E7%25A8%258B%25E5%25AF%2586%25E7%25A0%2581%25E6%25A8%25A1%25E5%25BC%258F">登录流程密码模式</a></li><li><a href="global.html#%25E8%25BF%2594%25E5%259B%259E">返回</a></li><li><a href="global.html#%25E8%25BF%2594%25E5%259B%259E%25E7%25BB%2593%25E6%259E%259C">返回结果</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a> on Sat Oct 28 2023 18:39:05 GMT+0700 (Indochina Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: libx/enc.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: libx/enc.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>
+try{
+    global["json_decode"] = json_decode;
+    global["json_encode"] = json_encode;
+    global["md5"] = md5;
+    global["strip_tagsx"] = strip_tagsx;
+   // module.exports = {urlencode, md5};
+}catch (e) {
+    
+}
+
+
+global['hex2bin']=hex2bin
+/**
+ *
+ * @param h
+ * @returns {string}
+ */
+function hex2bin(h) {
+    var s = ""
+    for (ch99 of h) {
+        s = s + hex2bin_single(ch99)
+    }
+    return s;
+}
+
+function hex2bin_single(h) {
+    var x = h;//这是一个十六进制的字符串表示
+    var y = parseInt(x, 16);//十六进制转为十进制
+    var z = y.toString(2);//十进制转为2进制
+    if (z.length == 3)
+        return '0' + z
+    if (z.length == 2)
+        return '00' + z
+    if (z.length == 1)
+        return '000' + z
+    if (z.length == 4)
+        return z;
+}
+
+function hexToBinArr(hex) {
+    if (!hex.match(/^[0-9a-fA-F]+$/)) {
+        throw new Error('is not a hex string.');
+    }
+    if (hex.length % 2 !== 0) {
+        hex = '0' + hex;
+    }
+    var bytes = [];
+    for (var n = 0; n &lt; hex.length; n += 2) {
+        var code = parseInt(hex.substr(n, 2), 16)
+        bytes.push(code);
+    }
+    return bytes;
+}
+
+//node  D:\wamp64\www\ossn\actions\sha256.js
+var sha256=function sha256(ascii) {
+    function rightRotate(value, amount) {
+        return (value >>> amount) | (value &lt;&lt; (32 - amount));
+    };
+
+    var mathPow = Math.pow;
+    var maxWord = mathPow(2, 32);
+    var lengthProperty = 'length'
+    var i, j; // Used as a counter across the whole file
+    var result = ''
+
+    var words = [];
+    var asciiBitLength = ascii[lengthProperty] * 8;
+
+    //* caching results is optional - remove/add slash from front of this line to toggle
+    // Initial hash value: first 32 bits of the fractional parts of the square roots of the first 8 primes
+    // (we actually calculate the first 64, but extra values are just ignored)
+    var hash = sha256.h = sha256.h || [];
+    // Round constants: first 32 bits of the fractional parts of the cube roots of the first 64 primes
+    var k = sha256.k = sha256.k || [];
+    var primeCounter = k[lengthProperty];
+    /*/
+    var hash = [], k = [];
+    var primeCounter = 0;
+    //*/
+
+    var isComposite = {};
+    for (var candidate = 2; primeCounter &lt; 64; candidate++) {
+        if (!isComposite[candidate]) {
+            for (i = 0; i &lt; 313; i += candidate) {
+                isComposite[i] = candidate;
+            }
+            hash[primeCounter] = (mathPow(candidate, .5) * maxWord) | 0;
+            k[primeCounter++] = (mathPow(candidate, 1 / 3) * maxWord) | 0;
+        }
+    }
+
+    ascii += '\x80' // Append Ƈ' bit (plus zero padding)
+    while (ascii[lengthProperty] % 64 - 56) ascii += '\x00' // More zero padding
+    for (i = 0; i &lt; ascii[lengthProperty]; i++) {
+        j = ascii.charCodeAt(i);
+        if (j >> 8) return; // ASCII check: only accept characters in range 0-255
+        words[i >> 2] |= j &lt;&lt; ((3 - i) % 4) * 8;
+    }
+    words[words[lengthProperty]] = ((asciiBitLength / maxWord) | 0);
+    words[words[lengthProperty]] = (asciiBitLength)
+
+    // process each chunk
+    for (j = 0; j &lt; words[lengthProperty];) {
+        var w = words.slice(j, j += 16); // The message is expanded into 64 words as part of the iteration
+        var oldHash = hash;
+        // This is now the undefinedworking hash", often labelled as variables a...g
+        // (we have to truncate as well, otherwise extra entries at the end accumulate
+        hash = hash.slice(0, 8);
+
+        for (i = 0; i &lt; 64; i++) {
+            var i2 = i + j;
+            // Expand the message into 64 words
+            // Used below if
+            var w15 = w[i - 15], w2 = w[i - 2];
+
+            // Iterate
+            var a = hash[0], e = hash[4];
+            var temp1 = hash[7]
+                + (rightRotate(e, 6) ^ rightRotate(e, 11) ^ rightRotate(e, 25)) // S1
+                + ((e &amp; hash[5]) ^ ((~e) &amp; hash[6])) // ch
+                + k[i]
+                // Expand the message schedule if needed
+                + (w[i] = (i &lt; 16) ? w[i] : (
+                        w[i - 16]
+                        + (rightRotate(w15, 7) ^ rightRotate(w15, 18) ^ (w15 >>> 3)) // s0
+                        + w[i - 7]
+                        + (rightRotate(w2, 17) ^ rightRotate(w2, 19) ^ (w2 >>> 10)) // s1
+                    ) | 0
+                );
+            // This is only used once, so *could* be moved below, but it only saves 4 bytes and makes things unreadble
+            var temp2 = (rightRotate(a, 2) ^ rightRotate(a, 13) ^ rightRotate(a, 22)) // S0
+                + ((a &amp; hash[1]) ^ (a &amp; hash[2]) ^ (hash[1] &amp; hash[2])); // maj
+
+            hash = [(temp1 + temp2) | 0].concat(hash); // We don't bother trimming off the extra ones, they're harmless as long as we're truncating when we do the slice()
+            hash[4] = (hash[4] + temp1) | 0;
+        }
+
+        for (i = 0; i &lt; 8; i++) {
+            hash[i] = (hash[i] + oldHash[i]) | 0;
+        }
+    }
+
+    for (i = 0; i &lt; 8; i++) {
+        for (j = 3; j + 1; j--) {
+            var b = (hash[i] >> (j * 8)) &amp; 255;
+            result += ((b &lt; 16) ? 0 : '') + b.toString(16);
+        }
+    }
+    return result;
+};
+
+
+
+/**
+ *
+ * @param hex16_32CHAR_128NUMBER B IN
+ * @returns {string}
+ */
+function sha256hashFromHex32bit(hex16) {
+    //hex  9663a6b4b233d586ec723bd9b97ed61f
+    // HEX编码（十六进制编码
+    let ascii = hexToStr(hex16);
+    return (sha256(ascii))
+}
+
+global['sha256hash']=sha256hash
+/**
+ *
+ * @param a128numStr
+ * @returns {string}
+ */
+function sha256hash(a128numStr) {
+    //hex  9663a6b4b233d586ec723bd9b97ed61f
+    // HEX编码（十六进制编码
+    var hex16 = bin2hex(a128numStr);
+//return (  sha256( hexToStr('179e5af5ef66e5da5049cd3de0258c5339a722094e0fdbbbe0e96f148ae80924') ))
+    let ascii = hexToStr(hex16);
+    return (sha256(ascii))
+}
+
+
+/**
+ * hex to bytearr
+ * @param hex
+ * @returns {string}
+ */
+function hexToStr(hex) {
+    let dataString = "";
+    if (hex.length % 2 !== 0) {
+        hex = '0' + hex;
+    }
+    const bytes = [];
+    for (let n = 0; n &lt; hex.length; n += 2) {
+        //每次去2个 16进制数字，组成8bit ，然后转换为字节 ，字节数组》字符串
+        const code = parseInt(hex.substr(n, 2), 16);
+        dataString += String.fromCharCode(code);
+    }
+    return dataString;
+}
+
+
+//fun finish  sha256
+
+/**
+ *bin2  16进制表示法
+ * @param s
+ * @returns {string}
+ */
+function bin2hex(s) {
+    let chars99 = '0123456789abcdef'
+    let s99 = ""
+    for (let i = 0; i &lt; s.length - 3; i = i + 4) {
+
+        //  console.log("cur idx:"+i)
+        let cur4lenStr = s.substr(i, 4)
+        // cur4lenStr  0010
+
+        //  console.log(cur4lenStr)
+// . charAt() 方法可返回指定位置的字符。 第一个字符位置为0
+        //二进制数字前缀0b
+        let pos = '0b' + cur4lenStr;
+        let s1 = chars99.charAt(pos);
+        s99 = s99 + s1;
+        //  console.log( chars99.charAt('0b'+cur4lenStr))
+
+    }
+    return s99;
+
+}
+
+
+global['urlencode']=urlencode
+function urlencode($prm) {
+    return encodeURIComponent($prm)
+}
+
+
+global['md5']=md5
+// 辅助函数
+function md5(data) {
+    var CryptoJS = require("crypto-js");
+    return CryptoJS.MD5(data).toString();
+}
+
+//global["shangfen"]=shangfen;
+function strip_tagsx($t) {
+    $t = strip_tags($t);
+    $t = removeBlankLines($t);
+    return $t;
+}
+
+function strip_tags($t) {
+    result = $t;
+    //  var result = $t.replace(/&lt;\/?.+?>/g,"")
+    //result = $t.replace(/&lt;\/?.+?>/g,"")   //cant replace img mlt line
+
+
+    result = result.replace(/&lt;style>[\s\S]*?&lt;\/style>/igm, "")
+    // var regex=/&lt;style>[\s\S]*?&lt;\/style>/ig;
+    result = result.replace(/&lt;\/?[^>]*>/img, "")
+
+    //.replace(/ /g,"");
+    return result;
+}
+
+function json_decode($s) {
+    return JSON.parse($s)
+}
+
+/**
+ * cant encode err   if err ,use json_encode_Err
+ * @param $s
+ * @returns {string}
+ */
+function json_encode($s) {
+    return JSON.stringify($s, null, 2)
+}
+
+
+/**
+ * json_encode_Err  json_encode_Err
+ * @param e
+ * @returns {string}
+ */
+function json_encode_Err(e)
+{
+//     e.stack1 = e?.stack  //bcs this two prpop cant to json encode
+// // if(e.message)
+//     e.msg1 = e?.message
+
+    let eobj = {"e":e,"stack": e.stack, "msg": e.message}
+
+    return json_encode(eobj)
+}
+
+
+global['json_encode_ErrRawErrObj']=json_encode_ErrRawErrObj
+function json_encode_ErrRawErrObj(e)
+{
+    e.stack1 = e?.stack  //bcs this two prpop cant to json encode
+// if(e.message)
+    e.msg1 = e?.message
+
+
+
+    return json_encode(e)
+}
+
+
+function  encodeShellCmd(rcd)
+{
+
+    // String ( JSON.stringify(rcd)  )
+}</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Issue_login_credentials.html">Issue_login_credentials</a></li><li><a href="findWdByBufpartNwrtToUi.html">findWdByBufpartNwrtToUi</a></li><li><a href="kexiafenBal.html">kexiafenBal</a></li></ul><h3>Global</h3><ul><li><a href="global.html#QryShangxiafen">QryShangxiafen</a></li><li><a href="global.html#accFiles">accFiles</a></li><li><a href="global.html#accpt2423">accpt2423</a></li><li><a href="global.html#addUserCore">addUserCore</a></li><li><a href="global.html#agtbal648">agtbal648</a></li><li><a href="global.html#allFileScore">allFileScore</a></li><li><a href="global.html#authChk">authChk</a></li><li><a href="global.html#bin2hex">bin2hex</a></li><li><a href="global.html#buildUrlNgetV3">buildUrlNgetV3</a></li><li><a href="global.html#callCmd">callCmd</a></li><li><a href="global.html#callFunPressEx">callFunPressEx</a></li><li><a href="global.html#call_func">call_func</a></li><li><a href="global.html#callrmt">callrmt</a></li><li><a href="global.html#callrmtRstapiUrl">callrmtRstapiUrl</a></li><li><a href="global.html#cashinAjax">cashinAjax</a></li><li><a href="global.html#checkAgtidErr">checkAgtidErr</a></li><li><a href="global.html#checkWhiteIp">checkWhiteIp</a></li><li><a href="global.html#check_login_credentials">check_login_credentials</a></li><li><a href="global.html#del_file">del_file</a></li><li><a href="global.html#dsl_callFrmUiToBiz">dsl_callFrmUiToBiz</a></li><li><a href="global.html#dsl_callFunCmdMode">dsl_callFunCmdMode</a></li><li><a href="global.html#errcodeMsgNodeEnv">errcodeMsgNodeEnv</a></li><li><a href="global.html#exchLoginVisa%25E4%25BA%25A4%25E6%258D%25A2visa">exchLoginVisa交换visa</a></li><li><a href="global.html#exit">exit</a></li><li><a href="global.html#explode">explode</a></li><li><a href="global.html#findPlayer">findPlayer</a></li><li><a href="global.html#findWdByBufpart">findWdByBufpart</a></li><li><a href="global.html#findWdLstByPartwd">findWdLstByPartwd</a></li><li><a href="global.html#formatDate">formatDate</a></li><li><a href="global.html#fs_watch">fs_watch</a></li><li><a href="global.html#funtion_exist">funtion_exist</a></li><li><a href="global.html#geneMmncCrpt">geneMmncCrpt</a></li><li><a href="global.html#getConn">getConn</a></li><li><a href="global.html#getDbdir">getDbdir</a></li><li><a href="global.html#getLoginToken">getLoginToken</a></li><li><a href="global.html#getcurReqID">getcurReqID</a></li><li><a href="global.html#hex2bin">hex2bin</a></li><li><a href="global.html#hexToStr">hexToStr</a></li><li><a href="global.html#http_get">http_get</a></li><li><a href="global.html#http_getSync">http_getSync</a></li><li><a href="global.html#http_get_core">http_get_core</a></li><li><a href="global.html#http_get_jqGet">http_get_jqGet</a></li><li><a href="global.html#http_get_jqGetSync">http_get_jqGetSync</a></li><li><a href="global.html#http_get_jqStyle">http_get_jqStyle</a></li><li><a href="global.html#idBasetime">idBasetime</a></li><li><a href="global.html#importUser">importUser</a></li><li><a href="global.html#importUserUploadUserdt">importUserUploadUserdt</a></li><li><a href="global.html#includeEsm">includeEsm</a></li><li><a href="global.html#isExistUser">isExistUser</a></li><li><a href="global.html#is_int">is_int</a></li><li><a href="global.html#json_encode">json_encode</a></li><li><a href="global.html#json_encode_Err">json_encode_Err</a></li><li><a href="global.html#kick">kick</a></li><li><a href="global.html#loadToDataTable">loadToDataTable</a></li><li><a href="global.html#loadToDataTableV2">loadToDataTableV2</a></li><li><a href="global.html#login">login</a></li><li><a href="global.html#loginLocal">loginLocal</a></li><li><a href="global.html#loginV2">loginV2</a></li><li><a href="global.html#main">main</a></li><li><a href="global.html#md5">md5</a></li><li><a href="global.html#msg_recv">msg_recv</a></li><li><a href="global.html#msg_recvListen">msg_recvListen</a></li><li><a href="global.html#oplog_qry">oplog_qry</a></li><li><a href="global.html#padTo2Digits">padTo2Digits</a></li><li><a href="global.html#parse_ini_file">parse_ini_file</a></li><li><a href="global.html#pdo_connV2">pdo_connV2</a></li><li><a href="global.html#pdo_connV3">pdo_connV3</a></li><li><a href="global.html#pdo_insertV3">pdo_insertV3</a></li><li><a href="global.html#pdo_insertV4">pdo_insertV4</a></li><li><a href="global.html#pdo_insertV5">pdo_insertV5</a></li><li><a href="global.html#pdo_insert_coreV2">pdo_insert_coreV2</a></li><li><a href="global.html#pdo_insert_noEx">pdo_insert_noEx</a></li><li><a href="global.html#pdo_query">pdo_query</a></li><li><a href="global.html#pdo_queryV2">pdo_queryV2</a></li><li><a href="global.html#pdo_queryV5">pdo_queryV5</a></li><li><a href="global.html#pdo_query_fromData">pdo_query_fromData</a></li><li><a href="global.html#pdo_save">pdo_save</a></li><li><a href="global.html#pdo_saveV2">pdo_saveV2</a></li><li><a href="global.html#pdo_saveV5">pdo_saveV5</a></li><li><a href="global.html#pipe">pipe</a></li><li><a href="global.html#ptn_getLastPtn">ptn_getLastPtn</a></li><li><a href="global.html#ptn_getPartns">ptn_getPartns</a></li><li><a href="global.html#ptn_getPartnsLast">ptn_getPartnsLast</a></li><li><a href="global.html#ptn_newprtn">ptn_newprtn</a></li><li><a href="global.html#qryAgtBal">qryAgtBal</a></li><li><a href="global.html#qryAgtBalINweb">qryAgtBalINweb</a></li><li><a href="global.html#qryCashinOutAplctnFmevt">qryCashinOutAplctnFmevt</a></li><li><a href="global.html#qry_cashin_aplctn">qry_cashin_aplctn</a></li><li><a href="global.html#query">query</a></li><li><a href="global.html#readExcelFromUploadFile">readExcelFromUploadFile</a></li><li><a href="global.html#readFileFromUploadFile">readFileFromUploadFile</a></li><li><a href="global.html#readFromExcel">readFromExcel</a></li><li><a href="global.html#recv_nml_msg">recv_nml_msg</a></li><li><a href="global.html#refresh_login_token">refresh_login_token</a></li><li><a href="global.html#requireAutoload">requireAutoload</a></li><li><a href="global.html#requirex">requirex</a></li><li><a href="global.html#retry">retry</a></li><li><a href="global.html#rvw_passAjax">rvw_passAjax</a></li><li><a href="global.html#rvw_passCore">rvw_passCore</a></li><li><a href="global.html#rvw_rfs">rvw_rfs</a></li><li><a href="global.html#saveLoginVisa">saveLoginVisa</a></li><li><a href="global.html#score_orderQryShagnxiafenByUnameOrderid">score_orderQryShagnxiafenByUnameOrderid</a></li><li><a href="global.html#searchPlayer">searchPlayer</a></li><li><a href="global.html#searchPlayerAll">searchPlayerAll</a></li><li><a href="global.html#sendLoginVisa">sendLoginVisa</a></li><li><a href="global.html#setEchoWinTxt">setEchoWinTxt</a></li><li><a href="global.html#setGlobalErrCatch">setGlobalErrCatch</a></li><li><a href="global.html#sha256hash">sha256hash</a></li><li><a href="global.html#sha256hashFromHex32bit">sha256hashFromHex32bit</a></li><li><a href="global.html#updateBal">updateBal</a></li><li><a href="global.html#upload">upload</a></li><li><a href="global.html#uploadIni">uploadIni</a></li><li><a href="global.html#watchHdlr">watchHdlr</a></li><li><a href="global.html#writeFileSyncV2">writeFileSyncV2</a></li><li><a href="global.html#writeFileV3">writeFileV3</a></li><li><a href="global.html#xiafen">xiafen</a></li><li><a href="global.html#xiafen745">xiafen745</a></li><li><a href="global.html#%25E4%25B8%258A%25E5%2588%2586">上分</a></li><li><a href="global.html#%25E4%25B8%258B%25E5%2588%2586">下分</a></li><li><a href="global.html#%25E4%25BD%2599%25E9%25A2%259D">余额</a></li><li><a href="global.html#%25E4%25BF%259D%25E5%25AD%2598%25E7%2599%25BB%25E5%25BD%2595%25E5%2587%25AD%25E6%258D%25AE">保存登录凭据</a></li><li><a href="global.html#%25E5%25A6%2582%25E6%259E%259C">如果</a></li><li><a href="global.html#%25E5%25B8%25AE%25E5%258A%25A9">帮助</a></li><li><a href="global.html#%25E5%25BE%25AA%25E7%258E%25AF">循环</a></li><li><a href="global.html#%25E6%2589%25A7%25E8%25A1%258C%25E6%258C%2587%25E4%25BB%25A4%25E5%25BA%258F%25E5%2588%2597">执行指令序列</a></li><li><a href="global.html#%25E6%2589%25A7%25E8%25A1%258C%25E6%258C%2587%25E4%25BB%25A4%25E5%25BA%258F%25E5%2588%2597FP">执行指令序列FP</a></li><li><a href="global.html#%25E6%25A0%25B8%25E9%25AA%258C%25E5%25AF%2586%25E7%25A0%2581%25E9%2594%2599%25E8%25AF%25AF">核验密码错误</a></li><li><a href="global.html#%25E6%25B5%2581%25E6%25B0%25B4">流水</a></li><li><a href="global.html#%25E7%2599%25BB%25E5%25BD%2595%25E6%25B5%2581%25E7%25A8%258B">登录流程</a></li><li><a href="global.html#%25E7%2599%25BB%25E5%25BD%2595%25E6%25B5%2581%25E7%25A8%258Btoken%25E6%25A8%25A1%25E5%25BC%258F">登录流程token模式</a></li><li><a href="global.html#%25E7%2599%25BB%25E5%25BD%2595%25E6%25B5%2581%25E7%25A8%258B%25E5%25AF%2586%25E7%25A0%2581%25E6%25A8%25A1%25E5%25BC%258F">登录流程密码模式</a></li><li><a href="global.html#%25E8%25BF%2594%25E5%259B%259E">返回</a></li><li><a href="global.html#%25E8%25BF%2594%25E5%259B%259E%25E7%25BB%2593%25E6%259E%259C">返回结果</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a> on Sat Oct 28 2023 18:39:05 GMT+0700 (Indochina Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

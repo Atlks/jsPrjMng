@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: libx/sttb.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: libx/sttb.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>global['retry'] = retry;
+
+
+/**
+ * retry useage
+ * @author ati
+ * @version 1.1
+
+ * @description retry desc
+ *
+ *
+ * @param {function} f
+ * @param {int} reTrytimes
+ * @param {fun} chkFun
+ * @returns {*}
+ */
+function retry(f, reTrytimes, chkFun) {
+
+    var rzt_fnl;
+    for (let i = 0; i &lt; reTrytimes; i++) {
+        rzt_fnl = f();
+        if (chkFun(rzt_fnl))
+            break;
+    }
+
+    return rzt_fnl;
+
+
+}
+
+/**
+ * 
+ */
+function pipe() {
+
+}
+
+
+
+/**
+ * 
+ *   Description placeholder
+ *  @author ati
+ * @version 1.1
+ * 
+
+ * @date 9/18/2023 - 12:07:43 AM
+ */
+function setGlobalErrCatch() {
+
+}
+
+function mq() {
+
+}
+
+/**
+ * callcmd desc
+ * @author ati
+ * @version 1.1
+ */
+function callCmd() {
+
+}
+
+function setDaemon() {
+
+}
+
+
+function unittest() {
+
+}
+
+/**
+ * callFunPressExcallFunPressEx
+ * callFunPressExcallFunPressEx
+ *
+ * @param fun
+ * @param params
+ * @returns {*}
+ */
+function callFunPressEx(fun, params) {
+    try {
+        echo("\r\n\r\n");
+        var funname = arguments.callee.name;
+        arg = JSON.stringify(arguments);
+        var ivkFundbg = "*********=>" + funname + arg
+        console.log(ivkFundbg)
+
+
+        if (isset("window"))
+            func = window[fun];
+        else
+            func = global[fun];
+
+
+        if (func == undefined) {
+            let eobj = { "enterFunArgs": ivkFundbg, "msg": " cant find fun:" + fun }
+            throw eobj;
+        }
+
+        //window[cb];
+        $r = func.apply("thisobj", params);
+        echo(sprintf("[%s] ret==>%s", fun, $r));
+        echo("\r\n\r\n");
+        return $r;
+    } catch (e) {
+        echo(e)
+        $e2 = errorCast(e);
+        let eobj = { "type": "ex", "name": "xxxex", "msg": JSON.stringify($e2), "e": $e2 };
+        $rz = JSON.stringify(eobj);
+    }
+
+
+}
+
+
+// ref  提升稳定性   文档 v2 x8x.docx</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Issue_login_credentials.html">Issue_login_credentials</a></li><li><a href="findWdByBufpartNwrtToUi.html">findWdByBufpartNwrtToUi</a></li><li><a href="kexiafenBal.html">kexiafenBal</a></li></ul><h3>Global</h3><ul><li><a href="global.html#QryShangxiafen">QryShangxiafen</a></li><li><a href="global.html#accFiles">accFiles</a></li><li><a href="global.html#accpt2423">accpt2423</a></li><li><a href="global.html#addUserCore">addUserCore</a></li><li><a href="global.html#agtbal648">agtbal648</a></li><li><a href="global.html#allFileScore">allFileScore</a></li><li><a href="global.html#authChk">authChk</a></li><li><a href="global.html#bin2hex">bin2hex</a></li><li><a href="global.html#buildUrlNgetV3">buildUrlNgetV3</a></li><li><a href="global.html#callCmd">callCmd</a></li><li><a href="global.html#callFunPressEx">callFunPressEx</a></li><li><a href="global.html#call_func">call_func</a></li><li><a href="global.html#callrmt">callrmt</a></li><li><a href="global.html#callrmtRstapiUrl">callrmtRstapiUrl</a></li><li><a href="global.html#cashinAjax">cashinAjax</a></li><li><a href="global.html#checkAgtidErr">checkAgtidErr</a></li><li><a href="global.html#checkWhiteIp">checkWhiteIp</a></li><li><a href="global.html#check_login_credentials">check_login_credentials</a></li><li><a href="global.html#del_file">del_file</a></li><li><a href="global.html#dsl_callFrmUiToBiz">dsl_callFrmUiToBiz</a></li><li><a href="global.html#dsl_callFunCmdMode">dsl_callFunCmdMode</a></li><li><a href="global.html#errcodeMsgNodeEnv">errcodeMsgNodeEnv</a></li><li><a href="global.html#exchLoginVisa%25E4%25BA%25A4%25E6%258D%25A2visa">exchLoginVisa交换visa</a></li><li><a href="global.html#exit">exit</a></li><li><a href="global.html#explode">explode</a></li><li><a href="global.html#findPlayer">findPlayer</a></li><li><a href="global.html#findWdByBufpart">findWdByBufpart</a></li><li><a href="global.html#findWdLstByPartwd">findWdLstByPartwd</a></li><li><a href="global.html#formatDate">formatDate</a></li><li><a href="global.html#fs_watch">fs_watch</a></li><li><a href="global.html#funtion_exist">funtion_exist</a></li><li><a href="global.html#geneMmncCrpt">geneMmncCrpt</a></li><li><a href="global.html#getConn">getConn</a></li><li><a href="global.html#getDbdir">getDbdir</a></li><li><a href="global.html#getLoginToken">getLoginToken</a></li><li><a href="global.html#getcurReqID">getcurReqID</a></li><li><a href="global.html#hex2bin">hex2bin</a></li><li><a href="global.html#hexToStr">hexToStr</a></li><li><a href="global.html#http_get">http_get</a></li><li><a href="global.html#http_getSync">http_getSync</a></li><li><a href="global.html#http_get_core">http_get_core</a></li><li><a href="global.html#http_get_jqGet">http_get_jqGet</a></li><li><a href="global.html#http_get_jqGetSync">http_get_jqGetSync</a></li><li><a href="global.html#http_get_jqStyle">http_get_jqStyle</a></li><li><a href="global.html#idBasetime">idBasetime</a></li><li><a href="global.html#importUser">importUser</a></li><li><a href="global.html#importUserUploadUserdt">importUserUploadUserdt</a></li><li><a href="global.html#includeEsm">includeEsm</a></li><li><a href="global.html#isExistUser">isExistUser</a></li><li><a href="global.html#is_int">is_int</a></li><li><a href="global.html#json_encode">json_encode</a></li><li><a href="global.html#json_encode_Err">json_encode_Err</a></li><li><a href="global.html#kick">kick</a></li><li><a href="global.html#loadToDataTable">loadToDataTable</a></li><li><a href="global.html#loadToDataTableV2">loadToDataTableV2</a></li><li><a href="global.html#login">login</a></li><li><a href="global.html#loginLocal">loginLocal</a></li><li><a href="global.html#loginV2">loginV2</a></li><li><a href="global.html#main">main</a></li><li><a href="global.html#md5">md5</a></li><li><a href="global.html#msg_recv">msg_recv</a></li><li><a href="global.html#msg_recvListen">msg_recvListen</a></li><li><a href="global.html#oplog_qry">oplog_qry</a></li><li><a href="global.html#padTo2Digits">padTo2Digits</a></li><li><a href="global.html#parse_ini_file">parse_ini_file</a></li><li><a href="global.html#pdo_connV2">pdo_connV2</a></li><li><a href="global.html#pdo_connV3">pdo_connV3</a></li><li><a href="global.html#pdo_insertV3">pdo_insertV3</a></li><li><a href="global.html#pdo_insertV4">pdo_insertV4</a></li><li><a href="global.html#pdo_insertV5">pdo_insertV5</a></li><li><a href="global.html#pdo_insert_coreV2">pdo_insert_coreV2</a></li><li><a href="global.html#pdo_insert_noEx">pdo_insert_noEx</a></li><li><a href="global.html#pdo_query">pdo_query</a></li><li><a href="global.html#pdo_queryV2">pdo_queryV2</a></li><li><a href="global.html#pdo_queryV5">pdo_queryV5</a></li><li><a href="global.html#pdo_query_fromData">pdo_query_fromData</a></li><li><a href="global.html#pdo_save">pdo_save</a></li><li><a href="global.html#pdo_saveV2">pdo_saveV2</a></li><li><a href="global.html#pdo_saveV5">pdo_saveV5</a></li><li><a href="global.html#pipe">pipe</a></li><li><a href="global.html#ptn_getLastPtn">ptn_getLastPtn</a></li><li><a href="global.html#ptn_getPartns">ptn_getPartns</a></li><li><a href="global.html#ptn_getPartnsLast">ptn_getPartnsLast</a></li><li><a href="global.html#ptn_newprtn">ptn_newprtn</a></li><li><a href="global.html#qryAgtBal">qryAgtBal</a></li><li><a href="global.html#qryAgtBalINweb">qryAgtBalINweb</a></li><li><a href="global.html#qryCashinOutAplctnFmevt">qryCashinOutAplctnFmevt</a></li><li><a href="global.html#qry_cashin_aplctn">qry_cashin_aplctn</a></li><li><a href="global.html#query">query</a></li><li><a href="global.html#readExcelFromUploadFile">readExcelFromUploadFile</a></li><li><a href="global.html#readFileFromUploadFile">readFileFromUploadFile</a></li><li><a href="global.html#readFromExcel">readFromExcel</a></li><li><a href="global.html#recv_nml_msg">recv_nml_msg</a></li><li><a href="global.html#refresh_login_token">refresh_login_token</a></li><li><a href="global.html#requireAutoload">requireAutoload</a></li><li><a href="global.html#requirex">requirex</a></li><li><a href="global.html#retry">retry</a></li><li><a href="global.html#rvw_passAjax">rvw_passAjax</a></li><li><a href="global.html#rvw_passCore">rvw_passCore</a></li><li><a href="global.html#rvw_rfs">rvw_rfs</a></li><li><a href="global.html#saveLoginVisa">saveLoginVisa</a></li><li><a href="global.html#score_orderQryShagnxiafenByUnameOrderid">score_orderQryShagnxiafenByUnameOrderid</a></li><li><a href="global.html#searchPlayer">searchPlayer</a></li><li><a href="global.html#searchPlayerAll">searchPlayerAll</a></li><li><a href="global.html#sendLoginVisa">sendLoginVisa</a></li><li><a href="global.html#setEchoWinTxt">setEchoWinTxt</a></li><li><a href="global.html#setGlobalErrCatch">setGlobalErrCatch</a></li><li><a href="global.html#sha256hash">sha256hash</a></li><li><a href="global.html#sha256hashFromHex32bit">sha256hashFromHex32bit</a></li><li><a href="global.html#updateBal">updateBal</a></li><li><a href="global.html#upload">upload</a></li><li><a href="global.html#uploadIni">uploadIni</a></li><li><a href="global.html#watchHdlr">watchHdlr</a></li><li><a href="global.html#writeFileSyncV2">writeFileSyncV2</a></li><li><a href="global.html#writeFileV3">writeFileV3</a></li><li><a href="global.html#xiafen">xiafen</a></li><li><a href="global.html#xiafen745">xiafen745</a></li><li><a href="global.html#%25E4%25B8%258A%25E5%2588%2586">上分</a></li><li><a href="global.html#%25E4%25B8%258B%25E5%2588%2586">下分</a></li><li><a href="global.html#%25E4%25BD%2599%25E9%25A2%259D">余额</a></li><li><a href="global.html#%25E4%25BF%259D%25E5%25AD%2598%25E7%2599%25BB%25E5%25BD%2595%25E5%2587%25AD%25E6%258D%25AE">保存登录凭据</a></li><li><a href="global.html#%25E5%25A6%2582%25E6%259E%259C">如果</a></li><li><a href="global.html#%25E5%25B8%25AE%25E5%258A%25A9">帮助</a></li><li><a href="global.html#%25E5%25BE%25AA%25E7%258E%25AF">循环</a></li><li><a href="global.html#%25E6%2589%25A7%25E8%25A1%258C%25E6%258C%2587%25E4%25BB%25A4%25E5%25BA%258F%25E5%2588%2597">执行指令序列</a></li><li><a href="global.html#%25E6%2589%25A7%25E8%25A1%258C%25E6%258C%2587%25E4%25BB%25A4%25E5%25BA%258F%25E5%2588%2597FP">执行指令序列FP</a></li><li><a href="global.html#%25E6%25A0%25B8%25E9%25AA%258C%25E5%25AF%2586%25E7%25A0%2581%25E9%2594%2599%25E8%25AF%25AF">核验密码错误</a></li><li><a href="global.html#%25E6%25B5%2581%25E6%25B0%25B4">流水</a></li><li><a href="global.html#%25E7%2599%25BB%25E5%25BD%2595%25E6%25B5%2581%25E7%25A8%258B">登录流程</a></li><li><a href="global.html#%25E7%2599%25BB%25E5%25BD%2595%25E6%25B5%2581%25E7%25A8%258Btoken%25E6%25A8%25A1%25E5%25BC%258F">登录流程token模式</a></li><li><a href="global.html#%25E7%2599%25BB%25E5%25BD%2595%25E6%25B5%2581%25E7%25A8%258B%25E5%25AF%2586%25E7%25A0%2581%25E6%25A8%25A1%25E5%25BC%258F">登录流程密码模式</a></li><li><a href="global.html#%25E8%25BF%2594%25E5%259B%259E">返回</a></li><li><a href="global.html#%25E8%25BF%2594%25E5%259B%259E%25E7%25BB%2593%25E6%259E%259C">返回结果</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a> on Sat Oct 28 2023 18:39:05 GMT+0700 (Indochina Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

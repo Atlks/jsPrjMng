@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>..</title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1">
+
+    <script>
+        window["global"]=[]
+        window["process"]={}
+        process.env={}
+        function  readFileSyncx(){}
+        function  require(){}
+        function  appendFileSync(){}
+        function  file_exists(){}
+        function  mkdirSync(){}
+        function  appendFileV2(){}
+
+        function  log_err(e){ console.log(e) }
+        window["process.env"]={}
+        __dirname=""
+    </script>
+
+    <script src="libx/sys.js"></script>
+    <script src="libx/browerNode.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.7.0.js"
+            integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+            crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="res/style.css">
+
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css"/>
+
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
+
+    <script src="libx/errHdlr.js"></script>
+    <script src="libBiz/user.js"></script>
+    <script src="libBiz/acc.js"></script>
+
+
+    <link rel="stylesheet" href="https://layui.itze.cn/layui-v2.6.8/layui/css/layui.css">
+    <script src="https://layui.itze.cn/layui-v2.6.8/layui/layui.js"></script>
+    <script src="libx/dsl.js"></script>
+    <script src="libx/logger.js"></script>
+    <script src="libx/php.js"></script>
+    <script src="libx/jq.js"></script>
+    <script src="libBiz/bizHttp.js"></script>
+    <script src="libBiz/bzUI.js"></script>
+    <script src="libx/str.js"></script>
+    <script src="libx/enc.js"></script>
+    <script src="libBiz/shangfen.js"></script>
+    <script src="libBiz/xiafen.js"></script>
+    <script src="libBiz/searchPlayer.js"></script>
+
+    <script src="libx/httpSync.js"></script>
+    <script src="libBiz/QryShangxiafen.js"></script>
+    <script src="libBiz/importUser.js"></script>
+    <script src="libx/ui.js"></script>
+
+    <script src=" https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js "></script>
+
+    <script src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+</head>
+<body style="padding: 20px">
+
+<!-- hed-->
+<div id="hddiv"></div>
+
+<script>
+    $( "#hddiv" ).load( callrmtRstapiUrl()+"includeXAjax%20head.htm", function() {
+        $("#aCfg a").addClass("CurTab")
+        $("#aCfg").css("color", "red");
+    });
+
+
+    //   $("#aUser").css("color","red");
+</script>
+<!-- hed-->
+
+
+<form id="fm1" name="">
+上分 <input type="text" onchange00="uname_sxf.value=this.value" value="" id="cashin" name="cashin" style="width: 100%">
+
+下分<input type="text" onchange00="uname_sxf.value=this.value" value="" id="cashout" name="cashout" style="width: 100%">
+
+流水<input type="text" onchange00="uname_sxf.value=this.value" value="" id="ls" name="ls" style="width: 100%">
+
+余额<input type="text" onchange00="uname_sxf.value=this.value" value="" id="bal" name="bal" style="width: 100%">
+<p></p>
+
+<button onclick="btnclick()" type="button" class="btn btn-success" style="margin-top:10px;width: 100%">保存</button>
+</form>
+
+
+<script>
+
+  function  btnclick(){
+      authChkFrt()
+      authChk()
+      let url = callrmtRstapiUrl()+ "saveMsgCmdCfg&" + $("form").serialize()
+      console.log(url)
+      http_get_jqGet(url,function (data) {
+          alert("成功")
+      },jqFailFun)
+
+    }
+
+
+  let url = callrmtRstapiUrl()+ "readMsgCmdCfg"
+  http_get_jqGet(url,function (data) {
+       if(data.length<5)
+           return
+        let rows=JSON.parse(data)
+       let obj=rows[0]
+        loadToForm(obj,"fm1")
+
+  },jqFailFun)
+
+</script>
+
+</body>
+</html>

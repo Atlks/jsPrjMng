@@ -1,0 +1,8596 @@
+[
+  {
+    "key": "del",
+    "cnstr": "删除",
+    "fil": "cmpt"
+  },
+
+  {
+    "key": "slvjj",
+    "cnstr": "解决",
+    "fil": "cmpt"
+  },
+
+  {
+    "key": "ocp",
+    "cnstr": "占用",
+    "fil": "cmpt"
+  },
+  {
+    "key": "slph",
+    "cnstr": "滑",
+    "fil": "cmpt"
+  },
+
+
+  {
+    "key": "nf",
+    "cnstr": "刀子",
+    "fil": "cmpt"
+  },
+
+
+  {
+    "key": "gem",
+    "cnstr": "宝石",
+    "fil": "cmpt"
+  },
+  {
+    "key": "gm",
+    "cnstr": "宝石",
+    "fil": "cmpt"
+  },
+  {
+    "key": "gmys",
+    "cnstr": "游戏",
+    "fil": "cmpt"
+  },
+  {
+    "key": "gam",
+    "cnstr": "游戏",
+    "fil": "cmpt"
+  },
+
+
+  {
+    "key": "spt",
+    "cnstr": "支持",
+    "fil": "cmpt"
+  },
+
+  {
+    "key": "sprt",
+    "cnstr": "运动",
+    "fil": "cmpt"
+  },
+
+  {
+    "key": "sbrt",
+    "cnstr": "运动",
+    "fil": "cmpt"
+  },
+  {
+    "key": "smr",
+    "cnstr": "总结",
+    "fil": "cmpt"
+  },
+
+
+  {
+    "key": "ptn",
+    "cnstr": "分区",
+    "fil": "cmpt"
+  },
+
+  {
+    "key": "ptsh",
+    "cnstr": "分区",
+    "fil": "cmpt"
+  },
+
+  {
+    "key": "cate",
+    "cnstr": "分类",
+    "fil": "cmpt"
+  },
+
+  {
+    "key": "nbr",
+    "cnstr": "数字",
+    "fil": "cmpt"
+  },
+  {
+    "key": "mtr",
+    "cnstr": "物资",
+    "fil": "cmpt"
+  },
+
+
+
+  {
+    "key": "lgc",
+    "cnstr": "逻辑",
+    "fil": "cmpt"
+  },
+
+
+  {
+    "key": "dtstrc",
+    "cnstr": "数据结构",
+    "fil": "cmpt"
+  },
+
+  {
+    "key": "type",
+    "cnstr": "类型",
+    "fil": "cmpt"
+  },
+
+
+
+  {
+    "key": "splt",
+    "cnstr": "分离",
+    "fil": "cmpt"
+  },
+
+
+
+  {
+    "key": "algo",
+    "cnstr": "算法",
+    "fil": "cmpt"
+  },
+
+
+  {
+    "key": "eq",
+    "cnstr": "等于",
+    "fil": "cmpt"
+  },
+  {
+    "key": "int",
+    "cnstr": "整数",
+    "fil": "cmpt"
+  },
+  {
+    "key": "nmrc",
+    "cnstr": "数值",
+    "fil": "cmpt"
+  },
+
+
+  {
+    "key": "ntfy",
+    "cnstr": "通知",
+    "fil": "cmpt"
+  },
+  {
+    "key": "doc",
+    "cnstr": "文档",
+    "fil": "cmpt"
+  },
+
+
+
+  {
+    "key": "dwn",
+    "cnstr": "下面",
+    "fil": "cmpt"
+  },
+
+
+  {
+    "key": "prcslc",
+    "cnstr": "流程",
+    "fil": "cmpt"
+  },
+  {
+    "key": "tech",
+    "cnstr": "技术",
+    "fil": "cmpt"
+  },
+
+  {
+    "key": "bot",
+    "cnstr": "机器人",
+    "fil": "cmpt"
+  },
+
+  {
+    "key": "rbtjcr",
+    "cnstr": "机器人",
+    "fil": "cmpt"
+  },
+
+  {
+    "key": "ntfy",
+    "cnstr": "通知",
+    "fil": "cmpt"
+  },
+
+  {
+    "key": "glb",
+    "cnstr": "全局",
+    "fil": "cmpt"
+  },
+
+  {
+    "key": "glbcy",
+    "cnstr": "全球",
+    "fil": "cmpt"
+  },
+
+  {
+    "key": "geo",
+    "cnstr": "地理",
+    "fil": "cmpt"
+  },
+
+
+  {
+    "key": "vsn",
+    "cnstr": "视野",
+    "fil": "cmpt"
+  },
+
+  {
+    "key": "ctr",
+    "cnstr": "控制",
+    "fil": "cmpt"
+  },
+  {
+    "key": "ctrl",
+    "cnstr": "控件",
+    "fil": "cmpt"
+  },
+
+
+
+  {
+    "key": "btn",
+    "cnstr": "按钮",
+    "fil": "cmpt"
+  },
+  {
+    "key": "btr",
+    "cnstr": "最好",
+    "fil": "cmpt"
+  },
+  {
+    "key": "btry",
+    "cnstr": "电池",
+    "fil": "cmpt"
+  },
+
+
+  {
+    "key": "rmv",
+    "cnstr": "删除",
+    "fil": "cmpt"
+  },
+  {
+    "key": "fctn",
+    "cnstr": "功能",
+    "fil": "cmpt"
+  },
+  {
+    "key": "ftr",
+    "cnstr": "特性",
+    "fil": "cmpt"
+  },
+  {
+    "key": "bked",
+    "cnstr": "后台",
+    "fil": "cmpt"
+  },
+  {
+    "key": "shw",
+    "cnstr": "显示",
+    "fil": "cmpt"
+  },
+  {
+    "key": "mdl",
+    "cnstr": "模块",
+    "fil": "cmpt"
+  },
+  {
+    "key": "mod",
+    "cnstr": "模块",
+    "fil": "cmpt"
+  },
+  {
+    "key": "hto",
+    "cnstr": "黑偷",
+    "fil": "cmpt"
+  },
+  {
+    "key": "htolm",
+    "cnstr": "里面",
+    "fil": "cmpt"
+  },
+  {
+    "key": "hto1",
+    "cnstr": "里面",
+    "fil": "cmpt"
+  },
+  {
+    "key": "coll",
+    "cnstr": "集合",
+    "fil": "cmpt"
+  },
+  {
+    "key": "vstlt",
+    "cnstr": "通用性",
+    "fil": "cmpt"
+  },
+  {
+    "key": "rfs",
+    "cnstr": "拒绝",
+    "fil": "nml"
+  },
+  {
+    "key": "scss",
+    "cnstr": "成功",
+    "fil": "nml"
+  },
+  {
+    "key": "shld",
+    "cnstr": "应该",
+    "fil": "nml"
+  },
+  {
+    "key": "aplct",
+    "cnstr": "申请",
+    "fil": "nml"
+  },
+  {
+    "key": "aplctn",
+    "cnstr": "申请",
+    "fil": "nml"
+  },
+  {
+    "key": "by",
+    "cnstr": "靠",
+    "fil": "nml"
+  },
+  {
+    "key": "fx",
+    "cnstr": "修复",
+    "fil": "nml"
+  },
+  {
+    "key": "rdab",
+    "cnstr": "可读性",
+    "fil": "nml"
+  },
+  {
+    "key": "shud",
+    "cnstr": "应该",
+    "fil": "nml"
+  },
+  {
+    "key": "rcm",
+    "cnstr": "注释",
+    "fil": "cmpt"
+  },
+  {
+    "key": "strct",
+    "cnstr": "结构",
+    "fil": "cmpt"
+  },
+  {
+    "key": "asm",
+    "cnstr": "汇编",
+    "fil": "cmpt"
+  },
+  {
+    "key": "who",
+    "cnstr": "谁",
+    "fil": "cmpt"
+  },
+  {
+    "key": "invt",
+    "cnstr": "创新",
+    "fil": "cmpt"
+  },
+  {
+    "key": "fmt",
+    "cnstr": "格式",
+    "fil": "cmpt"
+  },
+  {
+    "key": "rvw",
+    "cnstr": "审核",
+    "fil": "cmpt"
+  },
+  {
+    "key": "advs",
+    "cnstr": "高级",
+    "fil": "cmpt"
+  },
+  {
+    "key": "fst",
+    "cnstr": "第一个",
+    "fil": "cmpt"
+  },
+  {
+    "key": "prgl",
+    "cnstr": "编程语言",
+    "fil": "cmpt"
+  },
+  {
+    "key": "lan",
+    "cnstr": "语言",
+    "fil": "cmpt"
+  },
+  {
+    "key": "impt",
+    "cnstr": "重要",
+    "fil": "cmpt"
+  },
+  {
+    "key": "excpt",
+    "cnstr": "异常",
+    "fil": "cmpt"
+  },
+  {
+    "key": "smp",
+    "cnstr": "简单",
+    "fil": "cmpt"
+  },
+  {
+    "key": "lv",
+    "cnstr": "爱",
+    "fil": "cmpt"
+  },
+  {
+    "key": "smpjh",
+    "cnstr": "简化",
+    "fil": "cmpt"
+  },
+  {
+    "key": "kklt",
+    "cnstr": "计算",
+    "fil": "cmpt"
+  },
+  {
+    "key": "cclt",
+    "cnstr": "计算",
+    "fil": "cmpt"
+  },
+  {
+    "key": "skd",
+    "cnstr": "日程",
+    "fil": "cmpt"
+  },
+  {
+    "key": "df",
+    "cnstr": "不同",
+    "fil": "cmpt"
+  },
+  {
+    "key": "sbs",
+    "cnstr": "空格",
+    "fil": "cmpt"
+  },
+  {
+    "key": "chg",
+    "cnstr": "改变",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "sbsh",
+    "cnstr": "特殊",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "sbsts",
+    "cnstr": "特殊",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "dev",
+    "cnstr": "开发",
+    "fil": "cmpt"
+  },
+  {
+    "key": "optm",
+    "cnstr": "优化",
+    "fil": "cmpt"
+  },
+  {
+    "key": "iptm",
+    "cnstr": "输入法",
+    "fil": "cmpt"
+  },
+  {
+    "key": "sgl",
+    "cnstr": "单身",
+    "fil": "nml"
+  },
+  {
+    "key": "c",
+    "cnstr": "看见",
+    "fil": "nml"
+  },
+  {
+    "key": "d",
+    "cnstr": "天",
+    "fil": "nml"
+  },
+  {
+    "key": "chr",
+    "cnstr": "字符",
+    "fil": "nml"
+  },
+  {
+    "key": "etr",
+    "cnstr": "回车",
+    "fil": "nml"
+  },
+  {
+    "key": "r",
+    "cnstr": "是",
+    "fil": "nml"
+  },
+  {
+    "key": "t",
+    "cnstr": "真实",
+    "fil": "nml"
+  },
+  {
+    "key": "b",
+    "cnstr": "是",
+    "fil": "nml"
+  },
+  {
+    "key": "o",
+    "cnstr": "零",
+    "fil": "nml"
+  },
+  {
+    "key": "hi",
+    "cnstr": "高",
+    "fil": "nml"
+  },
+  {
+    "key": "g",
+    "cnstr": "好",
+    "fil": "nml"
+  },
+  {
+    "key": "f",
+    "cnstr": "false",
+    "fil": "nml"
+  },
+  {
+    "key": "alfbt",
+    "cnstr": "字母表",
+    "fil": "nml"
+  },
+  {
+    "key": "gad",
+    "cnstr": "猫",
+    "fil": "nml"
+  },
+  {
+    "key": "gadd",
+    "cnstr": "卡片",
+    "fil": "nml"
+  },
+  {
+    "key": "lk",
+    "cnstr": "喜欢",
+    "fil": "nml"
+  },
+  {
+    "key": "lib",
+    "cnstr": "类库",
+    "fil": "cmpt"
+  },
+  {
+    "key": "csl",
+    "fun": "ableFuname",
+    "cnstr": "控制台",
+    "fil": "C:\\w\\iptmthd\\cmpt.au3"
+  },
+  {
+    "key": "zzzzzzzzz&&&&&&",
+    "fun": "ableFuname",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "able",
+    "fun": "ableFuname",
+    "cnstr": "有能力的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "abt",
+    "fun": "abtFuname",
+    "cnstr": "关于",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "accnt",
+    "fun": "accntFuname",
+    "cnstr": "帐户",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "acid",
+    "fun": "acidFuname",
+    "cnstr": "酸",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "acrss",
+    "fun": "acrssFuname",
+    "cnstr": "穿过",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "act",
+    "fun": "actFuname",
+    "cnstr": "行为",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "addtn",
+    "fun": "addtnFuname",
+    "cnstr": "添加",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "adjstmnt",
+    "fun": "adjstmntFuname",
+    "cnstr": "调整",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "advrtsmnt",
+    "fun": "advrtsmntFuname",
+    "cnstr": "广告",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "aftr",
+    "fun": "aftrFuname",
+    "cnstr": "后",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "agn",
+    "fun": "agnFuname",
+    "cnstr": "再次",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "agnst",
+    "fun": "agnstFuname",
+    "cnstr": "反对",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "agrmnt",
+    "fun": "agrmntFuname",
+    "cnstr": "协议",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "air",
+    "fun": "airFuname",
+    "cnstr": "空气",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "all",
+    "fun": "allFuname",
+    "cnstr": "全部",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "almst",
+    "fun": "almstFuname",
+    "cnstr": "几乎",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "amng",
+    "fun": "amngFuname",
+    "cnstr": "之中",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "amnt",
+    "fun": "amntFuname",
+    "cnstr": "数量",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "amsmnt",
+    "fun": "amsmntFuname",
+    "cnstr": "娱乐",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "and",
+    "fun": "andFuname",
+    "cnstr": "和",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "angl",
+    "fun": "anglFuname",
+    "cnstr": "角度",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "angry",
+    "fun": "angryFuname",
+    "cnstr": "生气的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "anml",
+    "fun": "anmlFuname",
+    "cnstr": "动物",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "answr",
+    "fun": "answrFuname",
+    "cnstr": "回答",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "ant",
+    "fun": "antFuname",
+    "cnstr": "蚂蚁",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "any",
+    "fun": "anyFuname",
+    "cnstr": "任何",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "apprts",
+    "fun": "apprtsFuname",
+    "cnstr": "仪器",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "appl",
+    "fun": "applFuname",
+    "cnstr": "苹果",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "apprvl",
+    "fun": "apprvlFuname",
+    "cnstr": "赞同",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+
+
+  {
+    "key": "arch",
+
+    "cnstr": "架构拱",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "argmnt",
+    "fun": "argmntFuname",
+    "cnstr": "争论",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "arm",
+    "fun": "armFuname",
+    "cnstr": "手臂",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "army",
+    "fun": "armyFuname",
+    "cnstr": "军队",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "art",
+    "fun": "artFuname",
+    "cnstr": "艺术",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "as",
+    "fun": "asFuname",
+    "cnstr": "作为",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "at",
+    "fun": "atFuname",
+    "cnstr": "在",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "attck",
+    "fun": "attckFuname",
+    "cnstr": "攻击",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "attmpt",
+    "fun": "attmptFuname",
+    "cnstr": "试图",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "attntn",
+    "fun": "attntnFuname",
+    "cnstr": "注意力",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "attrctn",
+    "fun": "attrctnFuname",
+    "cnstr": "景点",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "athrty",
+    "fun": "athrtyFuname",
+    "cnstr": "权威",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "atmtc",
+    "fun": "atmtcFuname",
+    "cnstr": "自动的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "awk",
+    "fun": "awkFuname",
+    "cnstr": "苏醒",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "baby",
+    "fun": "babyFuname",
+    "cnstr": "婴儿",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "back",
+    "fun": "backFuname",
+    "cnstr": "后退",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "bad",
+    "fun": "badFuname",
+    "cnstr": "坏的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "bag",
+    "fun": "bagFuname",
+    "cnstr": "包",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "blnc",
+    "fun": "blncFuname",
+    "cnstr": "平衡",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "ball",
+    "fun": "ballFuname",
+    "cnstr": "球",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "band",
+    "fun": "bandFuname",
+    "cnstr": "乐队",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "base",
+    "fun": "baseFuname",
+    "cnstr": "根据",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "bsn",
+    "fun": "bsnFuname",
+    "cnstr": "盆地",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "bskt",
+    "fun": "bsktFuname",
+    "cnstr": "篮子",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "bath",
+    "fun": "bathFuname",
+    "cnstr": "洗澡",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "btfl",
+    "fun": "btflFuname",
+    "cnstr": "美丽的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "bcs",
+    "fun": "bcsFuname",
+    "cnstr": "因为",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "bed",
+    "fun": "bedFuname",
+    "cnstr": "床",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "bee",
+    "fun": "beeFuname",
+    "cnstr": "蜜蜂",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "bfr",
+    "fun": "bfrFuname",
+    "cnstr": "前",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "bhvr",
+    "fun": "bhvrFuname",
+    "cnstr": "行为",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "blf",
+    "fun": "blfFuname",
+    "cnstr": "信仰",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "bell",
+    "fun": "bellFuname",
+    "cnstr": "钟",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "bent",
+    "fun": "bentFuname",
+    "cnstr": "弯曲",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "brry",
+    "fun": "brryFuname",
+    "cnstr": "浆果",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "btwn",
+    "fun": "btwnFuname",
+    "cnstr": "之间",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "bird",
+    "fun": "birdFuname",
+    "cnstr": "鸟",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "brth",
+    "fun": "brthFuname",
+    "cnstr": "出生呼吸",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "bit",
+    "fun": "bitFuname",
+    "cnstr": "少量",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "bite",
+    "fun": "biteFuname",
+    "cnstr": "咬",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "bttr",
+    "fun": "bttrFuname",
+    "cnstr": "苦的黄油",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "blck",
+    "fun": "blckFuname",
+    "cnstr": "黑色的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "bld",
+    "fun": "bldFuname",
+    "cnstr": "血",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "blow",
+    "fun": "blowFuname",
+    "cnstr": "吹",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "blue",
+    "fun": "blueFuname",
+    "cnstr": "蓝色的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "brd",
+    "fun": "brdFuname",
+    "cnstr": "木板面包",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "boat",
+    "fun": "boatFuname",
+    "cnstr": "船",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "body",
+    "fun": "bodyFuname",
+    "cnstr": "身体",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "blng",
+    "fun": "blngFuname",
+    "cnstr": "沸腾",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "bone",
+    "fun": "boneFuname",
+    "cnstr": "骨",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "book",
+    "fun": "bookFuname",
+    "cnstr": "书",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "boot",
+    "fun": "bootFuname",
+    "cnstr": "启动",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "bttl",
+    "fun": "bttlFuname",
+    "cnstr": "瓶子",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "box",
+    "fun": "boxFuname",
+    "cnstr": "盒子",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "boy",
+    "fun": "boyFuname",
+    "cnstr": "男生",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "brn",
+    "fun": "brnFuname",
+    "cnstr": "脑",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "brk",
+    "fun": "brkFuname",
+    "cnstr": "制动",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "brnch",
+    "fun": "brnchFuname",
+    "cnstr": "分支",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "brss",
+    "fun": "brssFuname",
+    "cnstr": "黄铜",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "brck",
+    "fun": "brckFuname",
+    "cnstr": "砖",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "brdg",
+    "fun": "brdgFuname",
+    "cnstr": "桥",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "brght",
+    "fun": "brghtFuname",
+    "cnstr": "明亮的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "brkn",
+    "fun": "brknFuname",
+    "cnstr": "破碎的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "brthr",
+    "fun": "brthrFuname",
+    "cnstr": "兄弟",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "brwn",
+    "fun": "brwnFuname",
+    "cnstr": "棕色的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "brsh",
+    "fun": "brshFuname",
+    "cnstr": "刷子",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "bckt",
+    "fun": "bcktFuname",
+    "cnstr": "桶",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "bldng",
+    "fun": "bldngFuname",
+    "cnstr": "建筑",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "bulb",
+    "fun": "bulbFuname",
+    "cnstr": "电灯泡",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "burn",
+    "fun": "burnFuname",
+    "cnstr": "烧伤",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "brst",
+    "fun": "brstFuname",
+    "cnstr": "爆裂",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "bsnss",
+    "fun": "bsnssFuname",
+    "cnstr": "商业",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "but",
+    "fun": "butFuname",
+    "cnstr": "但",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "bttn",
+    "fun": "bttnFuname",
+    "cnstr": "按钮",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "C",
+    "fun": "CFuname",
+    "cnstr": "C",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "cake",
+    "fun": "cakeFuname",
+    "cnstr": "蛋糕",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "cmr",
+    "fun": "cmrFuname",
+    "cnstr": "相机",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "cnvs",
+    "fun": "cnvsFuname",
+    "cnstr": "帆布",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "card",
+    "fun": "cardFuname",
+    "cnstr": "卡片",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "care",
+    "fun": "careFuname",
+    "cnstr": "关心",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "crrg",
+    "fun": "crrgFuname",
+    "cnstr": "运输",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "cart",
+    "fun": "cartFuname",
+    "cnstr": "大车",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "cat",
+    "fun": "catFuname",
+    "cnstr": "猫",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "cs",
+    "fun": "csFuname",
+    "cnstr": "原因",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "crtn",
+    "fun": "crtnFuname",
+    "cnstr": "肯定",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "chn",
+    "fun": "chnFuname",
+    "cnstr": "链",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "chlk",
+    "fun": "chlkFuname",
+    "cnstr": "粉笔",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "chnc",
+    "fun": "chncFuname",
+    "cnstr": "机会",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "chng",
+    "fun": "chngFuname",
+    "cnstr": "改变",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "chp",
+    "fun": "chpFuname",
+    "cnstr": "便宜的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "chs",
+    "fun": "chsFuname",
+    "cnstr": "奶酪",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "chmcl",
+    "fun": "chmclFuname",
+    "cnstr": "化学",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "chst",
+    "fun": "chstFuname",
+    "cnstr": "胸部",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "chf",
+    "fun": "chfFuname",
+    "cnstr": "首席",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "chin",
+    "fun": "chinFuname",
+    "cnstr": "下巴",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "chrch",
+    "fun": "chrchFuname",
+    "cnstr": "教会",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "crcl",
+    "fun": "crclFuname",
+    "cnstr": "圆圈",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "clr",
+    "fun": "clrFuname",
+    "cnstr": "清除颜色",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "clck",
+    "fun": "clckFuname",
+    "cnstr": "钟",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "clth",
+    "fun": "clthFuname",
+    "cnstr": "布",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "cld",
+    "fun": "cldFuname",
+    "cnstr": "云",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "coal",
+    "fun": "coalFuname",
+    "cnstr": "煤炭",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "coat",
+    "fun": "coatFuname",
+    "cnstr": "外套",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "cold",
+    "fun": "coldFuname",
+    "cnstr": "寒冷的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "cllr",
+    "fun": "cllrFuname",
+    "cnstr": "衣领",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "comb",
+    "fun": "combFuname",
+    "cnstr": "梳子",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "come",
+    "fun": "comeFuname",
+    "cnstr": "来",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "cmfrt",
+    "fun": "cmfrtFuname",
+    "cnstr": "舒适",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "cmmtt",
+    "fun": "cmmttFuname",
+    "cnstr": "委员会",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "cmmn",
+    "fun": "cmmnFuname",
+    "cnstr": "常见的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "cmpny",
+    "fun": "cmpnyFuname",
+    "cnstr": "公司",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "cmprsn",
+    "fun": "cmprsnFuname",
+    "cnstr": "比较",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "cmplt",
+    "fun": "cmpltFuname",
+    "cnstr": "完全的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "cmpttn",
+    "fun": "cmpttnFuname",
+    "cnstr": "竞赛",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "cmplx",
+    "fun": "cmplxFuname",
+    "cnstr": "复杂的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "cndtn",
+    "fun": "cndtnFuname",
+    "cnstr": "状况",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "cnnctn",
+    "fun": "cnnctnFuname",
+    "cnstr": "联系",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "cnscs",
+    "fun": "cnscsFuname",
+    "cnstr": "有意识的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "cntrl",
+    "fun": "cntrlFuname",
+    "cnstr": "控制",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "cook",
+    "fun": "cookFuname",
+    "cnstr": "厨师",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "cppr",
+    "fun": "cpprFuname",
+    "cnstr": "铜",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "copy",
+    "fun": "copyFuname",
+    "cnstr": "复制",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "cord",
+    "fun": "cordFuname",
+    "cnstr": "绳索",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "cork",
+    "fun": "corkFuname",
+    "cnstr": "软木",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "cttn",
+    "fun": "cttnFuname",
+    "cnstr": "棉布",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "cgh",
+    "fun": "cghFuname",
+    "cnstr": "咳嗽",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "cntry",
+    "fun": "cntryFuname",
+    "cnstr": "国家",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "cvr",
+    "fun": "cvrFuname",
+    "cnstr": "覆盖",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "cow",
+    "fun": "cowFuname",
+    "cnstr": "奶牛",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "crck",
+    "fun": "crckFuname",
+    "cnstr": "裂缝",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "crdt",
+    "fun": "crdtFuname",
+    "cnstr": "信用",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "crm",
+    "fun": "crmFuname",
+    "cnstr": "犯罪",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "crl",
+    "fun": "crlFuname",
+    "cnstr": "残忍的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "crsh",
+    "fun": "crshFuname",
+    "cnstr": "压碎",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "cry",
+    "fun": "cryFuname",
+    "cnstr": "哭",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "cup",
+    "fun": "cupFuname",
+    "cnstr": "杯子",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "crrnt",
+    "fun": "crrntFuname",
+    "cnstr": "当前的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "crv",
+    "fun": "crvFuname",
+    "cnstr": "曲线",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "cshn",
+    "fun": "cshnFuname",
+    "cnstr": "软垫",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "cut",
+    "fun": "cutFuname",
+    "cnstr": "切",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "D",
+    "fun": "DFuname",
+    "cnstr": "D",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "dmg",
+    "fun": "dmgFuname",
+    "cnstr": "损害",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "dngr",
+    "fun": "dngrFuname",
+    "cnstr": "危险",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "dark",
+    "fun": "darkFuname",
+    "cnstr": "黑暗的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "dghtr",
+    "fun": "dghtrFuname",
+    "cnstr": "女儿",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "day",
+    "fun": "dayFuname",
+    "cnstr": "天",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "dead",
+    "fun": "deadFuname",
+    "cnstr": "死的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "dear",
+    "fun": "dearFuname",
+    "cnstr": "亲爱的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "dth",
+    "fun": "dthFuname",
+    "cnstr": "死亡",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "debt",
+    "fun": "debtFuname",
+    "cnstr": "债务",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "dcsn",
+    "fun": "dcsnFuname",
+    "cnstr": "决定",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "deep",
+    "fun": "deepFuname",
+    "cnstr": "深的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "dgr",
+    "fun": "dgrFuname",
+    "cnstr": "程度",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "dlct",
+    "fun": "dlctFuname",
+    "cnstr": "精美的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "dpndnt",
+    "fun": "dpndntFuname",
+    "cnstr": "依赖的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "dsgn",
+    "fun": "dsgnFuname",
+    "cnstr": "设计",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "dsr",
+    "fun": "dsrFuname",
+    "cnstr": "欲望",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "dstrctn",
+    "fun": "dstrctnFuname",
+    "cnstr": "破坏",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "dtl",
+    "fun": "dtlFuname",
+    "cnstr": "细节",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "dvlpmnt",
+    "fun": "dvlpmntFuname",
+    "cnstr": "发展",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "dffrnt",
+    "fun": "dffrntFuname",
+    "cnstr": "不同的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "dgstn",
+    "fun": "dgstnFuname",
+    "cnstr": "消化",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "drctn",
+    "fun": "drctnFuname",
+    "cnstr": "方向",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "drty",
+    "fun": "drtyFuname",
+    "cnstr": "肮脏的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "dscvry",
+    "fun": "dscvryFuname",
+    "cnstr": "发现",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "dscssn",
+    "fun": "dscssnFuname",
+    "cnstr": "讨论",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "dss",
+    "fun": "dssFuname",
+    "cnstr": "疾病",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "dsgst",
+    "fun": "dsgstFuname",
+    "cnstr": "厌恶",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "dstnc",
+    "fun": "dstncFuname",
+    "cnstr": "距离",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "dstrbtn",
+    "fun": "dstrbtnFuname",
+    "cnstr": "分配",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "dvsn",
+    "fun": "dvsnFuname",
+    "cnstr": "分配",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "do",
+    "fun": "doFuname",
+    "cnstr": "做",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "dog",
+    "fun": "dogFuname",
+    "cnstr": "狗",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "door",
+    "fun": "doorFuname",
+    "cnstr": "门",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "dbt",
+    "fun": "dbtFuname",
+    "cnstr": "怀疑",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "down",
+    "fun": "downFuname",
+    "cnstr": "向下",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "drn",
+    "fun": "drnFuname",
+    "cnstr": "流走",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "drwr",
+    "fun": "drwrFuname",
+    "cnstr": "抽屉",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "drss",
+    "fun": "drssFuname",
+    "cnstr": "裙子",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "drnk",
+    "fun": "drnkFuname",
+    "cnstr": "喝",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "drvng",
+    "fun": "drvngFuname",
+    "cnstr": "驾驶",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "drop",
+    "fun": "dropFuname",
+    "cnstr": "降低",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "dry",
+    "fun": "dryFuname",
+    "cnstr": "干燥",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "dst",
+    "fun": "dstFuname",
+    "cnstr": "灰尘",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "ear",
+    "fun": "earFuname",
+    "cnstr": "耳朵",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "erly",
+    "fun": "erlyFuname",
+    "cnstr": "早期的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "erth",
+    "fun": "erthFuname",
+    "cnstr": "地球",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "east",
+    "fun": "eastFuname",
+    "cnstr": "东方",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "edge",
+    "fun": "edgeFuname",
+    "cnstr": "边缘",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "edctn",
+    "fun": "edctnFuname",
+    "cnstr": "教育",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "effct",
+    "fun": "effctFuname",
+    "cnstr": "影响",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "egg",
+    "fun": "eggFuname",
+    "cnstr": "蛋",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "elstc",
+    "fun": "elstcFuname",
+    "cnstr": "松紧带",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "elctrc",
+    "fun": "elctrcFuname",
+    "cnstr": "电的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "end",
+    "fun": "endFuname",
+    "cnstr": "结尾",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "engn",
+    "fun": "engnFuname",
+    "cnstr": "引擎",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "engh",
+    "fun": "enghFuname",
+    "cnstr": "足够的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "eql",
+    "fun": "eqlFuname",
+    "cnstr": "平等的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "errr",
+    "fun": "errrFuname",
+    "cnstr": "错误",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "even",
+    "fun": "evenFuname",
+    "cnstr": "甚至",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "evnt",
+    "fun": "evntFuname",
+    "cnstr": "事件",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "ever",
+    "fun": "everFuname",
+    "cnstr": "曾经",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "evry",
+    "fun": "evryFuname",
+    "cnstr": "每一个",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "exmpl",
+    "fun": "exmplFuname",
+    "cnstr": "例子",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "exchng",
+    "fun": "exchngFuname",
+    "cnstr": "交换",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "exstnc",
+    "fun": "exstncFuname",
+    "cnstr": "存在",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "expnsn",
+    "fun": "expnsnFuname",
+    "cnstr": "扩张",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "exprnc",
+    "fun": "exprncFuname",
+    "cnstr": "经验",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "exprt",
+    "fun": "exprtFuname",
+    "cnstr": "专家",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "eye",
+    "fun": "eyeFuname",
+    "cnstr": "眼睛",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "F",
+    "fun": "FFuname",
+    "cnstr": "F",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "face",
+    "fun": "faceFuname",
+    "cnstr": "脸",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "fact",
+    "fun": "factFuname",
+    "cnstr": "事实",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "fall",
+    "fun": "fallFuname",
+    "cnstr": "落下",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "FLS",
+    "fun": "FLSFuname",
+    "cnstr": "错误的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "fmly",
+    "fun": "fmlyFuname",
+    "cnstr": "家庭",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "far",
+    "fun": "farFuname",
+    "cnstr": "远的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "farm",
+    "fun": "farmFuname",
+    "cnstr": "农场",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "fat",
+    "fun": "fatFuname",
+    "cnstr": "胖的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "fthr",
+    "fun": "fthrFuname",
+    "cnstr": "父亲羽毛",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "fear",
+    "fun": "fearFuname",
+    "cnstr": "害怕",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "fbl",
+    "fun": "fblFuname",
+    "cnstr": "微弱",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "flng",
+    "fun": "flngFuname",
+    "cnstr": "感觉",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "fml",
+    "fun": "fmlFuname",
+    "cnstr": "女性",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "frtl",
+    "fun": "frtlFuname",
+    "cnstr": "沃",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "fctn",
+    "fun": "fctnFuname",
+    "cnstr": "小说",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "fld",
+    "fun": "fldFuname",
+    "cnstr": "场地",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "fght",
+    "fun": "fghtFuname",
+    "cnstr": "斗争",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "fngr",
+    "fun": "fngrFuname",
+    "cnstr": "手指",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "fire",
+    "fun": "fireFuname",
+    "cnstr": "火",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "frst",
+    "fun": "frstFuname",
+    "cnstr": "第一的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "fish",
+    "fun": "fishFuname",
+    "cnstr": "鱼",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "fxd",
+    "fun": "fxdFuname",
+    "cnstr": "固定的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "flag",
+    "fun": "flagFuname",
+    "cnstr": "旗帜",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "flm",
+    "fun": "flmFuname",
+    "cnstr": "火焰",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "flat",
+    "fun": "flatFuname",
+    "cnstr": "平坦的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "flght",
+    "fun": "flghtFuname",
+    "cnstr": "航班",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "flr",
+    "fun": "flrFuname",
+    "cnstr": "地面",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "flwr",
+    "fun": "flwrFuname",
+    "cnstr": "花",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "fly",
+    "fun": "flyFuname",
+    "cnstr": "飞",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "fold",
+    "fun": "foldFuname",
+    "cnstr": "折叠",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "food",
+    "fun": "foodFuname",
+    "cnstr": "食物",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "flsh",
+    "fun": "flshFuname",
+    "cnstr": "愚蠢的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "foot",
+    "fun": "footFuname",
+    "cnstr": "脚",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "for",
+    "fun": "forFuname",
+    "cnstr": "为了",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "frc",
+    "fun": "frcFuname",
+    "cnstr": "力量",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "fork",
+    "fun": "forkFuname",
+    "cnstr": "叉",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "form",
+    "fun": "formFuname",
+    "cnstr": "形式",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "frwrd",
+    "fun": "frwrdFuname",
+    "cnstr": "向前",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "fowl",
+    "fun": "fowlFuname",
+    "cnstr": "鸡",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "frm",
+    "fun": "frmFuname",
+    "cnstr": "框架",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "free",
+    "fun": "freeFuname",
+    "cnstr": "自由的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "frqnt",
+    "fun": "frqntFuname",
+    "cnstr": "经常",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "frnd",
+    "fun": "frndFuname",
+    "cnstr": "朋友",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "from",
+    "fun": "fromFuname",
+    "cnstr": "从",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "frt",
+    "fun": "frtFuname",
+    "cnstr": "水果",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "full",
+    "fun": "fullFuname",
+    "cnstr": "满的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "futr",
+    "cnstr": "未来",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "ftrvl",
+    "cnstr": "未来",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "grdn",
+    "fun": "grdnFuname",
+    "cnstr": "花园",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "gnrl",
+    "fun": "gnrlFuname",
+    "cnstr": "一般的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "get",
+    "fun": "getFuname",
+    "cnstr": "得到",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "girl",
+    "fun": "girlFuname",
+    "cnstr": "女孩",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "give",
+    "fun": "giveFuname",
+    "cnstr": "给",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "glss",
+    "fun": "glssFuname",
+    "cnstr": "玻璃",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "glv",
+    "fun": "glvFuname",
+    "cnstr": "手套",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "go",
+    "fun": "goFuname",
+    "cnstr": "去",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "goat",
+    "fun": "goatFuname",
+    "cnstr": "山羊",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "gold",
+    "fun": "goldFuname",
+    "cnstr": "金子",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "good",
+    "fun": "goodFuname",
+    "cnstr": "好的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "gvrnmnt",
+    "fun": "gvrnmntFuname",
+    "cnstr": "政府",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "grss",
+    "fun": "grssFuname",
+    "cnstr": "草",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "grt",
+    "fun": "grtFuname",
+    "cnstr": "伟大的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "grn",
+    "fun": "grnFuname",
+    "cnstr": "绿色的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "gry",
+    "fun": "gryFuname",
+    "cnstr": "灰色",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "grip",
+    "fun": "gripFuname",
+    "cnstr": "紧握",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "grp",
+    "fun": "grpFuname",
+    "cnstr": "团体",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "grwth",
+    "fun": "grwthFuname",
+    "cnstr": "生长",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "gd",
+    "fun": "gdFuname",
+    "cnstr": "指导",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "gun",
+    "fun": "gunFuname",
+    "cnstr": "枪",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "H",
+    "fun": "HFuname",
+    "cnstr": "H",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "hair",
+    "fun": "hairFuname",
+    "cnstr": "头发",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "hmmr",
+    "fun": "hmmrFuname",
+    "cnstr": "锤子",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "hand",
+    "fun": "handFuname",
+    "cnstr": "手",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "hngng",
+    "fun": "hngngFuname",
+    "cnstr": "绞刑",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "hppy",
+    "fun": "hppyFuname",
+    "cnstr": "快乐的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "hrbr",
+    "fun": "hrbrFuname",
+    "cnstr": "港口",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "hard",
+    "fun": "hardFuname",
+    "cnstr": "难的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "hrmny",
+    "fun": "hrmnyFuname",
+    "cnstr": "和谐",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "hat",
+    "fun": "hatFuname",
+    "cnstr": "帽子",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "hate",
+    "fun": "hateFuname",
+    "cnstr": "恨",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "have",
+    "fun": "haveFuname",
+    "cnstr": "有",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "he",
+    "fun": "heFuname",
+    "cnstr": "他",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "head",
+    "fun": "headFuname",
+    "cnstr": "头",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "hlthy",
+    "fun": "hlthyFuname",
+    "cnstr": "健康",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "hrng",
+    "fun": "hrngFuname",
+    "cnstr": "听力",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "hrt",
+    "fun": "hrtFuname",
+    "cnstr": "心",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "heat",
+    "fun": "heatFuname",
+    "cnstr": "热",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "help",
+    "fun": "helpFuname",
+    "cnstr": "帮助",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "here",
+    "fun": "hereFuname",
+    "cnstr": "这里",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "high",
+    "fun": "highFuname",
+    "cnstr": "高的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "hstry",
+    "fun": "hstryFuname",
+    "cnstr": "历史",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "hole",
+    "fun": "holeFuname",
+    "cnstr": "洞",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "hllw",
+    "fun": "hllwFuname",
+    "cnstr": "空洞的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "hook",
+    "fun": "hookFuname",
+    "cnstr": "钩",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "hope",
+    "fun": "hopeFuname",
+    "cnstr": "希望",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "horn",
+    "fun": "hornFuname",
+    "cnstr": "喇叭",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "hrs",
+    "fun": "hrsFuname",
+    "cnstr": "马",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "hsptl",
+    "fun": "hsptlFuname",
+    "cnstr": "医院",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "hour",
+    "fun": "hourFuname",
+    "cnstr": "小时",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "hs",
+    "fun": "hsFuname",
+    "cnstr": "房子",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "how",
+    "fun": "howFuname",
+    "cnstr": "如何",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "hmr",
+    "fun": "hmrFuname",
+    "cnstr": "幽默",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "I",
+    "fun": "IFuname",
+    "cnstr": "我",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "ice",
+    "fun": "iceFuname",
+    "cnstr": "冰",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "idea",
+    "fun": "ideaFuname",
+    "cnstr": "主意",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "if",
+    "fun": "ifFuname",
+    "cnstr": "如果",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "ill",
+    "fun": "illFuname",
+    "cnstr": "患病的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+
+
+  {
+    "key": "ehc",
+
+    "cnstr": "增强",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "imptnt",
+
+    "cnstr": "重要的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "impls",
+    "fun": "implsFuname",
+    "cnstr": "冲动",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "in",
+    "fun": "inFuname",
+    "cnstr": "在",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "incrs",
+    "fun": "incrsFuname",
+    "cnstr": "增加",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "indstry",
+    "fun": "indstryFuname",
+    "cnstr": "行业",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "ink",
+    "fun": "inkFuname",
+    "cnstr": "墨水",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "insct",
+    "fun": "insctFuname",
+    "cnstr": "昆虫",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "instrmnt",
+    "fun": "instrmntFuname",
+    "cnstr": "乐器",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "insrnc",
+    "fun": "insrncFuname",
+    "cnstr": "保险",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "intrst",
+    "fun": "intrstFuname",
+    "cnstr": "兴趣",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "invntn",
+    "fun": "invntnFuname",
+    "cnstr": "发明",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "iron",
+    "fun": "ironFuname",
+    "cnstr": "铁",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "islnd",
+    "fun": "islndFuname",
+    "cnstr": "岛",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "J",
+    "fun": "JFuname",
+    "cnstr": "J",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "jlly",
+    "fun": "jllyFuname",
+    "cnstr": "果冻",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "jwl",
+    "fun": "jwlFuname",
+    "cnstr": "宝石",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "join",
+    "fun": "joinFuname",
+    "cnstr": "加入",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "jrny",
+    "fun": "jrnyFuname",
+    "cnstr": "旅行",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "jdg",
+    "fun": "jdgFuname",
+    "cnstr": "法官",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "jmp",
+    "fun": "jmpFuname",
+    "cnstr": "跳",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "keep",
+    "fun": "keepFuname",
+    "cnstr": "保持",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "kttl",
+    "fun": "kttlFuname",
+    "cnstr": "壶",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "key",
+    "fun": "keyFuname",
+    "cnstr": "钥匙",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "kick",
+    "fun": "kickFuname",
+    "cnstr": "踢",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "kind",
+    "fun": "kindFuname",
+    "cnstr": "种类",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "kiss",
+    "fun": "kissFuname",
+    "cnstr": "吻",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "knee",
+    "fun": "kneeFuname",
+    "cnstr": "膝盖",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "knf",
+    "fun": "knfFuname",
+    "cnstr": "刀",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "knot",
+    "fun": "knotFuname",
+    "cnstr": "结",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "knwldg",
+    "fun": "knwldgFuname",
+    "cnstr": "知识",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "L",
+    "fun": "LFuname",
+    "cnstr": "L",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "land",
+    "fun": "landFuname",
+    "cnstr": "土地",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "lngg",
+    "fun": "lnggFuname",
+    "cnstr": "语言",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "last",
+    "fun": "lastFuname",
+    "cnstr": "最后的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "late",
+    "fun": "lateFuname",
+    "cnstr": "晚的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "lgh",
+    "fun": "lghFuname",
+    "cnstr": "笑",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "law",
+    "fun": "lawFuname",
+    "cnstr": "法律",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "lead",
+    "fun": "leadFuname",
+    "cnstr": "带领",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "leaf",
+    "fun": "leafFuname",
+    "cnstr": "叶子",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "lrnng",
+    "fun": "lrnngFuname",
+    "cnstr": "学习",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "lthr",
+    "fun": "lthrFuname",
+    "cnstr": "皮革",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "left",
+    "fun": "leftFuname",
+    "cnstr": "左边",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "leg",
+    "fun": "legFuname",
+    "cnstr": "腿",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "let",
+    "fun": "letFuname",
+    "cnstr": "让",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "lttr",
+    "fun": "lttrFuname",
+    "cnstr": "信",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "lvl",
+    "fun": "lvlFuname",
+    "cnstr": "等级",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "lbrry",
+    "fun": "lbrryFuname",
+    "cnstr": "图书馆",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "lift",
+    "fun": "liftFuname",
+    "cnstr": "举起",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "lght",
+    "fun": "lghtFuname",
+    "cnstr": "光",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "like",
+    "fun": "likeFuname",
+    "cnstr": "喜欢",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "lmt",
+    "fun": "lmtFuname",
+    "cnstr": "限制",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "line",
+    "fun": "lineFuname",
+    "cnstr": "线",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "lnn",
+    "fun": "lnnFuname",
+    "cnstr": "亚麻布",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "lip",
+    "fun": "lipFuname",
+    "cnstr": "唇",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "lqd",
+    "fun": "lqdFuname",
+    "cnstr": "液体",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "list",
+    "fun": "listFuname",
+    "cnstr": "列表",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "lss",
+    "fun": "lssFuname",
+    "cnstr": "很少",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "atlst",
+    "fun": "lstFuname",
+    "cnstr": "至少",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "lvng",
+    "fun": "lvngFuname",
+    "cnstr": "活的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "lock",
+    "fun": "lockFuname",
+    "cnstr": "锁",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "long",
+    "fun": "longFuname",
+    "cnstr": "长的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "look",
+    "fun": "lookFuname",
+    "cnstr": "看",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "ls",
+    "fun": "lsFuname",
+    "cnstr": "松动的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "loss",
+    "fun": "lossFuname",
+    "cnstr": "损失",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "loud",
+    "fun": "loudFuname",
+    "cnstr": "大声",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "love",
+    "fun": "loveFuname",
+    "cnstr": "爱",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "low",
+    "fun": "lowFuname",
+    "cnstr": "低的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "M",
+    "fun": "MFuname",
+    "cnstr": "中号",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "mchn",
+    "fun": "mchnFuname",
+    "cnstr": "机器",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "make",
+    "fun": "makeFuname",
+    "cnstr": "制作",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "male",
+    "fun": "maleFuname",
+    "cnstr": "男性",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "man",
+    "fun": "manFuname",
+    "cnstr": "男人",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "mngr",
+    "fun": "mngrFuname",
+    "cnstr": "经理",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "map",
+    "fun": "mapFuname",
+    "cnstr": "地图",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "mark",
+    "fun": "markFuname",
+    "cnstr": "标记",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "mrkt",
+    "fun": "mrktFuname",
+    "cnstr": "市场",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "mrrd",
+    "fun": "mrrdFuname",
+    "cnstr": "已婚",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "mtch",
+    "fun": "mtchFuname",
+    "cnstr": "匹配",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "mtrl",
+    "fun": "mtrlFuname",
+    "cnstr": "材料",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "mass",
+    "fun": "massFuname",
+    "cnstr": "大量的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "may",
+    "fun": "mayFuname",
+    "cnstr": "可能",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "meal",
+    "fun": "mealFuname",
+    "cnstr": "一顿饭",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "msr",
+    "fun": "msrFuname",
+    "cnstr": "措施",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "meat",
+    "fun": "meatFuname",
+    "cnstr": "肉",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "mdcl",
+    "fun": "mdclFuname",
+    "cnstr": "医疗的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "mtng",
+    "fun": "mtngFuname",
+    "cnstr": "会议",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "mmry",
+    "fun": "mmryFuname",
+    "cnstr": "记忆",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "mtl",
+    "fun": "mtlFuname",
+    "cnstr": "金属",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "mddl",
+    "fun": "mddlFuname",
+    "cnstr": "中间",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "mltry",
+    "fun": "mltryFuname",
+    "cnstr": "军队",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "milk",
+    "fun": "milkFuname",
+    "cnstr": "牛奶",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "mind",
+    "fun": "mindFuname",
+    "cnstr": "头脑",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "mine",
+    "fun": "mineFuname",
+    "cnstr": "矿",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "mnt",
+    "fun": "mntFuname",
+    "cnstr": "分钟",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "mist",
+    "fun": "mistFuname",
+    "cnstr": "薄雾",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "mxd",
+    "fun": "mxdFuname",
+    "cnstr": "混合的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "mny",
+    "fun": "mnyFuname",
+    "cnstr": "钱",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "mnky",
+    "fun": "mnkyFuname",
+    "cnstr": "猴",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "mnth",
+    "fun": "mnthFuname",
+    "cnstr": "月",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "moon",
+    "fun": "moonFuname",
+    "cnstr": "月亮",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "mrnng",
+    "fun": "mrnngFuname",
+    "cnstr": "早晨",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "mthr",
+    "fun": "mthrFuname",
+    "cnstr": "母亲",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "mtn",
+    "fun": "mtnFuname",
+    "cnstr": "运动",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "mntn",
+    "fun": "mntnFuname",
+    "cnstr": "山",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "mth",
+    "fun": "mthFuname",
+    "cnstr": "嘴",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "move",
+    "fun": "moveFuname",
+    "cnstr": "移动",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "mscl",
+    "fun": "msclFuname",
+    "cnstr": "肌肉",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "msc",
+    "fun": "mscFuname",
+    "cnstr": "音乐",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "nail",
+    "fun": "nailFuname",
+    "cnstr": "指甲",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "name",
+    "fun": "nameFuname",
+    "cnstr": "姓名",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "nrrw",
+    "fun": "nrrwFuname",
+    "cnstr": "狭窄的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "ntn",
+    "fun": "ntnFuname",
+    "cnstr": "国家",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "ntrl",
+    "fun": "ntrlFuname",
+    "cnstr": "自然的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "near",
+    "fun": "nearFuname",
+    "cnstr": "靠近",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "ncssry",
+    "fun": "ncssryFuname",
+    "cnstr": "必要的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "neck",
+    "fun": "neckFuname",
+    "cnstr": "脖子",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "need",
+    "fun": "needFuname",
+    "cnstr": "需要",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "ndl",
+    "fun": "ndlFuname",
+    "cnstr": "针",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "nrv",
+    "fun": "nrvFuname",
+    "cnstr": "神经",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "net",
+    "fun": "netFuname",
+    "cnstr": "网",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "new",
+    "fun": "newFuname",
+    "cnstr": "新的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "news",
+    "fun": "newsFuname",
+    "cnstr": "消息",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "nght",
+    "fun": "nghtFuname",
+    "cnstr": "夜晚",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "no",
+    "fun": "noFuname",
+    "cnstr": "不",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "ns",
+    "fun": "nsFuname",
+    "cnstr": "噪音",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "nrml",
+    "fun": "nrmlFuname",
+    "cnstr": "普通的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "nrth",
+    "fun": "nrthFuname",
+    "cnstr": "北",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "nose",
+    "fun": "noseFuname",
+    "cnstr": "鼻子",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "not",
+    "fun": "notFuname",
+    "cnstr": "不是",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "note",
+    "fun": "noteFuname",
+    "cnstr": "笔记",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "now",
+    "fun": "nowFuname",
+    "cnstr": "现在",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "nmbr",
+    "fun": "nmbrFuname",
+    "cnstr": "数字",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "nut",
+    "fun": "nutFuname",
+    "cnstr": "坚果",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "obsrvtn",
+    "fun": "obsrvtnFuname",
+    "cnstr": "观察",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "of",
+    "fun": "ofFuname",
+    "cnstr": "的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "off",
+    "fun": "offFuname",
+    "cnstr": "离开",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "offr",
+    "fun": "offrFuname",
+    "cnstr": "提供",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "offc",
+    "fun": "offcFuname",
+    "cnstr": "办公室",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "oil",
+    "fun": "oilFuname",
+    "cnstr": "油",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "old",
+    "fun": "oldFuname",
+    "cnstr": "老的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "on",
+    "fun": "onFuname",
+    "cnstr": "在",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "only",
+    "fun": "onlyFuname",
+    "cnstr": "仅有的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "open",
+    "fun": "openFuname",
+    "cnstr": "打开",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "oprtn",
+    "fun": "oprtnFuname",
+    "cnstr": "手术",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "opnn",
+    "fun": "opnnFuname",
+    "cnstr": "观点",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "oppst",
+    "fun": "oppstFuname",
+    "cnstr": "对面的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "or",
+    "fun": "orFuname",
+    "cnstr": "或者",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "orng",
+    "fun": "orngFuname",
+    "cnstr": "橙子",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "ordr",
+    "fun": "ordrFuname",
+    "cnstr": "命令",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "orgnztn",
+    "fun": "orgnztnFuname",
+    "cnstr": "组织",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "ornmnt",
+    "fun": "ornmntFuname",
+    "cnstr": "装饰品",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "othr",
+    "fun": "othrFuname",
+    "cnstr": "其他",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "out",
+    "fun": "outFuname",
+    "cnstr": "出去",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "oven",
+    "fun": "ovenFuname",
+    "cnstr": "烤箱",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "over",
+    "fun": "overFuname",
+    "cnstr": "超过",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "ownr",
+    "fun": "ownrFuname",
+    "cnstr": "所有者",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "P",
+    "fun": "PFuname",
+    "cnstr": "磷",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "page",
+    "fun": "pageFuname",
+    "cnstr": "页",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "pain",
+    "fun": "painFuname",
+    "cnstr": "疼痛",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "pnt",
+    "fun": "pntFuname",
+    "cnstr": "画观点",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "ppr",
+    "fun": "pprFuname",
+    "cnstr": "纸",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "prlll",
+    "fun": "prlllFuname",
+    "cnstr": "平行线",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "prcl",
+    "fun": "prclFuname",
+    "cnstr": "包裹",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "part",
+    "fun": "partFuname",
+    "cnstr": "部分",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "past",
+    "fun": "pastFuname",
+    "cnstr": "过去的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "pst",
+    "fun": "pstFuname",
+    "cnstr": "粘贴",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "pymnt",
+    "fun": "pymntFuname",
+    "cnstr": "支付",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "pc",
+    "fun": "pcFuname",
+    "cnstr": "和平",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "pen",
+    "fun": "penFuname",
+    "cnstr": "笔",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "pncl",
+    "fun": "pnclFuname",
+    "cnstr": "铅笔",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "prsn",
+    "fun": "prsnFuname",
+    "cnstr": "人监狱",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "physcl",
+    "fun": "physclFuname",
+    "cnstr": "身体的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "pctr",
+    "fun": "pctrFuname",
+    "cnstr": "图片",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "pig",
+    "fun": "pigFuname",
+    "cnstr": "猪",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "pin",
+    "fun": "pinFuname",
+    "cnstr": "别针",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "pipe",
+    "fun": "pipeFuname",
+    "cnstr": "管道",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "plc",
+    "fun": "plcFuname",
+    "cnstr": "地方",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "pln",
+    "fun": "plnFuname",
+    "cnstr": "飞机",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "plnt",
+    "fun": "plntFuname",
+    "cnstr": "植物",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "plt",
+    "fun": "pltFuname",
+    "cnstr": "盘子",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "play",
+    "fun": "playFuname",
+    "cnstr": "玩",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "pls",
+    "fun": "plsFuname",
+    "cnstr": "请",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "plsr",
+    "fun": "plsrFuname",
+    "cnstr": "乐趣",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "pckt",
+    "fun": "pcktFuname",
+    "cnstr": "口袋",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "psn",
+    "fun": "psnFuname",
+    "cnstr": "毒",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "plsh",
+    "fun": "plshFuname",
+    "cnstr": "抛光",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "pltcl",
+    "fun": "pltclFuname",
+    "cnstr": "政治的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "poor",
+    "fun": "poorFuname",
+    "cnstr": "贫穷的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "prtr",
+    "fun": "prtrFuname",
+    "cnstr": "搬运工",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "pstn",
+    "fun": "pstnFuname",
+    "cnstr": "位置",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "pssbl",
+    "fun": "pssblFuname",
+    "cnstr": "可能的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "pot",
+    "fun": "potFuname",
+    "cnstr": "锅",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "ptt",
+    "fun": "pttFuname",
+    "cnstr": "土豆",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "pwdr",
+    "fun": "pwdrFuname",
+    "cnstr": "粉末",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "pwr",
+    "fun": "pwrFuname",
+    "cnstr": "力量",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "prsnt",
+    "fun": "prsntFuname",
+    "cnstr": "展示",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "prc",
+    "fun": "prcFuname",
+    "cnstr": "价格",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "prnt",
+    "fun": "prntFuname",
+    "cnstr": "打印",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "prvt",
+    "fun": "prvtFuname",
+    "cnstr": "私人的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "prbbl",
+    "fun": "prbblFuname",
+    "cnstr": "可能",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "prcss",
+    "fun": "prcssFuname",
+    "cnstr": "过程",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "prdc",
+    "fun": "prdcFuname",
+    "cnstr": "生产",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "prft",
+    "fun": "prftFuname",
+    "cnstr": "利润",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "prprty",
+    "fun": "prprtyFuname",
+    "cnstr": "财产",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "prs",
+    "fun": "prsFuname",
+    "cnstr": "散文",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "prtst",
+    "fun": "prtstFuname",
+    "cnstr": "反对",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "pblc",
+    "fun": "pblcFuname",
+    "cnstr": "民众",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "pull",
+    "fun": "pullFuname",
+    "cnstr": "拉",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "pump",
+    "fun": "pumpFuname",
+    "cnstr": "泵",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "pnshmnt",
+    "fun": "pnshmntFuname",
+    "cnstr": "惩罚",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "prps",
+    "fun": "prpsFuname",
+    "cnstr": "目的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "push",
+    "fun": "pushFuname",
+    "cnstr": "推",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "put.",
+    "fun": "putFuname",
+    "cnstr": "放。",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "Q",
+    "fun": "QFuname",
+    "cnstr": "问",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "qlty",
+    "fun": "qltyFuname",
+    "cnstr": "质量",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "qstn",
+    "fun": "qstnFuname",
+    "cnstr": "问题",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "qck",
+    "fun": "qckFuname",
+    "cnstr": "快的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "qt",
+    "fun": "qtFuname",
+    "cnstr": "安静的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "rail",
+    "fun": "railFuname",
+    "cnstr": "轨",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "rain",
+    "fun": "rainFuname",
+    "cnstr": "雨",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "rng",
+    "fun": "rngFuname",
+    "cnstr": "范围",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "rat",
+    "fun": "ratFuname",
+    "cnstr": "鼠",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "rate",
+    "fun": "rateFuname",
+    "cnstr": "速度",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "ray",
+    "fun": "rayFuname",
+    "cnstr": "射线",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "rctn",
+    "fun": "rctnFuname",
+    "cnstr": "反应",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "rdng",
+    "fun": "rdngFuname",
+    "cnstr": "阅读",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "rdy",
+    "fun": "rdyFuname",
+    "cnstr": "准备好",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "rsn",
+    "fun": "rsnFuname",
+    "cnstr": "原因",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "rcpt",
+    "fun": "rcptFuname",
+    "cnstr": "收据",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "rcrd",
+    "fun": "rcrdFuname",
+    "cnstr": "记录",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "red",
+    "fun": "redFuname",
+    "cnstr": "红色的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "rgrt",
+    "fun": "rgrtFuname",
+    "cnstr": "后悔",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "rglr",
+    "fun": "rglrFuname",
+    "cnstr": "常规的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "rltn",
+    "fun": "rltnFuname",
+    "cnstr": "关系",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "rlgn",
+    "fun": "rlgnFuname",
+    "cnstr": "宗教",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "rprsnttv",
+    "fun": "rprsnttvFuname",
+    "cnstr": "代表",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "rqst",
+    "fun": "rqstFuname",
+    "cnstr": "要求",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "rspct",
+    "fun": "rspctFuname",
+    "cnstr": "尊重",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "rspnsbl",
+    "fun": "rspnsblFuname",
+    "cnstr": "负责任的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "rest",
+    "fun": "restFuname",
+    "cnstr": "休息",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "rwrd",
+    "fun": "rwrdFuname",
+    "cnstr": "报酬",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "rhythm",
+    "fun": "rhythmFuname",
+    "cnstr": "韵律",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "rice",
+    "fun": "riceFuname",
+    "cnstr": "米",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "rght",
+    "fun": "rghtFuname",
+    "cnstr": "正确的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "ring",
+    "fun": "ringFuname",
+    "cnstr": "戒指",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "rvr",
+    "fun": "rvrFuname",
+    "cnstr": "河",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "road",
+    "fun": "roadFuname",
+    "cnstr": "路",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "rod",
+    "fun": "rodFuname",
+    "cnstr": "杆",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "roll",
+    "fun": "rollFuname",
+    "cnstr": "卷",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "roof",
+    "fun": "roofFuname",
+    "cnstr": "屋顶",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "room",
+    "fun": "roomFuname",
+    "cnstr": "房间",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "root",
+    "fun": "rootFuname",
+    "cnstr": "根",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "rgh",
+    "fun": "rghFuname",
+    "cnstr": "粗糙的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "rnd",
+    "fun": "rndFuname",
+    "cnstr": "圆形的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "rub",
+    "fun": "rubFuname",
+    "cnstr": "擦",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "rule",
+    "fun": "ruleFuname",
+    "cnstr": "规则",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "sad",
+    "fun": "sadFuname",
+    "cnstr": "伤心",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "safe",
+    "fun": "safeFuname",
+    "cnstr": "安全的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "sail",
+    "fun": "sailFuname",
+    "cnstr": "帆",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "salt",
+    "fun": "saltFuname",
+    "cnstr": "盐",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "same",
+    "fun": "sameFuname",
+    "cnstr": "相同的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "sand",
+    "fun": "sandFuname",
+    "cnstr": "沙",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "say",
+    "fun": "sayFuname",
+    "cnstr": "说",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "scl",
+    "fun": "sclFuname",
+    "cnstr": "规模",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "schl",
+    "fun": "schlFuname",
+    "cnstr": "学校",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "scnc",
+    "fun": "scncFuname",
+    "cnstr": "科学",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "scssrs",
+    "fun": "scssrsFuname",
+    "cnstr": "剪刀",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "scrw",
+    "fun": "scrwFuname",
+    "cnstr": "拧紧",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "sea",
+    "fun": "seaFuname",
+    "cnstr": "海",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "seat",
+    "fun": "seatFuname",
+    "cnstr": "座位",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "scnd",
+    "fun": "scndFuname",
+    "cnstr": "第二",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "scrt",
+    "fun": "scrtFuname",
+    "cnstr": "秘密",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "scrtry",
+    "fun": "scrtryFuname",
+    "cnstr": "秘书",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "see",
+    "fun": "seeFuname",
+    "cnstr": "看",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "seed",
+    "fun": "seedFuname",
+    "cnstr": "种子",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "slctn",
+    "fun": "slctnFuname",
+    "cnstr": "选择",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "self",
+    "fun": "selfFuname",
+    "cnstr": "自己",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "send",
+    "fun": "sendFuname",
+    "cnstr": "发送",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "seem",
+    "fun": "seemFuname",
+    "cnstr": "似乎",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "sns",
+    "fun": "snsFuname",
+    "cnstr": "感觉",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "sprt",
+    "fun": "sprtFuname",
+    "cnstr": "分离",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "srs",
+    "fun": "srsFuname",
+    "cnstr": "严肃的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "srvnt",
+    "fun": "srvntFuname",
+    "cnstr": "仆人",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "sex",
+    "fun": "sexFuname",
+    "cnstr": "性别",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "shd",
+    "fun": "shdFuname",
+    "cnstr": "阴影",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "shk",
+    "fun": "shkFuname",
+    "cnstr": "摇",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "shm",
+    "fun": "shmFuname",
+    "cnstr": "耻辱",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "shrp",
+    "fun": "shrpFuname",
+    "cnstr": "锋利的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "shp",
+    "fun": "shpFuname",
+    "cnstr": "羊",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "shlf",
+    "fun": "shlfFuname",
+    "cnstr": "架子",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "ship",
+    "fun": "shipFuname",
+    "cnstr": "船",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "shrt",
+    "fun": "shrtFuname",
+    "cnstr": "短的衬衫",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "shck",
+    "fun": "shckFuname",
+    "cnstr": "震惊",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "shoe",
+    "fun": "shoeFuname",
+    "cnstr": "鞋",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "shut",
+    "fun": "shutFuname",
+    "cnstr": "关闭",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "side",
+    "fun": "sideFuname",
+    "cnstr": "边",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "sign",
+    "fun": "signFuname",
+    "cnstr": "符号",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "silk",
+    "fun": "silkFuname",
+    "cnstr": "丝绸",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "slvr",
+    "fun": "slvrFuname",
+    "cnstr": "银",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "smpl",
+    "fun": "smplFuname",
+    "cnstr": "简单的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "sstr",
+    "fun": "sstrFuname",
+    "cnstr": "姐姐",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "size",
+    "fun": "sizeFuname",
+    "cnstr": "尺寸",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "skin",
+    "fun": "skinFuname",
+    "cnstr": "皮肤",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "skrt",
+    "fun": "skrtFuname",
+    "cnstr": "裙子",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "sky",
+    "fun": "skyFuname",
+    "cnstr": "天空",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "slp",
+    "fun": "slpFuname",
+    "cnstr": "睡觉",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "slip",
+    "fun": "slipFuname",
+    "cnstr": "滑",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "slow",
+    "fun": "slowFuname",
+    "cnstr": "慢的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "small",
+    "fun": "smllFuname",
+    "cnstr": "小的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "smsh",
+    "fun": "smshFuname",
+    "cnstr": "粉碎",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "smll",
+    "fun": "smellFuname",
+    "cnstr": "闻",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "sml",
+    "fun": "smlFuname",
+    "cnstr": "微笑",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "smk",
+    "fun": "smkFuname",
+    "cnstr": "抽烟",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "smth",
+    "fun": "smthFuname",
+    "cnstr": "光滑的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "snk",
+    "fun": "snkFuname",
+    "cnstr": "蛇",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "snz",
+    "fun": "snzFuname",
+    "cnstr": "喷嚏",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "snow",
+    "fun": "snowFuname",
+    "cnstr": "雪",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "so",
+    "fun": "soFuname",
+    "cnstr": "所以",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "soap",
+    "fun": "soapFuname",
+    "cnstr": "肥皂",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "scty",
+    "fun": "sctyFuname",
+    "cnstr": "社会",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "sock",
+    "fun": "sockFuname",
+    "cnstr": "短袜",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "soft",
+    "fun": "softFuname",
+    "cnstr": "柔软的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "sld",
+    "fun": "sldFuname",
+    "cnstr": "坚硬的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "some",
+    "fun": "someFuname",
+    "cnstr": "一些",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "son",
+    "fun": "sonFuname",
+    "cnstr": "儿子",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "song",
+    "fun": "songFuname",
+    "cnstr": "歌曲",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "sort",
+    "fun": "sortFuname",
+    "cnstr": "种类",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "snd",
+    "fun": "sndFuname",
+    "cnstr": "声音",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "sth",
+    "fun": "sthFuname",
+    "cnstr": "南",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "soup",
+    "fun": "soupFuname",
+    "cnstr": "汤",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "spc",
+    "fun": "spcFuname",
+    "cnstr": "空间空格",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "spd",
+    "fun": "spdFuname",
+    "cnstr": "铲",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "spcl",
+    "fun": "spclFuname",
+    "cnstr": "特别的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "spng",
+    "fun": "spngFuname",
+    "cnstr": "海绵",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "spn",
+    "fun": "spnFuname",
+    "cnstr": "勺子",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "sprng",
+    "fun": "sprngFuname",
+    "cnstr": "春天",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "sqr",
+    "fun": "sqrFuname",
+    "cnstr": "正方形",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "stmp",
+    "fun": "stmpFuname",
+    "cnstr": "邮票",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "stg",
+    "fun": "stgFuname",
+    "cnstr": "阶段",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "star",
+    "fun": "starFuname",
+    "cnstr": "星星",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "strt",
+    "fun": "strtFuname",
+    "cnstr": "开始",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "sttmnt",
+    "fun": "sttmntFuname",
+    "cnstr": "陈述",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "sttn",
+    "fun": "sttnFuname",
+    "cnstr": "车站",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "stm",
+    "fun": "stmFuname",
+    "cnstr": "蒸汽",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "stem",
+    "fun": "stemFuname",
+    "cnstr": "干",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "stl",
+    "fun": "stlFuname",
+    "cnstr": "钢",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "step",
+    "fun": "stepFuname",
+    "cnstr": "步",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "stck",
+    "fun": "stckFuname",
+    "cnstr": "戳",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "stcky",
+    "fun": "stckyFuname",
+    "cnstr": "黏",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "stll",
+    "fun": "stllFuname",
+    "cnstr": "仍然",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "sttch",
+    "fun": "sttchFuname",
+    "cnstr": "缝",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "stckng",
+    "fun": "stckngFuname",
+    "cnstr": "袜",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "stmch",
+    "fun": "stmchFuname",
+    "cnstr": "胃",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "stn",
+    "fun": "stnFuname",
+    "cnstr": "石头",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "stop",
+    "fun": "stopFuname",
+    "cnstr": "停止",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "str",
+    "fun": "strFuname",
+    "cnstr": "店铺",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "stry",
+    "fun": "stryFuname",
+    "cnstr": "故事",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "strng",
+    "fun": "strngFuname",
+    "cnstr": "奇怪的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "strt",
+    "fun": "strtFuname1",
+    "cnstr": "街道",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "strtch",
+    "fun": "strtchFuname",
+    "cnstr": "拉紧",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "stff",
+    "fun": "stffFuname",
+    "cnstr": "僵硬的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "strght",
+    "fun": "strghtFuname",
+    "cnstr": "直的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "strng",
+    "fun": "strngFuname1",
+    "cnstr": "强的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "strctr",
+    "fun": "strctrFuname",
+    "cnstr": "结构",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "sbstnc",
+    "fun": "sbstncFuname",
+    "cnstr": "物质",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "such",
+    "fun": "suchFuname",
+    "cnstr": "这样的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "sddn",
+    "fun": "sddnFuname",
+    "cnstr": "突然的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "sgr",
+    "fun": "sgrFuname",
+    "cnstr": "糖",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "sggstn",
+    "fun": "sggstnFuname",
+    "cnstr": "建议",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "smmr",
+    "fun": "smmrFuname",
+    "cnstr": "夏天",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "sun",
+    "fun": "sunFuname",
+    "cnstr": "太阳",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "spprt",
+    "fun": "spprtFuname",
+    "cnstr": "支持",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "srprs",
+    "fun": "srprsFuname",
+    "cnstr": "惊喜",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "swt",
+    "fun": "swtFuname",
+    "cnstr": "甜的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "swim",
+    "fun": "swimFuname",
+    "cnstr": "游泳",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "systm.",
+    "fun": "systmFuname",
+    "cnstr": "系统。",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "tbl",
+    "fun": "tblFuname",
+    "cnstr": "桌子",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "tail",
+    "fun": "tailFuname",
+    "cnstr": "尾巴",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "take",
+    "fun": "takeFuname",
+    "cnstr": "拿",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "talk",
+    "fun": "talkFuname",
+    "cnstr": "讲话",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "tall",
+    "fun": "tallFuname",
+    "cnstr": "高的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "tst",
+    "fun": "tstFuname",
+    "cnstr": "品尝",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "tax",
+    "fun": "taxFuname",
+    "cnstr": "税",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "tchng",
+    "fun": "tchngFuname",
+    "cnstr": "教学",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "tndncy",
+    "fun": "tndncyFuname",
+    "cnstr": "趋势",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "test",
+    "fun": "testFuname",
+    "cnstr": "测试",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "than",
+    "fun": "thanFuname",
+    "cnstr": "比",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "that",
+    "fun": "thatFuname",
+    "cnstr": "那",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "the",
+    "fun": "theFuname",
+    "cnstr": "这",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "then",
+    "fun": "thenFuname",
+    "cnstr": "然后",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "thry",
+    "fun": "thryFuname",
+    "cnstr": "理论",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "thr",
+    "fun": "thrFuname",
+    "cnstr": "那里",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "thck",
+    "fun": "thckFuname",
+    "cnstr": "厚的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "thin",
+    "fun": "thinFuname",
+    "cnstr": "薄的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "thng",
+    "fun": "thngFuname",
+    "cnstr": "事物",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "this",
+    "fun": "thisFuname",
+    "cnstr": "这",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "thgh",
+    "fun": "thghFuname",
+    "cnstr": "尽管",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "thght",
+    "fun": "thghtFuname",
+    "cnstr": "想法",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "thrd",
+    "fun": "thrdFuname",
+    "cnstr": "线",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "thrt",
+    "fun": "thrtFuname",
+    "cnstr": "喉",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "thrgh",
+    "fun": "thrghFuname",
+    "cnstr": "通过",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "thmb",
+    "fun": "thmbFuname",
+    "cnstr": "拇指",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "thndr",
+    "fun": "thndrFuname",
+    "cnstr": "雷",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "tckt",
+    "fun": "tcktFuname",
+    "cnstr": "票",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "tght",
+    "fun": "tghtFuname",
+    "cnstr": "紧的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "till",
+    "fun": "tillFuname",
+    "cnstr": "直到",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "time",
+    "fun": "timeFuname",
+    "cnstr": "时间",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "tin",
+    "fun": "tinFuname",
+    "cnstr": "锡",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "trd",
+    "fun": "trdFuname",
+    "cnstr": "疲劳的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "to",
+    "fun": "toFuname",
+    "cnstr": "到",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "toe",
+    "fun": "toeFuname",
+    "cnstr": "脚趾",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "tgthr",
+    "fun": "tgthrFuname",
+    "cnstr": "一起",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "tmrrw",
+    "fun": "tmrrwFuname",
+    "cnstr": "明天",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "tng",
+    "fun": "tngFuname",
+    "cnstr": "舌头",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "tth",
+    "fun": "tthFuname",
+    "cnstr": "齿",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "top",
+    "fun": "topFuname",
+    "cnstr": "顶部",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "tch",
+    "fun": "tchFuname",
+    "cnstr": "触碰",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "town",
+    "fun": "townFuname",
+    "cnstr": "镇",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "trd",
+    "fun": "trdFuname1",
+    "cnstr": "贸易",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "trn",
+    "fun": "trnFuname",
+    "cnstr": "火车",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "trnsprt",
+    "fun": "trnsprtFuname",
+    "cnstr": "运输",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "tray",
+    "fun": "trayFuname",
+    "cnstr": "托盘",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "tree",
+    "fun": "treeFuname",
+    "cnstr": "树",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "trck",
+    "fun": "trckFuname",
+    "cnstr": "诡计",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "trbl",
+    "fun": "trblFuname",
+    "cnstr": "麻烦",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "trsrs",
+    "fun": "trsrsFuname",
+    "cnstr": "裤子",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "TRUE",
+    "fun": "TRUEFuname",
+    "cnstr": "真正",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "turn",
+    "fun": "turnFuname",
+    "cnstr": "转动",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "umbrll",
+    "fun": "umbrllFuname",
+    "cnstr": "伞",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "undr",
+    "fun": "undrFuname",
+    "cnstr": "在下面",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "unit",
+    "fun": "unitFuname",
+    "cnstr": "单元",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "up",
+    "fun": "upFuname",
+    "cnstr": "向上",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "use.",
+    "fun": "useFuname",
+    "cnstr": "使用。",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "V",
+    "fun": "VFuname",
+    "cnstr": "V",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "vl",
+    "fun": "vlFuname",
+    "cnstr": "价值",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "vrs",
+    "fun": "vrsFuname",
+    "cnstr": "诗",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "very",
+    "fun": "veryFuname",
+    "cnstr": "非常",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "vssl",
+    "fun": "vsslFuname",
+    "cnstr": "血管",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "view",
+    "fun": "viewFuname",
+    "cnstr": "看法",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "vlnt",
+    "fun": "vlntFuname",
+    "cnstr": "暴力",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "vc.",
+    "fun": "vcFuname",
+    "cnstr": "嗓音。",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "wtng",
+    "fun": "wtngFuname",
+    "cnstr": "等待",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "walk",
+    "fun": "walkFuname",
+    "cnstr": "走",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "wall",
+    "fun": "wallFuname",
+    "cnstr": "墙",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "war",
+    "fun": "warFuname",
+    "cnstr": "战争",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "warm",
+    "fun": "warmFuname",
+    "cnstr": "温暖的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "wash",
+    "fun": "washFuname",
+    "cnstr": "洗",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "wst",
+    "fun": "wstFuname",
+    "cnstr": "浪费",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "wtch",
+    "fun": "wtchFuname",
+    "cnstr": "手表",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "wtr",
+    "fun": "wtrFuname",
+    "cnstr": "水",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "wave",
+    "fun": "waveFuname",
+    "cnstr": "海浪",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "wax",
+    "fun": "waxFuname",
+    "cnstr": "蜡",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "way",
+    "fun": "wayFuname",
+    "cnstr": "方式",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "wthr",
+    "fun": "wthrFuname",
+    "cnstr": "天气",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "week",
+    "fun": "weekFuname",
+    "cnstr": "星期",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "wght",
+    "fun": "wghtFuname",
+    "cnstr": "重量",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "well",
+    "fun": "wellFuname",
+    "cnstr": "出色地",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "west",
+    "fun": "westFuname",
+    "cnstr": "西方",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "wet",
+    "fun": "wetFuname",
+    "cnstr": "湿的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "whl",
+    "fun": "whlFuname",
+    "cnstr": "车轮",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "when",
+    "fun": "whenFuname",
+    "cnstr": "什么时候",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "whr",
+    "fun": "whrFuname",
+    "cnstr": "在哪里",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "whl",
+    "fun": "whlFuname1",
+    "cnstr": "尽管",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "whip",
+    "fun": "whipFuname",
+    "cnstr": "鞭子",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "whstl",
+    "fun": "whstlFuname",
+    "cnstr": "哨",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "wht",
+    "fun": "whtFuname",
+    "cnstr": "白色的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "who",
+    "fun": "whoFuname",
+    "cnstr": "WHO",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "why",
+    "fun": "whyFuname",
+    "cnstr": "为什么",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "wide",
+    "fun": "wideFuname",
+    "cnstr": "宽的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "will",
+    "fun": "willFuname",
+    "cnstr": "将要",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "wind",
+    "fun": "windFuname",
+    "cnstr": "风",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "wndw",
+    "fun": "wndwFuname",
+    "cnstr": "窗户",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "wine",
+    "fun": "wineFuname",
+    "cnstr": "葡萄酒",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "wing",
+    "fun": "wingFuname",
+    "cnstr": "翅膀",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "wntr",
+    "fun": "wntrFuname",
+    "cnstr": "冬天",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "wire",
+    "fun": "wireFuname",
+    "cnstr": "金属丝",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "wise",
+    "fun": "wiseFuname",
+    "cnstr": "明智的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "with",
+    "fun": "withFuname",
+    "cnstr": "和",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "wmn",
+    "fun": "wmnFuname",
+    "cnstr": "女士",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "wood",
+    "fun": "woodFuname",
+    "cnstr": "木头",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "wool",
+    "fun": "woolFuname",
+    "cnstr": "羊毛",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "word",
+    "fun": "wordFuname",
+    "cnstr": "单词",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "work",
+    "fun": "workFuname",
+    "cnstr": "工作",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "worm",
+    "fun": "wormFuname",
+    "cnstr": "虫",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "wnd",
+    "fun": "wndFuname",
+    "cnstr": "伤口",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "wrtng",
+    "fun": "wrtngFuname",
+    "cnstr": "写作",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "wrng",
+    "fun": "wrngFuname",
+    "cnstr": "错误的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "year",
+    "fun": "yearFuname",
+    "cnstr": "年",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "yllw",
+    "fun": "yllwFuname",
+    "cnstr": "黄色的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "yes",
+    "fun": "yesFuname",
+    "cnstr": "是的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "ystrdy",
+    "fun": "ystrdyFuname",
+    "cnstr": "昨天",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "you",
+    "fun": "youFuname",
+    "cnstr": "你",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "yng",
+    "fun": "yngFuname",
+    "cnstr": "年轻的",
+    "fil": "C:\\w\\iptmthd\\basicE850.au3"
+  },
+  {
+    "key": "egls",
+    "fun": "nglshFuname",
+    "cnstr": "英文",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "code",
+    "fun": "code",
+    "cnstr": "编码代码",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "rpls",
+    "fun": "rplc",
+    "cnstr": "替换",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "ref",
+    "fun": "ref",
+    "cnstr": "引用参考",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "inst",
+    "fun": "inst",
+    "cnstr": "安装",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "mng",
+    "fun": "mng",
+    "cnstr": "管理",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "edtr",
+    "fun": "edtr",
+    "cnstr": "编辑器",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "txt",
+    "fun": "txt",
+    "cnstr": "文本",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "itm",
+    "fun": "itm",
+    "cnstr": "项目",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "cfg",
+    "fun": "cfg",
+    "cnstr": "配置",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "enc",
+    "fun": "enc",
+    "cnstr": "编码",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "dir",
+    "fun": "dir",
+    "cnstr": "目录",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "dwn",
+    "fun": "dwn",
+    "cnstr": "下载",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "rbt",
+    "fun": "rbt",
+    "cnstr": "重启",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "fil",
+    "fun": "fil",
+    "cnstr": "文件",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "cpy",
+    "fun": "cpy",
+    "cnstr": "复制",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "clk",
+    "fun": "clk",
+    "cnstr": "点击",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "prg",
+    "fun": "prg",
+    "cnstr": "编程",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "mdf",
+    "fun": "mdf",
+    "cnstr": "修改",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "font",
+    "fun": "font",
+    "cnstr": "字体",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "opn",
+    "fun": "opn",
+    "cnstr": "打开",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "wds",
+    "fun": "wds",
+    "cnstr": "窗户",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "shw",
+    "fun": "shw",
+    "cnstr": "显示",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "tool",
+    "fun": "tool",
+    "cnstr": "工具",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "tbr",
+    "fun": "tbr",
+    "cnstr": "工具栏",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "bar",
+    "fun": "bar",
+    "cnstr": "条",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "run",
+    "fun": "run1",
+    "cnstr": "运行",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "alw",
+    "fun": "alw",
+    "cnstr": "允许",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "sav",
+    "fun": "sav",
+    "cnstr": "保存",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "load",
+    "fun": "load",
+    "cnstr": "加载",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "ld",
+    "fun": "ld",
+    "cnstr": "加载",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "lnm",
+    "fun": "lnm",
+    "cnstr": "行号",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "bkgrd",
+    "fun": "bkgrd",
+    "cnstr": "背景",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "asgn",
+    "fun": "asgn",
+    "cnstr": "分配",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "fnd",
+    "fun": "fnd",
+    "cnstr": "寻找",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "cmplr",
+    "fun": "cmplr",
+    "cnstr": "编译器",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "cflct",
+    "fun": "cflct",
+    "cnstr": "冲突",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "str",
+    "fun": "str",
+    "cnstr": "字符串",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "fcs",
+    "fun": "fcs",
+    "cnstr": "焦点聚焦",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "prcs",
+    "fun": "prcs",
+    "cnstr": "处理",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "db",
+    "fun": "db",
+    "cnstr": "数据库",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "ftr",
+    "fun": "ftr",
+    "cnstr": "未来",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "vw",
+    "fun": "vw",
+    "cnstr": "视图",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "frtnd",
+    "fun": "frtnd",
+    "cnstr": "前端",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "bknd",
+    "fun": "bknd",
+    "cnstr": "后端",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "bld",
+    "fun": "bld1",
+    "cnstr": "搭建",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "cln",
+    "fun": "cln",
+    "cnstr": "清理干净",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "buf",
+    "fun": "buf",
+    "cnstr": "缓冲",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "svr",
+    "fun": "svr",
+    "cnstr": "服务器端",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "cnn",
+    "fun": "cnn",
+    "cnstr": "连接",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "op",
+    "fun": "op",
+    "cnstr": "操作",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Kbd",
+    "fun": "Kbd",
+    "cnstr": "键盘",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "lsn",
+    "fun": "lsn",
+    "cnstr": "监听",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "also",
+    "fun": "also",
+    "cnstr": "也",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "ivk",
+    "fun": "ivk",
+    "cnstr": "调用",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "ipt",
+    "fun": "iptm2",
+    "cnstr": "输入",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "iptm",
+    "fun": "iptm",
+    "cnstr": "输入法",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "tek",
+    "fun": "tek",
+    "cnstr": "技术",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "bp",
+    "fun": "bp",
+    "cnstr": "最佳实践",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "prcp",
+    "fun": "prcp",
+    "cnstr": "原理",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Abstrct",
+    "fun": "AbstrctFuname",
+    "cnstr": "抽象摘要",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Abstrctn",
+    "fun": "AbstrctnFuname",
+    "cnstr": "抽象",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Accss",
+    "fun": "AccssFuname",
+    "cnstr": "访问",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Actvt",
+    "fun": "ActvtFuname",
+    "cnstr": "激活",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Actvtn",
+    "fun": "ActvtnFuname",
+    "cnstr": "激活",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Actv",
+    "fun": "ActvFuname",
+    "cnstr": "激活",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Adptr",
+    "fun": "AdptrFuname",
+    "cnstr": "适配器",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Add",
+    "fun": "AddFuname",
+    "cnstr": "添加",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Addrss",
+    "fun": "AddrssFuname",
+    "cnstr": "地址",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Advncd",
+    "fun": "AdvncdFuname",
+    "cnstr": "高级",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Aggrgtn",
+    "fun": "AggrgtnFuname",
+    "cnstr": "聚合",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Algrthm",
+    "fun": "AlgrthmFuname",
+    "cnstr": "算法",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Allct",
+    "fun": "AllctFuname",
+    "cnstr": "分配",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Allctr",
+    "fun": "AllctrFuname",
+    "cnstr": "分配器",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Annttn",
+    "fun": "AnnttnFuname",
+    "cnstr": "注解",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "App",
+    "fun": "AppFuname",
+    "cnstr": "bndl",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Applctn",
+    "fun": "ApplctnFuname",
+    "cnstr": "应用",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Apply",
+    "fun": "ApplyFuname",
+    "cnstr": "应用",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Archtctr",
+    "fun": "ArchtctrFuname",
+    "cnstr": "架构",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Artfct",
+    "fun": "ArtfctFuname",
+    "cnstr": "成品",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Arry",
+    "fun": "ArryFuname",
+    "cnstr": "数组",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Asynchrnz",
+    "fun": "AsynchrnzFuname",
+    "cnstr": "异步",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Atmc",
+    "fun": "AtmcFuname",
+    "cnstr": "原子的",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Attrbt",
+    "fun": "AttrbtFuname",
+    "cnstr": "属性",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Ad",
+    "fun": "AdFuname",
+    "cnstr": "音频",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "auth",
+    "fun": "authFuname",
+    "cnstr": "验证授权",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Bs",
+    "fun": "BsFuname",
+    "cnstr": "clss",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Btch",
+    "fun": "BtchFuname",
+    "cnstr": "批（处理）",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Bind",
+    "fun": "BindFuname",
+    "cnstr": "绑定",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Btrt",
+    "fun": "BtrtFuname",
+    "cnstr": "码率",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Blck",
+    "fun": "BlckFuname1",
+    "cnstr": "区块",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Bln",
+    "fun": "BlnFuname",
+    "cnstr": "布尔",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Bnc",
+    "fun": "BncFuname",
+    "cnstr": "退回",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Brkpnt",
+    "fun": "BrkpntFuname",
+    "cnstr": "断点",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Bndl",
+    "fun": "BndlFuname",
+    "cnstr": "套件",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Bus",
+    "fun": "BusFuname",
+    "cnstr": "总线",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Burn",
+    "fun": "BurnFuname1",
+    "cnstr": "刻录",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Byte",
+    "fun": "ByteFuname",
+    "cnstr": "字节",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Cch",
+    "fun": "CchFuname",
+    "cnstr": "缓存",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Call",
+    "fun": "CallFuname",
+    "cnstr": "调用",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Cllbck",
+    "fun": "CllbckFuname",
+    "cnstr": "回调",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Crtfct",
+    "fun": "CrtfctFuname",
+    "cnstr": "证书",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Chrctr",
+    "fun": "ChrctrFuname",
+    "cnstr": "字符",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Chck",
+    "fun": "ChckFuname",
+    "cnstr": "查看",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Clss",
+    "fun": "ClssFuname",
+    "cnstr": "类",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Tap",
+    "fun": "TapFuname",
+    "cnstr": "触碰",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Clpbrd",
+    "fun": "ClpbrdFuname",
+    "cnstr": "剪贴板",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Clon",
+    "fun": "ClnFuname1",
+    "cnstr": "克隆",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Chsn",
+    "fun": "ChsnFuname",
+    "cnstr": "内聚",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Cmb",
+    "fun": "CmbFuname",
+    "cnstr": "bx",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Cmmnd",
+    "fun": "CmmndFuname",
+    "cnstr": "命令",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Cmmnd",
+    "fun": "CmmndFuname1",
+    "cnstr": "ln",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Cmmnt",
+    "fun": "CmmntFuname",
+    "cnstr": "评论",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Cmmt",
+    "fun": "CmmtFuname",
+    "cnstr": "提交",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Cmmnctn",
+    "fun": "CmmnctnFuname",
+    "cnstr": "通信",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Cmmnty",
+    "fun": "CmmntyFuname",
+    "cnstr": "社区",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Cmptblty",
+    "fun": "CmptbltyFuname",
+    "cnstr": "兼容性",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Cmptbl",
+    "fun": "CmptblFuname",
+    "cnstr": "兼容的",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Cmplr",
+    "fun": "CmplrFuname",
+    "cnstr": "编译",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Cmpnnt",
+    "fun": "CmpnntFuname",
+    "cnstr": "组件",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Cmpstn",
+    "fun": "CmpstnFuname",
+    "cnstr": "组合",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Cmprss",
+    "fun": "CmprssFuname",
+    "cnstr": "压缩",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Cncrrncy",
+    "fun": "CncrrncyFuname",
+    "cnstr": "并发",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Cncrrnt",
+    "fun": "CncrrntFuname",
+    "cnstr": "并发",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Cnfgrtn",
+    "fun": "CnfgrtnFuname",
+    "cnstr": "配置",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Cnstnt",
+    "fun": "CnstntFuname",
+    "cnstr": "常量",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Cnstrnt",
+    "fun": "CnstrntFuname",
+    "cnstr": "约束",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Cnstrctr",
+    "fun": "CnstrctrFuname",
+    "cnstr": "构造函数",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Cntnr",
+    "fun": "CntnrFuname",
+    "cnstr": "容器",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Cntxt",
+    "fun": "CntxtFuname",
+    "cnstr": "上下文",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Cntns",
+    "fun": "CntnsFuname",
+    "cnstr": "dlvry",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Cntrl",
+    "fun": "CntrlFuname1",
+    "cnstr": "控制",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Copy",
+    "fun": "CopyFuname1",
+    "cnstr": "复制",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Crtn",
+    "fun": "CrtnFuname1",
+    "cnstr": "协程",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Cplng",
+    "fun": "CplngFuname",
+    "cnstr": "耦合",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Crsh",
+    "fun": "CrshFuname1",
+    "cnstr": "崩溃",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Crsr",
+    "fun": "CrsrFuname",
+    "cnstr": "光标",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Cstm",
+    "fun": "CstmFuname",
+    "cnstr": "自定义",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Data",
+    "fun": "DataFuname",
+    "cnstr": "数据",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Dt",
+    "fun": "DtFuname",
+    "cnstr": "lnk",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Dt",
+    "fun": "DtFuname1",
+    "cnstr": "strctr",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Dtbs",
+    "fun": "DtbsFuname",
+    "cnstr": "数据库",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Dtbs",
+    "fun": "DtbsFuname1",
+    "cnstr": "schm",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Ddlck",
+    "fun": "DdlckFuname",
+    "cnstr": "死锁",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Dbg",
+    "fun": "DbgFuname",
+    "cnstr": "调试",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Dbggr",
+    "fun": "DbggrFuname",
+    "cnstr": "调试器",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Dclr",
+    "fun": "DclrFuname",
+    "cnstr": "声明",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Dflt",
+    "fun": "DfltFuname",
+    "cnstr": "默认",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Dfntn",
+    "fun": "DfntnFuname",
+    "cnstr": "定义",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Dlgt",
+    "fun": "DlgtFuname",
+    "cnstr": "委托",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Dlgtn",
+    "fun": "DlgtnFuname",
+    "cnstr": "委托",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Dpndncy",
+    "fun": "DpndncyFuname",
+    "cnstr": "依赖",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Drvd",
+    "fun": "DrvdFuname",
+    "cnstr": "clss",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Dsgn",
+    "fun": "DsgnFuname1",
+    "cnstr": "pttrn",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Dstrctr",
+    "fun": "DstrctrFuname",
+    "cnstr": "析构函数",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Dtct",
+    "fun": "DtctFuname",
+    "cnstr": "检测",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Dvc",
+    "fun": "DvcFuname",
+    "cnstr": "设备",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Dlg",
+    "fun": "DlgFuname",
+    "cnstr": "对话框",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Dgtl",
+    "fun": "DgtlFuname",
+    "cnstr": "数字化",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Drctry",
+    "fun": "DrctryFuname",
+    "cnstr": "目录",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Dsptch",
+    "fun": "DsptchFuname",
+    "cnstr": "分派",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Dstrbtd",
+    "fun": "DstrbtdFuname",
+    "cnstr": "分布式",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Dcmnt",
+    "fun": "DcmntFuname",
+    "cnstr": "文档",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Dmn",
+    "fun": "DmnFuname",
+    "cnstr": "域",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Drvr",
+    "fun": "DrvrFuname",
+    "cnstr": "驱动程序",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Elmnt",
+    "fun": "ElmntFuname",
+    "cnstr": "元素",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Enbl",
+    "fun": "EnblFuname",
+    "cnstr": "启用",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Entty",
+    "fun": "EnttyFuname",
+    "cnstr": "实体",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Eql",
+    "fun": "EqlFuname1",
+    "cnstr": "相等的",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Escp",
+    "fun": "EscpFuname",
+    "cnstr": "cd",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Evnt",
+    "fun": "EvntFuname1",
+    "cnstr": "事件",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Excptn",
+    "fun": "ExcptnFuname",
+    "cnstr": "异常",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Exprt",
+    "fun": "ExprtFuname1",
+    "cnstr": "导出",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Exprssn",
+    "fun": "ExprssnFuname",
+    "cnstr": "表达式",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Extnsn",
+    "fun": "ExtnsnFuname",
+    "cnstr": "扩展",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Ftr",
+    "fun": "FtrFuname1",
+    "cnstr": "特点",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Fdbck",
+    "fun": "FdbckFuname",
+    "cnstr": "反馈",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Fld",
+    "fun": "FldFuname1",
+    "cnstr": "字段",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Fltr",
+    "fun": "FltrFuname",
+    "cnstr": "过滤器",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Frmwr",
+    "fun": "FrmwrFuname",
+    "cnstr": "固件",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Flag",
+    "fun": "FlagFuname1",
+    "cnstr": "标记",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Flsh",
+    "fun": "FlshFuname1",
+    "cnstr": "刷新",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Fldr",
+    "fun": "FldrFuname",
+    "cnstr": "文件夹",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Font",
+    "fun": "FontFuname",
+    "cnstr": "字体",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Form",
+    "fun": "FormFuname1",
+    "cnstr": "表单",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Frmt",
+    "fun": "FrmtFuname",
+    "cnstr": "格式",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Frwrd",
+    "fun": "FrwrdFuname1",
+    "cnstr": "转发",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Frgmnt",
+    "fun": "FrgmntFuname",
+    "cnstr": "片段",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Frm",
+    "fun": "FrmFuname1",
+    "cnstr": "帧；框架",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Frmwrk",
+    "fun": "FrmwrkFuname",
+    "cnstr": "框架",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Frzn",
+    "fun": "FrznFuname",
+    "cnstr": "冻结，锁定",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Fll",
+    "fun": "FllFuname",
+    "cnstr": "scrn,",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Fnctn",
+    "fun": "FnctnFuname",
+    "cnstr": "函数",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Game",
+    "fun": "GameFuname",
+    "cnstr": "游戏",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Gtwy",
+    "fun": "GtwyFuname",
+    "cnstr": "网关",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Gnrl",
+    "fun": "GnrlFuname1",
+    "cnstr": "通用的",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Gnrt",
+    "fun": "GnrtFuname",
+    "cnstr": "生成",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Gnrcs",
+    "fun": "GnrcsFuname",
+    "cnstr": "泛型",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Glbl",
+    "fun": "GlblFuname",
+    "cnstr": "全局的",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Grph",
+    "fun": "GrphFuname",
+    "cnstr": "图",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Hndl",
+    "fun": "HndlFuname",
+    "cnstr": "句柄",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Hrdwr",
+    "fun": "HrdwrFuname",
+    "cnstr": "硬件",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Hash",
+    "fun": "HashFuname",
+    "cnstr": "哈希",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Heap",
+    "fun": "HeapFuname",
+    "cnstr": "堆",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Help",
+    "fun": "HelpFuname1",
+    "cnstr": "帮助",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Hrrchy",
+    "fun": "HrrchyFuname",
+    "cnstr": "层次结构",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Hgh",
+    "fun": "HghFuname",
+    "cnstr": "Dfntn",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Hst",
+    "fun": "HstFuname",
+    "cnstr": "fl",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Hm",
+    "fun": "HmFuname",
+    "cnstr": "pg",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Icon",
+    "fun": "IconFuname",
+    "cnstr": "图标",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Idntfr",
+    "fun": "IdntfrFuname",
+    "cnstr": "标识符",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Idle",
+    "fun": "IdleFuname",
+    "cnstr": "闲置",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Img",
+    "fun": "ImgFuname",
+    "cnstr": "图像",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Immtbl",
+    "fun": "ImmtblFuname",
+    "cnstr": "不可变的",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Implmnt",
+    "fun": "ImplmntFuname",
+    "cnstr": "实现",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Implct",
+    "fun": "ImplctFuname",
+    "cnstr": "隐式",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Imprt",
+    "fun": "ImprtFuname",
+    "cnstr": "导入",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Indnt",
+    "fun": "IndntFuname",
+    "cnstr": "缩进",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Info",
+    "fun": "InfoFuname",
+    "cnstr": "简介",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Infrmtn",
+    "fun": "InfrmtnFuname",
+    "cnstr": "信息",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Inhrtnc",
+    "fun": "InhrtncFuname",
+    "cnstr": "继承",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Intlztn",
+    "fun": "IntlztnFuname",
+    "cnstr": "初始化",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Inln",
+    "fun": "InlnFuname",
+    "cnstr": "内联",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Instnc",
+    "fun": "InstncFuname",
+    "cnstr": "实例",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Intgrt",
+    "fun": "IntgrtFuname",
+    "cnstr": "集成",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Intgrtd",
+    "fun": "IntgrtdFuname",
+    "cnstr": "集成的",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Intgrty",
+    "fun": "IntgrtyFuname",
+    "cnstr": "完整性",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Intrfc",
+    "fun": "IntrfcFuname",
+    "cnstr": "接口",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Intrntnlztn",
+    "fun": "IntrntnlztnFuname",
+    "cnstr": "(18N)",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Intrnt",
+    "fun": "IntrntFuname",
+    "cnstr": "互联网",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Intrprtr",
+    "fun": "IntrprtrFuname",
+    "cnstr": "解释器",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Invk",
+    "fun": "InvkFuname",
+    "cnstr": "调用",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Itrt",
+    "fun": "ItrtFuname",
+    "cnstr": "迭代；",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Itrtn",
+    "fun": "ItrtnFuname",
+    "cnstr": "迭代",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Itrtr",
+    "fun": "ItrtrFuname",
+    "cnstr": "迭代器",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Krnl",
+    "fun": "KrnlFuname",
+    "cnstr": "内核",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Key",
+    "fun": "KeyFuname1",
+    "cnstr": "密钥",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Kybnd",
+    "fun": "KybndFuname",
+    "cnstr": "快捷键",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Lag",
+    "fun": "LagFuname",
+    "cnstr": "延迟",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Lyt",
+    "fun": "LytFuname",
+    "cnstr": "布局",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Lbrry",
+    "fun": "LbrryFuname1",
+    "cnstr": "程序库",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Link",
+    "fun": "LinkFuname",
+    "cnstr": "链接",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Lnk",
+    "fun": "LnkFuname",
+    "cnstr": "tm",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Lnkd",
+    "fun": "LnkdFuname",
+    "cnstr": "lst",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Lnkr",
+    "fun": "LnkrFuname",
+    "cnstr": "链接器",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "List",
+    "fun": "ListFuname1",
+    "cnstr": "列表",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Lstnr",
+    "fun": "LstnrFuname",
+    "cnstr": "监听器",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Ltrls",
+    "fun": "LtrlsFuname",
+    "cnstr": "字面值",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Ltrl",
+    "fun": "LtrlFuname",
+    "cnstr": "cnstnt",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Load",
+    "fun": "LoadFuname",
+    "cnstr": "加载",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Ld",
+    "fun": "LdFuname",
+    "cnstr": "tm",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Ldr",
+    "fun": "LdrFuname",
+    "cnstr": "加载器",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Lclztn",
+    "fun": "LclztnFuname",
+    "cnstr": "(L10N)",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Lcl",
+    "fun": "LclFuname",
+    "cnstr": "vrbl",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Lock",
+    "fun": "LockFuname1",
+    "cnstr": "锁定",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Log",
+    "fun": "LogFuname",
+    "cnstr": "日志",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Lg",
+    "fun": "LgFuname",
+    "cnstr": "n,",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Loop",
+    "fun": "LoopFuname",
+    "cnstr": "循环",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Mtch",
+    "fun": "MtchFuname1",
+    "cnstr": "匹配",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Mmry",
+    "fun": "MmryFuname1",
+    "cnstr": "内存",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Menu",
+    "fun": "MenuFuname",
+    "cnstr": "菜单",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Mssg",
+    "fun": "MssgFuname",
+    "cnstr": "消息",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Mtdt",
+    "fun": "MtdtFuname",
+    "cnstr": "元数据",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Mddlwr",
+    "fun": "MddlwrFuname",
+    "cnstr": "中间件，中间软件",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Mbl",
+    "fun": "MblFuname",
+    "cnstr": "移动",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Mdfr",
+    "fun": "MdfrFuname",
+    "cnstr": "修饰符",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Mdl",
+    "fun": "MdlFuname",
+    "cnstr": "模块",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Mnmrphsm",
+    "fun": "MnmrphsmFuname",
+    "cnstr": "单态",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Mthrbrd",
+    "fun": "MthrbrdFuname",
+    "cnstr": "主板",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Ms",
+    "fun": "MsFuname",
+    "cnstr": "鼠标",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Mlttskng",
+    "fun": "MlttskngFuname",
+    "cnstr": "多任务（处理）",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Mtbl",
+    "fun": "MtblFuname",
+    "cnstr": "可变的",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Mtx",
+    "fun": "MtxFuname",
+    "cnstr": "互斥",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Ntv",
+    "fun": "NtvFuname",
+    "cnstr": "原生",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Nvgtr",
+    "fun": "NvgtrFuname",
+    "cnstr": "导航器",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Nstd",
+    "fun": "NstdFuname",
+    "cnstr": "嵌套的",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Ntwrk",
+    "fun": "NtwrkFuname",
+    "cnstr": "网络",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "New",
+    "fun": "NewFuname1",
+    "cnstr": "新建",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Ntrztn",
+    "fun": "NtrztnFuname",
+    "cnstr": "公证",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Objct",
+    "fun": "ObjctFuname",
+    "cnstr": "对象",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Objct-rntd",
+    "fun": "ObjctrntdFuname",
+    "cnstr": "面向对象",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Onln",
+    "fun": "OnlnFuname",
+    "cnstr": "在线",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Oprnd",
+    "fun": "OprndFuname",
+    "cnstr": "操作数，运算元",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Oprtng",
+    "fun": "OprtngFuname",
+    "cnstr": "systm",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Oprtr",
+    "fun": "OprtrFuname",
+    "cnstr": "操作符，运算符",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Ovrflw",
+    "fun": "OvrflwFuname",
+    "cnstr": "溢出（上溢出）",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Ovrly",
+    "fun": "OvrlyFuname",
+    "cnstr": "叠加面板",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Ovrld",
+    "fun": "OvrldFuname",
+    "cnstr": "重载",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Ovrrd",
+    "fun": "OvrrdFuname",
+    "cnstr": "覆盖，重写",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Pack",
+    "fun": "PackFuname",
+    "cnstr": "打包，压缩",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Pckg",
+    "fun": "PckgFuname",
+    "cnstr": "(nn)",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Pane",
+    "fun": "PaneFuname",
+    "cnstr": "窗格",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Prlllsm",
+    "fun": "PrlllsmFuname",
+    "cnstr": "并行性，并行",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Prmtr",
+    "fun": "PrmtrFuname",
+    "cnstr": "参数（也称为形式参数，形参）",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Prs",
+    "fun": "PrsFuname1",
+    "cnstr": "解析",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Prttn",
+    "fun": "PrttnFuname",
+    "cnstr": "分割；（硬盘）分区",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Pst",
+    "fun": "PstFuname1",
+    "cnstr": "粘贴",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Ptch",
+    "fun": "PtchFuname",
+    "cnstr": "补丁",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Pttrn",
+    "fun": "PttrnFuname",
+    "cnstr": "模式；样式",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Prfrmnc",
+    "fun": "PrfrmncFuname",
+    "cnstr": "性能",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Prsstnc",
+    "fun": "PrsstncFuname",
+    "cnstr": "持久性",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Pht",
+    "fun": "PhtFuname",
+    "cnstr": "照片",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Physcl",
+    "fun": "PhysclFuname1",
+    "cnstr": "lyr",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Pcklst",
+    "fun": "PcklstFuname",
+    "cnstr": "选择列表",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Plchldr",
+    "fun": "PlchldrFuname",
+    "cnstr": "占位符",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Plggblty",
+    "fun": "PlggbltyFuname",
+    "cnstr": "可插入性",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Plgn",
+    "fun": "PlgnFuname",
+    "cnstr": "插件",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Pntr",
+    "fun": "PntrFuname",
+    "cnstr": "指针",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Plymrphsm",
+    "fun": "PlymrphsmFuname",
+    "cnstr": "多态",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Port",
+    "fun": "PortFuname",
+    "cnstr": "端口",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Pwr",
+    "fun": "PwrFuname1",
+    "cnstr": "bnk",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Prsnttn",
+    "fun": "PrsnttnFuname",
+    "cnstr": "lyr",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Prst",
+    "fun": "PrstFuname",
+    "cnstr": "预设",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Prnt",
+    "fun": "PrntFuname1",
+    "cnstr": "打印",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Prntr",
+    "fun": "PrntrFuname",
+    "cnstr": "打印机",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Prcdr",
+    "fun": "PrcdrFuname",
+    "cnstr": "过程",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Prcss",
+    "fun": "PrcssFuname1",
+    "cnstr": "进程",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Prfl",
+    "fun": "PrflFuname",
+    "cnstr": "配置文件",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Prfl",
+    "fun": "PrflFuname1",
+    "cnstr": "评测",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Prflr",
+    "fun": "PrflrFuname",
+    "cnstr": "（性能）分析器",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Prgrm",
+    "fun": "PrgrmFuname",
+    "cnstr": "程序",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Prjct",
+    "fun": "PrjctFuname",
+    "cnstr": "项目",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Prtcl",
+    "fun": "PrtclFuname",
+    "cnstr": "协议",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Qlty",
+    "fun": "QltyFuname1",
+    "cnstr": "质量",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Q",
+    "fun": "QFuname1",
+    "cnstr": "队列",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Rdn",
+    "fun": "RdnFuname",
+    "cnstr": "弧度",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Rd",
+    "fun": "RdFuname",
+    "cnstr": "bttn",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "RM",
+    "fun": "RMFuname",
+    "cnstr": "(Rndm",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Read",
+    "fun": "ReadFuname",
+    "cnstr": "读",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Rd-nly",
+    "fun": "RdnlyFuname",
+    "cnstr": "只读",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Rcvry",
+    "fun": "RcvryFuname",
+    "cnstr": "还原",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Rcrsn",
+    "fun": "RcrsnFuname",
+    "cnstr": "递归",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Rfrnc",
+    "fun": "RfrncFuname",
+    "cnstr": "参考",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Rgstr",
+    "fun": "RgstrFuname",
+    "cnstr": "寄存器",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Rls",
+    "fun": "RlsFuname",
+    "cnstr": "发行",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Rmt",
+    "fun": "RmtFuname",
+    "cnstr": "远程",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Rndr",
+    "fun": "RndrFuname",
+    "cnstr": "渲染",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Rsltn",
+    "fun": "RsltnFuname",
+    "cnstr": "分辨率",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Rspns",
+    "fun": "RspnsFuname",
+    "cnstr": "响应",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Rstr",
+    "fun": "RstrFuname",
+    "cnstr": "还原",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Rtrn",
+    "fun": "RtrnFuname",
+    "cnstr": "返回",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Rllbck",
+    "fun": "RllbckFuname",
+    "cnstr": "回滚",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Rtn",
+    "fun": "RtnFuname",
+    "cnstr": "程序",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Run",
+    "fun": "RunFuname",
+    "cnstr": "运行",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Save",
+    "fun": "SaveFuname",
+    "cnstr": "保存",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Smplng",
+    "fun": "SmplngFuname",
+    "cnstr": "取样",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Sclr",
+    "fun": "SclrFuname",
+    "cnstr": "标量",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Schdl",
+    "fun": "SchdlFuname",
+    "cnstr": "调度",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Schdlr",
+    "fun": "SchdlrFuname",
+    "cnstr": "调度器",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Scp",
+    "fun": "ScpFuname",
+    "cnstr": "作用域",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Scrll",
+    "fun": "ScrllFuname",
+    "cnstr": "br",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Scrpt",
+    "fun": "ScrptFuname",
+    "cnstr": "脚本",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "SDK",
+    "fun": "SDKFuname",
+    "cnstr": "(Sftwr",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Srch",
+    "fun": "SrchFuname",
+    "cnstr": "ngn",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Scrty",
+    "fun": "ScrtyFuname",
+    "cnstr": "安全性",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Sgmnt",
+    "fun": "SgmntFuname",
+    "cnstr": "段",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Srvr",
+    "fun": "SrvrFuname",
+    "cnstr": "服务器",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Sssn",
+    "fun": "SssnFuname",
+    "cnstr": "会话",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Sssn",
+    "fun": "SssnFuname1",
+    "cnstr": "会话",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Sttngs",
+    "fun": "SttngsFuname",
+    "cnstr": "设置",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Shrtct",
+    "fun": "ShrtctFuname",
+    "cnstr": "快捷",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Slcn",
+    "fun": "SlcnFuname",
+    "cnstr": "硅",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Smltn",
+    "fun": "SmltnFuname",
+    "cnstr": "模拟",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Sgntr",
+    "fun": "SgntrFuname",
+    "cnstr": "签名",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Sldr",
+    "fun": "SldrFuname",
+    "cnstr": "滑块",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Smrt",
+    "fun": "SmrtFuname",
+    "cnstr": "智能",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Smrtphn",
+    "fun": "SmrtphnFuname",
+    "cnstr": "智能手机",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "SMS",
+    "fun": "SMSFuname",
+    "cnstr": "(Shrt",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Snip",
+    "fun": "SnipFuname",
+    "cnstr": "截图",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Src",
+    "fun": "SrcFuname",
+    "cnstr": "cd",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Stck",
+    "fun": "StckFuname1",
+    "cnstr": "栈",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Str",
+    "fun": "StrFuname1",
+    "cnstr": "rtng",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Sttmnt",
+    "fun": "SttmntFuname1",
+    "cnstr": "语句",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Stts",
+    "fun": "SttsFuname",
+    "cnstr": "br",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Stppr",
+    "fun": "StpprFuname",
+    "cnstr": "步进器",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Strm",
+    "fun": "StrmFuname",
+    "cnstr": "（数据）流",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Strng",
+    "fun": "StrngFuname11",
+    "cnstr": "字符串",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Sbclss",
+    "fun": "SbclssFuname",
+    "cnstr": "子类",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Sbrtn",
+    "fun": "SbrtnFuname",
+    "cnstr": "子例程",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Sprclss",
+    "fun": "SprclssFuname",
+    "cnstr": "超类",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Spprt",
+    "fun": "SpprtFuname1",
+    "cnstr": "支持",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Sspnd",
+    "fun": "SspndFuname",
+    "cnstr": "暂停",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Synchrnz",
+    "fun": "SynchrnzFuname",
+    "cnstr": "同步",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Synchrns",
+    "fun": "SynchrnsFuname",
+    "cnstr": "同步的",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Tab",
+    "fun": "TabFuname",
+    "cnstr": "标签（页）",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Tag",
+    "fun": "TagFuname",
+    "cnstr": "标签",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Task",
+    "fun": "TaskFuname",
+    "cnstr": "任务",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Tmplt",
+    "fun": "TmpltFuname",
+    "cnstr": "模板",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Text",
+    "fun": "TextFuname",
+    "cnstr": "文本",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Txt",
+    "fun": "TxtFuname",
+    "cnstr": "bx",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Thrd",
+    "fun": "ThrdFuname1",
+    "cnstr": "线程",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Tp-p",
+    "fun": "TppFuname",
+    "cnstr": "充值",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Tkn",
+    "fun": "TknFuname",
+    "cnstr": "标记",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Trvrs",
+    "fun": "TrvrsFuname",
+    "cnstr": "遍历",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Try",
+    "fun": "TryFuname",
+    "cnstr": "尝试",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Tree",
+    "fun": "TreeFuname1",
+    "cnstr": "树",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Tpl",
+    "fun": "TplFuname",
+    "cnstr": "元组",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Ttrl",
+    "fun": "TtrlFuname",
+    "cnstr": "教程",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Type",
+    "fun": "TypeFuname",
+    "cnstr": "类型",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Unvrsl",
+    "fun": "UnvrslFuname",
+    "cnstr": "通用的",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Vrbl",
+    "fun": "VrblFuname",
+    "cnstr": "变量",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Vd",
+    "fun": "VdFuname",
+    "cnstr": "视频",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "View",
+    "fun": "ViewFuname1",
+    "cnstr": "视图",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Vc",
+    "fun": "VcFuname1",
+    "cnstr": "语音",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Vlm",
+    "fun": "VlmFuname",
+    "cnstr": "卷",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Wndw",
+    "fun": "WndwFuname1",
+    "cnstr": "窗口",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Wdgt",
+    "fun": "WdgtFuname",
+    "cnstr": "窗口部件",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Wldcrd",
+    "fun": "WldcrdFuname",
+    "cnstr": "通配符",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Wrkspcs",
+    "fun": "WrkspcsFuname",
+    "cnstr": "工作区",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "Wrt",
+    "fun": "WrtFuname",
+    "cnstr": "写",
+    "fil": "C:\\w\\iptmthd\\cmptrWords500.au3"
+  },
+  {
+    "key": "@hotkeys",
+    "fun": "ngemFunname",
+    "cnstr": "@输出",
+    "fil": "C:\\w\\iptmthd\\hotstr_tmplt.au3"
+  },
+  {
+    "key": "n",
+    "fun": "nge",
+    "cnstr": "我",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "nm",
+    "fun": "ngem",
+    "cnstr": "我们",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "hd",
+    "fun": "hd",
+    "cnstr": "头部",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "frd",
+    "fun": "frd",
+    "cnstr": "朋友",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "thk",
+    "fun": "thk",
+    "cnstr": "想思考",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "org",
+    "fun": "org",
+    "cnstr": "组织",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "rlt",
+    "fun": "rlt",
+    "cnstr": "关系",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "wd",
+    "fun": "wd",
+    "cnstr": "单词",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "otpt",
+    "fun": "otpt",
+    "cnstr": "输出",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "prblm",
+    "fun": "prblm",
+    "cnstr": "问题",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "slv",
+    "fun": "slv",
+    "cnstr": "解决",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "we",
+    "fun": "us",
+    "cnstr": "我们",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "us",
+    "fun": "us",
+    "cnstr": "我们",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "shma",
+    "fun": "shma",
+    "cnstr": "什么",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "stdy",
+    "fun": "stdy",
+    "cnstr": "学习",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "impsb",
+    "fun": "impsb",
+    "cnstr": "不可能",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "rd",
+    "fun": "rd",
+    "cnstr": "阅读",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "wrt",
+    "fun": "wrt",
+    "cnstr": "写",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "mky",
+    "fun": "mky",
+    "cnstr": "猴子",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "srch",
+    "fun": "srch",
+    "cnstr": "搜索",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "frt",
+    "fun": "frt",
+    "cnstr": "前",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "err",
+    "fun": "err",
+    "cnstr": "错误",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "adjst",
+    "fun": "adjst",
+    "cnstr": "调整",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "fnt",
+    "fun": "fnt",
+    "cnstr": "字体",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "{space}",
+    "fun": "clrBuf",
+    "cnstr": "吃饭",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "chf",
+    "fun": "chf",
+    "cnstr": "吃饭",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "yda",
+    "fun": "yda",
+    "cnstr": "一达",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "chs",
+    "fun": "chs",
+    "cnstr": "选择",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "rct",
+    "fun": "rct",
+    "cnstr": "最近",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "lst",
+    "fun": "lst",
+    "cnstr": "列表",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "istc",
+    "fun": "istc",
+    "cnstr": "实例",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "wid",
+    "fun": "wid",
+    "cnstr": "宽度",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "wrd",
+    "fun": "wrd",
+    "cnstr": "单词",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "ttl",
+    "fun": "ttl",
+    "cnstr": "标题",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "cur",
+    "fun": "cur",
+    "cnstr": "当前",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "pth",
+    "fun": "pth",
+    "cnstr": "路径",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "def",
+    "fun": "def",
+    "cnstr": "默认",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "fscr",
+    "fun": "fscr",
+    "cnstr": "全屏",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "let",
+    "fun": "let",
+    "cnstr": "让",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "all",
+    "fun": "all",
+    "cnstr": "所有",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "mcr",
+    "fun": "mcr",
+    "cnstr": "微",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "nam",
+    "fun": "nam",
+    "cnstr": "名字",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "ni",
+    "fun": "ni",
+    "cnstr": "你",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "btw",
+    "fun": "examplefunction",
+    "cnstr": "by the way",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "oth",
+    "fun": "oth",
+    "cnstr": "其他",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "sys",
+    "fun": "sys",
+    "cnstr": "时间",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "jst",
+    "fun": "jst",
+    "cnstr": "就",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "zo",
+    "fun": "jst2",
+    "cnstr": "就",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "usr",
+    "fun": "usr",
+    "cnstr": "用户",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "can",
+    "fun": "can",
+    "cnstr": "能",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "yet",
+    "fun": "yet",
+    "cnstr": "依然还",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "he",
+    "fun": "he",
+    "cnstr": "还",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "use",
+    "fun": "use",
+    "cnstr": "使用",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "chk",
+    "fun": "chk",
+    "cnstr": "检查",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "auto",
+    "fun": "auto",
+    "cnstr": "自动",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "frnt",
+    "fun": "frt1",
+    "cnstr": "前面",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "hdn",
+    "fun": "hdn",
+    "cnstr": "隐藏",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "set",
+    "fun": "set",
+    "cnstr": "设置",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "pst",
+    "fun": "pst",
+    "cnstr": "粘贴",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "thn",
+    "fun": "then1",
+    "cnstr": "然后",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "tru",
+    "fun": "true1",
+    "cnstr": "真正",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "bcm",
+    "fun": "bcm",
+    "cnstr": "变成",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "nd",
+    "fun": "need2",
+    "cnstr": "需要",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "need",
+    "fun": "need",
+    "cnstr": "需要",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "bck",
+    "fun": "bck",
+    "cnstr": "后台",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "add",
+    "fun": "add",
+    "cnstr": "添加",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "menu",
+    "fun": "menu",
+    "cnstr": "菜单",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "adrs",
+    "fun": "adrs",
+    "cnstr": "地址",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+  {
+    "key": "callme{enter}",
+    "fun": "examplefunction",
+    "cnstr": "by the way",
+    "fil": "C:\\w\\iptmthd\\iptMizi.au3"
+  },
+
+
+  {
+    "key": "ctrlkz",
+    "cnstr": "控制",
+    "fil": "cmpt"
+  },
+
+
+  {
+    "key": "stmt",
+    "cnstr": "语句",
+    "fil": "cmpt"
+  },
+
+
+  {
+    "key": "fd",
+    "cnstr": "食物",
+    "fil": "cmpt"
+  },
+
+  {
+    "key": "abbr",
+    "cnstr": "缩写",
+    "fil": "cmpt"
+  },
+
+
+
+  {
+    "key": "imprv",
+    "cnstr": "提升",
+    "fil": "cmpt"
+  },
+  {
+    "key": "iprv",
+    "cnstr": "提升",
+    "fil": "cmpt"
+  },
+
+  {
+    "key": "fwd",
+    "cnstr": "向前",
+    "fil": "cmpt"
+  },
+  {
+    "key": "fdr",
+    "cnstr": "文件夹",
+    "fil": "cmpt"
+  },
+
+
+  {
+    "key": "sbt",
+    "cnstr": "支持",
+    "fil": "cmpt"
+  },
+
+
+  {
+    "key": "rcc",
+    "cnstr": "循环",
+    "fil": "cmpt"
+  }
+]

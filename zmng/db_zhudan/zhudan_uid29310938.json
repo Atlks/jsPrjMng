@@ -1,0 +1,52 @@
+[
+  {
+    "ObjectID": "654fbd7490afb33aefac352b",
+    "GameInfoID": "9101-1699724642617-1744-2-0",
+    "AgentID": 111523,
+    "LineCode": "10001_1",
+    "UserID": 29279367,
+    "Account": "5681870688",
+    "GameID": 910,
+    "RoomID": 9101,
+    "TableID": 2,
+    "ChairID": 30,
+    "UserCount": 38,
+    "CardValue": "351c34171d|3:2|9:7|1|0:0:0",
+    
+    "AllBet": 200,
+    "ValidBet": 200,
+    "Profit": -200,
+    "Revenue": 0,
+    "Rank": "",
+    "GameStartTime": "2023-11-11 17:44:02.617",
+    "GameEndTime": "2023-11-11 17:44:20.634",
+    "Category": 0
+  },
+  
+  
+   {
+    "ObjectID": "654fbd7490afb33aefac352b",
+    "GameInfoID": "9101-1699724642617-1744-2-0",
+    "AgentID": 111523,
+    "LineCode": "10001_1",
+    "UserID": 29279367,
+    "Account": "5681870688",
+    "GameID": 910,
+    "RoomID": 9101,
+    "TableID": 2,
+    "ChairID": 30,
+    "UserCount": 38,
+    "CardValue": "351c34171d|3:2|9:7|1|0:0:0",
+    
+    "AllBet": 200,
+    "ValidBet": 100,
+    "Profit": -200,
+    "Revenue": 0,
+    "Rank": "",
+    "GameStartTime": "2023-11-24 17:44:02.617",
+    "GameEndTime": "2023-11-11 17:44:20.634",
+    "Category": 0
+  }
+
+
+]
