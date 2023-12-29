@@ -2,28 +2,33 @@
 
 //tp6  cmd test
 //  php.exe  test\call_tp_t.php calltp
-//echo 111;
-// 命令行入口文件
-// 加载基础文件
-require __DIR__ . '/../vendor/autoload.php';
 
-//$fun = "fff641";
 
-$GLOBALS['fun641'] = "fff641";
-$GLOBALS['prm641'] = ["ttt65222__PRM"];
-$GLOBALS['callbackFun'] =function ($ret){
-  echo  $GLOBALS['ret641'];
-  echo 99;
-};
+use app\model\Setting;
+
+require_once __DIR__."/../lib/sys1011.php";
 
 
 
-// 应用初始化
-(new \think\App())->console->run();
+function main101() {
+//  echo 999;
 
+  $set = Setting::find(3);
+  echo   $set->value;
 
-function fff641($prm) {
-  echo $prm;
-  return "retval111";
+ // return "retval111";
 }
+
+
+
+
+
+
+// call main（）
+call_inTpX("main101");
+
+
+
+
+
 

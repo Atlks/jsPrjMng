@@ -10,3 +10,6 @@ function clr(){
 
     ob_end_clean();
 }
+
+
+
