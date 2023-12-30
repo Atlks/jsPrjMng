@@ -323,7 +323,8 @@ function startBetEvt() {
   $draw_time = date("Y-m-d H:i:s", $kaijtime);
   $text = $text . "开奖时间：$draw_time\n";
   //$text = \app\common\Helper::replace_markdown($text);
-  $text = encodeMkdwn($text);
+  require_once __DIR__ . '/../../lib/markdown.php';
+  $text = \encodeMkdwn($text);
   //for safe hide kaijblk
   $kaijBlknum = $GLOBALS['kaijBlknum'];
   $text = $text . "开奖区块号 ：[$kaijBlknum](https://tronscan.org/#/block/$kaijBlknum)";

@@ -7,7 +7,7 @@ while(true)
 
 
 
-  $cmd="  chmod -R 777 /www/wwwroot/aapimng";
+  $cmd="  chmod -R 777 /www/wwwroot/ssc.521ck.vip/runtime";
 
    exec_console($cmd);
    echo $cmd;

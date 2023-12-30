@@ -14,7 +14,7 @@ return [
         'keywdReqHdlr' => 'app\common\keywdReqHdlr',
       'msgHdlrLhc' => 'app\common\msgHdlrLhc',
 
-
+      'ssc_main' => 'app\common\mainx',
       'testx' => 'app\common\testCls',
       'calltp'=>'\calltp'
         

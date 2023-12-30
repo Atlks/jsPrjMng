@@ -11,7 +11,7 @@ require_once __DIR__."/../lib/sys1011.php";
 
 
 function main101() {
-//  echo 999;
+   echo 999;
 
   $set = Setting::find(3);
   echo   $set->value;

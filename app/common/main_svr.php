@@ -295,15 +295,14 @@ function startBetEvt() {
   $text = $lottery_no . "期 开始下注!\r\n";
 
   //----------add start info
-//  $bot_words = \app\model\BotWords::where('Id', 1)->find();
-//  $words = $bot_words->Start_Bet;
-//  $text = $text . $words;
+  $bot_words = \app\model\BotWords::where('Id', 1)->find();
+  $words = $bot_words->Start_Bet;
+  $text = $text . $words;
 
-  $startinfo=file_get_contents(__DIR__."/../../db/startInfo.md");
-//$text = \app\common\Helper::replace_markdown($text);
-  require_once __DIR__ . '/../../lib/markdown.php';
-
-  $text = $text . $startinfo;
+//   $startinfo=file_get_contents(__DIR__."/../../db/startInfo.md");
+// //$text = \app\common\Helper::replace_markdown($text);
+//   require_once __DIR__ . '/../../lib/markdown.php';
+//   $text = $text . $startinfo;
   //end
 
   $elapsed = Setting::find(6)->value + Setting::find(7)->value;
@@ -313,7 +312,8 @@ function startBetEvt() {
   $draw_time = date("Y-m-d H:i:s", $kaijtime);
   $text = $text . "开奖时间：$draw_time\n";
   //$text = \app\common\Helper::replace_markdown($text);
-  $text = encodeMkdwn($text);
+  require_once __DIR__ . '/../../lib/markdown.php';
+  $text = \encodeMkdwn($text);
   //for safe hide kaijblk
 
   $kaijBlknum = $GLOBALS['kaijBlknum'];

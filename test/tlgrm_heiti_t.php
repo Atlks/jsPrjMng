@@ -5,7 +5,7 @@ require __DIR__ . '/../vendor/autoload.php';
 
 require_once __DIR__ . '/../lib/markdown.php';
 
-
+//@msgbot2053bot
 $GLOBALS['BOT_TOKEN'] = '6959066432:AAH9OgIspApiYStnaNyznl7mcJ_qPjBA7Fg';
 $GLOBALS['chat_id'] = -4038077884;  //msgnode
 
