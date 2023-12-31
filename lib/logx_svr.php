@@ -3,10 +3,6 @@
 namespace libspc {
 
 
-
-
-
-
   function log_dbg_php($method_linenum, $msg, $obj) {
     log_php($method_linenum, $msg, $obj, "dbg");
   }
@@ -307,9 +303,9 @@ namespace {
   function log_rcd($logtxt): void {
 
 
-      if(!isset($GLOBALS['funIvk']))
-        if(isset($GLOBALS['reqchain']))
-           $GLOBALS['funIvk']=$GLOBALS['reqchain'];
+    if(!isset($GLOBALS['funIvk']))
+      if(isset($GLOBALS['reqchain']))
+        $GLOBALS['funIvk']=$GLOBALS['reqchain'];
 
 
     $funIvk = isset($GLOBALS['funIvk']) ? $GLOBALS['funIvk'] : "defUnknow";
@@ -322,7 +318,7 @@ namespace {
     echo $logtxt;
     //  dsl__fileWrt($logtxt,$logf);
     if(!file_exists(dirname($logf)))
-       mkdir(dirname($logf), 0777, true);
+      mkdir(dirname($logf), 0777, true);
     file_put_contents($logf, $logtxt, FILE_APPEND);
   }
 
@@ -466,33 +462,18 @@ namespace {
     }
 
   }
-  function logV3($method_linenum, $msg, $filFrg = "info") {//log_err
 
-    try {
-
-      $logf = __DIR__ . "/../runtime/" . date('Y-m-d') . "_$filFrg.log";
-      // time [meth()] msg
-      $logtxt = sprintf("%s [%s():] %s", date('mdHis'), $method_linenum, $msg);
-
-      file_put_contents($logf, $logtxt . PHP_EOL, FILE_APPEND);
-
-
-    } catch (\Throwable $e) {
-      var_dump($e);
-    }
-  }
 
   function log_setReqChainLog_enterMeth($LineFun, $args) {
 
-
     try {
-     if(is_array($LineFun))
-       $LineFun=json_encode($LineFun);
+      if(is_array($LineFun))
+        $LineFun=json_encode($LineFun);
 
 
       $args_txt = json_encode($args, JSON_UNESCAPED_UNICODE);
 
-     // $msg=sprintf("%s%s",$LineFun, $args_txt);
+      // $msg=sprintf("%s%s",$LineFun, $args_txt);
       //statnd msg tmplt
 
       $logtxt = sprintf("%s ***%s%s \r\n", date('mdHis'), $LineFun,$args_txt );
@@ -550,14 +531,7 @@ namespace {
 
 
 
-
-
   //end fun
-
-
-
-
-
 
 }
 

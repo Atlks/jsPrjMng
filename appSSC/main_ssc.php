@@ -1,10 +1,11 @@
 <?php
 
-namespace app\common;
+//todo 分拆evt  ，，splt evt, bettime adjst optmz
 
 //cfg L306   开奖区块号
 //L209   drawV3($blkNum)
 //L72  get_current_noV3()
+//  php C:\0prj\sscbot\cmd/../appSSC/main_ssc.php    calltp
 
 use app\model\LotteryLog;
 use think\console\Command;
@@ -14,8 +15,10 @@ use think\console\input\Option;
 use think\console\Output;
 use app\model\Setting;
 use think\view\driver\Php;
-use function libspc\log_enterMethV2;
 use function libspc\log_err;
+
+
+
 
 //   C:\phpstudy_pro\Extensions\php\php8.0.2nts\php.exe C:\modyfing\jbbot\think swoole2
 global $BOT_TOKEN;
@@ -23,92 +26,26 @@ global $BOT_TOKEN;
 global $chat_id;
 //$bot_token = "6426986117:AAFb3woph_1zOWFS5cO98XIFUPcj6GqvmXc";  //sscNohk
 //$chat_id = -1001903259578;
-
-
-//var_dump(test752());
-//$text = "--------本期下注玩家---------" . "\r\n";
-//$text = "=====本期中奖名单======";
-//$text = str_replace("-", "\-", $text);  //  tlgrm txt encode prblm 
-//$text = str_replace("-", "\=", $text);
-//var_dump($text);
-//require_once(__DIR__ . "/../../lib/tlgrmV2.php");
-//bot_sendMsgTxtMode($text, BOT_TOKEN, chat_id);
-//die();
-//function sendmessage841($text)
-//{
-//    \think\facade\Log::notice(__METHOD__ . json_encode(func_get_args()));
-//    //  C:\phpstudy_pro\Extensions\php\php8.0.2nts\php.exe C:\项目最新\jbbot\public\index2.php   gamelogic/start2
-//    // must start2 ..bcs indx inm router,so cant acc
-//    echo $text . PHP_EOL;
-//}
-
-
-class mainx extends Command {
-  protected function configure() {
-    // 指令配置   php C:\modyfing\jbbot\think    swoole2  sscx
-    $this->setName('cmd2')
-      ->addArgument('cfgOpt', Argument::OPTIONAL, "cfgOpt name")
-      ->setDescription('the cmd2 command');
-  }
-
-
-  protected function execute(Input $input, Output $output) {
-    require_once __DIR__ . "/../../lib/iniAutoload.php";
-//        require_once __DIR__ . "/../../lib/log23.php";
-//        require_once __DIR__ . "/../../lib/logx.php";
-    if ($input->getArgument('cfgOpt')) {
-      $cfgOpt = trim($input->getArgument('cfgOpt'));
-      $cfgOpt = urldecode($cfgOpt);
-      \log23::zdbg11(__METHOD__, "cmdopt", $cfgOpt);
-      $GLOBALS['cfgOpt'] = $cfgOpt;
-      //  \think\facade\Log::dbg11("cfgopt=》".$cfgOpt);
-    }
-
-
-    \think\facade\Log::info('这是一个自定义日志类型');
-    //   die();
-    // 指令输出
-    $output->writeln('cmd2');
-    while (true) {
-      try {
-        \think\facade\Log::noticexx('这是一个自定义日志类型');
-
-        // echo   iconv("gbk","utf-8","php中文待转字符");//把中文gbk编码转为utf8
-        main_process();
-      } catch (\Throwable $exception) {
-        $lineNumStr = __FILE__ . ":" . __LINE__ . " f:" . __FUNCTION__ . " m:" . __METHOD__ . "  ";
-        //   \think\facade\Log::info($lineNumStr);
-        \think\facade\Log::error("----------------errrrr2---------------------------");
-        \think\facade\Log::error("file_linenum:" . $exception->getFile() . ":" . $exception->getLine());
-        \think\facade\Log::error("errmsg:" . $exception->getMessage());
-        \think\facade\Log::error("errtraceStr:" . $exception->getTraceAsString());
-        var_dump($exception);
-
-        // throw $exception; // for test
-      }
-      usleep(50 * 1000);
-      break;
-    }
-  }
-}
-
-
-if (!class_exists("mainx")) {
-
-
-}
-
 global $lottery_no;   // ="glb no";
 static $lottery_no = "...";
 $lottery_no = "...";
 $alltimeCycle = 120; //sec
 $GLOBALS['alltimeCycle'] = 120;
 
-function _main()
-{
-  main_process();
-}
-function main_process() {
+
+require_once __DIR__ . "/../lib/sys1011.php";
+require_once __DIR__ . "/../lib/logx.php";
+require_once __DIR__ . "/../lib/dsl.php";
+call_inTpX("_main");
+
+
+
+
+
+
+
+
+function _main() {
   \think\facade\Log::notice(__METHOD__ . json_encode(func_get_args()));
   global $lottery_no;
   $lottery_no = 111;
@@ -291,7 +228,7 @@ function startBetEvt() {
    ));
 
 
-   var_dump($log);
+//   var_dump($log);
    $lineNumStr = __FILE__ . ":" . __LINE__ . " f:" . __FUNCTION__ . " m:" . __METHOD__ . "  ";
    //   \think\facade\Log::info($lineNumStr);
    \think\facade\Log::info("add new lotry qihao " . $lineNumStr);
@@ -324,7 +261,7 @@ function startBetEvt() {
   $draw_time = date("Y-m-d H:i:s", $kaijtime);
   $text = $text . "开奖时间：$draw_time\n";
   //$text = \app\common\Helper::replace_markdown($text);
-  require_once __DIR__ . '/../../lib/markdown.php';
+  require_once __DIR__ . '/../lib/markdown.php';
   $text = \encodeMkdwn($text);
   //for safe hide kaijblk
   $kaijBlknum = $GLOBALS['kaijBlknum'];
@@ -339,11 +276,19 @@ function startBetEvt() {
 
 
 
+  if(file_exists("c:/sendBotMsgDisable"))
+  {
+    logV3(__METHOD__,"\n\n","mainCycle");
+    logV3(__METHOD__,$text,"mainCycle");
 
-  $bot = new \TelegramBot\Api\BotApi($GLOBALS['BOT_TOKEN']);
-  $cfile = new \CURLFile(app()->getRootPath() . "public/static/start.jpg");
-  $bot->sendPhoto($GLOBALS['chat_id'], $cfile, $text, null, null, null, false, "MarkdownV2");
-  //    $bot->sendMessage(chatid,txt,parsemode,replyMsgID)
+  }else
+  {
+    $bot = new \TelegramBot\Api\BotApi($GLOBALS['BOT_TOKEN']);
+    $cfile = new \CURLFile(app()->getRootPath() . "public/static/start.jpg");
+    $bot->sendPhoto($GLOBALS['chat_id'], $cfile, $text, null, null, null, false, "MarkdownV2");
+    //    $bot->sendMessage(chatid,txt,parsemode,replyMsgID)
+
+  }
   //// 更新状态开放投注
   $set = Setting::find(3);
   $set->value = 0;
@@ -438,8 +383,17 @@ function fenpan_wanrning_event() {
   $text = $words;
 
   echo $text . PHP_EOL;
-  bot_sendMsgTxtMode($text, $GLOBALS['BOT_TOKEN'], $GLOBALS['chat_id']);
-  //  $bot->sendmessage($chat_id, $text);
+
+  if(file_exists("c:/sendBotMsgDisable"))
+  {
+    logV3(__METHOD__,"\n\n","mainCycle");
+
+    logV3(__METHOD__,$text,"mainCycle");
+
+  }else {
+    bot_sendMsgTxtMode($text, $GLOBALS['BOT_TOKEN'], $GLOBALS['chat_id']);
+    //  $bot->sendmessage($chat_id, $text);
+  }
 }
 
 
@@ -469,7 +423,16 @@ function fenpan_stop_event() {
     $words = $bot_words->StopBet_Notice;
     $text = $words;
     echo $text . PHP_EOL;
-    sendmessageBotNConsole($text);
+
+    if(file_exists("c:/sendBotMsgDisable"))
+    {
+      logV3(__METHOD__,"\n\n","mainCycle");
+
+      logV3(__METHOD__,$text,"mainCycle");
+
+    }else {
+      sendmessageBotNConsole($text);
+    }
   } catch (\Throwable $e) {
   }
 
@@ -501,7 +464,16 @@ function fenpan_stop_event() {
 
     \think\facade\Log::info($msg);
     //  $msg = str_replace("-", "\-", $text);  //  tlgrm txt encode prblm  BCS is markdown mode
-    sendMsgEx($GLOBALS['chat_id'], $msg);
+
+    if(file_exists("c:/sendBotMsgDisable"))
+    {
+      logV3(__METHOD__,"\n\n","mainCycle");
+
+      logV3(__METHOD__,$text,"mainCycle");
+
+    }else {
+      sendMsgEx($GLOBALS['chat_id'], $msg);
+    }
   } catch (\Throwable $e) {
   }
 
@@ -517,9 +489,17 @@ function fenpan_stop_event() {
     $text = "第" . $lottery_no . "期 [点击官方开奖](https://tronscan.org/#/block/$kaijBlknum)";
     // sendmessageBotNConsole($text);
 
-    $bot = new \TelegramBot\Api\BotApi($GLOBALS['BOT_TOKEN']);
-    $bot->sendmessage($GLOBALS['chat_id'], $text, "MarkdownV2", true);
-    // public function StopBet()
+
+    if(file_exists("c:/sendBotMsgDisable"))
+    {
+      logV3(__METHOD__,$text,"mainCycle");
+
+    }else {
+
+      $bot = new \TelegramBot\Api\BotApi($GLOBALS['BOT_TOKEN']);
+      $bot->sendmessage($GLOBALS['chat_id'], $text, "MarkdownV2", true);
+
+    }
 
   } catch (\Throwable $e) {
 
@@ -536,7 +516,7 @@ function kaij_draw_evt() {
   $draw_str = "console:" . $GLOBALS['qihao'] . "期开奖中..console";
   //  sendmessage841($draw_str);
   \think\facade\Log::notice(__METHOD__ . json_encode(func_get_args()));
-  require_once __DIR__ . "/lotrySscV2.php";
+  require_once __DIR__ . "/../app/common/lotrySscV2.php";
 
   global $lottery_no;
   //--------------get kaijnum  show kaij str
@@ -554,15 +534,15 @@ function kaij_draw_evt() {
     //  $text .= $this->result . "\r\n";
 
 
-    //add open btn
-    $buttonTxt = file_get_contents(__DIR__ . "/../../db/button.json");
-    $buttonTxt=str_replace("\$kaijBlknum",$GLOBALS['kaijBlknum'],$buttonTxt);
-    $keyboard_array = json_decode($buttonTxt);
-    $keyboard = new \TelegramBot\Api\Types\Inline\InlineKeyboardMarkup($keyboard_array);
+    if(file_exists("c:/sendBotMsgDisable"))
+    {
+      logV3(__METHOD__,"\n\n","mainCycle");
 
+      logV3(__METHOD__,$text,"mainCycle");
 
-
-    sendMsgEx706($GLOBALS['chat_id'], $text,$keyboard);
+    }else {
+      sendMsgEx($GLOBALS['chat_id'], $text);
+    }
   } catch (\Throwable $e) {
   }
 
@@ -580,14 +560,28 @@ function kaij_draw_evt() {
 
 
     $echoTxt = $gmLgcSSc->DrawLotteryV2($blkHash);    // if finish chg stat to next..
-    bot_sendMsgTxtModeEx($echoTxt, $GLOBALS['BOT_TOKEN'], $GLOBALS['chat_id']);
 
+    if(file_exists("c:/sendBotMsgDisable"))
+    { logV3(__METHOD__,"\n\n","mainCycle");
+
+      logV3(__METHOD__,$echoTxt,"mainCycle");
+
+    }else {
+      bot_sendMsgTxtModeEx($echoTxt, $GLOBALS['BOT_TOKEN'], $GLOBALS['chat_id']);
+    }
   } catch (\Throwable $e) {
     log_err($e,__METHOD__);
   }
 
 //------------------ gene pic rzt
-  SendPicRzt($gmLgcSSc);
+  if(file_exists("c:/sendBotMsgDisable"))
+  { logV3(__METHOD__,"\n\n","mainCycle");
+
+    logV3(__METHOD__,"SendPicRzt....","mainCycle");
+
+  }else {
+    SendPicRzt($gmLgcSSc);
+  }
 
   \think\facade\Db::close();
   $show_str = "console:" . $lottery_no . "期开奖完毕==开始下注 \r\n";
@@ -613,10 +607,10 @@ function SendPicRzt(GameLogicSsc $gmLgcSSc): void {
 
 }
 
-function sendMsgEx(mixed $chat_id, string $text,$rplyMkp=null) {
+function sendMsgEx(mixed $chat_id, string $text) {
   try {
     $bot = new \TelegramBot\Api\BotApi($GLOBALS['BOT_TOKEN']);
-    $bot->sendmessage($GLOBALS['chat_id'], $text,null,false,null,null,$rplyMkp);
+    $bot->sendmessage($GLOBALS['chat_id'], $text);
   } catch (\Throwable $e) {
     try {
       $bot = new \TelegramBot\Api\BotApi($GLOBALS['BOT_TOKEN']);
@@ -629,31 +623,6 @@ function sendMsgEx(mixed $chat_id, string $text,$rplyMkp=null) {
         log_err($e ,__METHOD__);
       }
   }
-
-  }
-
-}
-
-
-
-function sendMsgEx706(mixed $chat_id, string $text,$rplyMkp=null) {
-  try {
-    require_once __DIR__."/../../lib/logx.php";
-    log_enterMethV2(__METHOD__,func_get_args(), "sendMsgEx706");
-    $bot = new \TelegramBot\Api\BotApi($GLOBALS['BOT_TOKEN']);
-    $bot->sendmessage($chat_id, $text,null,false,null,null,$rplyMkp);
-  } catch (\Throwable $e) {
-    try {
-      $bot = new \TelegramBot\Api\BotApi($GLOBALS['BOT_TOKEN']);
-      $bot->sendmessage($GLOBALS['chat_id'], $text);
-    } catch (\Throwable $e) {
-      try {
-        $bot = new \TelegramBot\Api\BotApi($GLOBALS['BOT_TOKEN']);
-        $bot->sendmessage($GLOBALS['chat_id'], $text);
-      }   catch (\Throwable $e) {
-        log_err($e ,__METHOD__);
-      }
-    }
 
   }
 
