@@ -1,0 +1,3 @@
+fun name must uniq ,easy find.search
+
+impt var name also uniq ...
