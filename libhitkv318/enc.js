@@ -1,16 +1,16 @@
-
-try{
+try {
     global["json_decode"] = json_decode;
     global["json_encode"] = json_encode;
     global["md5"] = md5;
     global["strip_tagsx"] = strip_tagsx;
-   // module.exports = {urlencode, md5};
-}catch (e) {
-    
+    // module.exports = {urlencode, md5};
+} catch (e) {
+
 }
 
 
-global['hex2bin']=hex2bin
+global['hex2bin'] = hex2bin
+
 /**
  *
  * @param h
@@ -54,7 +54,13 @@ function hexToBinArr(hex) {
 }
 
 //node  D:\wamp64\www\ossn\actions\sha256.js
-var sha256=function sha256(ascii) {
+
+/**
+ * ret 256bit bytearry....hexencode..base16
+ * @param ascii
+ * @returns {string}
+ */
+var sha256 = function sha256(ascii) {
     function rightRotate(value, amount) {
         return (value >>> amount) | (value << (32 - amount));
     };
@@ -151,7 +157,10 @@ var sha256=function sha256(ascii) {
     return result;
 };
 
+global['sha256'] = sha256
 
+// console.log( sha256("abc"))
+// console.log(44)
 
 /**
  *
@@ -165,7 +174,8 @@ function sha256hashFromHex32bit(hex16) {
     return (sha256(ascii))
 }
 
-global['sha256hashByNumstrMod']=sha256hashByNumstrMod
+global['sha256hashByNumstrMod'] = sha256hashByNumstrMod
+
 /**
  *
  * @param a128numStr
@@ -180,6 +190,84 @@ function sha256hashByNumstrMod(a128numStr) {
     return (sha256(ascii))
 }
 
+
+global['hexToByteArrStr'] = hexToByteArrStr
+
+function hexToByteArrStr(hex) {
+    let dataString = "";
+    if (hex.length % 2 !== 0) {
+        hex = '0' + hex;
+    }
+    const bytes = [];
+    for (let n = 0; n < hex.length; n += 2) {
+        //每次去2个 16进制数字，组成8bit ，然后转换为字节 ，字节数组》字符串
+        const code = parseInt(hex.substr(n, 2), 16);
+        dataString += String.fromCharCode(code);
+    }
+    return dataString;
+}
+
+
+// console.log(hexEncd("abc"))
+// console.log(hexEncode("abc"))
+
+/**
+ * bin2hex
+ * @param bytearr
+ * @returns {string}
+ */
+function hexEncd(bytearr) {
+    let s = new Buffer(bytearr).toString('HEX');
+    return s
+}
+
+//console.log(hexDecd(hexEncode("abc")))
+
+function hexDecd(bytearr) {
+
+
+    let s = new Buffer(bytearr, 'hex').toString();
+    return s
+}
+
+
+//console.log(hexEncode("~!@#$%^&*()_+abccdehijklmn opq uvwxyz123456"))
+
+function hexEncode(str) {
+
+    console.log(str.length)
+
+    hex = ""
+
+    for (let char of str) {
+        //  console.log("字符："+char);
+        let asciicode = char.charCodeAt(0);
+        let hexStr = asciicode.toString(16);
+        // console.log("hex:"+ hexStr)
+        if (hexStr.length == 1)
+            hexStr = "0" + "" + hexStr;
+
+        hex = hex + hexStr;
+    }
+
+    return hex.toUpperCase()
+}
+
+function hexDecode(hex) {
+    let dataString = "";
+    if (hex.length % 2 !== 0) {
+        hex = '0' + hex;
+    }
+    const bytes = [];
+    for (let n = 0; n < hex.length; n += 2) {
+        //每次去2个 16进制数字，组成8bit ，然后转换为字节 ，字节数组》字符串
+        const code = parseInt(hex.substr(n, 2), 16);
+        dataString += String.fromCharCode(code);
+    }
+    return dataString;
+}
+
+global['hexToStr'] = hexToStr
 
 /**
  * hex to bytearr
@@ -200,6 +288,42 @@ function hexToStr(hex) {
     return dataString;
 }
 
+global['str2binEncode'] = str2binEncode
+
+function str2binEncode(str) {
+    let hex = str2hexEncode(str)
+    return hex2bin(hex)
+}
+
+global['str2hexEncode'] = str2hexEncode
+//console.log(str2hexEncode(""))
+//bytearr to hexencode
+function str2hexEncode(str) {
+
+    console.log(str.length)
+
+    hex = ""
+
+    for (let char of str) {
+        //  console.log("字符："+char);
+        let asciicode = char.charCodeAt(0);
+        let hexStr = asciicode.toString(16);
+        // console.log("hex:"+ hexStr)
+        if (hexStr.length == 1)
+            hexStr = "0" + "" + hexStr;
+
+        hex = hex + hexStr;
+    }
+    // const encoder = new TextEncoder();
+    // const bytes = encoder.encode(str,"gbk");
+    // console.log(bytes.length)
+    // const buffer = Buffer.from(str,"utf8");   //, 'utf8'
+    // const hexStr = buffer.toString('hex');
+    return hex
+}
+
+
+global['bin2hex'] = bin2hex
 
 //fun finish  sha256
 
@@ -231,13 +355,30 @@ function bin2hex(s) {
 }
 
 
-global['urlencode']=urlencode
+global['urlencode'] = urlencode
+
 function urlencode($prm) {
     return encodeURIComponent($prm)
 }
 
 
-global['md5']=md5
+let data = md5_str2bytearr("fffff");
+console.log(data.length)  //16byte*8bit
+// console.log("hex2=>"+ str2hexEncode(data ) )
+global['md5_str2bytearr'] = md5_str2bytearr
+
+function md5_str2bytearr(data) {
+    var CryptoJS = require("crypto-js");
+    let hex = CryptoJS.MD5(data).toString();
+
+    // console.log(hex.length) //32 len,,,>>16byte*8bit
+    //   console.log("hex=>"+hex)
+    return hexDecd(hex);  // hexstr encode show easy show
+}
+
+
+global['md5'] = md5
+
 // 辅助函数
 function md5(data) {
     var CryptoJS = require("crypto-js");
@@ -284,33 +425,30 @@ function json_encode($s) {
  * @param e
  * @returns {string}
  */
-function json_encode_Err(e)
-{
+function json_encode_Err(e) {
 //     e.stack1 = e?.stack  //bcs this two prpop cant to json encode
 // // if(e.message)
 //     e.msg1 = e?.message
 
-    let eobj = {"e":e,"stack": e.stack, "msg": e.message}
+    let eobj = {"e": e, "stack": e.stack, "msg": e.message}
 
     return json_encode(eobj)
 }
 
 
-global['json_encode_ErrRawErrObj']=json_encode_ErrRawErrObj
-function json_encode_ErrRawErrObj(e)
-{
+global['json_encode_ErrRawErrObj'] = json_encode_ErrRawErrObj
+
+function json_encode_ErrRawErrObj(e) {
     e.stack1 = e?.stack  //bcs this two prpop cant to json encode
 // if(e.message)
     e.msg1 = e?.message
-
 
 
     return json_encode(e)
 }
 
 
-function  encodeShellCmd(rcd)
-{
+function encodeShellCmd(rcd) {
 
     // String ( JSON.stringify(rcd)  )
 }

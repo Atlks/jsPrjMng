@@ -57,7 +57,7 @@ function geneMmncCrpt(seed)
 function generateMnemonicRdm() {
     let a128num =  get128bitNum();
     //   console.log(a128num)
-    const sha256hash_rzt = sha256hash(a128num)
+    const sha256hash_rzt = sha256hashByNumstrMod(a128num)
     //console.log(sha256hash_rzt)
 
     const pad4bit_char = sha256hash_rzt.charAt(0);
@@ -87,7 +87,7 @@ function generateMnemonic(hex_32bit) {
 
     let a128num=hex2bin(hex_32bit)
     //   console.log(a128num)
-    const sha256hash_rzt = sha256hash(a128num)
+    const sha256hash_rzt = sha256hashByNumstrMod(a128num)
   //  console.log(sha256hash_rzt)
 
     const pad4bit_char = sha256hash_rzt.charAt(0);

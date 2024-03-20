@@ -33,8 +33,7 @@ wdlst2048 = ["abandon", "ability", "able", "about", "above", "absent", "absorb",
 
 
 require("./enc")
-let basewd="fk"
-let toNum=md5(basewd)
+
 
 
 
@@ -42,12 +41,12 @@ global['geneMmncCrpt']=geneMmncCrpt
 /**
  *
  */
-function geneMmncCrpt(seed)
+function geneMmncCrpt(seed_md5Hexencode)
 {
  let s=   generateMnemonic_left(generateMnemonicRdm(),7)
     s+=' school '
     s+= generateMnemonic_left(generateMnemonicRdm(),7)+' harsh '
-    s+=generateMnemonic_ivei(generateMnemonic(seed))+"  "
+    s+=generateMnemonic_ivei(geneMmnc(seed_md5Hexencode))+"  "
     s+=generateMnemonic_left(generateMnemonicRdm(),7)
     return s;
 }
@@ -83,16 +82,28 @@ function generateMnemonicRdm() {
     return wd99
 }
 
-function generateMnemonic(hex_32bit) {
 
-    let a128num=hex2bin(hex_32bit)
+global['geneMmnc']=geneMmnc
+
+function geneMmnc(md5Hexencode) {
+
+    require("./enc")
+
+    let a128bitKey=hexDecd(md5Hexencode)
     //   console.log(a128num)
-    const sha256hash_rzt = sha256hashByNumstrMod(a128num)
-  //  console.log(sha256hash_rzt)
 
-    const pad4bit_char = sha256hash_rzt.charAt(0);
-  //  console.log(hex2bin(pad4bit_char))
-    const all132bitNum = a128num + hex2bin(pad4bit_char);
+
+    //--------add sign
+    const sha256hash_rzt = sha256(a128bitKey)
+
+
+    //  console.log(sha256hash_rzt)
+//   sha256hash_rzt   64char...512bit
+    const pad4bit_char = sha256hash_rzt.charAt(0);//already hex encode
+    //  console.log(hex2bin(pad4bit_char))
+
+    a128bitkeyBinencode=str2binEncode(a128bitKey)
+    const all132bitNum = a128bitkeyBinencode + hex2bin(pad4bit_char);
     //  console.log(all132bitNum)
 
     let wd99 = "";
@@ -112,6 +123,19 @@ function generateMnemonic(hex_32bit) {
     //console.log(wd99)
     return wd99
 }
+
+global['ori']=ori
+function  ori(hex_32byte)
+{
+    let a128numStr=hex2bin(hex_32byte)
+
+    var hex16 = bin2hex(a128numStr);
+//return (  sha256( hexToStr('179e5af5ef66e5da5049cd3de0258c5339a722094e0fdbbbe0e96f148ae80924') ))
+    let ascii = hexToStr(hex16);
+
+    console.log( str2hexEncode(ascii))
+}
+
 
 //console.log(generateMnemonic())
 function generateMnemonic_ivei(mmnc) {

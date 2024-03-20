@@ -165,7 +165,7 @@ function sha256hashFromHex32bit(hex16) {
     return (sha256(ascii))
 }
 
-global['sha256hash']=sha256hash
+global['sha256hashByNumstrMod']=sha256hash
 /**
  *
  * @param a128numStr
