@@ -1,0 +1,340 @@
+{
+    "code": 200,
+    "msg": "",
+    "data": [
+        {
+            "gameid": 140,
+            "game_type": 1,
+            "title": "比特28",
+            "room_list": [
+                {
+                    "game_room_id": 0,
+                    "name": "全部",
+                    "gameid": 140
+                },
+                {
+                    "game_room_id": 1,
+                    "name": "比特28-1.8",
+                    "gameid": 140
+                },
+                {
+                    "game_room_id": 2,
+                    "name": "比特28-1.88",
+                    "gameid": 140
+                },
+                {
+                    "game_room_id": 3,
+                    "name": "比特28-2.0",
+                    "gameid": 140
+                },
+                {
+                    "game_room_id": 4,
+                    "name": "比特28-2.8",
+                    "gameid": 140
+                },
+                {
+                    "game_room_id": 5,
+                    "name": "比特28-3.2",
+                    "gameid": 140
+                },
+                {
+                    "game_room_id": 47,
+                    "name": "比特28预测",
+                    "gameid": 140
+                }
+            ]
+        },
+        {
+            "gameid": 139,
+            "game_type": 1,
+            "title": "加拿大28",
+            "room_list": [
+                {
+                    "game_room_id": 0,
+                    "name": "全部",
+                    "gameid": 139
+                },
+                {
+                    "game_room_id": 16,
+                    "name": "①加拿大-1.8",
+                    "gameid": 139
+                },
+                {
+                    "game_room_id": 17,
+                    "name": "②加拿大-4.0\/4.2",
+                    "gameid": 139
+                },
+                {
+                    "game_room_id": 18,
+                    "name": "⑤加拿大-2.8",
+                    "gameid": 139
+                },
+                {
+                    "game_room_id": 19,
+                    "name": "③加拿大-2.0",
+                    "gameid": 139
+                },
+                {
+                    "game_room_id": 20,
+                    "name": "⑥加拿大-3.2",
+                    "gameid": 139
+                },
+                {
+                    "game_room_id": 48,
+                    "name": "加拿大预测房间",
+                    "gameid": 139
+                }
+            ]
+        },
+        {
+            "gameid": 116,
+            "game_type": 1,
+            "title": "俄勒冈28",
+            "room_list": [
+                {
+                    "game_room_id": 0,
+                    "name": "全部",
+                    "gameid": 116
+                },
+                {
+                    "game_room_id": 11,
+                    "name": "俄勒冈28-1.8",
+                    "gameid": 116
+                },
+                {
+                    "game_room_id": 12,
+                    "name": "俄勒冈28-1.88",
+                    "gameid": 116
+                },
+                {
+                    "game_room_id": 13,
+                    "name": "俄勒冈28-2.0",
+                    "gameid": 116
+                },
+                {
+                    "game_room_id": 14,
+                    "name": "俄勒冈28-2.8",
+                    "gameid": 116
+                },
+                {
+                    "game_room_id": 15,
+                    "name": "俄勒冈28-3.2",
+                    "gameid": 116
+                },
+                {
+                    "game_room_id": 50,
+                    "name": "俄勒冈预测房间",
+                    "gameid": 116
+                }
+            ]
+        },
+        {
+            "gameid": 26,
+            "game_type": 1,
+            "title": "分分28",
+            "room_list": [
+                {
+                    "game_room_id": 0,
+                    "name": "全部",
+                    "gameid": 26
+                },
+                {
+                    "game_room_id": 6,
+                    "name": "分分28-1.8",
+                    "gameid": 26
+                },
+                {
+                    "game_room_id": 7,
+                    "name": "分分28-1.88",
+                    "gameid": 26
+                },
+                {
+                    "game_room_id": 8,
+                    "name": "分分28-2.0",
+                    "gameid": 26
+                },
+                {
+                    "game_room_id": 9,
+                    "name": "分分28-2.8",
+                    "gameid": 26
+                },
+                {
+                    "game_room_id": 10,
+                    "name": "分分28-3.2",
+                    "gameid": 26
+                },
+                {
+                    "game_room_id": 49,
+                    "name": "分分预测房间",
+                    "gameid": 26
+                }
+            ]
+        },
+        {
+            "gameid": 150,
+            "game_type": 2,
+            "title": "澳洲幸运五",
+            "room_list": [
+                {
+                    "game_room_id": 0,
+                    "name": "全部",
+                    "gameid": 150
+                },
+                {
+                    "game_room_id": 46,
+                    "name": "澳洲幸运5",
+                    "gameid": 150
+                }
+            ]
+        },
+        {
+            "gameid": 141,
+            "game_type": 2,
+            "title": "澳洲幸运10",
+            "room_list": [
+                {
+                    "game_room_id": 0,
+                    "name": "全部",
+                    "gameid": 141
+                },
+                {
+                    "game_room_id": 45,
+                    "name": "澳洲幸运10",
+                    "gameid": 141
+                }
+            ]
+        },
+        {
+            "gameid": 182,
+            "game_type": 2,
+            "title": "新澳门六合彩",
+            "room_list": []
+        },
+        {
+            "gameid": 164,
+            "game_type": 3,
+            "title": "沙巴体育",
+            "room_list": []
+        },
+        {
+            "gameid": 129,
+            "game_type": 3,
+            "title": "熊猫体育",
+            "room_list": []
+        },
+        {
+            "gameid": 90,
+            "game_type": 3,
+            "title": "IM体育",
+            "room_list": []
+        },
+        {
+            "gameid": 163,
+            "game_type": 3,
+            "title": "FB体育",
+            "room_list": []
+        },
+        {
+            "gameid": 91,
+            "game_type": 4,
+            "title": "IM电竞",
+            "room_list": []
+        },
+        {
+            "gameid": 169,
+            "game_type": 5,
+            "title": "AG真人",
+            "room_list": []
+        },
+        {
+            "gameid": 98,
+            "game_type": 5,
+            "title": "BG真人",
+            "room_list": []
+        },
+        {
+            "gameid": 183,
+            "game_type": 5,
+            "title": "BBIN真人",
+            "room_list": []
+        },
+        {
+            "gameid": 155,
+            "game_type": 5,
+            "title": "DB真人",
+            "room_list": []
+        },
+        {
+            "gameid": 94,
+            "game_type": 6,
+            "title": "PG电子游戏",
+            "room_list": []
+        },
+        {
+            "gameid": 170,
+            "game_type": 6,
+            "title": "AG电子",
+            "room_list": []
+        },
+        {
+            "gameid": 96,
+            "game_type": 6,
+            "title": "PP电子游戏",
+            "room_list": []
+        },
+        {
+            "gameid": 181,
+            "game_type": 6,
+            "title": "BBIN电子",
+            "room_list": []
+        },
+        {
+            "gameid": 166,
+            "game_type": 6,
+            "title": "CQ9电子",
+            "room_list": []
+        },
+        {
+            "gameid": 97,
+            "game_type": 6,
+            "title": "JDB电子游戏",
+            "room_list": []
+        },
+        {
+            "gameid": 93,
+            "game_type": 6,
+            "title": "PT电子游戏",
+            "room_list": []
+        },
+        {
+            "gameid": 133,
+            "game_type": 7,
+            "title": "开元棋牌",
+            "room_list": []
+        },
+        {
+            "gameid": 130,
+            "game_type": 7,
+            "title": "DB棋牌",
+            "room_list": []
+        },
+        {
+            "gameid": 171,
+            "game_type": 9,
+            "title": "AG捕鱼",
+            "room_list": []
+        },
+        {
+            "gameid": 162,
+            "game_type": 9,
+            "title": "DB捕鱼",
+            "room_list": []
+        },
+        {
+            "gameid": 156,
+            "game_type": 9,
+            "title": "BG捕鱼",
+            "room_list": []
+        }
+    ]
+}

@@ -28,3 +28,11 @@ $rows = Cache::remember(' ', function () use ($CollStorepath) {
 # norml iot just ok ..
 
 # >100w  maybe   Lucene also o k
+
+# tishen rd pef
+
+unserialize  beter than json decode.
+100w unsrlz 360ms...  jsondcd  760ms
+
+maybe bin fmt betrrr...
+
