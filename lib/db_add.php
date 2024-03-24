@@ -7,24 +7,40 @@ require __DIR__ . "/../lib/dbg.php";
 //----------------------- save
 
 $map = ["id" => 1, "age" => 5, "name" => "name55", "addtm" => date("Y-m-d")];  // ,  ,
-$map = ["id" => 2, "name" => "name22", 'col3' => 12,'room'=>5];  // ,  ,
+$map = ["id" => 2, "name" => "name22", 'col3' => 12];  // ,  ,
 
-$tabl = "tb6";
-$dbFileName = "sqlxx.db";
-save($tabl, $map, $dbFileName);
+$tabl = "tb1";
+$dbFileName = "coll.db";
 
+
+$arr=[];
+$db = new SQLite3($dbFileName);
+$db->exec(" BEGIN TRANSACTION; ");
+for($i=1;$i<100*10000;$i++)
+{
+    if($i%300==0)
+        var_dump($i);
+    $d = new \DateTime();
+    $map = [
+        'id' => $d->format( 'Y-m-d His.u' ),
+        'game_id' =>  $i,                                     //游戏ID
+        'game_room_ids' => 'array'];
+    saveFast($tabl, $map, $db);
+
+}
+$db->exec(" COMMIT;");
 
 //delDt(["id" => 1], $tabl, $dbFileName);
 
 
 //------------------qery
-
-$querySql = " select * from  $tabl ";
-
-
-$arr_rzt = qry($querySql, $dbFileName);
-
-print_r($arr_rzt);
+//
+//$querySql = " select * from  $tabl ";
+//
+//
+//$arr_rzt = qry($querySql, $dbFileName);
+//
+//print_r($arr_rzt);
 
 
 /**
@@ -47,20 +63,35 @@ function qry(string $querySql, $dbFileName): array
 
 function save($tabl, $map, $dbFileName)
 {
-    setDbgFunEnter(__METHOD__, func_get_args());
+  //  setDbgFunEnter(__METHOD__, func_get_args());
 
     //--------------------- crt table
 
-    @crtTable($tabl, $map, $dbFileName);
+  //  @crtTable($tabl, $map, $dbFileName);
 
 
     $db = new SQLite3($dbFileName);
     $sql = "replace into $tabl" . arr_toSqlPrms($map);
-    setDbgVal(__METHOD__, "sql", $sql);
+//    setDbgVal(__METHOD__, "sql", $sql);
     $ret = $db->exec($sql);
-    setDbgRtVal(__METHOD__, $ret);
+ //   setDbgRtVal(__METHOD__, $ret);
 
 }
+
+function saveFast($tabl, $map,$db)
+{
+    //  setDbgFunEnter(__METHOD__, func_get_args());
+
+
+
+     $sql = "replace into $tabl" . arr_toSqlPrms($map);
+  //  $sql = "insert into $tabl" . arr_toSqlPrms($map);
+
+     $db->exec($sql);
+
+
+}
+
 
 
 function delDt(array $array, string $tabl, string $dbFileName)
@@ -88,7 +119,7 @@ function crtTable($tabl, $map, $dbFileName)
     setDbgFunEnter(__METHOD__, func_get_args());
     $db = new SQLite3($dbFileName);
     $sql = " CREATE TABLE $tabl ( id text  PRIMARY KEY) ";
-    setDbgVal(__METHOD__, "", $sql);
+    setDbgVal(__METHOD__, "sql", $sql);
     $db->exec($sql);
     $typeMapPHP2sqlt = ["integer" => "int", "string" => "text"];
     foreach ($map as $k => $v) {
@@ -98,16 +129,8 @@ function crtTable($tabl, $map, $dbFileName)
         if (strtolower($sqltType) != "integer")
             $sqltType = "text";
         $crtColm = "alter table $tabl add column $k  $sqltType";
-        setDbgVal(__METHOD__, "", $crtColm);
-
-        setDbgVal(__METHOD__, "sql_ret", $db->exec($crtColm));
-
-
-        $idxname=$k."Idx2024";
-        $sql_idx="  CREATE INDEX $idxname ON  $tabl (  $k ); ";
-        setDbgVal(__METHOD__, "", $sql_idx);
-
-        setDbgVal(__METHOD__, "sql_ret", $db->exec($sql_idx));
+        setDbgVal(__METHOD__, "sql", $crtColm);
+        $db->exec($crtColm);
     }
     setDbgRtVal(__METHOD__, "");
 }

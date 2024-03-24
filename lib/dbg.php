@@ -3,13 +3,15 @@
 
 $GLOBALS['dbg']=[];
 
-
+$GLOBALS['dbg_show']=true;
 /**
  * @param string $METHOD__
  * @return void
  */
 function setDbgFunEnter(string $METHOD__,$func_get_args): void
 {
+    if($GLOBALS['dbg_show']==false)
+        return;
     $GLOBALS['dbgpad']=$GLOBALS['dbgpad']+4;
 
     $logmsg = str_repeat(" ", $GLOBALS['dbgpad']) . $METHOD__ . '(((' . json_encode($func_get_args) . ")))";
@@ -20,6 +22,8 @@ function setDbgFunEnter(string $METHOD__,$func_get_args): void
 
 function setDbgVal(string $METHOD__,  $vname,$val): void
 {
+    if($GLOBALS['dbg_show']==false)
+        return;
     $msg = str_repeat(" ", $GLOBALS['dbgpad']) . $METHOD__ . ":: $vname=>$val";
     array_push($GLOBALS['dbg'],
         $msg);
@@ -35,6 +39,8 @@ function setDbgVal(string $METHOD__,  $vname,$val): void
  */
 function setDbgRtVal(string $METHOD__,  $retval): void
 {
+    if($GLOBALS['dbg_show']==false)
+        return;
     // ENDFUN
     $msglog = str_repeat(" ", $GLOBALS['dbgpad']) . "" . $METHOD__ . ':: ret=>' . json_encode($retval) ;
     print_r($msglog."\n");
