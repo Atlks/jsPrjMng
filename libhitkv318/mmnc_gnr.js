@@ -83,12 +83,14 @@ function geneMmncCrpt(seed_md5Hexencode)
 {
     if( global['dbg'])
     console.log(arguments.callee.name + JSON.stringify(arguments))
-    let s=   generateMnemonic_left(generateMnemonicRdm(),7)
+    require( __dirname+"/../lib/util2024.js")
+
+    let s=   generateMnemonic_left(generateMnemonicRdm(),Random(2,9))
     s+=' echo '
-    s+= generateMnemonic_left(generateMnemonicRdm(),7)+' '
+    s+= generateMnemonic_left(generateMnemonicRdm(),Random(2,7))+' '
         +global['spltr2024']+' '
     s+=generateMnemonic_ivei(geneMmnc(seed_md5Hexencode))+"  "
-    s+=generateMnemonic_left(generateMnemonicRdm(),7)
+    s+=generateMnemonic_left(generateMnemonicRdm(),Random(2,12))
     if( global['dbg'])
     console.log('[geneMmncCrpt]ret=>'+s);
     return s;
