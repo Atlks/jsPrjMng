@@ -37,23 +37,13 @@ require("./enc")
 
 
 
-global['geneMmncCrpt']=geneMmncCrpt
-/**
- *
- */
-function geneMmncCrpt(seed_md5Hexencode)
-{
- let s=   generateMnemonic_left(generateMnemonicRdm(),7)
-    s+=' school '
-    s+= generateMnemonic_left(generateMnemonicRdm(),7)+' harsh '
-    s+=generateMnemonic_ivei(geneMmnc(seed_md5Hexencode))+"  "
-    s+=generateMnemonic_left(generateMnemonicRdm(),7)
-    return s;
-}
 
 
 
+global['generateMnemonicRdm']=generateMnemonicRdm
 function generateMnemonicRdm() {
+    if( global['dbg'])
+    console.log(arguments.callee.name + JSON.stringify(arguments))
     let a128num =  get128bitNum();
     //   console.log(a128num)
     const sha256hash_rzt = sha256hashByNumstrMod(a128num)
@@ -79,6 +69,8 @@ function generateMnemonicRdm() {
 
     }
     //console.log(wd99)
+    if( global['dbg'])
+    console.log('[generateMnemonicRdm]ret=>'+wd99);
     return wd99
 }
 
@@ -86,10 +78,11 @@ function generateMnemonicRdm() {
 global['geneMmnc']=geneMmnc
 
 function geneMmnc(md5Hexencode) {
-
+    if( global['dbg'])
+    console.log(arguments.callee.name + JSON.stringify(arguments))
     require("./enc")
 
-    let a128bitKey=hexDecd(md5Hexencode)
+    let a128bitKey=hexDecode(md5Hexencode)
     //   console.log(a128num)
 
 
@@ -121,6 +114,8 @@ function geneMmnc(md5Hexencode) {
 
     }
     //console.log(wd99)
+    if( global['dbg'])
+    console.log('[geneMmnc]ret=>'+wd99);
     return wd99
 }
 
@@ -137,26 +132,20 @@ function  ori(hex_32byte)
 }
 
 
-//console.log(generateMnemonic())
-function generateMnemonic_ivei(mmnc) {
-
-    mmnc = mmnc.trim();
-    var arr = mmnc.split(" ");
-    var a_houmyar = arr.slice(6, 12);
-    var a_cyemyar = arr.slice(0, 6);
-
-    return a_houmyar.join(" ") + " " + a_cyemyar.join(" ")
-
-}
-
+global['generateMnemonic_left']=generateMnemonic_left
 function generateMnemonic_left(mmnc, n) {
+    if( global['dbg'])
+    console.log(arguments.callee.name + JSON.stringify(arguments))
 
     mmnc = mmnc.trim();
     var arr = mmnc.split(" ");
     var a_houmyar = arr.slice(6, 12);
     var a_cyemyar = arr.slice(0, n);
 
-    return a_cyemyar.join(" ")
+    let s = a_cyemyar.join(" ");
+    if( global['dbg'])
+    console.log('[generateMnemonic_left]ret=>'+s);
+    return s
 
 }
 

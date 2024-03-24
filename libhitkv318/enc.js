@@ -148,6 +148,7 @@ var sha256 = function sha256(ascii) {
         }
     }
 
+    //hashlen =72
     for (i = 0; i < 8; i++) {
         for (j = 3; j + 1; j--) {
             var b = (hash[i] >> (j * 8)) & 255;
@@ -211,26 +212,38 @@ function hexToByteArrStr(hex) {
 // console.log(hexEncd("abc"))
 // console.log(hexEncode("abc"))
 
+//global['hexEncd']=hexEncd
 /**
+ *
+ * dep also bug
  * bin2hex
  * @param bytearr
  * @returns {string}
  */
-function hexEncd(bytearr) {
+function hexEncd_dep(bytearr) {
     let s = new Buffer(bytearr).toString('HEX');
     return s
 }
 
 //console.log(hexDecd(hexEncode("abc")))
 
-function hexDecd(bytearr) {
+//global['hexDecd']=hexDecd
 
+/**
+ * dep haoxiang 有bug  确实有bug
+ * maybe some byte code is 65520 unicode int
+ * @param hexEcdStr
+ * @returns {string}
+ */
+function hexDecd_dep(hexEcdStr) {
 
-    let s = new Buffer(bytearr, 'hex').toString();
+     //encode ascii is right，，length is same,just some byte diff
+    let s = Buffer.from(hexEcdStr, 'HEX') .toString( "ascii" );
     return s
 }
 
 
+global['hexEncode']=hexEncode
 //console.log(hexEncode("~!@#$%^&*()_+abccdehijklmn opq uvwxyz123456"))
 
 function hexEncode(str) {
@@ -253,6 +266,7 @@ function hexEncode(str) {
     return hex.toUpperCase()
 }
 
+global['hexDecode']=hexDecode
 function hexDecode(hex) {
     let dataString = "";
     if (hex.length % 2 !== 0) {
@@ -362,8 +376,8 @@ function urlencode($prm) {
 }
 
 
-let data = md5_str2bytearr("fffff");
-console.log(data.length)  //16byte*8bit
+// let data = md5_str2bytearr("fffff");
+// console.log(data.length)  //16byte*8bit
 // console.log("hex2=>"+ str2hexEncode(data ) )
 global['md5_str2bytearr'] = md5_str2bytearr
 
