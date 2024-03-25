@@ -2,7 +2,7 @@
 
 
 require __DIR__ . "/../lib/dbg.php";
-
+require __DIR__ . "/../lib/sql.php";
 
 //----------------------- save
 
@@ -11,10 +11,15 @@ $map = ["id" => 2, "name" => "name22", 'col3' => 12,'room'=>5];  // ,  ,
 
 $tabl = "tb6";
 $dbFileName = "sqlxx.db";
-save($tabl, $map, $dbFileName);
+//save($tabl, $map, $dbFileName);
+
+updt( $tabl,$map, $dbFileName);
 
 
 //delDt(["id" => 1], $tabl, $dbFileName);
+
+
+//delDtJqStl("#1",$tabl, $dbFileName);
 
 
 //------------------qery
@@ -22,9 +27,62 @@ save($tabl, $map, $dbFileName);
 $querySql = " select * from  $tabl ";
 
 
-$arr_rzt = qry($querySql, $dbFileName);
+//$arr_rzt = qry($querySql, $dbFileName);
+$arr_rzt = qryJqStl("#2",$tabl, $dbFileName);
 
 print_r($arr_rzt);
+
+
+
+die();
+
+
+
+
+function updt( $tabl,$map, $dbFileName)
+{
+    setDbgFunEnter(__METHOD__, func_get_args());
+
+    //--------------------- crt table
+
+
+
+
+    $db = new SQLite3($dbFileName);
+    $sql = "update $tabl set " . arr_toSqlPrms4update($map)." where id=".$map['id'];
+    setDbgVal(__METHOD__, "sql", $sql);
+    setDbgVal(__METHOD__, "sql_ret",  $db->exec($sql));
+    setDbgRtVal(__METHOD__, "");
+}
+
+
+function delDtJqStl($loctr, string $tabl, string $dbFileName)
+{
+    setDbgFunEnter(__METHOD__, func_get_args());
+    $loctr=trim($loctr);
+    $id=substr($loctr,1);
+    $sql = "delete from $tabl where id=$id"  ;
+    setDbgVal(__METHOD__, "sql", $sql);
+    $db = new SQLite3($dbFileName);
+    $ret = $db->exec($sql);
+    setDbgRtVal(__METHOD__, $ret);
+
+}
+
+function delDt(array $array, string $tabl, string $dbFileName)
+{
+    setDbgFunEnter(__METHOD__, func_get_args());
+
+
+    $sql = "delete from $tabl where id=" . $array['id'];
+    setDbgVal(__METHOD__, "sql", $sql);
+    $db = new SQLite3($dbFileName);
+    $ret = $db->exec($sql);
+    setDbgRtVal(__METHOD__, $ret);
+
+}
+
+
 
 
 /**
@@ -45,36 +103,20 @@ function qry(string $querySql, $dbFileName): array
     return $arr_rzt;
 }
 
-function save($tabl, $map, $dbFileName)
+function qryJqStl($loctr, string $tabl, string $dbFileName)
 {
     setDbgFunEnter(__METHOD__, func_get_args());
-
-    //--------------------- crt table
-
-    @crtTable($tabl, $map, $dbFileName);
-
-
-    $db = new SQLite3($dbFileName);
-    $sql = "replace into $tabl" . arr_toSqlPrms($map);
+    $loctr=trim($loctr);
+    $id=substr($loctr,1);
+    $sql = "select * from $tabl where id=$id"  ;
     setDbgVal(__METHOD__, "sql", $sql);
-    $ret = $db->exec($sql);
-    setDbgRtVal(__METHOD__, $ret);
+
+    $ret = qry($sql,$dbFileName);
+    setDbgRtVal(__METHOD__, array_slice($ret, 0, 3));
 
 }
 
 
-function delDt(array $array, string $tabl, string $dbFileName)
-{
-    setDbgFunEnter(__METHOD__, func_get_args());
-
-
-    $sql = "delete from $tabl where id=" . $array['id'];
-    setDbgVal(__METHOD__, "sql", $sql);
-    $db = new SQLite3($dbFileName);
-    $ret = $db->exec($sql);
-    setDbgRtVal(__METHOD__, $ret);
-
-}
 
 
 /**
@@ -113,21 +155,21 @@ function crtTable($tabl, $map, $dbFileName)
 }
 
 
-function arr_toSqlPrms($arr)
+
+
+function save($tabl, $map, $dbFileName)
 {
-//    foreach ($arr as $k => $v)
-//    {
-//        $f[] = $k;
-//        $val[] = "'".$v."'";
-//    }
-//    $f = implode(',',$f);
+    setDbgFunEnter(__METHOD__, func_get_args());
+
+    //--------------------- crt table
+
+    @crtTable($tabl, $map, $dbFileName);
 
 
-    $columns = implode(", ", array_keys($arr));
-    //$val = implode(',',array_values($arr));
-    $escaped_values = array_map(function ($v) {
-        return "'" . $v . "'";
-    }, array_values($arr));
-    $values = implode(",", $escaped_values);
-    return "(" . $columns . ")values(" . $values . ")";
+    $db = new SQLite3($dbFileName);
+    $sql = "replace into $tabl" . arr_toSqlPrms4insert($map);
+    setDbgVal(__METHOD__, "sql", $sql);
+    $ret = $db->exec($sql);
+    setDbgRtVal(__METHOD__, $ret);
+
 }
