@@ -27,7 +27,7 @@ Directories
 | .git-robot                                      |          1 |          1 |          0 |          1 |          2 |
 | db                                              |          5 |        223 |          0 |          0 |        223 |
 | doc                                             |          3 |         31 |          2 |         21 |         54 |
-| ini                                             |          1 |          4 |          0 |          9 |         13 |
+| ini_test                                             |          1 |          4 |          0 |          9 |         13 |
 | libBiz                                          |          4 |         91 |         24 |         53 |        168 |
 | libx                                            |         15 |        456 |        159 |        208 |        823 |
 | lowdbx                                          |          4 |         87 |         51 |         72 |        210 |
@@ -58,7 +58,7 @@ Files
 | c:\在修改的内容\jbbot\zmng\dslV3.sql                  | SQL        |         45 |          2 |         64 |        111 |
 | c:\在修改的内容\jbbot\zmng\index.html                 | HTML       |         59 |          2 |         30 |         91 |
 | c:\在修改的内容\jbbot\zmng\index.js                   | JavaScript |         75 |         35 |         61 |        171 |
-| c:\在修改的内容\jbbot\zmng\ini\bp.md                  | Markdown   |          4 |          0 |          9 |         13 |
+| c:\在修改的内容\jbbot\zmng\ini_test\bp.md                  | Markdown   |          4 |          0 |          9 |         13 |
 | c:\在修改的内容\jbbot\zmng\libBiz\api——dep.js         | JavaScript |         87 |         23 |         45 |        155 |
 | c:\在修改的内容\jbbot\zmng\libBiz\exec.php            | PHP        |          1 |          0 |          6 |          7 |
 | c:\在修改的内容\jbbot\zmng\libBiz\jsphpT.js           | JavaScript |          2 |          1 |          2 |          5 |

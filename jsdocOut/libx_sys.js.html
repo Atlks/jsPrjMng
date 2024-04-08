@@ -36,18 +36,18 @@
 global['parse_ini_file'] = parse_ini_file
 
 /**
- * not rcm use ini file..just use cmd cfg togthr file btr..
+ * not rcm use ini_test file..just use cmd cfg togthr file btr..
  *
  * @param fil
 
  */
 function parse_ini_file(fil) {
     const path = require("path");
-   // var ini = require('ini');
-    const ini = require("ini");
+   // var ini_test = require('ini_test');
+    const ini_test = require("ini_test");
     const fs = require("fs");
-    // const iopath = path.join(__dirname, '../cfgDep.ini'); // 引用Pos.ini的相对地址
-    const Info = ini.parse(fs.readFileSync(fil, 'utf-8'));
+    // const iopath = path.join(__dirname, '../cfgDep.ini_test'); // 引用Pos.ini的相对地址
+    const Info = ini_test.parse(fs.readFileSync(fil, 'utf-8'));
     return Info
 }
 

@@ -3,7 +3,7 @@
 
 # data fmt
 
-ini fmt betr...json ,,php srlz fmt 
+ini_test fmt betr...json ,,php srlz fmt 
 
 
 # str fmt 

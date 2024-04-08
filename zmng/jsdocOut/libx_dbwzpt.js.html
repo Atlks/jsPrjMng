@@ -587,11 +587,11 @@ function getConn() {
     path = require("path");
     fs = require("fs");
     mysql = require("mysql");
-    let ini = require('ini');
+    let ini_test = require('ini_test');
     var fs = require("fs");
     var path = require("path");
     const iopath = path.join(__dirname, '../.env'); // 引用Pos.ini的相对地址
-    const Info = ini.parse(fs.readFileSync(iopath, 'utf-8'));
+    const Info = ini_test.parse(fs.readFileSync(iopath, 'utf-8'));
     console.log(Info)
 
     var mysql = require('mysql');

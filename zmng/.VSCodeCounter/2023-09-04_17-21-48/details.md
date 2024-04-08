@@ -29,7 +29,7 @@ Total : 80 files,  3181 codes, 779 comments, 1620 blanks, all 5580 lines
 | [dslV3.sql](/dslV3.sql) | SQL | 45 | 2 | 64 | 111 |
 | [index.html](/index.html) | HTML | 59 | 2 | 30 | 91 |
 | [index.js](/index.js) | JavaScript | 75 | 35 | 61 | 171 |
-| [ini/bp.md](/ini/bp.md) | Markdown | 4 | 0 | 9 | 13 |
+| [ini_test/bp.md](/ini_test/bp.md) | Markdown | 4 | 0 | 9 | 13 |
 | [libBiz/api——dep.js](/libBiz/api%E2%80%94%E2%80%94dep.js) | JavaScript | 87 | 23 | 45 | 155 |
 | [libBiz/exec.php](/libBiz/exec.php) | PHP | 1 | 0 | 6 | 7 |
 | [libBiz/jsphpT.js](/libBiz/jsphpT.js) | JavaScript | 2 | 1 | 2 | 5 |

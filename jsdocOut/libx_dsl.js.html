@@ -144,7 +144,7 @@ function getRootDir(basename) {
         f = __dirname + "/../" + basename;
 
     // if (libdir)
-    //     f = libdir + "/../cfgDep.ini";
+    //     f = libdir + "/../cfgDep.ini_test";
     // alert("[getRootDir]f=>"+f)
     return f;
 }
@@ -170,7 +170,7 @@ function getlib(basename) {
         f = __dirname + "/../" + basename;
 
     // if (libdir)
-    //     f = libdir + "/../cfgDep.ini";
+    //     f = libdir + "/../cfgDep.ini_test";
     //  alert(f)
     return f;
 }
@@ -179,7 +179,7 @@ function getlib(basename) {
 // todo dep cfg
 function execCmd(cmdstr) {
     exe = "node";
-    let f = getRootDir("cfgDep.ini");
+    let f = getRootDir("cfgDep.ini_test");
     let iniObj = parse_ini_file(f)
     exe = iniObj.cmdexe;
 

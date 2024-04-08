@@ -4,7 +4,7 @@
 
 loc db smp...
 
-# fmt ini , toml( betr ini )  ,http qery str
+# fmt ini_test , toml( betr ini_test )  ,http qery str
 
 # cfg json also ok
 

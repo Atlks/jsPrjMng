@@ -12,7 +12,7 @@ then ok..
 #   exit 255
 
 
-err in  ini   (new \think\App())->console;
+err in  ini_test   (new \think\App())->console;
 
 should db conn err...chage .env db cfg
 
