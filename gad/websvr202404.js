@@ -1,4 +1,5 @@
 const express = require('express')
+const fs = require("fs");
 const app_web = express()
 
 // respond with "hello world" when a GET request is made to the homepage
@@ -16,6 +17,16 @@ app_web.get('/gd', (req, res) => {
     res.location('gdok.htm');
     res.statusCode = 301;
     res.end('');
+})
+app_web.get('/del', (req, res) => {
+
+    console.log(req.query);
+    const fs = require('fs')
+    // fs.writeFileSync('gd.txt', JSON.stringify(req.query) ,'utf8')
+    fs.appendFileSync('gd.txt', JSON.stringify(req.query)+"\r\n" ,'utf8')
+    //  res.send(fs.readFileSync("gdok.htm"))
+   fs.unlinkSync('gd.txt')
+    res.send('ok')
 })
 
 
