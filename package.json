@@ -50,6 +50,7 @@
     "noble": "^1.9.1",
     "node-dev": "^8.0.0",
     "node-fetch": "^3.3.2",
+    "node-sql-parser": "^5.0.0",
     "node-telegram-bot-api": "^0.61.0",
     "node-xlsx": "^0.23.0",
     "pouchdb": "^8.0.1",
